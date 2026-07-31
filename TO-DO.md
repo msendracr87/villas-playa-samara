@@ -8,9 +8,11 @@ Do not replace a pending item with an assumption. When an item is resolved, upda
 
 - [x] Complete the current homepage presentation design and implementation iteration.
 - [x] Complete the requested responsive, accessibility, performance, interaction, animation, and bounded quality passes.
+- [x] Initialize and push the source repository to `msendracr87/villas-playa-samara`.
+- [x] Publish and verify the Netlify owner-review environment at `https://villasplayasamara.netlify.app/`.
 - [ ] Present the homepage to the owners and record their final content, image, and positioning feedback.
 
-See [Homepage development progress — July 30, 2026](docs/progress/2026-07-30-homepage-development.md) for the completed-work record. The homepage is ready for presentation, not public launch; the unchecked requirements below remain pending.
+See the [homepage development record](docs/progress/2026-07-30-homepage-development.md), [repository and deployment record](docs/progress/2026-07-30-repository-and-netlify-deployment.md), and [Netlify deployment reference](docs/deployment/netlify.md). The homepage is ready for presentation, not public launch; the unchecked requirements below remain pending.
 
 ## Homepage-first focus — start here
 
@@ -191,3 +193,12 @@ These items can remain outside the homepage presentation unless the owners speci
 - [ ] Add a source and last-reviewed date for hours, prices, schedules, policies, and contact details.
 - [ ] Define how seasonal facts and activity schedules will be maintained after launch.
 - [ ] Remove or update every pending marker before the associated content is published.
+
+## Deployment and launch operations
+
+- [ ] Confirm the Netlify team, site owner, continuous-deployment connection, and production branch.
+- [ ] Confirm the Netlify build command, publish directory, Node.js version, and environment-variable requirements.
+- [ ] Define deploy-preview, branch-deploy, approval, rollback, and production-release responsibilities.
+- [ ] Provide and configure the final custom domain, DNS, HTTPS, and redirect requirements.
+- [ ] Confirm analytics, consent, monitoring, and error-reporting requirements.
+- [ ] Reclassify the Netlify environment as production only after the applicable public-launch checklist is complete.

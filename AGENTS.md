@@ -8,6 +8,7 @@ This repository contains a React 19, TypeScript, and Vite application for the Vi
 - `src/styles/` contains application-wide styles rather than component-specific rules.
 - `docs/copy/` contains the website's implementation copy. Treat it as the primary content source for application work.
 - `docs/copy/accommodations/Accommodations-overview.md` is the canonical source for accommodation names, ordering, occupancy, and summary features.
+- `docs/deployment/` records hosting environments, confirmed build settings, deployment ownership, and launch-transition requirements.
 - `docs/progress/` contains dated implementation and milestone records. Add a new record after substantial project work instead of rewriting historical entries.
 - `TO-DO.md` tracks missing content, unresolved operational facts, approvals, and implementation dependencies. Do not silently resolve its items by guessing.
 - `docs/asset-duplicates.md` records intentional backup and cross-category duplicate assets.
