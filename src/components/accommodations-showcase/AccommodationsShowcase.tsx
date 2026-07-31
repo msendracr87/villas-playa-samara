@@ -166,6 +166,17 @@ export function AccommodationsShowcase() {
             {String(activeIndex + 1).padStart(2, "0")} /{" "}
             {String(accommodations.length).padStart(2, "0")}
           </span>
+          <button
+            className="accommodations-showcase__view-more accommodations-showcase__desktop-view-more"
+            type="button"
+            disabled
+            title="Accommodation page is not available yet"
+          >
+            View more
+            <span className="material-symbols-outlined" aria-hidden="true">
+              arrow_forward
+            </span>
+          </button>
         </div>
 
         <div
@@ -258,7 +269,7 @@ export function AccommodationsShowcase() {
                           {accommodation.summary}
                         </p>
                         <button
-                          className="accommodations-showcase__mobile-view-more"
+                          className="accommodations-showcase__view-more accommodations-showcase__mobile-view-more"
                           type="button"
                           disabled
                           title="Accommodation page is not available yet"
