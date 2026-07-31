@@ -92,7 +92,15 @@ const accommodations = [
 
 export function AccommodationsShowcase() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const activeAccommodation = accommodations[activeIndex];
+
+  const toggleMobileAccommodation = (index: number) => {
+    setActiveIndex(index);
+    setExpandedIndex((currentIndex) =>
+      currentIndex === index ? null : index,
+    );
+  };
 
   return (
     <section
@@ -161,24 +169,99 @@ export function AccommodationsShowcase() {
         </div>
 
         <div
-          className="accommodations-showcase__selector"
+          className="accommodations-showcase__selector accommodations-showcase__selector--desktop"
           aria-label="Choose an accommodation to preview"
         >
-          {accommodations.map((accommodation, index) => (
-            <button
-              key={accommodation.name}
-              className={index === activeIndex ? "is-active" : undefined}
-              type="button"
-              aria-pressed={index === activeIndex}
-              onClick={() => setActiveIndex(index)}
-            >
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              {accommodation.name}
-              <span className="material-symbols-outlined" aria-hidden="true">
-                arrow_outward
-              </span>
-            </button>
-          ))}
+          {accommodations.map((accommodation, index) => {
+            const isActive = index === activeIndex;
+
+            return (
+              <div
+                className="accommodations-showcase__option"
+                key={accommodation.name}
+              >
+                <button
+                  className={isActive ? "is-active" : undefined}
+                  type="button"
+                  aria-pressed={isActive}
+                  onClick={() => setActiveIndex(index)}
+                >
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  {accommodation.name}
+                  <span
+                    className="material-symbols-outlined"
+                    aria-hidden="true"
+                  >
+                    arrow_outward
+                  </span>
+                </button>
+              </div>
+            );
+          })}
+        </div>
+
+        <div
+          className="accommodations-showcase__mobile-accordion"
+          aria-label="Browse rooms, suites, and villas"
+        >
+          {accommodations.map((accommodation, index) => {
+            const isExpanded = index === expandedIndex;
+            const buttonId = `accommodation-mobile-trigger-${index}`;
+            const panelId = `accommodation-mobile-panel-${index}`;
+
+            return (
+              <div
+                className={`accommodations-showcase__mobile-item${
+                  isExpanded ? " is-expanded" : ""
+                }`}
+                key={accommodation.name}
+              >
+                <button
+                  id={buttonId}
+                  className="accommodations-showcase__mobile-trigger"
+                  type="button"
+                  aria-expanded={isExpanded}
+                  aria-controls={panelId}
+                  onClick={() => toggleMobileAccommodation(index)}
+                >
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <span>{accommodation.name}</span>
+                  <span
+                    className="material-symbols-outlined"
+                    aria-hidden="true"
+                  >
+                    expand_more
+                  </span>
+                </button>
+
+                <div
+                  id={panelId}
+                  className="accommodations-showcase__mobile-panel"
+                  role="region"
+                  aria-labelledby={buttonId}
+                  aria-hidden={!isExpanded}
+                >
+                  <div className="accommodations-showcase__mobile-panel-inner">
+                    <figure>
+                      <img
+                        src={accommodation.image.small}
+                        srcSet={`${accommodation.image.small} 720w, ${accommodation.image.large} 1440w`}
+                        sizes="calc(100vw - 40px)"
+                        alt={`${accommodation.name} accommodation`}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <figcaption>
+                        <p>{accommodation.note}</p>
+                        <span>{accommodation.meta}</span>
+                        <p>{accommodation.summary}</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

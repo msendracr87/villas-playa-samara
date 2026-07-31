@@ -124,6 +124,10 @@
   padding: 34px clamp(28px, 4vw, 58px);
 }
 
+.accommodations-showcase__option {
+  min-width: 0;
+}
+
 .accommodations-showcase__selector button {
   display: grid;
   width: 100%;
@@ -171,6 +175,10 @@
   transform: scale(0.98);
 }
 
+.accommodations-showcase__mobile-accordion {
+  display: none;
+}
+
 @media (max-width: 980px) {
   .accommodations-showcase__experience {
     grid-template-columns: 1fr;
@@ -186,7 +194,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .accommodations-showcase__selector button:nth-child(odd) {
+  .accommodations-showcase__option:nth-child(odd) {
     margin-right: 24px;
   }
 }
@@ -205,13 +213,140 @@
     font-size: clamp(2rem, 10vw, 3.5rem);
   }
 
-  .accommodations-showcase__selector {
-    display: block;
-    padding-inline: 20px;
+  .accommodations-showcase__experience {
+    min-height: 0;
   }
 
-  .accommodations-showcase__selector button:nth-child(odd) {
-    margin-right: 0;
+  .accommodations-showcase__media,
+  .accommodations-showcase__selector--desktop {
+    display: none;
+  }
+
+  .accommodations-showcase__mobile-accordion {
+    display: block;
+    padding: 12px 20px 30px;
+    background: var(--color-forest-950);
+  }
+
+  .accommodations-showcase__mobile-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .accommodations-showcase__mobile-trigger {
+    display: grid;
+    width: 100%;
+    min-height: 76px;
+    grid-template-columns: 30px minmax(0, 1fr) 32px;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border: 0;
+    color: rgba(255, 255, 255, 0.72);
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    transition:
+      color 220ms cubic-bezier(0.2, 0, 0, 1),
+      transform 180ms cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  .accommodations-showcase__mobile-trigger > span:first-child {
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+  }
+
+  .accommodations-showcase__mobile-trigger > span:nth-child(2) {
+    font-size: 0.96rem;
+    line-height: 1.35;
+  }
+
+  .accommodations-showcase__mobile-trigger .material-symbols-outlined {
+    display: grid;
+    width: 32px;
+    height: 44px;
+    place-items: center;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 26px;
+    transform: rotate(0);
+    transition:
+      color 220ms cubic-bezier(0.2, 0, 0, 1),
+      transform 320ms cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  .accommodations-showcase__mobile-trigger:active {
+    transform: scale(0.985);
+  }
+
+  .accommodations-showcase__mobile-item.is-expanded
+    .accommodations-showcase__mobile-trigger {
+    color: #fff;
+  }
+
+  .accommodations-showcase__mobile-item.is-expanded
+    .accommodations-showcase__mobile-trigger
+    .material-symbols-outlined {
+    color: var(--color-lime);
+    transform: rotate(180deg);
+  }
+
+  .accommodations-showcase__mobile-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+      grid-template-rows 420ms cubic-bezier(0.2, 0, 0, 1),
+      opacity 240ms ease-out;
+  }
+
+  .accommodations-showcase__mobile-item.is-expanded
+    .accommodations-showcase__mobile-panel {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .accommodations-showcase__mobile-panel-inner {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .accommodations-showcase__mobile-panel figure {
+    margin: 0;
+    padding: 0 0 26px;
+  }
+
+  .accommodations-showcase__mobile-panel img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .accommodations-showcase__mobile-panel figcaption {
+    padding: 20px 2px 0;
+  }
+
+  .accommodations-showcase__mobile-panel figcaption > p:first-child {
+    margin: 0 0 10px;
+    color: var(--color-lime);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .accommodations-showcase__mobile-panel figcaption > span {
+    display: block;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  .accommodations-showcase__mobile-panel figcaption > p:last-child {
+    margin: 12px 0 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.9rem;
+    line-height: 1.65;
   }
 }
 
@@ -221,7 +356,10 @@
   }
 
   .accommodations-showcase__selector button,
-  .accommodations-showcase__selector button .material-symbols-outlined {
+  .accommodations-showcase__selector button .material-symbols-outlined,
+  .accommodations-showcase__mobile-trigger,
+  .accommodations-showcase__mobile-trigger .material-symbols-outlined,
+  .accommodations-showcase__mobile-panel {
     transition-duration: 0.01ms;
   }
 }
