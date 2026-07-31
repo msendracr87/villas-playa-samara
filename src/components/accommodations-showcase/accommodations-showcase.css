@@ -342,11 +342,37 @@
     line-height: 1.55;
   }
 
-  .accommodations-showcase__mobile-panel figcaption > p:last-child {
+  .accommodations-showcase__mobile-summary {
     margin: 12px 0 0;
     color: rgba(255, 255, 255, 0.68);
     font-size: 0.9rem;
     line-height: 1.65;
+  }
+
+  .accommodations-showcase__mobile-view-more {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 12px 17px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    color: rgba(255, 255, 255, 0.78);
+    background: transparent;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .accommodations-showcase__mobile-view-more:disabled {
+    cursor: not-allowed;
+    opacity: 0.72;
+  }
+
+  .accommodations-showcase__mobile-view-more
+    .material-symbols-outlined {
+    font-size: 20px;
   }
 }
 

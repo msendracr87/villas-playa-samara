@@ -254,7 +254,23 @@ export function AccommodationsShowcase() {
                       <figcaption>
                         <p>{accommodation.note}</p>
                         <span>{accommodation.meta}</span>
-                        <p>{accommodation.summary}</p>
+                        <p className="accommodations-showcase__mobile-summary">
+                          {accommodation.summary}
+                        </p>
+                        <button
+                          className="accommodations-showcase__mobile-view-more"
+                          type="button"
+                          disabled
+                          title="Accommodation page is not available yet"
+                        >
+                          View more
+                          <span
+                            className="material-symbols-outlined"
+                            aria-hidden="true"
+                          >
+                            arrow_forward
+                          </span>
+                        </button>
                       </figcaption>
                     </figure>
                   </div>
