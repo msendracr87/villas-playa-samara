@@ -155,28 +155,30 @@ export function AccommodationsShowcase() {
             decoding="async"
           />
           <div className="accommodations-showcase__caption">
-            <p>{activeAccommodation.note}</p>
-            <h3>{activeAccommodation.name}</h3>
-            <span>{activeAccommodation.meta}</span>
-            <p className="accommodations-showcase__summary">
-              {activeAccommodation.summary}
-            </p>
+            <div className="accommodations-showcase__caption-copy">
+              <p>{activeAccommodation.note}</p>
+              <h3>{activeAccommodation.name}</h3>
+              <span>{activeAccommodation.meta}</span>
+              <p className="accommodations-showcase__summary">
+                {activeAccommodation.summary}
+              </p>
+            </div>
+            <button
+              className="accommodations-showcase__view-more accommodations-showcase__desktop-view-more"
+              type="button"
+              disabled
+              title="Accommodation page is not available yet"
+            >
+              View more
+              <span className="material-symbols-outlined" aria-hidden="true">
+                arrow_forward
+              </span>
+            </button>
           </div>
           <span className="accommodations-showcase__count" aria-hidden="true">
             {String(activeIndex + 1).padStart(2, "0")} /{" "}
             {String(accommodations.length).padStart(2, "0")}
           </span>
-          <button
-            className="accommodations-showcase__view-more accommodations-showcase__desktop-view-more"
-            type="button"
-            disabled
-            title="Accommodation page is not available yet"
-          >
-            View more
-            <span className="material-symbols-outlined" aria-hidden="true">
-              arrow_forward
-            </span>
-          </button>
         </div>
 
         <div
