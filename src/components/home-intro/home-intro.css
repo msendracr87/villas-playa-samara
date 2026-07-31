@@ -1,0 +1,125 @@
+.home-intro {
+  padding: var(--section-space) 0;
+  color: var(--color-ink);
+  background: var(--color-sand-50);
+}
+
+.home-intro__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.7fr);
+  gap: clamp(48px, 8vw, 124px) clamp(40px, 8vw, 128px);
+}
+
+.home-intro__heading {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-intro .section-title {
+  font-size: clamp(2.4rem, 5.1vw, 5rem);
+}
+
+.home-intro__copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.home-intro__copy .text-link {
+  margin-top: auto;
+}
+
+.home-intro__aerial {
+  position: relative;
+  grid-column: 1 / -1;
+  height: clamp(420px, 60vw, 810px);
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0 0 40px 40px;
+  background: var(--color-sand-200);
+}
+
+.home-intro__aerial::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--color-sand-50) 0%, rgba(250, 248, 242, 0) 50%);
+  content: "";
+  pointer-events: none;
+}
+
+.home-intro__aerial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-intro__fact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.home-intro__fact strong {
+  color: var(--color-brand-green-text);
+  font-size: clamp(3.2rem, 3vw, 5.4rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.88;
+}
+
+.home-intro__fact span {
+  color: var(--color-forest-700);
+  font-size: clamp(0.62rem, 0.85vw, 0.76rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .home-intro__layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .home-intro__copy {
+    gap: 22px;
+  }
+
+  .home-intro__copy .text-link {
+    margin-top: 12px;
+  }
+
+  .home-intro__heading {
+    gap: 44px;
+    justify-content: flex-start;
+  }
+
+  .home-intro__aerial {
+    grid-column: 1;
+    height: min(74vw, 540px);
+    min-height: 700px;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-intro__fact {
+    gap: 10px;
+  }
+
+  .home-intro__fact strong {
+    font-size: 3rem;
+  }
+
+  .home-intro__fact span {
+    font-size: 0.56rem;
+    letter-spacing: 0.05em;
+  }
+}

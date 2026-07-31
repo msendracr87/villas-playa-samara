@@ -1,0 +1,904 @@
+
+/*! Starts Here */
+
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one {
+    overflow: visible;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container {
+  margin: 0 auto;
+  max-width: 95.375rem;
+  padding: 4rem 2rem 5rem;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container {
+    padding: 7.5rem 3rem 0;
+  }
+}
+@media (max-width: 274.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container {
+    padding: 2rem 0.3rem 3rem;
+  }
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container {
+    padding: 2rem 0.1rem 3rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container a {
+  text-decoration: none;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__illustration {
+  text-align: center;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__illustration img {
+  margin: 0 auto;
+  max-width: 7.5rem;
+  width: 100%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .header .book-now-menu #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container #mmLink {
+  margin: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author {
+  height: 2.75rem;
+  line-height: 2.75rem !important;
+  padding-left: 3.25rem;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1025px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author {
+    padding-left: 60px;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author .profile-pic {
+  background-image: url(images/instagram-profile.957e5520.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 2.75rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  width: 2.75rem;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author .profile-pic {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author .profile-pic {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media (min-width: 1025px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__item-author .profile-pic {
+    height: 44px;cb-in-the-hood
+    width: 44px;
+  }
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel {
+    display: none;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .c-wysiwyg {
+  margin: 0 auto 32px;
+  max-width: 25rem;
+  text-align: center;
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .c-wysiwyg .size-56 {
+    font-size: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    line-height: 18px;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__heading {
+  font-family:
+    GT America Extended Regular,
+    Times New Roman,
+    serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 274.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__heading {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__paragraph {
+  font-family:
+    Tiempos Fine Light,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__paragraph strong {
+  font-family:
+    Tiempos Fine Bold,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__paragraph em {
+  font-family:
+    Tiempos Fine Italic,
+    Times New Roman,
+    serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__paragraph {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 2.75rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container {
+  overflow: visible;
+  padding-bottom: 3rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide {
+  height: auto;
+  width: 75%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide .cb-in-the-hood__item-content,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide.swiper-slide--default .cb-in-the-hood__item-heading {
+  font-family:
+    GT America Extended Regular,
+    Times New Roman,
+    serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+@media (max-width: 899.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide.swiper-slide--default .cb-in-the-hood__item-heading {
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: break-word;
+  }
+}
+@media (max-width: 374.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide.swiper-slide--default .cb-in-the-hood__item-heading {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 274.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide.swiper-slide--default .cb-in-the-hood__item-heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide.swiper-slide--default .cb-in-the-hood__item-heading {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+@media (max-width: 899.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-wrapper .swiper-slide.swiper-slide--default .cb-in-the-hood__item-paragraph {
+    padding-right: 10px;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-scrollbar {
+  background-color: #d8d8d8;
+  border-radius: 0;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  opacity: 1 !important;
+  width: 100%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #3e3a37;
+  border-radius: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__image {
+  display: block;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__image:before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading {
+  font-family:
+    Tiempos Fine Light,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading strong {
+  font-family:
+    Tiempos Fine Bold,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading em {
+  font-family:
+    Tiempos Fine Italic,
+    Times New Roman,
+    serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 274.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading span {
+  font-family:
+    GT America Thin,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-heading span strong {
+  font-family:
+    GT America Medium,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-paragraph {
+  display: block;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-author {
+  font-family:
+    GT America Light,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-paragraph {
+  font-family:
+    GT America Light,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 274.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-paragraph {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__carousel .cb-in-the-hood__item-paragraph {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid {
+    display: none;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container {
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: sticky;
+  top: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 7vw;
+  text-align: center;
+}
+@media (min-width: 1526px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky {
+    padding-bottom: 6.67625rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky > * {
+  max-width: 40.625rem;
+  width: 66.66%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky .cb-in-the-hood__heading {
+  font-family:
+    GT America Extended Regular,
+    Times New Roman,
+    serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky .cb-in-the-hood__paragraph {
+  font-family:
+    Tiempos Fine Light,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky .cb-in-the-hood__paragraph strong {
+  font-family:
+    Tiempos Fine Bold,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky .cb-in-the-hood__paragraph em {
+  font-family:
+    Tiempos Fine Italic,
+    Times New Roman,
+    serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky .cb-in-the-hood__paragraph {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__sticky-container .cb-in-the-hood__sticky .cb-in-the-hood__paragraph span {
+  font-family:
+    GT America Light,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__gradient {
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-col {
+  width: calc(33.33% - 7vw);
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-col {
+    width: calc(33.33% - 3vw);
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-col {
+    width: calc(33.33% - 5vw);
+  }
+}
+@media (min-width: 1025px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-col {
+    width: calc(33.33% - 7vw);
+  }
+}
+@media (min-width: 1526px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-col {
+    width: calc(33.33% - 6.67625rem);
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-col--offset {
+  margin-top: 7vw;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item {
+  margin-bottom: 7vw;
+  position: relative;
+}
+@media (min-width: 1526px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item {
+    margin-bottom: 6.67625rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item--article a:after {
+  height: 6rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a {
+    padding: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a {
+    padding: 1.25rem;
+  }
+}
+@media (min-width: 1025px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a {
+    padding: 1.5rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a:after {
+  height: 5.5rem;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content:after,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a:after {
+    height: 6rem;
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content:after,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a:after {
+    height: 6.5rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+  font-family:
+    GT America Extended Regular,
+    Times New Roman,
+    serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  left: auto;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  right: auto;
+  top: auto;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1025px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 374.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 274.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (max-width: 174.98px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading span,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading span {
+  font-family:
+    GT America Thin,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-heading span strong,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-heading span strong {
+  font-family:
+    GT America Medium,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item.cb-in-the-hood__grid-item--default a .cb-in-the-hood__item-paragraph {
+  left: auto;
+  position: relative;
+  right: auto;
+  top: auto;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item--instagram a:after {
+  height: 7.5rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item:before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  will-change: opacity;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item img {
+  display: block;
+  width: 100%;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover:before,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content.hover #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:focus #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:hover #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a.hover #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:focus #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:hover #mmLink {
+  opacity: 1;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:before,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a #mmLink {
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  will-change: opacity;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:after,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content:before,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a:before {
+  top: 0;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .header .book-now-menu #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a #mmLink {
+  left: 1.25rem;
+  position: absolute;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph {
+  right: 1.25rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph {
+  margin-bottom: 1.25rem;
+  top: 1.25rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .header .book-now-menu #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a #mmLink {
+  bottom: 1.25rem;
+  z-index: 1;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading {
+  font-family:
+    Tiempos Fine Light,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading strong,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading strong {
+  font-family:
+    Tiempos Fine Bold,
+    Times New Roman,
+    serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading em,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading em {
+  font-family:
+    Tiempos Fine Italic,
+    Times New Roman,
+    serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading span,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading span {
+  font-family:
+    GT America Thin,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-heading span strong,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-heading span strong {
+  font-family:
+    GT America Medium,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .header .book-now-menu #mmLink,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .button,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .header .book-now-menu #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content #mmLink,
+.header .book-now-menu .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a #mmLink {
+  font-family:
+    GT America Light,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph {
+  font-family:
+    GT America Light,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph {
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+  }
+}
+@media (min-width: 900px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph {
+    font-size: 0.8125rem;
+    line-height: 1.4375rem;
+  }
+}
+@media (min-width: 1025px) {
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-paragraph,
+  .cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-paragraph {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item .cb-in-the-hood__item-content .cb-in-the-hood__item-author,
+.cb-in-the-hood--type-one .cb-in-the-hood__container .cb-in-the-hood__grid .cb-in-the-hood__grid-item a .cb-in-the-hood__item-author {
+  font-family:
+    GT America Light,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+/*! ENDS HERE  */

@@ -1,0 +1,230 @@
+.wellness-overview {
+  padding: clamp(72px, 8vw, 120px) 0;
+  color: var(--color-ink);
+  background: var(--color-sand-50);
+  scroll-margin-top: 24px;
+}
+
+.wellness-overview__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.68fr);
+  align-items: end;
+  gap: 36px clamp(40px, 8vw, 128px);
+}
+
+.wellness-overview__intro .section-kicker {
+  grid-column: 1 / -1;
+  margin-bottom: -8px;
+}
+
+.wellness-overview__summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(340px, 0.75fr);
+  margin-top: clamp(48px, 6vw, 82px);
+  overflow: hidden;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow:
+    0 24px 70px rgba(16, 26, 20, 0.08),
+    0 2px 12px rgba(16, 26, 20, 0.04);
+}
+
+.wellness-overview__current,
+.wellness-overview__future {
+  padding: clamp(34px, 5vw, 72px);
+}
+
+.wellness-overview__status {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: var(--color-lime);
+  background: rgba(196, 214, 88, 0.1);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wellness-overview__status--current {
+  color: #536522;
+  background: var(--color-sand-100);
+}
+
+.wellness-overview__current h3,
+.wellness-overview__future h3 {
+  max-width: 14ch;
+  margin: 22px 0 0;
+  font-size: clamp(2rem, 3.5vw, 3.8rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.wellness-overview__current-list,
+.wellness-overview__future-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wellness-overview__current-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(22px, 3vw, 42px);
+  margin-top: clamp(34px, 4vw, 52px);
+}
+
+.wellness-overview__current-list li {
+  min-width: 0;
+}
+
+.wellness-overview__icon {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  color: #647b29;
+  background: var(--color-sand-100);
+  font-size: 21px;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.wellness-overview__current-list h4 {
+  margin: 18px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.wellness-overview__current-list p {
+  margin: 9px 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.wellness-overview__current .text-link {
+  margin-top: clamp(34px, 4vw, 52px);
+}
+
+.wellness-overview__future {
+  color: #fff;
+  background: var(--color-forest-900);
+}
+
+.wellness-overview__future h3 {
+  font-size: clamp(2rem, 3vw, 3.25rem);
+}
+
+.wellness-overview__future > p {
+  max-width: 42ch;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.wellness-overview__future-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 18px;
+  margin-top: 32px;
+}
+
+.wellness-overview__future-list li {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.wellness-overview__future .wellness-overview__icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  color: var(--color-lime);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 19px;
+}
+
+.wellness-overview__future small {
+  display: block;
+  margin-top: 34px;
+  color: var(--color-lime);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1080px) {
+  .wellness-overview__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .wellness-overview__future-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .wellness-overview__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .wellness-overview__intro .section-kicker {
+    grid-column: 1;
+  }
+
+  .wellness-overview__current-list {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .wellness-overview__current-list li {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 0 16px;
+  }
+
+  .wellness-overview__current-list h4 {
+    align-self: end;
+    margin-top: 0;
+  }
+
+  .wellness-overview__current-list p {
+    grid-column: 2;
+  }
+
+  .wellness-overview__future-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .wellness-overview__summary {
+    width: calc(100% + (var(--page-gutter) * 2));
+    margin-left: calc(var(--page-gutter) * -1);
+    border-radius: 0;
+  }
+
+  .wellness-overview__future-list {
+    grid-template-columns: 1fr;
+  }
+}

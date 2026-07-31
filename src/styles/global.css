@@ -1,0 +1,65 @@
+:root {
+  --color-forest-950: #101a14;
+  --color-forest-900: #172019;
+  --color-forest-800: #243329;
+  --color-forest-700: #354a3b;
+  --color-leaf: #93b13d;
+  --color-lime: #c4d658;
+  --color-brand-green-text: #536522;
+  --color-sand-50: #faf8f2;
+  --color-sand-100: #f0ecdf;
+  --color-sand-200: #e4dece;
+  --color-ink: #182119;
+  --color-muted: #657066;
+  --color-footer-text: #fff;
+  --color-footer-text-secondary: #9fa3a1;
+  --color-footer-link: #c1c3c2;
+  --color-footer-text-muted: #858b87;
+  --interaction-target-min: 44px;
+  --page-gutter: clamp(20px, 5vw, 80px);
+  --section-space: clamp(88px, 11vw, 176px);
+  --content-width: 1440px;
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #fff;
+  background: var(--color-forest-900);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

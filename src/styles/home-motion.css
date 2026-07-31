@@ -1,0 +1,315 @@
+:root {
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-motion-ready [data-home-motion] {
+  --motion-delay: 0ms;
+}
+
+.home-motion-ready [data-home-motion-delay="1"] {
+  --motion-delay: 110ms;
+}
+
+.home-motion-ready [data-home-motion-delay="2"] {
+  --motion-delay: 200ms;
+}
+
+.home-motion-ready [data-home-motion="copy"] {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 720ms var(--motion-ease-out) var(--motion-delay),
+    opacity 540ms var(--motion-ease-out) var(--motion-delay),
+    transform 720ms var(--motion-ease-out) var(--motion-delay);
+}
+
+.home-motion-ready
+  [data-home-motion="copy"]:not(.is-motion-visible) {
+  clip-path: inset(0 0 24% 0);
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.home-motion-ready [data-home-motion="media"] {
+  transform: none;
+}
+
+.home-motion-ready [data-home-motion="media"] img {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 520ms var(--motion-ease-out),
+    transform 900ms var(--motion-ease-out);
+}
+
+.home-motion-ready
+  [data-home-motion="media"]:not(.is-motion-visible)
+  img {
+  opacity: 0;
+  transform: scale(1.035);
+  will-change: opacity, transform;
+}
+
+.home-motion-ready
+  [data-home-motion="wide-media"]
+  .accommodations-showcase__media,
+.home-motion-ready
+  [data-home-motion="wide-media"]
+  .accommodations-showcase__selector {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--motion-ease-out),
+    transform 780ms var(--motion-ease-out);
+}
+
+.home-motion-ready
+  [data-home-motion="wide-media"]:not(.is-motion-visible)
+  .accommodations-showcase__media {
+  opacity: 0;
+  transform: translate3d(-28px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.home-motion-ready
+  [data-home-motion="wide-media"]:not(.is-motion-visible)
+  .accommodations-showcase__selector {
+  opacity: 0;
+  transform: translate3d(28px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.home-motion-ready
+  [data-home-motion="carousel"]
+  .dining-showcase__viewport {
+  opacity: 1;
+  transition:
+    opacity 540ms var(--motion-ease-out),
+    transform 760ms var(--motion-ease-out);
+  transform: translate3d(0, 0, 0);
+}
+
+.home-motion-ready
+  [data-home-motion="carousel"]:not(.is-motion-visible)
+  .dining-showcase__viewport {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: opacity, transform;
+}
+
+.home-motion-ready
+  [data-home-motion="discoveries"]
+  .experiences-showcase__column {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 780ms var(--motion-ease-out),
+    opacity 560ms var(--motion-ease-out),
+    transform 780ms var(--motion-ease-out);
+}
+
+.home-motion-ready
+  [data-home-motion="discoveries"]
+  .experiences-showcase__column:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.home-motion-ready
+  [data-home-motion="discoveries"]
+  .experiences-showcase__column:nth-child(3) {
+  transition-delay: 190ms;
+}
+
+.home-motion-ready
+  [data-home-motion="discoveries"]:not(.is-motion-visible)
+  .experiences-showcase__column {
+  clip-path: inset(0 0 14% 0);
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.home-motion-ready [data-home-motion="wellness-panel"] {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 760ms var(--motion-ease-out) var(--motion-delay),
+    opacity 560ms var(--motion-ease-out) var(--motion-delay),
+    transform 760ms var(--motion-ease-out) var(--motion-delay);
+}
+
+.home-motion-ready
+  [data-home-motion="wellness-panel"]:not(.is-motion-visible) {
+  opacity: 0;
+  will-change: clip-path, opacity, transform;
+}
+
+.home-motion-ready
+  .wellness-overview__current[data-home-motion="wellness-panel"]:not(
+    .is-motion-visible
+  ) {
+  clip-path: inset(0 8% 0 0);
+  transform: translate3d(-28px, 0, 0);
+}
+
+.home-motion-ready
+  .wellness-overview__future[data-home-motion="wellness-panel"]:not(
+    .is-motion-visible
+  ) {
+  clip-path: inset(0 0 0 8%);
+  transform: translate3d(28px, 0, 0);
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]
+  .gallery-preview__grid
+  figure {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    clip-path 760ms var(--motion-ease-out),
+    opacity 520ms var(--motion-ease-out),
+    transform 760ms var(--motion-ease-out);
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]
+  .gallery-preview__grid
+  figure:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]
+  .gallery-preview__grid
+  figure:nth-child(3) {
+  transition-delay: 140ms;
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]
+  .gallery-preview__grid
+  figure:nth-child(4) {
+  transition-delay: 190ms;
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]
+  .gallery-preview__grid
+  figure:nth-child(5) {
+  transition-delay: 240ms;
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]:not(.is-motion-visible)
+  .gallery-preview__grid
+  figure {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0.35;
+  transform: scale(0.985);
+  will-change: clip-path, opacity, transform;
+}
+
+.home-motion-ready
+  [data-home-motion="gallery"]:not(.is-motion-visible)
+  .gallery-preview__grid
+  figure:nth-child(even) {
+  clip-path: inset(0 100% 0 0);
+}
+
+.home-motion-ready [data-home-motion="booking"] > img {
+  transform: scale(1);
+  transition: transform 1100ms var(--motion-ease-out);
+}
+
+.home-motion-ready
+  [data-home-motion="booking"]
+  .booking-call-to-action__content {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 800ms var(--motion-ease-out) 100ms,
+    opacity 580ms var(--motion-ease-out) 100ms,
+    transform 800ms var(--motion-ease-out) 100ms;
+}
+
+.home-motion-ready
+  [data-home-motion="booking"]:not(.is-motion-visible)
+  > img {
+  transform: scale(1.06);
+  will-change: transform;
+}
+
+.home-motion-ready
+  [data-home-motion="booking"]:not(.is-motion-visible)
+  .booking-call-to-action__content {
+  clip-path: inset(0 0 32% 0);
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.home-motion-ready
+  [data-home-motion="footer"]
+  > * {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 680ms var(--motion-ease-out),
+    opacity 500ms var(--motion-ease-out),
+    transform 680ms var(--motion-ease-out);
+}
+
+.home-motion-ready
+  [data-home-motion="footer"]
+  > :nth-child(2) {
+  transition-delay: 90ms;
+}
+
+.home-motion-ready
+  [data-home-motion="footer"]
+  > :nth-child(3) {
+  transition-delay: 170ms;
+}
+
+.home-motion-ready
+  [data-home-motion="footer"]:not(.is-motion-visible)
+  > * {
+  clip-path: inset(0 0 20% 0);
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+@media (max-width: 680px) {
+  .home-motion-ready
+    [data-home-motion="discoveries"]
+    .experiences-showcase__column {
+    transition-delay: 0ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-home-motion],
+  .home-motion-ready [data-home-motion],
+  [data-home-motion="discoveries"] .experiences-showcase__column,
+  [data-home-motion="gallery"] .gallery-preview__grid figure,
+  [data-home-motion="booking"] > img,
+  [data-home-motion="booking"] .booking-call-to-action__content,
+  [data-home-motion="footer"] > * {
+    animation: none !important;
+    clip-path: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}
