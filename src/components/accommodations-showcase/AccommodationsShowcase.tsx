@@ -201,12 +201,6 @@ export function AccommodationsShowcase() {
                 >
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   {accommodation.name}
-                  <span
-                    className="material-symbols-outlined"
-                    aria-hidden="true"
-                  >
-                    arrow_outward
-                  </span>
                 </button>
               </div>
             );
