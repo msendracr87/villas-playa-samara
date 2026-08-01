@@ -1,4 +1,6 @@
+import type { CSSProperties } from "react";
 import { accommodations } from "../../data/accommodations";
+import { useAccommodationsMotion } from "../../hooks/useAccommodationsMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { useParallaxBackground } from "../../hooks/useParallaxBackground";
 import { AccommodationCard } from "../accommodation-card/AccommodationCard";
@@ -6,6 +8,7 @@ import { AccommodationInquiry } from "../accommodation-inquiry/AccommodationInqu
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import "./accommodations-overview.css";
+import "./accommodations-motion.css";
 
 const commonAmenities = [
   { label: "King or Queen-size beds", icon: "king_bed" },
@@ -22,6 +25,7 @@ const commonAmenities = [
 
 export function AccommodationsOverview() {
   const amenitiesRef = useParallaxBackground("--amenities-parallax-y");
+  useAccommodationsMotion();
 
   usePageMetadata(
     "Rooms & Villas in Sámara | Villas Playa Sámara",
@@ -35,6 +39,7 @@ export function AccommodationsOverview() {
         <section
           className="accommodations-page__hero"
           aria-labelledby="accommodations-page-title"
+          data-accommodations-motion="hero"
         >
           <img
             src={accommodations[7].image.large}
@@ -56,7 +61,10 @@ export function AccommodationsOverview() {
           className="accommodations-page__intro"
           aria-labelledby="accommodations-intro-title"
         >
-          <div className="content-wrap accommodations-page__intro-content">
+          <div
+            className="content-wrap accommodations-page__intro-content"
+            data-accommodations-motion="intro"
+          >
             <div>
               <p className="section-kicker">Find your stay</p>
               <h2 className="section-title" id="accommodations-intro-title">
@@ -77,15 +85,23 @@ export function AccommodationsOverview() {
           aria-labelledby="common-amenities-title"
           ref={amenitiesRef}
         >
-          <div className="content-wrap accommodations-page__amenities-layout">
+          <div
+            className="content-wrap accommodations-page__amenities-layout"
+            data-accommodations-motion="amenities"
+          >
             <div>
               <p>Across the collection</p>
               <h2 id="common-amenities-title">Common in-room amenities</h2>
               <span>Amenities and layouts vary by accommodation category.</span>
             </div>
             <ul>
-              {commonAmenities.map((amenity) => (
-                <li key={amenity.label}>
+              {commonAmenities.map((amenity, index) => (
+                <li
+                  key={amenity.label}
+                  style={{
+                    "--amenity-delay": `${100 + index * 34}ms`,
+                  } as CSSProperties}
+                >
                   <span
                     className="material-symbols-outlined"
                     aria-hidden="true"
@@ -103,7 +119,10 @@ export function AccommodationsOverview() {
           className="content-wrap accommodations-page__collection"
           aria-labelledby="accommodation-collection-title"
         >
-          <div className="accommodations-page__collection-heading">
+          <div
+            className="accommodations-page__collection-heading"
+            data-accommodations-motion="collection-heading"
+          >
             <h2 id="accommodation-collection-title">Choose your setting and space</h2>
             <p>
               Compare all eight categories in their approved order, from

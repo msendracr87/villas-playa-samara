@@ -14,7 +14,10 @@ export function AccommodationCard({
   index,
 }: AccommodationCardProps) {
   return (
-    <article className="accommodation-card">
+    <article
+      className="accommodation-card"
+      data-accommodations-motion="stay"
+    >
       <a
         className="accommodation-card__media"
         href={getAccommodationPath(accommodation)}

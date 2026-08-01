@@ -1,0 +1,327 @@
+:root {
+  --accommodations-motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="hero"]
+  > img {
+  clip-path: inset(0);
+  transform: scale(1);
+  transition:
+    clip-path 1100ms var(--accommodations-motion-ease),
+    transform 1300ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="hero"]
+  .accommodations-page__hero-content
+  > * {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 760ms var(--accommodations-motion-ease),
+    opacity 560ms var(--accommodations-motion-ease),
+    transform 760ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="hero"]
+  .accommodations-page__hero-content
+  > h1 {
+  transition-delay: 110ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="hero"]
+  .accommodations-page__hero-content
+  > span {
+  transition-delay: 230ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="hero"]:not(.is-motion-visible)
+  > img {
+  clip-path: inset(0 5%);
+  transform: scale(1.055);
+  will-change: clip-path, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="hero"]:not(.is-motion-visible)
+  .accommodations-page__hero-content
+  > * {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  transform: translate3d(0, 38px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="intro"]
+  > * {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 720ms var(--accommodations-motion-ease),
+    opacity 520ms var(--accommodations-motion-ease),
+    transform 720ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="intro"]
+  > .section-copy {
+  transition-delay: 120ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="intro"]:not(.is-motion-visible)
+  > * {
+  clip-path: inset(0 0 24% 0);
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="amenities"]
+  > div {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 760ms var(--accommodations-motion-ease),
+    opacity 540ms var(--accommodations-motion-ease),
+    transform 760ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="amenities"]
+  li {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    border-color 240ms ease,
+    opacity 480ms var(--accommodations-motion-ease)
+      var(--amenity-delay),
+    transform 620ms var(--accommodations-motion-ease)
+      var(--amenity-delay);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="amenities"]:not(.is-motion-visible)
+  > div {
+  clip-path: inset(0 0 28% 0);
+  opacity: 0;
+  transform: translate3d(-26px, 0, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="amenities"]:not(.is-motion-visible)
+  li {
+  opacity: 0;
+  transform: translate3d(18px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="collection-heading"]
+  > * {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 720ms var(--accommodations-motion-ease),
+    opacity 520ms var(--accommodations-motion-ease),
+    transform 720ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="collection-heading"]
+  > p {
+  transition-delay: 100ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="collection-heading"]:not(.is-motion-visible)
+  > h2 {
+  clip-path: inset(0 0 28% 0);
+  opacity: 0;
+  transform: translate3d(-28px, 0, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="collection-heading"]:not(.is-motion-visible)
+  > p {
+  clip-path: inset(0 0 24% 0);
+  opacity: 0;
+  transform: translate3d(24px, 0, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]
+  .accommodation-card__media {
+  clip-path: inset(0);
+  opacity: 1;
+  transition:
+    clip-path 880ms var(--accommodations-motion-ease),
+    opacity 540ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]
+  .accommodation-card__media
+  img {
+  transition-duration: 900ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]
+  .accommodation-card__number {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 400ms var(--accommodations-motion-ease) 240ms,
+    transform 560ms var(--accommodations-motion-ease) 240ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]
+  .accommodation-card__body {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 720ms var(--accommodations-motion-ease) 130ms,
+    opacity 520ms var(--accommodations-motion-ease) 130ms,
+    transform 720ms var(--accommodations-motion-ease) 130ms;
+}
+
+.accommodations-motion-ready
+  .accommodations-page__grid
+  [data-accommodations-motion="stay"]:nth-child(even)
+  .accommodation-card__media,
+.accommodations-motion-ready
+  .accommodations-page__grid
+  [data-accommodations-motion="stay"]:nth-child(even)
+  .accommodation-card__body {
+  transition-delay: 100ms;
+}
+
+.accommodations-motion-ready
+  .accommodations-page__grid
+  [data-accommodations-motion="stay"]:not(.is-motion-visible)
+  .accommodation-card__media {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0.42;
+  will-change: clip-path, opacity;
+}
+
+.accommodations-motion-ready
+  .accommodations-page__grid
+  [data-accommodations-motion="stay"]:nth-child(even):not(.is-motion-visible)
+  .accommodation-card__media {
+  clip-path: inset(0 0 0 100%);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]:not(.is-motion-visible)
+  .accommodation-card__media
+  img {
+  transform: scale(1.045);
+  will-change: transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]:not(.is-motion-visible)
+  .accommodation-card__number {
+  opacity: 0;
+  transform: scale(0.72);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="stay"]:not(.is-motion-visible)
+  .accommodation-card__body {
+  clip-path: inset(0 0 18% 0);
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="inquiry"]
+  > * {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 820ms var(--accommodations-motion-ease),
+    opacity 560ms var(--accommodations-motion-ease),
+    transform 820ms var(--accommodations-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="inquiry"]
+  > .accommodation-inquiry__form {
+  transition-delay: 110ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="inquiry"]:not(.is-motion-visible)
+  > .accommodation-inquiry__intro {
+  clip-path: inset(0 0 26% 0);
+  opacity: 0;
+  transform: translate3d(-26px, 0, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="inquiry"]:not(.is-motion-visible)
+  > .accommodation-inquiry__form {
+  clip-path: inset(0 0 10% 0);
+  opacity: 0;
+  transform: translate3d(28px, 0, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+@media (max-width: 760px) {
+  .accommodations-motion-ready
+    .accommodations-page__grid
+    [data-accommodations-motion="stay"]:nth-child(even)
+    .accommodation-card__media,
+  .accommodations-motion-ready
+    .accommodations-page__grid
+    [data-accommodations-motion="stay"]:nth-child(even)
+    .accommodation-card__body {
+    transition-delay: 0ms;
+  }
+
+  .accommodations-motion-ready
+    .accommodations-page__grid
+    [data-accommodations-motion="stay"]:nth-child(even):not(
+      .is-motion-visible
+    )
+    .accommodation-card__media {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-accommodations-motion],
+  .accommodations-motion-ready [data-accommodations-motion],
+  [data-accommodations-motion] *,
+  .accommodations-motion-ready [data-accommodations-motion] * {
+    animation: none !important;
+    clip-path: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}

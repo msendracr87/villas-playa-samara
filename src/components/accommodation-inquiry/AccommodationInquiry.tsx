@@ -11,7 +11,10 @@ export function AccommodationInquiry() {
       aria-labelledby="accommodation-inquiry-title"
       ref={inquiryRef}
     >
-      <div className="content-wrap accommodation-inquiry__layout">
+      <div
+        className="content-wrap accommodation-inquiry__layout"
+        data-accommodations-motion="inquiry"
+      >
         <div className="accommodation-inquiry__intro">
           <h2 id="accommodation-inquiry-title">
             Let us help you find the right room or villa
