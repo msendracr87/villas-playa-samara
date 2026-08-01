@@ -3,17 +3,18 @@ import logoUrl from "../../../assets/svgs/logo/vps-logo-fff-frame.svg";
 import "./header.css";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Rooms & Villas", href: "#accommodation" },
-  { label: "Dining", href: "#dining" },
-  { label: "Experiences", href: "#experiences" },
-  { label: "Wellness", href: "#wellness" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Home", href: "/#home" },
+  { label: "Rooms & Villas", href: "/rooms-and-villas" },
+  { label: "Dining", href: "/#dining" },
+  { label: "Experiences", href: "/#experiences" },
+  { label: "Wellness", href: "/#wellness" },
+  { label: "Gallery", href: "/#gallery" },
 ] as const;
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuId = useId();
+  const currentPath = window.location.pathname;
 
   useEffect(() => {
     if (!isMenuOpen) {
@@ -42,7 +43,7 @@ export function Header() {
         <div className="site-header__brand-panel">
           <a
             className="site-header__brand"
-            href="#home"
+            href="/"
             aria-label="Villas Playa Sámara home"
           >
             <img src={logoUrl} alt="" />
@@ -84,13 +85,25 @@ export function Header() {
         >
           <nav className="site-header__nav" aria-label="Primary navigation">
             {navItems.map((item) => (
-              <a key={item.label} href={item.href} onClick={closeMenu}>
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={closeMenu}
+                aria-current={
+                  item.href === "/rooms-and-villas" &&
+                  currentPath.startsWith("/rooms-and-villas")
+                    ? "page"
+                    : item.href === "/#home" && currentPath === "/"
+                      ? "page"
+                      : undefined
+                }
+              >
                 {item.label}
               </a>
             ))}
           </nav>
 
-          <a className="site-header__book" href="#book" onClick={closeMenu}>
+          <a className="site-header__book" href="/#book" onClick={closeMenu}>
             Book now
           </a>
 

@@ -36,7 +36,9 @@
   transform: none;
 }
 
-.home-motion-ready [data-home-motion="media"] img {
+.home-motion-ready
+  [data-home-motion="media"]
+  .home-intro__aerial-image {
   opacity: 1;
   transform: scale(1);
   transition:
@@ -46,7 +48,7 @@
 
 .home-motion-ready
   [data-home-motion="media"]:not(.is-motion-visible)
-  img {
+  .home-intro__aerial-image {
   opacity: 0;
   transform: scale(1.035);
   will-change: opacity, transform;

@@ -141,12 +141,22 @@
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.12em;
+  text-decoration: none;
   text-transform: uppercase;
+  transition:
+    color 180ms cubic-bezier(0.2, 0, 0, 1),
+    background-color 180ms cubic-bezier(0.2, 0, 0, 1),
+    transform 180ms cubic-bezier(0.2, 0, 0, 1);
 }
 
-.accommodations-showcase__view-more:disabled {
-  cursor: not-allowed;
-  opacity: 0.76;
+.accommodations-showcase__view-more:hover,
+.accommodations-showcase__view-more:focus-visible {
+  color: var(--color-forest-950);
+  background: #fff;
+}
+
+.accommodations-showcase__view-more:active {
+  transform: scale(0.96);
 }
 
 .accommodations-showcase__view-more .material-symbols-outlined {
@@ -399,6 +409,10 @@
   .accommodations-showcase__mobile-trigger,
   .accommodations-showcase__mobile-trigger .material-symbols-outlined,
   .accommodations-showcase__mobile-panel {
+    transition-duration: 0.01ms;
+  }
+
+  .accommodations-showcase__view-more {
     transition-duration: 0.01ms;
   }
 }

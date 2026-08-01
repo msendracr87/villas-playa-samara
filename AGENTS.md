@@ -109,6 +109,11 @@ Google's Material Design Icons and Material Symbols are the project's official i
 
 Prefer Material Symbols to legacy Material Icons. Use them sparingly for navigation, buttons, forms, status, contact details, and common actions. Do not add Font Awesome, Heroicons, Bootstrap Icons, Lucide, or another icon library unless explicitly requested.
 
+When an icon is requested, follow this workflow in order:
+
+1. Search Google's Material Symbols and Material Icons first and use a suitable icon from that official system whenever one is available. Do not begin by searching local folders or alternative icon libraries.
+2. If no suitable Google icon exists, stop and ask the project owner to add or provide the required icon in the source files. Do not silently substitute an icon from another library or create an unapproved replacement.
+
 Every icon-only button needs a clear `aria-label`; mark purely decorative icons with `aria-hidden="true"`. When a future application needs only a few icons, extract or serve that approved subset rather than importing the complete upstream asset collection.
 
 ## Review & Change Management

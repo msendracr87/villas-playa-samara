@@ -35,7 +35,10 @@ export function BookingCallToAction() {
           >
             Book now
           </button>
-          <a className="booking-call-to-action__secondary" href="#accommodation">
+          <a
+            className="booking-call-to-action__secondary"
+            href="/rooms-and-villas"
+          >
             View rooms &amp; villas
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_forward

@@ -21,13 +21,6 @@
   text-transform: uppercase;
 }
 
-.section-kicker::before {
-  width: 30px;
-  height: 1px;
-  background: currentColor;
-  content: "";
-}
-
 .section-title {
   max-width: 13ch;
   margin: 0;

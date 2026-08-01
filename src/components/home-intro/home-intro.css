@@ -44,16 +44,28 @@
 
 .home-intro__aerial::after {
   position: absolute;
+  z-index: 1;
   inset: 0;
-  background: linear-gradient(180deg, var(--color-sand-50) 0%, rgba(250, 248, 242, 0) 50%);
+  background: linear-gradient(180deg, var(--color-sand-50) 0%, var(--color-sand-50) 14%, rgba(250, 248, 242, 0.95) 24%, rgba(250, 248, 242, 0) 54%);
   content: "";
   pointer-events: none;
 }
 
-.home-intro__aerial img {
+.home-intro__aerial-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.home-intro__aerial-logo {
+  position: absolute;
+  z-index: 2;
+  top: clamp(28px, 5vw, 72px);
+  left: 50%;
+  width: clamp(250px, 32vw, 470px);
+  height: auto;
+  pointer-events: none;
+  transform: translate(-50%, -35%);
 }
 
 .home-intro__fact {
@@ -106,6 +118,11 @@
     height: min(74vw, 540px);
     min-height: 700px;
     border-radius: 0 0 20px 20px;
+  }
+
+  .home-intro__aerial-logo {
+    top: 62px;
+    width: min(78vw, 400px);
   }
 }
 

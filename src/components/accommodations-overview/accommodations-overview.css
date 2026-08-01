@@ -1,0 +1,248 @@
+.accommodations-page {
+  color: var(--color-ink);
+}
+
+.accommodations-page__hero {
+  position: relative;
+  display: grid;
+  min-height: min(860px, 92svh);
+  align-items: end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--color-forest-900);
+}
+
+.accommodations-page__hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 12, 8, 0.22) 0%, transparent 38%), linear-gradient(0deg, rgba(7, 12, 8, 0.82) 0%, rgba(7, 12, 8, 0.08) 65%);
+  content: "";
+}
+
+.accommodations-page__hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.accommodations-page__hero-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: clamp(54px, 8vw, 116px);
+}
+
+.accommodations-page__hero-content > p,
+.accommodations-page__amenities-layout > div > p {
+  margin: 0 0 18px;
+  color: var(--color-lime);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.accommodations-page__hero h1 {
+  max-width: 14ch;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.accommodations-page__hero-content > span {
+  display: block;
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.accommodations-page__intro {
+  padding-block: var(--section-space) calc(var(--section-space) + 100px);
+  background-color: var(--color-sand-50);
+  background-image: linear-gradient(to bottom, rgba(250, 248, 242, 1) 0%, rgba(250, 248, 242, 0.94) 50%, rgba(250, 248, 242, 0.64) 80%, rgba(250, 248, 242, 0) 100%), url("../../../assets/images/drone/drone-samara-duarte-dellarole-15.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.accommodations-page__intro-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(30px, 4vw, 48px);
+}
+
+.accommodations-page__intro-content > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.accommodations-page__intro-content .section-title {
+  margin-inline: auto;
+}
+
+.accommodations-page__intro-content .section-copy {
+  max-width: 64ch;
+}
+
+.accommodations-page__amenities {
+  --amenities-parallax-y: 0px;
+
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(64px, 8vw, 112px);
+  color: #fff;
+  background-color: var(--color-forest-900);
+  isolation: isolate;
+}
+
+.accommodations-page__amenities::before {
+  position: absolute;
+  z-index: 0;
+  inset: -40% 0;
+  background-image: linear-gradient(rgba(16, 26, 20, 0.22), rgba(16, 26, 20, 0.34)), url("../../../assets/images/patterns/vps-palm-pattern-2-edit.jpg");
+  background-position: center 42%;
+  background-size: cover;
+  content: "";
+  pointer-events: none;
+  transform: translate3d(0, var(--amenities-parallax-y), 0) scale(1.02);
+}
+
+.accommodations-page__amenities-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.3fr);
+  align-items: start;
+  gap: 56px clamp(48px, 10vw, 160px);
+}
+
+.accommodations-page__amenities h2 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4.4rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.accommodations-page__amenities-layout > div > span {
+  display: block;
+  max-width: 34ch;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.accommodations-page__amenities ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accommodations-page__amenities li {
+  display: grid;
+  min-height: 58px;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.9rem;
+}
+
+.accommodations-page__amenities li .material-symbols-outlined {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  color: var(--color-lime);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.accommodations-page__collection {
+  padding-block: var(--section-space);
+}
+
+.accommodations-page__collection-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.65fr);
+  align-items: end;
+  gap: 36px 64px;
+  padding-bottom: clamp(58px, 7vw, 96px);
+}
+
+.accommodations-page__collection-heading h2 {
+  max-width: 14ch;
+  margin: 0;
+  font-size: clamp(2.5rem, 5.2vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.accommodations-page__collection-heading p {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.accommodations-page__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(72px, 10vw, 144px) clamp(32px, 6vw, 88px);
+}
+
+.accommodations-page__grid .accommodation-card:nth-child(even) {
+  margin-top: clamp(48px, 8vw, 112px);
+}
+
+@media (max-width: 760px) {
+  .accommodations-page__hero {
+    min-height: 760px;
+  }
+
+  .accommodations-page__hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4.7rem);
+  }
+
+  .accommodations-page__amenities-layout,
+  .accommodations-page__collection-heading,
+  .accommodations-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accommodations-page__amenities ul {
+    grid-template-columns: 1fr;
+  }
+
+  .accommodations-page__grid {
+    gap: 72px;
+  }
+
+  .accommodations-page__grid .accommodation-card:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accommodations-page__amenities::before {
+    transform: none;
+  }
+}

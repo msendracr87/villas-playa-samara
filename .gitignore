@@ -18,5 +18,8 @@ dist/
 .idea/
 .vscode/
 
+# Local image-editing source files
+*.psd
+
 # Local development scratch files
 video-test.html

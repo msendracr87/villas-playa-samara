@@ -10,6 +10,7 @@ Do not replace a pending item with an assumption. When an item is resolved, upda
 - [x] Complete the requested responsive, accessibility, performance, interaction, animation, and bounded quality passes.
 - [x] Initialize and push the source repository to `msendracr87/villas-playa-samara`.
 - [x] Publish and verify the Netlify owner-review environment at `https://villasplayasamara.netlify.app/`.
+- [x] Build the Rooms & Villas overview and eight reusable accommodation-detail routes for owner review.
 - [ ] Present the homepage to the owners and record their final content, image, and positioning feedback.
 
 See the [homepage development record](docs/progress/2026-07-30-homepage-development.md), [repository and deployment record](docs/progress/2026-07-30-repository-and-netlify-deployment.md), and [Netlify deployment reference](docs/deployment/netlify.md). The homepage is ready for presentation, not public launch; the unchecked requirements below remain pending.
@@ -105,6 +106,8 @@ These items can remain outside the homepage presentation unless the owners speci
 
 ## Accommodation information
 
+- [ ] Decide whether to implement an accommodation comparison engine and define the approved comparison criteria, filtering behavior, and mobile experience.
+- [ ] Approve the Rooms & Villas inquiry form fields, required fields, consent and privacy copy, submission destination, and success and error handling.
 - [ ] Provide the room-specific booking URL for each of the eight accommodation categories.
 - [ ] Provide or confirm the floor-plan link for each accommodation category.
 - [ ] Provide the size of each accommodation in square feet and square meters.

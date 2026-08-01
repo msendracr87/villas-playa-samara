@@ -119,8 +119,29 @@
 }
 
 .wellness-overview__future {
+  position: relative;
+  overflow: hidden;
   color: #fff;
-  background: var(--color-forest-900);
+  background-color: var(--color-forest-900);
+  isolation: isolate;
+}
+
+.wellness-overview__future::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0 0 auto;
+  height: 50%;
+  background-image: linear-gradient(180deg, rgba(23, 32, 25, 0) 0%, rgba(23, 32, 25, 0.18) 42%, var(--color-forest-900) 100%), url("../../../assets/images/wellness/spa-underdevelopment/spa-overview-render.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  pointer-events: none;
+}
+
+.wellness-overview__future > * {
+  position: relative;
+  z-index: 1;
 }
 
 .wellness-overview__future h3 {

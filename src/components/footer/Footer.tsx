@@ -3,11 +3,11 @@ import qvivaLogoUrl from "../../../assets/images/logos/QVivaResorts-Logo2-1-300x
 import "./footer.css";
 
 const footerLinks = [
-  { label: "Rooms & Villas", href: "#accommodation" },
-  { label: "Dining", href: "#dining" },
-  { label: "Experiences", href: "#experiences" },
-  { label: "Wellness", href: "#wellness" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Rooms & Villas", href: "/rooms-and-villas" },
+  { label: "Dining", href: "/#dining" },
+  { label: "Experiences", href: "/#experiences" },
+  { label: "Wellness", href: "/#wellness" },
+  { label: "Gallery", href: "/#gallery" },
 ] as const;
 
 export function Footer() {
@@ -18,7 +18,7 @@ export function Footer() {
         data-home-motion="footer"
       >
         <div className="site-footer__brand">
-          <a href="#home" aria-label="Villas Playa Sámara home">
+          <a href="/" aria-label="Villas Playa Sámara home">
             <img src={logoUrl} alt="" />
           </a>
           <p>
@@ -39,7 +39,7 @@ export function Footer() {
         <div className="site-footer__stay">
           <p>Begin your stay</p>
           <h2>Close to the beach. At home in Sámara.</h2>
-          <a href="#book">
+          <a href="/#book">
             Book now
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_forward
