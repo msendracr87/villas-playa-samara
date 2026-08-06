@@ -14,8 +14,10 @@
 - **Sleeps:** 2 guests
 - **View:** Beachfront / Ocean view
 - **Outdoor space:** Beachfront terrace
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_7-deluxe-ocean-view.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_7-deluxe-ocean-view.jpg)
+- **Size:** 417 sq. ft. / 39 sq. meters
 
 ## A Romantic Ocean Hideaway
 

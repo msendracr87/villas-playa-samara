@@ -14,8 +14,10 @@
 - **Sleeps:** Maximum 6 guests
 - **View:** Beachfront / Ocean view
 - **Outdoor space:** Beachfront terrace
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_6-two-bedroom-beachfront-villa.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_6-two-bedroom-beachfront-villa.jpg)
+- **Size:** 1.226 sq. ft. / 114 sq. meters
 
 ## An Oceanfront Escape for Families and Groups
 

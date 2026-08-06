@@ -15,21 +15,18 @@
 }
 
 .home-motion-ready [data-home-motion="copy"] {
-  clip-path: inset(0);
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition:
-    clip-path 720ms var(--motion-ease-out) var(--motion-delay),
     opacity 540ms var(--motion-ease-out) var(--motion-delay),
     transform 720ms var(--motion-ease-out) var(--motion-delay);
 }
 
 .home-motion-ready
   [data-home-motion="copy"]:not(.is-motion-visible) {
-  clip-path: inset(0 0 24% 0);
   opacity: 0;
   transform: translate3d(0, 22px, 0);
-  will-change: clip-path, opacity, transform;
+  will-change: opacity, transform;
 }
 
 .home-motion-ready [data-home-motion="media"] {

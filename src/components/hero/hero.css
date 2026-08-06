@@ -55,6 +55,15 @@
   animation: hero-copy-open 720ms 120ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.hero__script-accent {
+  display: inline-block;
+  font-family: "Birthstone", cursive;
+  font-size: 1.65em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.72;
+}
+
 .hero__description {
   max-width: 800px;
   margin: 24px 0 0;

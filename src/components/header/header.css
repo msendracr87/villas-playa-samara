@@ -192,6 +192,7 @@
   place-items: center;
   padding-inline: 22px;
   border: 1px solid rgba(255, 255, 255, 0.86);
+  border-radius: 4px;
   color: inherit;
   font-size: 0.83rem;
   font-weight: 600;

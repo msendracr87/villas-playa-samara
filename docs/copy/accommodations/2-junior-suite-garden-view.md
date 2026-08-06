@@ -14,8 +14,10 @@
 - **Sleeps:** Maximum 4 guests
 - **View:** Garden view
 - **Outdoor space:** Garden-view terrace
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_2-junior-suite-garden-view.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_2-junior-suite-garden-view.jpg)
+- **Size:** 717 sq. ft. / 67 sq. meters
 
 ## Spacious Villa with Nature Views
 

@@ -15,9 +15,51 @@ import oceanKingImageLarge from "../../assets/images/optimized/homepage/accommod
 import luxuryVillaImageSmall from "../../assets/images/optimized/homepage/accommodations/three-bedroom-beachfront-luxury-villa-720.webp";
 import luxuryVillaImageLarge from "../../assets/images/optimized/homepage/accommodations/three-bedroom-beachfront-luxury-villa-1440.webp";
 
+const galleryImageModules = import.meta.glob<string>(
+  "../../assets/images/accommodations/[1-8]-*/*.{jpg,jpeg,png,webp}",
+  { eager: true, query: "?url", import: "default" },
+);
+
+const floorPlanImageModules = import.meta.glob<string>(
+  "../../assets/images/accommodations/0-blueprints/**/*.{jpg,jpeg,png,webp}",
+  { eager: true, query: "?url", import: "default" },
+);
+
+const getGalleryImages = (folder: string) =>
+  Object.entries(galleryImageModules)
+    .filter(([path]) => path.includes(`/accommodations/${folder}/`))
+    .sort(([left], [right]) =>
+      left.localeCompare(right, undefined, { numeric: true }),
+    )
+    .map(([, url]) => url);
+
+const getFloorPlanImage = (orientation: string, fileName: string) => {
+  const entry = Object.entries(floorPlanImageModules).find(([path]) =>
+    path.endsWith(`/0-blueprints/${orientation}/${fileName}`),
+  );
+
+  if (!entry) {
+    throw new Error(`Missing accommodation floor plan: ${fileName}`);
+  }
+
+  return entry[1];
+};
+
+const getFloorPlanImages = (fileStem: string) => ({
+  landscape: getFloorPlanImage(
+    "1350x1080",
+    `VPS-villas-suites-room-blueprint-1350x1080_${fileStem}.jpg`,
+  ),
+  portrait: getFloorPlanImage(
+    "1080x1350",
+    `VPS-villas-suites-room-blueprint-1080x1350_${fileStem}.jpg`,
+  ),
+});
+
 export type Accommodation = {
   slug: string;
   name: string;
+  titleBedConfiguration?: string;
   shortName: string;
   note: string;
   category: "Room" | "Suite" | "Villa";
@@ -25,6 +67,7 @@ export type Accommodation = {
   sleeps: string;
   view: string;
   outdoorSpace: string;
+  size: string;
   homepageMeta: string;
   homepageSummary: string;
   summary: string;
@@ -34,6 +77,11 @@ export type Accommodation = {
     small: string;
     large: string;
   };
+  gallery: readonly string[];
+  floorPlan: {
+    landscape: string;
+    portrait: string;
+  };
   pageTitle: string;
   metaDescription: string;
 };
@@ -42,6 +90,7 @@ export const accommodations: readonly Accommodation[] = [
   {
     slug: "deluxe-garden-view-king-size-bed",
     name: "Deluxe Garden View — King-Size Bed",
+    titleBedConfiguration: "King-Size Bed",
     shortName: "Deluxe Garden View King",
     note: "Cozy comfort for two",
     category: "Room",
@@ -49,6 +98,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "2 guests",
     view: "Garden or pool area",
     outdoorSpace: "Terrace or balcony",
+    size: "409 sq. ft. / 38 sq. meters",
     homepageMeta: "King bed · 2 guests · Garden or pool view",
     homepageSummary:
       "A comfortable room for couples or solo travelers, with a terrace or balcony overlooking the garden or pool area.",
@@ -76,6 +126,8 @@ export const accommodations: readonly Accommodation[] = [
       "Terrace or balcony",
     ],
     image: { small: gardenKingImageSmall, large: gardenKingImageLarge },
+    gallery: getGalleryImages("1-deluxe-garden-view-king-size-bed"),
+    floorPlan: getFloorPlanImages("1-deluxe-garden-view-king-size-bed"),
     pageTitle: "Deluxe Garden View King Room | Villas Playa Sámara",
     metaDescription:
       "Stay in a Deluxe Garden View room at Villas Playa Sámara with one King bed, space for two guests, convenient amenities, and a terrace or balcony.",
@@ -90,6 +142,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "Maximum 4 guests",
     view: "Garden view",
     outdoorSpace: "Garden-view terrace",
+    size: "717 sq. ft. / 67 sq. meters",
     homepageMeta: "Flexible beds · Up to 4 guests · Garden view",
     homepageSummary:
       "A garden-view suite with flexible sleeping space, a shared living and dining area, a full kitchen, and a private terrace.",
@@ -122,6 +175,8 @@ export const accommodations: readonly Accommodation[] = [
       "Garden-view terrace",
     ],
     image: { small: juniorGardenImageSmall, large: juniorGardenImageLarge },
+    gallery: getGalleryImages("2-junior-suite-garden-view"),
+    floorPlan: getFloorPlanImages("2-junior-suite-garden-view"),
     pageTitle: "Junior Suite Garden View | Villas Playa Sámara",
     metaDescription:
       "Discover a Garden View Junior Suite for up to four guests, with flexible beds, a living area, full kitchen, and private terrace at Villas Playa Sámara.",
@@ -129,6 +184,7 @@ export const accommodations: readonly Accommodation[] = [
   {
     slug: "deluxe-garden-view-two-queen-size-beds",
     name: "Deluxe Garden View — Two Queen-Size Beds",
+    titleBedConfiguration: "Two Queen-Size Beds",
     shortName: "Deluxe Garden View Queens",
     note: "Comfort for small groups",
     category: "Room",
@@ -136,6 +192,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "4 guests",
     view: "Garden or pool area",
     outdoorSpace: "Terrace or balcony",
+    size: "445 sq. ft. / 41 sq. meters",
     homepageMeta: "Two Queen beds · 4 guests · Garden or pool view",
     homepageSummary:
       "A practical room with two Queen beds, light refreshment facilities, a sofa seating area, and an outdoor terrace or balcony.",
@@ -163,6 +220,12 @@ export const accommodations: readonly Accommodation[] = [
       "Terrace or balcony",
     ],
     image: { small: gardenQueensImageSmall, large: gardenQueensImageLarge },
+    gallery: getGalleryImages(
+      "3-deluxe-garden-view-two-queen-size-beds",
+    ),
+    floorPlan: getFloorPlanImages(
+      "3-deluxe-garden-view-two-queen-size-beds",
+    ),
     pageTitle: "Deluxe Garden View Two Queen Room | Villas Playa Sámara",
     metaDescription:
       "Stay in a Deluxe Garden View room with two Queen beds, space for four guests, convenient amenities, and a terrace or balcony at Villas Playa Sámara.",
@@ -177,6 +240,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "Maximum 4 guests",
     view: "Beachfront / Ocean view",
     outdoorSpace: "Beachfront terrace",
+    size: "717 sq. ft. / 67 sq. meters",
     homepageMeta: "Flexible beds · Up to 4 guests · Beachfront",
     homepageSummary:
       "A beachfront suite with flexible sleeping space, shared living and dining, a full kitchen, and a terrace facing the Pacific.",
@@ -212,6 +276,8 @@ export const accommodations: readonly Accommodation[] = [
       small: juniorBeachfrontImageSmall,
       large: juniorBeachfrontImageLarge,
     },
+    gallery: getGalleryImages("4-junior-suite-beachfront"),
+    floorPlan: getFloorPlanImages("4-junior-suite-beachfront"),
     pageTitle: "Junior Suite Beachfront | Villas Playa Sámara",
     metaDescription:
       "Enjoy a Beachfront Junior Suite for up to four guests, with ocean views, flexible beds, a living area, full kitchen, and terrace beside the Pacific.",
@@ -226,6 +292,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "Maximum 6 guests",
     view: "Garden view",
     outdoorSpace: "Garden-view terrace",
+    size: "1.226 sq. ft. / 114 sq. meters",
     homepageMeta: "Two bedrooms · Up to 6 guests · Garden view",
     homepageSummary:
       "A two-bedroom villa with private bathrooms, generous shared living space, a full kitchen, and a tropical garden terrace.",
@@ -258,6 +325,8 @@ export const accommodations: readonly Accommodation[] = [
       "Garden-view terrace",
     ],
     image: { small: gardenVillaImageSmall, large: gardenVillaImageLarge },
+    gallery: getGalleryImages("5-two-bedroom-garden-view-villa"),
+    floorPlan: getFloorPlanImages("5-two-bedroom-garden-view-villa"),
     pageTitle: "Two-Bedroom Garden View Villa | Villas Playa Sámara",
     metaDescription:
       "Explore a two-bedroom Garden View Villa for up to six guests, with two bathrooms, shared living space, a full kitchen, and a tropical terrace.",
@@ -272,6 +341,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "Maximum 6 guests",
     view: "Beachfront / Ocean view",
     outdoorSpace: "Beachfront terrace",
+    size: "1.226 sq. ft. / 114 sq. meters",
     homepageMeta: "Two bedrooms · Up to 6 guests · Beachfront",
     homepageSummary:
       "A spacious two-bedroom villa with private bathrooms, a full kitchen, and an inviting terrace beside the Pacific.",
@@ -307,6 +377,8 @@ export const accommodations: readonly Accommodation[] = [
       small: beachfrontVillaImageSmall,
       large: beachfrontVillaImageLarge,
     },
+    gallery: getGalleryImages("6-two-bedroom-beachfront-villa"),
+    floorPlan: getFloorPlanImages("6-two-bedroom-beachfront-villa"),
     pageTitle: "Two-Bedroom Beachfront Villa | Villas Playa Sámara",
     metaDescription:
       "Stay beside the Pacific in a two-bedroom beachfront villa for up to six guests, with two bathrooms, a full kitchen, shared living space, and terrace.",
@@ -314,6 +386,7 @@ export const accommodations: readonly Accommodation[] = [
   {
     slug: "deluxe-ocean-view-king-size-bed",
     name: "Deluxe Ocean View — King-Size Bed",
+    titleBedConfiguration: "King-Size Bed",
     shortName: "Deluxe Ocean View King",
     note: "A romantic ocean hideaway",
     category: "Room",
@@ -321,6 +394,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "2 guests",
     view: "Beachfront / Ocean view",
     outdoorSpace: "Beachfront terrace",
+    size: "417 sq. ft. / 39 sq. meters",
     homepageMeta: "King bed · 2 guests · Ocean view",
     homepageSummary:
       "An intimate ocean-view room for two with everyday refreshment amenities and a spacious beachfront terrace.",
@@ -347,6 +421,8 @@ export const accommodations: readonly Accommodation[] = [
       "Beachfront terrace",
     ],
     image: { small: oceanKingImageSmall, large: oceanKingImageLarge },
+    gallery: getGalleryImages("7-deluxe-ocean-view"),
+    floorPlan: getFloorPlanImages("7-deluxe-ocean-view"),
     pageTitle: "Deluxe Ocean View King Room | Villas Playa Sámara",
     metaDescription:
       "Discover a Deluxe Ocean View room for two with a King bed, everyday amenities, and a private beachfront terrace at Villas Playa Sámara.",
@@ -361,6 +437,7 @@ export const accommodations: readonly Accommodation[] = [
     sleeps: "8 guests",
     view: "Beachfront / Ocean view",
     outdoorSpace: "Beachfront terrace",
+    size: "1.617 sq. ft. / 150 sq. meters",
     homepageMeta: "Three bedrooms · Up to 8 guests · Beachfront",
     homepageSummary:
       "A generous three-bedroom villa with two bathrooms, a full kitchen, and abundant shared space right beside the sand.",
@@ -394,6 +471,12 @@ export const accommodations: readonly Accommodation[] = [
       "Beachfront terrace",
     ],
     image: { small: luxuryVillaImageSmall, large: luxuryVillaImageLarge },
+    gallery: getGalleryImages(
+      "8-three-bedroom-beachfront-luxury-villa",
+    ),
+    floorPlan: getFloorPlanImages(
+      "8-three-bedroom-beachfront-luxury-villa",
+    ),
     pageTitle: "Three-Bedroom Beachfront Villa | Villas Playa Sámara",
     metaDescription:
       "Enjoy a spacious three-bedroom beachfront villa for up to eight guests, with ocean views, two bathrooms, a full kitchen, and room to gather.",
@@ -402,6 +485,20 @@ export const accommodations: readonly Accommodation[] = [
 
 export const getAccommodationPath = (accommodation: Accommodation) =>
   `/rooms-and-villas/${accommodation.slug}`;
+
+export const getAccommodationTitleParts = (accommodation: Accommodation) => {
+  const bedConfiguration = accommodation.titleBedConfiguration;
+  const bedConfigurationSuffix = bedConfiguration
+    ? ` — ${bedConfiguration}`
+    : "";
+  const name =
+    bedConfigurationSuffix &&
+    accommodation.name.endsWith(bedConfigurationSuffix)
+      ? accommodation.name.slice(0, -bedConfigurationSuffix.length)
+      : accommodation.name;
+
+  return { bedConfiguration, name };
+};
 
 export const getAccommodationBySlug = (slug: string) =>
   accommodations.find((accommodation) => accommodation.slug === slug);

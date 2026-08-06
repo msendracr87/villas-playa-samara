@@ -51,7 +51,12 @@ export function AccommodationsOverview() {
           <div className="content-wrap accommodations-page__hero-content">
             <p>Rooms, suites &amp; villas</p>
             <h1 id="accommodations-page-title">
-              Experience the best in comfort &amp; service by the beach
+              A{" "}
+              <span className="accommodations-page__script-accent">
+                welcoming
+              </span>{" "}
+              stay close to the{" "}
+              <span className="accommodations-page__script-accent">beach</span>.
             </h1>
             <span>Eight accommodation categories · Garden and beachfront settings</span>
           </div>

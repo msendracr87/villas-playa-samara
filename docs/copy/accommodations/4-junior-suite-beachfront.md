@@ -14,8 +14,10 @@
 - **Sleeps:** Maximum 4 guests
 - **View:** Beachfront / Ocean view
 - **Outdoor space:** Beachfront terrace
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_4-junior-suite-beachfront.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_4-junior-suite-beachfront.jpg)
+- **Size:** 717 sq. ft. / 67 sq. meters
 
 ## Steps from the Sand
 

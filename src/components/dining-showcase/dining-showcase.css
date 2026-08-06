@@ -48,7 +48,7 @@
   position: relative;
   height: clamp(340px, 28vw, 460px);
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--color-sand-200);
 }
 

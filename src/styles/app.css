@@ -85,6 +85,7 @@
   min-height: 54px;
   place-items: center;
   padding: 14px 24px;
+  border-radius: 4px;
   color: var(--color-sand-50);
   background: var(--color-forest-900);
   font-size: 0.76rem;

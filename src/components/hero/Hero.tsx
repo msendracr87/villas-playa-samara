@@ -46,7 +46,8 @@ export function Hero() {
 
       <div className="hero__content">
         <h1 id="hero-title">
-          Stay Close to the Beach. Feel at Home in Sámara.
+          <span className="hero__script-accent">Make</span> Yourself at Home by
+          Playa <span className="hero__script-accent">Sámara</span>.
         </h1>
         <p className="hero__description">
           A welcoming all-inclusive resort with comfortable rooms and villas,

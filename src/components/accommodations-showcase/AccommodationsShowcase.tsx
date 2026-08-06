@@ -2,6 +2,7 @@ import { useState } from "react";
 import {
   accommodations,
   getAccommodationPath,
+  getAccommodationTitleParts,
 } from "../../data/accommodations";
 import "./accommodations-showcase.css";
 
@@ -9,6 +10,10 @@ export function AccommodationsShowcase() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const activeAccommodation = accommodations[activeIndex];
+  const {
+    bedConfiguration: activeBedConfiguration,
+    name: activeDisplayName,
+  } = getAccommodationTitleParts(activeAccommodation);
 
   const toggleMobileAccommodation = (index: number) => {
     setActiveIndex(index);
@@ -67,7 +72,14 @@ export function AccommodationsShowcase() {
           <div className="accommodations-showcase__caption">
             <div className="accommodations-showcase__caption-copy">
               <p>{activeAccommodation.note}</p>
-              <h3>{activeAccommodation.name}</h3>
+              <h3>
+                <span>{activeDisplayName}</span>
+                {activeBedConfiguration ? (
+                  <span className="accommodations-showcase__bed-configuration">
+                    {activeBedConfiguration}
+                  </span>
+                ) : null}
+              </h3>
               <span>{activeAccommodation.homepageMeta}</span>
               <p className="accommodations-showcase__summary">
                 {activeAccommodation.homepageSummary}
@@ -95,6 +107,8 @@ export function AccommodationsShowcase() {
         >
           {accommodations.map((accommodation, index) => {
             const isActive = index === activeIndex;
+            const { bedConfiguration, name } =
+              getAccommodationTitleParts(accommodation);
 
             return (
               <div
@@ -108,7 +122,12 @@ export function AccommodationsShowcase() {
                   onClick={() => setActiveIndex(index)}
                 >
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  {accommodation.name}
+                  <span className="accommodations-showcase__option-title">
+                    <span>{name}</span>
+                    {bedConfiguration ? (
+                      <span>{bedConfiguration}</span>
+                    ) : null}
+                  </span>
                 </button>
               </div>
             );
@@ -123,6 +142,8 @@ export function AccommodationsShowcase() {
             const isExpanded = index === expandedIndex;
             const buttonId = `accommodation-mobile-trigger-${index}`;
             const panelId = `accommodation-mobile-panel-${index}`;
+            const { bedConfiguration, name } =
+              getAccommodationTitleParts(accommodation);
 
             return (
               <div
@@ -140,7 +161,12 @@ export function AccommodationsShowcase() {
                   onClick={() => toggleMobileAccommodation(index)}
                 >
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  <span>{accommodation.name}</span>
+                  <span className="accommodations-showcase__mobile-title">
+                    <span>{name}</span>
+                    {bedConfiguration ? (
+                      <span>{bedConfiguration}</span>
+                    ) : null}
+                  </span>
                   <span
                     className="material-symbols-outlined"
                     aria-hidden="true"

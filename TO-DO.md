@@ -93,7 +93,7 @@ The current homepage draft already contains the main written sections. The large
 
 These items can remain outside the homepage presentation unless the owners specifically ask to see them:
 
-- Accommodation sizes, floor plans, room-specific booking URLs, and full detail-page galleries.
+- Room-specific booking URLs and additional gallery photography for the two Deluxe Garden View categories.
 - Final restaurant menus, prices, allergens, detailed hours, and reservation policies.
 - Mini Buffet and Ice Cream Shop concepts, because they are not part of the current four-venue collection.
 - Mini-Golf, because its copy and imagery are still pending and it is currently omitted from the homepage.
@@ -109,8 +109,8 @@ These items can remain outside the homepage presentation unless the owners speci
 - [ ] Decide whether to implement an accommodation comparison engine and define the approved comparison criteria, filtering behavior, and mobile experience.
 - [ ] Approve the Rooms & Villas inquiry form fields, required fields, consent and privacy copy, submission destination, and success and error handling.
 - [ ] Provide the room-specific booking URL for each of the eight accommodation categories.
-- [ ] Provide or confirm the floor-plan link for each accommodation category.
-- [ ] Provide the size of each accommodation in square feet and square meters.
+- [x] Provide or confirm the floor-plan link for each accommodation category.
+- [x] Provide the size of each accommodation in square feet and square meters.
 - [ ] Confirm the exact bed configuration and maximum occupancy for both Junior Suite categories.
 - [ ] Confirm how the optional King-bed configuration changes the Junior Suite Garden View bedroom layout.
 - [ ] Confirm the sofa-bed configuration for both Two Bedroom Villa categories within their six-guest maximum occupancy.

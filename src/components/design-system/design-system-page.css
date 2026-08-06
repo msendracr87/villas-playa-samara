@@ -324,7 +324,7 @@
 .design-system-page__rounded-action {
   min-height: 54px;
   border: 0;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 14px 24px;
   color: #fff;
   background: var(--color-forest-900);
@@ -336,7 +336,7 @@
 }
 
 .design-system-page__form {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .design-system-page__status-row {

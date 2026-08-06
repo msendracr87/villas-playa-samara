@@ -14,8 +14,10 @@
 - **Sleeps:** 4 guests
 - **View:** Garden or pool area
 - **Outdoor space:** Terrace or balcony
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_3-deluxe-garden-view-two-queen-size-beds.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_3-deluxe-garden-view-two-queen-size-beds.jpg)
+- **Size:** 445 sq. ft. / 41 sq. meters
 
 ## Comfort for Small Groups
 

@@ -4,7 +4,7 @@
 
 When it's time to truly relax, our 115 deluxe rooms and spacious villas invite you to a seaside escape where comfort, tropical charm, and serenity blend to make everyday worries disappear.
 
-> **Canonical content note:** This document defines the approved accommodation names and ordering. Accommodation sizes, floor plans, room-specific booking URLs, and selected configuration details remain pending in `../../../TO-DO.md`.
+> **Canonical content note:** This document defines the approved accommodation names and ordering. Approved accommodation sizes and floor-plan links are recorded in each accommodation detail file. Room-specific booking URLs and selected configuration details remain pending in `../../../TO-DO.md`.
 
 ### Common In-Room Amenities
 

@@ -14,8 +14,10 @@
 - **Sleeps:** Maximum 6 guests
 - **View:** Garden view
 - **Outdoor space:** Garden-view terrace
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_5-two-bedroom-garden-view-villa.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_5-two-bedroom-garden-view-villa.jpg)
+- **Size:** 1.226 sq. ft. / 114 sq. meters
 
 ## A Spacious Family Retreat
 

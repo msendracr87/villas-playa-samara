@@ -14,8 +14,10 @@
 - **Sleeps:** 2 guests
 - **View:** Garden or pool area
 - **Outdoor space:** Terrace or balcony
-- **Floor plan:** View Floor Plan *(link pending)*
-- **Size:** XXX sq. ft. / XXX sq. meters *(placeholder; confirm before publication)*
+- **Floor plan:**
+  - Horizontal Desktop [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1350x1080/VPS-villas-suites-room-blueprint-1350x1080_1-deluxe-garden-view-king-size-bed.jpg)
+  - Vertical Mobile [View Floor Plan](../../../assets/images/accommodations/0-blueprints/1080x1350/VPS-villas-suites-room-blueprint-1080x1350_1-deluxe-garden-view-king-size-bed.jpg)
+- **Size:** 409 sq. ft. / 38 sq. meters
 
 ## Cozy Comfort for Two
 
