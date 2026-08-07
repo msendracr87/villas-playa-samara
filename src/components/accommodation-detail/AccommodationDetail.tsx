@@ -5,6 +5,7 @@ import {
   getAccommodationTitleParts,
 } from "../../data/accommodations";
 import { getAccommodationFaqs } from "../../data/accommodationFaqs";
+import { useAccommodationsMotion } from "../../hooks/useAccommodationsMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { useParallaxBackground } from "../../hooks/useParallaxBackground";
 import { AccommodationMediaDialog } from "../accommodation-card/AccommodationMediaDialog";
@@ -12,6 +13,7 @@ import { AccommodationInquiryForm } from "../accommodation-inquiry/Accommodation
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import "./accommodation-detail.css";
+import "./accommodation-detail-motion.css";
 
 type AccommodationDetailProps = {
   accommodation: Accommodation;
@@ -68,6 +70,7 @@ export function AccommodationDetail({
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
   const includedRef = useParallaxBackground("--included-parallax-y");
+  useAccommodationsMotion();
   usePageMetadata(accommodation.pageTitle, accommodation.metaDescription);
 
   const { bedConfiguration, name: displayName } =
@@ -108,7 +111,11 @@ export function AccommodationDetail({
     <div className="site-shell accommodation-detail-page">
       <Header />
       <main id="main-content">
-        <div className="accommodation-detail-page__hero" aria-hidden="true">
+        <div
+          className="accommodation-detail-page__hero"
+          aria-hidden="true"
+          data-accommodations-motion="detail-hero"
+        >
           <img
             src={accommodation.image.large}
             srcSet={`${accommodation.image.small} 720w, ${accommodation.image.large} 1440w`}
@@ -121,6 +128,7 @@ export function AccommodationDetail({
         <section
           className="content-wrap accommodation-detail-page__story"
           aria-labelledby="accommodation-detail-title"
+          data-accommodations-motion="detail-story"
         >
           <header className="accommodation-detail-page__story-heading">
             <p className="section-kicker">{accommodation.note}</p>
@@ -227,7 +235,10 @@ export function AccommodationDetail({
           aria-labelledby="accommodation-included-title"
           ref={includedRef}
         >
-          <div className="content-wrap accommodation-detail-page__included-layout">
+          <div
+            className="content-wrap accommodation-detail-page__included-layout"
+            data-accommodations-motion="detail-included"
+          >
             <div>
               <p>Inside your {accommodation.category.toLowerCase()}</p>
               <h2 id="accommodation-included-title">
@@ -240,8 +251,13 @@ export function AccommodationDetail({
                 "--included-rows": includedRowCount,
               } as CSSProperties}
             >
-              {accommodation.features.map((feature) => (
-                <li key={feature}>
+              {accommodation.features.map((feature, index) => (
+                <li
+                  key={feature}
+                  style={{
+                    "--detail-feature-delay": `${Math.min(70 + index * 24, 360)}ms`,
+                  } as CSSProperties}
+                >
                   <span
                     className="material-symbols-outlined"
                     aria-hidden="true"
@@ -258,6 +274,7 @@ export function AccommodationDetail({
         <section
           className="content-wrap accommodation-detail-page__faqs"
           aria-labelledby="accommodation-faqs-title"
+          data-accommodations-motion="detail-faqs"
         >
           <header className="accommodation-detail-page__faqs-heading">
             <h2 id="accommodation-faqs-title">
@@ -270,8 +287,13 @@ export function AccommodationDetail({
           </header>
 
           <div className="accommodation-detail-page__faqs-list">
-            {faqs.map((faq) => (
-              <details key={faq.question}>
+            {faqs.map((faq, index) => (
+              <details
+                key={faq.question}
+                style={{
+                  "--detail-faq-delay": `${80 + index * 52}ms`,
+                } as CSSProperties}
+              >
                 <summary>
                   <span>{faq.question}</span>
                   <span
@@ -324,6 +346,7 @@ export function AccommodationDetail({
         <nav
           className="content-wrap accommodation-detail-page__next"
           aria-label="Explore another accommodation"
+          data-accommodations-motion="detail-next"
         >
           <a href={`/rooms-and-villas/${previousAccommodation.slug}`}>
             <span className="material-symbols-outlined" aria-hidden="true">

@@ -14,6 +14,7 @@ This directory contains dated implementation records for completed milestones an
 
 ## Progress records
 
+- [Accommodation detail motion added — August 6, 2026](2026-08-06-accommodation-detail-motion.md)
 - [Interface and accommodation refinement summary — August 6, 2026](2026-08-06-interface-and-accommodation-refinement-summary.md)
 - [Accommodation FAQ inquiry added — August 6, 2026](2026-08-06-accommodation-detail-faq-inquiry.md)
 - [Accommodation detail FAQs added — August 6, 2026](2026-08-06-accommodation-detail-faqs.md)

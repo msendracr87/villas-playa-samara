@@ -1,0 +1,318 @@
+:root {
+  --accommodation-detail-motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-hero"]
+  > img {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    clip-path 1000ms var(--accommodation-detail-motion-ease),
+    opacity 600ms var(--accommodation-detail-motion-ease),
+    transform 1250ms var(--accommodation-detail-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-hero"]:not(.is-motion-visible)
+  > img {
+  clip-path: inset(0 5%);
+  opacity: 0.72;
+  transform: scale(1.055);
+  will-change: clip-path, opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-heading
+  > *,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-copy
+  > *,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-facts
+  > li,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-actions {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 520ms var(--accommodation-detail-motion-ease),
+    transform 760ms var(--accommodation-detail-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-heading
+  > h1 {
+  transition-delay: 80ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-copy
+  > :first-child {
+  transition-delay: 130ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-copy
+  > :nth-child(2) {
+  transition-delay: 190ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-facts
+  > li:nth-child(1) {
+  transition-delay: 190ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-facts
+  > li:nth-child(2) {
+  transition-delay: 240ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-facts
+  > li:nth-child(3) {
+  transition-delay: 290ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-facts
+  > li:nth-child(4) {
+  transition-delay: 340ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]
+  .accommodation-detail-page__story-actions {
+  transition-delay: 250ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]:not(.is-motion-visible)
+  .accommodation-detail-page__story-heading
+  > *,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]:not(.is-motion-visible)
+  .accommodation-detail-page__story-copy
+  > *,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]:not(.is-motion-visible)
+  .accommodation-detail-page__story-facts
+  > li,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-story"]:not(.is-motion-visible)
+  .accommodation-detail-page__story-actions {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-included"]
+  > div {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 540ms var(--accommodation-detail-motion-ease),
+    transform 760ms var(--accommodation-detail-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-included"]
+  li {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    border-color 240ms ease,
+    opacity 460ms var(--accommodation-detail-motion-ease)
+      var(--detail-feature-delay),
+    transform 620ms var(--accommodation-detail-motion-ease)
+      var(--detail-feature-delay);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-included"]:not(.is-motion-visible)
+  > div {
+  opacity: 0;
+  transform: translate3d(-24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-included"]:not(.is-motion-visible)
+  li {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__faqs-heading
+  > *,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__faqs-list
+  > details,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__more-questions {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    color 180ms cubic-bezier(0.2, 0, 0, 1),
+    opacity 500ms var(--accommodation-detail-motion-ease),
+    transform 720ms var(--accommodation-detail-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__faqs-heading
+  > p {
+  transition-delay: 90ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__faqs-list
+  > details {
+  transition-delay: var(--detail-faq-delay);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__more-questions {
+  transition-delay: 180ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]
+  .accommodation-detail-page__faqs-divider {
+  opacity: 1;
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition:
+    opacity 420ms var(--accommodation-detail-motion-ease) 200ms,
+    transform 720ms var(--accommodation-detail-motion-ease) 200ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]:not(.is-motion-visible)
+  .accommodation-detail-page__faqs-heading
+  > *,
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]:not(.is-motion-visible)
+  .accommodation-detail-page__more-questions {
+  opacity: 0;
+  transform: translate3d(-24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]:not(.is-motion-visible)
+  .accommodation-detail-page__faqs-list
+  > details {
+  opacity: 0;
+  transform: translate3d(24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-faqs"]:not(.is-motion-visible)
+  .accommodation-detail-page__faqs-divider {
+  opacity: 0;
+  transform: scaleX(0);
+  will-change: opacity, transform;
+}
+
+.accommodation-detail-page__faqs-inquiry:not([hidden]) {
+  animation: accommodation-detail-inquiry-open 420ms
+    var(--accommodation-detail-motion-ease) both;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-next"]
+  > a {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 500ms var(--accommodation-detail-motion-ease),
+    transform 720ms var(--accommodation-detail-motion-ease);
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-next"]
+  > a:last-child {
+  transition-delay: 90ms;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-next"]:not(.is-motion-visible)
+  > a:first-child {
+  opacity: 0;
+  transform: translate3d(-24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.accommodations-motion-ready
+  [data-accommodations-motion="detail-next"]:not(.is-motion-visible)
+  > a:last-child {
+  opacity: 0;
+  transform: translate3d(24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+@keyframes accommodation-detail-inquiry-open {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -14px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 620px) {
+  .accommodations-motion-ready
+    [data-accommodations-motion="detail-included"]
+    li,
+  .accommodations-motion-ready
+    [data-accommodations-motion="detail-faqs"]
+    .accommodation-detail-page__faqs-list
+    > details {
+    transition-delay: 0ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-accommodations-motion^="detail-"],
+  .accommodations-motion-ready [data-accommodations-motion^="detail-"],
+  [data-accommodations-motion^="detail-"] *,
+  .accommodations-motion-ready [data-accommodations-motion^="detail-"] * {
+    animation: none !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .accommodation-detail-page__faqs-inquiry:not([hidden]) {
+    animation: none;
+  }
+}
