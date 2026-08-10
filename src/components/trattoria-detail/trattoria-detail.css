@@ -607,26 +607,41 @@
   }
 
   .trattoria-page__hero-layout {
+    justify-items: center;
     padding-block: 154px 44px;
+    text-align: center;
   }
 
   .trattoria-page__identity {
+    width: 100%;
     margin-bottom: 30px;
   }
 
   .trattoria-page__identity h1 {
     width: min(88vw, 420px);
     height: 190px;
+    margin-inline: auto;
+  }
+
+  .trattoria-page__identity h1 img {
+    object-position: center;
+  }
+
+  .trattoria-page__identity > span {
+    margin-inline: auto;
   }
 
   .trattoria-page__hero-actions {
-    align-items: flex-start;
+    width: 100%;
+    align-items: center;
     flex-direction: column;
     gap: 14px;
   }
 
+  .trattoria-page__hero-link,
   .trattoria-page__back-link {
-    align-self: flex-end;
+    align-self: center;
+    justify-content: center;
   }
 
   .trattoria-page__evening-moments {

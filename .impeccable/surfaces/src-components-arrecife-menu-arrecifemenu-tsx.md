@@ -19,7 +19,7 @@ Render the full digital and print content directly from the canonical Markdown d
 
 ## Direction and memorable moment
 
-Treat the digital experience like a restrained menu rather than a conventional marketing page: a compact sand-colored utility header, a venue-colored title cover, a spacious long-form reading surface, and quiet compact metadata after the menu content. Arrecife uses deep green, Baja Azul uses coastal deep blue and teal, Trattoria uses deep wine and terracotta, and Veranda uses deep navy, muted teal, and amber. Adapt that system for print with the current venue logo and menu title centered, a minimal concept-status line, economical two-column typography, logical page-break protection, and no website header, footer, or digital metadata block. Both formats retain the same menu hierarchy and allergen language.
+Treat the digital experience like a restrained menu rather than a conventional marketing page: a compact sand-colored utility header, a venue-colored title cover, a spacious long-form reading surface, and quiet compact metadata after the menu content. Arrecife uses deep green, Baja Azul uses coastal deep blue and teal, Trattoria uses deep wine and terracotta, and Veranda uses deep navy, muted teal, and amber. Compound schedule headings use the day as the primary title and the theme after an em dash as a smaller secondary line; the dash is structural source punctuation rather than a display element. Adapt that system for print with the current venue logo and menu title centered, a minimal concept-status line, economical two-column typography, logical page-break protection, and no website header, footer, or digital metadata block. Both formats retain the same menu hierarchy and allergen language.
 
 ## Unresolved decisions
 

@@ -619,26 +619,41 @@
   }
 
   .veranda-page__hero-layout {
+    justify-items: center;
     padding-block: 154px 44px;
+    text-align: center;
   }
 
   .veranda-page__identity {
+    width: 100%;
     margin-bottom: 30px;
   }
 
   .veranda-page__identity h1 {
     width: min(88vw, 420px);
     height: 210px;
+    margin-inline: auto;
+  }
+
+  .veranda-page__identity h1 img {
+    object-position: center;
+  }
+
+  .veranda-page__identity > span {
+    margin-inline: auto;
   }
 
   .veranda-page__hero-actions {
-    align-items: flex-start;
+    width: 100%;
+    align-items: center;
     flex-direction: column;
     gap: 14px;
   }
 
+  .veranda-page__hero-link,
   .veranda-page__back-link {
-    align-self: flex-end;
+    align-self: center;
+    justify-content: center;
   }
 
   .veranda-page__playbook-band {

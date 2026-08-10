@@ -533,22 +533,35 @@
     min-height: 760px;
   }
   .baja-page__hero-layout {
+    justify-items: center;
     padding-block: 154px 44px;
+    text-align: center;
   }
   .baja-page__identity {
+    width: 100%;
     margin-bottom: 30px;
   }
   .baja-page__identity h1 {
     width: min(88vw, 420px);
     height: 200px;
+    margin-inline: auto;
+  }
+  .baja-page__identity h1 img {
+    object-position: center;
+  }
+  .baja-page__identity > span {
+    margin-inline: auto;
   }
   .baja-page__hero-actions {
-    align-items: flex-start;
+    width: 100%;
+    align-items: center;
     flex-direction: column;
     gap: 14px;
   }
+  .baja-page__hero-link,
   .baja-page__back-link {
-    align-self: flex-end;
+    align-self: center;
+    justify-content: center;
   }
   .baja-page__service-moments {
     grid-template-columns: 1fr;

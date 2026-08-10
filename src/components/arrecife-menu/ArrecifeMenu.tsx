@@ -219,6 +219,19 @@ const slugify = (value: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 
+const splitCompoundHeading = (value: string) => {
+  const match = value.match(/^(.+?)\s+—\s+(.+)$/);
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    primary: match[1].trim(),
+    secondary: match[2].trim(),
+  };
+};
+
 function AllergenList({
   allergens,
   note,
@@ -252,6 +265,8 @@ function MenuContent({ blocks }: { blocks: MenuBlock[] }) {
 
     if (block.type === "heading") {
       const headingId = `${slugify(block.text)}-${index}`;
+      const compoundHeading =
+        block.level === 2 ? splitCompoundHeading(block.text) : null;
 
       if (block.level === 3) {
         return (
@@ -263,11 +278,33 @@ function MenuContent({ blocks }: { blocks: MenuBlock[] }) {
 
       return (
         <h2
-          className={block.level === 1 ? "arrecife-menu__lead-heading" : undefined}
+          aria-label={
+            compoundHeading
+              ? `${compoundHeading.primary}: ${compoundHeading.secondary}`
+              : undefined
+          }
+          className={
+            block.level === 1
+              ? "arrecife-menu__lead-heading"
+              : compoundHeading
+                ? "arrecife-menu__split-heading"
+                : undefined
+          }
           id={headingId}
           key={key}
         >
-          {block.text}
+          {compoundHeading ? (
+            <>
+              <span aria-hidden="true" className="arrecife-menu__heading-primary">
+                {compoundHeading.primary}
+              </span>
+              <span aria-hidden="true" className="arrecife-menu__heading-subtitle">
+                {compoundHeading.secondary}
+              </span>
+            </>
+          ) : (
+            block.text
+          )}
         </h2>
       );
     }

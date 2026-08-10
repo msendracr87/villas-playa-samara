@@ -289,6 +289,26 @@
   margin-top: 0;
 }
 
+.arrecife-menu__content h2.arrecife-menu__split-heading {
+  max-width: 22ch;
+}
+
+.arrecife-menu__heading-primary,
+.arrecife-menu__heading-subtitle {
+  display: block;
+}
+
+.arrecife-menu__heading-subtitle {
+  max-width: 24ch;
+  margin-top: 0.55rem;
+  color: var(--menu-accent);
+  font-size: clamp(1.15rem, 2.1vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
 .arrecife-menu__content h3 {
   max-width: 34ch;
   margin: 42px 0 0;
@@ -577,6 +597,20 @@
     padding-top: 0;
     border-top: 0;
     font-size: 20pt;
+  }
+
+  .arrecife-menu__content h2.arrecife-menu__split-heading {
+    max-width: none;
+  }
+
+  .arrecife-menu__heading-subtitle {
+    max-width: none;
+    margin-top: 0.05in;
+    color: #536522;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.2;
   }
 
   .arrecife-menu__entry {
