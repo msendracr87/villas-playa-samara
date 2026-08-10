@@ -1,7 +1,8 @@
-# Italian Restaurant  
+# Trattoria
 ## Drinks & Cocktails Menu
 
 > **Property:** Villas Playa Sámara  
+> **Venue branding:** Trattoria is a concept name and logo that may change before final approval
 > **Menu type:** Concept menu for website and visual mockup development  
 >
 > Wines are presented separately in the **Wine Menu**. Brands, selections, ingredients, and availability are subject to change.

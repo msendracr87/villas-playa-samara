@@ -1,7 +1,8 @@
-# Mexican Restaurant & Snacks  
+# Baja Azul
 ## Drinks Menu
 
 > **Property:** Villas Playa Sámara  
+> **Venue branding:** Baja Azul is a concept name and logo that may change before final approval
 > **Menu type:** Concept menu for website and visual mockup development  
 >
 > Brands, selections, ingredients, and availability are subject to change.

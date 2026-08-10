@@ -208,15 +208,15 @@ The villa includes a fully equipped kitchen, a large social area, and a beachfro
 
 ### How many resort dining venues are there?
 
-Villas Playa Sámara has four resort dining venues: Arrecife Restaurant & Bar, Italian Restaurant, Mexican Restaurant & Snacks, and Sport Bar. The latter three are working public names until final venue names are approved.
+Villas Playa Sámara has four resort dining concepts: Arrecife, Baja Azul, Trattoria, and Veranda. All four names and their supplied logos are concepts for owner review and may change before final approval.
 
-### What kind of dining is available at Arrecife Restaurant & Bar?
+### What kind of dining is available at Arrecife?
 
 Arrecife is the resort's main restaurant, with breakfast, lunch, and dinner service. Its program may combine buffet and à la carte service depending on the season and current operation.
 
 ### What other dining styles can guests enjoy?
 
-The resort's dining program includes Italian-inspired dinners, Mexican-inspired meals and snacks, and a casual Sport Bar for drinks and light bites. Current service times and formats should be confirmed during the stay because they can vary.
+The resort's dining program includes Italian-inspired dinners at Trattoria, Mexican-inspired meals and snacks at Baja Azul, and drinks and light bites at Veranda. These venue names are concepts and may change. Current service times and formats should be confirmed during the stay because they can vary.
 
 ### Is Nikoa Beach Club one of the four resort restaurants?
 
@@ -325,7 +325,7 @@ The following are valuable FAQ topics found across comparable resort websites, b
 
 ### Dining
 
-- What are the final public names of the Italian, Mexican, and Sport Bar venues?
+- What are the final approved names and logos for Arrecife, Baja Azul, Trattoria, and Veranda?
 - What are each venue's verified opening days and service hours?
 - Which meals, beverages, and venues are included in each all-inclusive package?
 - Which restaurants require reservations, and how are they made?

@@ -1,8 +1,8 @@
-# Sport Bar  
+# Veranda
 ## Snacks & Salty Treats Menu
 
 > **Property:** Villas Playa Sámara  
-> **Venue name:** Pending  
+> **Venue branding:** Veranda is a concept name and logo that may change before final approval
 > **Menu type:** Concept menu for website and visual mockup development  
 > **Service:** Casual snacks and shareable bar food  
 >

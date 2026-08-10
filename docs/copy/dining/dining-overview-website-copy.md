@@ -4,9 +4,9 @@
 > **Property:** Villas Playa Sámara  
 > **Content status:** Draft for implementation and owner review  
 >
-> **Naming note:** Italian Restaurant, Mexican Restaurant & Snacks, and Sport Bar are working titles. Replace them throughout the website once the final venue names are approved.
+> **Concept branding note:** Arrecife, Baja Azul, Trattoria, and Veranda—and their supplied logos—are concepts for owner review. All four names and logos may change before final approval and launch.
 >
-> **Venue scope:** Villas Playa Sámara has four resort dining venues: Arrecife Restaurant & Bar, Mexican Restaurant & Snacks, Italian Restaurant, and Sport Bar. Nikoa Beach Club is a separate additional-charge venue and is not included in the all-inclusive plan.
+> **Venue scope:** Villas Playa Sámara has four resort dining venues: Arrecife, Baja Azul, Trattoria, and Veranda. Nikoa Beach Club is a separate additional-charge venue and is not included in the all-inclusive plan.
 >
 > **Menu status:** All menus under `docs/copy/dining/**/menus/` are mockup-only and must not be presented as final menus.
 
@@ -55,9 +55,9 @@ Our restaurants and bars offer a range of settings and menus for couples, famili
 
 Choose from international variety, Costa Rican character, casual daytime selections, themed dinners, and relaxed drinks and snacks.
 
-### Arrecife Restaurant & Bar
+### Arrecife
 
-[Arrecife Restaurant & Bar](../../../assets/images/dining/arrecife-restaurant/arrecife-restaurant-1-hero.png)
+[Arrecife](../../../assets/images/dining/arrecife-restaurant/arrecife-restaurant-1-hero.png)
 
 The resort’s main dining venue, offering seasonal buffet and à la carte service with international variety and Costa Rican character.
 
@@ -66,9 +66,9 @@ The resort’s main dining venue, offering seasonal buffet and à la carte servi
 
 ---
 
-### Mexican Restaurant & Snacks
+### Baja Azul
 
-[Mexican Restaurant & Snacks](../../../assets/images/dining/mexican-restaurant/mexican-restaurant-hero.jpg)
+[Baja Azul](../../../assets/images/dining/mexican-restaurant/mexican-restaurant-hero.jpg)
 
 A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la carte experience in the evening.
 
@@ -77,26 +77,26 @@ A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la 
 
 ---
 
-### Italian Restaurant
+### Trattoria
 
-[Italian Restaurant](../../../assets/images/dining/italian-restaurant/italian-restaurant-side-view.jpg)
+[Trattoria](../../../assets/images/dining/italian-restaurant/italian-restaurant-side-view.jpg)
 
 A relaxed à la carte dinner experience featuring classic Italian favorites, including pizza, pasta, traditional desserts, and a selection of drinks.
 
 **Service:** Dinner  
-**CTA:** [Explore the Italian Restaurant](italian-restaurant/italian-restaurant-website-copy.md)
+**CTA:** [Explore Trattoria](italian-restaurant/italian-restaurant-website-copy.md)
 
 ---
 
-### Sport Bar
+### Veranda
 
-[Sport Bar](../../../assets/images/dining/sport-bar/sport-bar-inside-1-hero.png)
+[Veranda](../../../assets/images/dining/sport-bar/sport-bar-inside-1-hero.png)
 
 A relaxed place for cocktails, cold drinks, sports, salty treats, and casual snacks from afternoon into the evening.
 
 **Service:** Drinks and snacks  
 **Hours:** 12:00 p.m. – 12:00 a.m.  
-**CTA:** [Explore the Sport Bar](sportbar/sport-bar-website-copy.md)
+**CTA:** [Explore Veranda](sportbar/sport-bar-website-copy.md)
 
 ---
 

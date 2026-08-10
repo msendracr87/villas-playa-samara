@@ -1,0 +1,108 @@
+# Villas Playa Sámara website
+
+Design and development repository for the Villas Playa Sámara beachfront resort website in Sámara, Guanacaste, Costa Rica.
+
+The project is currently an owner-review presentation, not a publication-ready website. Several names, menus, operational facts, destinations, policies, and image approvals still require confirmation before launch.
+
+## Current progress
+
+### Homepage
+
+- Complete current presentation design and responsive implementation.
+- Includes Rooms & Villas, Dining, Experiences, Wellness, Gallery, and booking sections.
+- Ready for owner review; final imagery, links, business facts, and publication approvals remain pending.
+
+### Rooms & Villas
+
+- Complete overview page.
+- Eight reusable accommodation-detail routes using the approved accommodation names and order.
+- Includes key facts, floor plans, galleries, FAQs, and inquiry experiences.
+- Final booking links, some occupancy details, form destinations, and additional photography remain pending.
+
+### Dining
+
+- Complete Dining overview with four resort concepts and a separate Nikoa Beach Club presentation.
+- Dedicated pages for Arrecife, Baja Azul, Trattoria, and Veranda.
+- Markdown-driven digital concept menus with sticky menu navigation and allergen guidance.
+- US Letter print presentations generated from the same Markdown sources as the digital menus.
+- Restaurant names, logos, menu selections, hours, policies, and operating details remain concept or unapproved content until confirmed.
+
+### Design system
+
+- Responsive React component system with square interface geometry.
+- Shared typography, color, spacing, motion, navigation, buttons, and content patterns.
+- Material Symbols are used as the official interface icon system.
+
+## Review environment
+
+The current hosted review build is available at [villasplayasamara.netlify.app](https://villasplayasamara.netlify.app/).
+
+This environment is for review and must not be treated as the final public website while launch requirements remain unresolved.
+
+## What remains before public launch
+
+The complete working checklist is maintained in [TO-DO.md](TO-DO.md). The main outstanding areas are:
+
+- Owner approval of final copy, imagery, positioning, and production alt text.
+- Final booking engine, room booking links, Guest Services, contact, social, and CTA destinations.
+- Approval of dining names, logos, menus, allergens, hours, prices, reservation policies, and seasonal availability.
+- Final operational facts for accommodations, all-inclusive inclusions, resort amenities, experiences, and wellness.
+- Privacy, cookies, terms, accessibility, reservation, cancellation, and other legal content.
+- Production forms, submission destinations, consent language, and success or error handling.
+- Analytics, cookie consent, monitoring, custom domain, deployment ownership, and release procedures.
+- Decision and workflow for Spanish localization.
+
+Never publish placeholder, pending, future, draft, or mockup-only content as a current confirmed offering.
+
+## Technology
+
+- React 19
+- TypeScript
+- Vite
+- Component-scoped CSS and shared global styles
+- Markdown-based canonical website copy and dining menus
+- Netlify review deployment
+
+## Local development
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Start the development server:
+
+```sh
+npm run dev
+```
+
+Create a production build:
+
+```sh
+npm run build
+```
+
+Preview the production build locally:
+
+```sh
+npm run preview
+```
+
+## Repository structure
+
+- `src/components/` — reusable page and interface components.
+- `src/styles/` — application-wide styles and design foundations.
+- `src/data/` — structured application data and Markdown menu configuration.
+- `docs/copy/` — canonical implementation copy and menu content.
+- `docs/progress/` — dated implementation and milestone records.
+- `docs/deployment/` — hosting and launch-transition documentation.
+- `assets/images/` — source and optimized website imagery.
+- `assets/svgs/` — approved and concept vector assets.
+- `TO-DO.md` — unresolved content, approvals, operational facts, and launch requirements.
+
+## Content status
+
+Content is classified as `approved`, `draft`, `mockup-only`, or `future`. Dining menus remain mockup-only unless the project owner explicitly changes their status. Arrecife, Baja Azul, Trattoria, and Veranda are concept names and logos for review and may change before final approval.
+
+For the latest implementation history, see [Project progress](docs/progress/README.md).

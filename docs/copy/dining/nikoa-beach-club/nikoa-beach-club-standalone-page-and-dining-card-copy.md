@@ -9,7 +9,7 @@
 >
 > **Important:** Menu selections, prices, operating hours, reservation policies, and additional services may change. Confirm all operational details before publication.
 >
-> **Asset note:** Nikoa photography still needs to be added to `assets/images/dining/nikoa-beach-club/`. Track this in `../../../../TO-DO.md`.
+> **Asset note:** Nikoa overview photography and approved logo variants are available in `assets/images/dining/nikoa-beach-club/`.
 
 ---
 

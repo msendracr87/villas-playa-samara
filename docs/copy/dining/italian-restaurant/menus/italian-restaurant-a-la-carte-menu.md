@@ -1,7 +1,8 @@
-# Italian Restaurant  
+# Trattoria
 ## À La Carte Menu
 
 > **Property:** Villas Playa Sámara  
+> **Venue branding:** Trattoria is a concept name and logo that may change before final approval
 > **Menu type:** Concept menu for website and visual mockup development  
 > **Culinary direction:** Classic Italian dishes in a relaxed resort setting  
 >

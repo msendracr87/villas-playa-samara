@@ -4,6 +4,12 @@ import { HomeIntro } from "./components/home-intro/HomeIntro";
 import { AccommodationsShowcase } from "./components/accommodations-showcase/AccommodationsShowcase";
 // import { FamilyExperience } from "./components/family-experience/FamilyExperience";
 import { DiningShowcase } from "./components/dining-showcase/DiningShowcase";
+import { DiningOverview } from "./components/dining-overview/DiningOverview";
+import { ArrecifeDetail } from "./components/arrecife-detail/ArrecifeDetail";
+import { DiningMenuPage } from "./components/arrecife-menu/ArrecifeMenu";
+import { BajaAzulDetail } from "./components/baja-azul-detail/BajaAzulDetail";
+import { TrattoriaDetail } from "./components/trattoria-detail/TrattoriaDetail";
+import { VerandaDetail } from "./components/veranda-detail/VerandaDetail";
 import { ExperiencesShowcase } from "./components/experiences-showcase/ExperiencesShowcase";
 import { WellnessOverview } from "./components/wellness-overview/WellnessOverview";
 import { GalleryPreview } from "./components/gallery-preview/GalleryPreview";
@@ -13,6 +19,13 @@ import { AccommodationDetail } from "./components/accommodation-detail/Accommoda
 import { AccommodationsOverview } from "./components/accommodations-overview/AccommodationsOverview";
 import { DesignSystemPage } from "./components/design-system/DesignSystemPage";
 import { getAccommodationBySlug } from "./data/accommodations";
+import {
+  arrecifeMenuVenue,
+  bajaAzulMenuVenue,
+  getDiningMenuBySlug,
+  trattoriaMenuVenue,
+  verandaMenuVenue,
+} from "./data/diningMenus";
 import { useHomeMotion } from "./hooks/useHomeMotion";
 import { usePageMetadata } from "./hooks/usePageMetadata";
 import "./styles/app.css";
@@ -46,6 +59,74 @@ export function App() {
 
   if (path === "/rooms-and-villas") {
     return <AccommodationsOverview />;
+  }
+
+  if (path === "/dining") {
+    return <DiningOverview />;
+  }
+
+  if (path === "/dining/arrecife") {
+    return <ArrecifeDetail />;
+  }
+
+  if (path === "/dining/baja-azul") {
+    return <BajaAzulDetail />;
+  }
+
+  if (path === "/dining/trattoria") {
+    return <TrattoriaDetail />;
+  }
+
+  if (path === "/dining/veranda") {
+    return <VerandaDetail />;
+  }
+
+  if (path.startsWith("/dining/arrecife/menus/")) {
+    const slug = decodeURIComponent(path.slice("/dining/arrecife/menus/".length));
+    const menu = getDiningMenuBySlug(arrecifeMenuVenue, slug);
+
+    if (menu) {
+      return <DiningMenuPage menu={menu} venue={arrecifeMenuVenue} />;
+    }
+
+    return <ArrecifeDetail />;
+  }
+
+  if (path.startsWith("/dining/baja-azul/menus/")) {
+    const slug = decodeURIComponent(path.slice("/dining/baja-azul/menus/".length));
+    const menu = getDiningMenuBySlug(bajaAzulMenuVenue, slug);
+
+    if (menu) {
+      return <DiningMenuPage menu={menu} venue={bajaAzulMenuVenue} />;
+    }
+
+    return <BajaAzulDetail />;
+  }
+
+  if (path.startsWith("/dining/trattoria/menus/")) {
+    const slug = decodeURIComponent(path.slice("/dining/trattoria/menus/".length));
+    const menu = getDiningMenuBySlug(trattoriaMenuVenue, slug);
+
+    if (menu) {
+      return <DiningMenuPage menu={menu} venue={trattoriaMenuVenue} />;
+    }
+
+    return <TrattoriaDetail />;
+  }
+
+  if (path.startsWith("/dining/veranda/menus/")) {
+    const slug = decodeURIComponent(path.slice("/dining/veranda/menus/".length));
+    const menu = getDiningMenuBySlug(verandaMenuVenue, slug);
+
+    if (menu) {
+      return <DiningMenuPage menu={menu} venue={verandaMenuVenue} />;
+    }
+
+    return <VerandaDetail />;
+  }
+
+  if (path.startsWith("/dining/")) {
+    return <DiningOverview />;
   }
 
   if (path === "/design-system") {

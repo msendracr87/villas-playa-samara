@@ -1,14 +1,16 @@
-# Arrecife Restaurant & Bar  
+# Arrecife
 ## Website Copy
 
 > **Property:** Villas Playa Sámara  
-> **Restaurant name:** Arrecife  
+> **Venue concept:** Arrecife — main restaurant and bar
 > **Content status:** Draft for implementation and owner review  
 > **Menu status:** Mockup-only; menu content is not final and must not be published as a current menu  
 >
+> **Concept branding note:** **Arrecife** and its supplied logo are concepts for owner review and may change before final approval and launch.
+>
 > **Editorial note:** Lunch has been drafted as **12:00 p.m. to 4:00 p.m.** because the original “12:00 a.m.” was a typo. The corrected time remains pending approval in `../../../../TO-DO.md`.
 >
-> **Naming note:** The next restaurant is identified as **Mexican Restaurant** until its final public name is confirmed.
+> **Navigation note:** The next restaurant concept is identified as **Baja Azul**; that name and logo are also subject to change.
 
 ---
 
@@ -18,11 +20,11 @@
 
 Dining at Villas Playa Sámara
 
-# Arrecife Restaurant & Bar
+# Arrecife
 
 ## International variety, Costa Rican character, and relaxed resort dining
 
-Arrecife is the main Restaurant & Bar at Villas Playa Sámara, offering a welcoming dining experience from breakfast through dinner.
+Arrecife is the main restaurant and bar at Villas Playa Sámara, offering a welcoming dining experience from breakfast through dinner.
 
 Depending on the season, guests can enjoy generous buffet service or a relaxed à la carte menu featuring international, Mediterranean, Italian-inspired, Costa Rican, and contemporary flavors.
 
@@ -142,7 +144,7 @@ Our team will be happy to confirm whether buffet or à la carte service is avail
 
 # Experience Arrecife
 
-Explore the atmosphere, buffet presentations, à la carte dishes, bar service, and shared dining moments at Arrecife Restaurant & Bar.
+Explore the atmosphere, buffet presentations, à la carte dishes, bar service, and shared dining moments at Arrecife.
 
 **CTA:** View Gallery
 
@@ -165,24 +167,24 @@ Explore the atmosphere, buffet presentations, à la carte dishes, bar service, a
 
 # Discover more dining at Villas Playa Sámara
 
-Return to the dining overview or continue to our Mexican Restaurant, offering casual daytime selections and a Mexican-inspired experience in the evening.
+Return to the dining overview or continue to Baja Azul, offering casual daytime selections and a Mexican-inspired experience in the evening.
 
 **Previous CTA:** Dining Overview  
-**Next CTA:** Next Restaurant: Mexican Restaurant
+**Next CTA:** Next Restaurant: Baja Azul
 
 ### Navigation Labels
 
 - **Back:** All Restaurants
-- **Current:** Arrecife Restaurant & Bar
-- **Next:** Mexican Restaurant
+- **Current:** Arrecife
+- **Next:** Baja Azul
 
-> Replace **Mexican Restaurant** with the final approved venue name before publication.
+> Arrecife and Baja Azul are concept names and may change before publication.
 
 ---
 
 ## Short Card Copy
 
-### Arrecife Restaurant & Bar
+### Arrecife
 
 The resort’s main dining venue, offering seasonal buffet and à la carte service with international variety and Costa Rican character.
 
@@ -195,8 +197,8 @@ The resort’s main dining venue, offering seasonal buffet and à la carte servi
 
 ### Suggested Page Title
 
-Arrecife Restaurant & Bar | Villas Playa Sámara
+Arrecife | Villas Playa Sámara
 
 ### Suggested Meta Description
 
-Discover Arrecife Restaurant & Bar at Villas Playa Sámara, offering seasonal buffet and à la carte dining with international dishes, Costa Rican flavors, and relaxed resort hospitality.
+Discover Arrecife at Villas Playa Sámara, offering seasonal buffet and à la carte dining with international dishes, Costa Rican flavors, and relaxed resort hospitality.

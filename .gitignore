@@ -23,3 +23,6 @@ dist/
 
 # Local development scratch files
 video-test.html
+
+# Local Reasonix metadata
+.reasonix/

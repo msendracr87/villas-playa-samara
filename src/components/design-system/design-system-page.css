@@ -207,7 +207,7 @@
 
 .design-system-page__shapes {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 44px 28px;
 }
 
@@ -321,10 +321,10 @@
   margin-bottom: 24px;
 }
 
-.design-system-page__rounded-action {
+.design-system-page__form-action {
   min-height: 54px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 0;
   padding: 14px 24px;
   color: #fff;
   background: var(--color-forest-900);
@@ -336,7 +336,7 @@
 }
 
 .design-system-page__form {
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 .design-system-page__status-row {

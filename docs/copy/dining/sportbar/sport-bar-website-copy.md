@@ -1,12 +1,12 @@
-# Sport Bar  
+# Veranda
 ## Website Copy
 
 > **Property:** Villas Playa Sámara  
-> **Venue name:** Pending  
+> **Venue concept:** Veranda — sport bar
 > **Content status:** Draft for implementation and owner review  
 > **Menu status:** Mockup-only; menu content is not final and must not be published as a current menu  
 >
-> **Naming note:** The final venue name is pending. Replace **Sport Bar** throughout the website once the approved name is confirmed.
+> **Concept branding note:** **Veranda** and its supplied logo are concepts for owner review and may change before final approval and launch.
 
 ---
 
@@ -16,11 +16,11 @@
 
 Drinks & Social Spaces at Villas Playa Sámara
 
-# Sport Bar
+# Veranda
 
 ## Drinks, games, and easygoing evenings
 
-The Sport Bar is a relaxed venue where guests can enjoy cocktails, cold drinks, salty treats, and casual snacks throughout the afternoon and evening.
+Veranda is a relaxed venue where guests can enjoy cocktails, cold drinks, salty treats, and casual snacks throughout the afternoon and evening.
 
 It is a comfortable place to meet, watch a game, share something from the menu, or settle in with a drink after a day at the beach.
 
@@ -33,7 +33,7 @@ It is a comfortable place to meet, watch a game, share something from the menu, 
 
 # A casual place to meet, watch, and unwind
 
-The Sport Bar brings together drinks, sports, and a lively but comfortable atmosphere.
+Veranda brings together drinks, sports, and a lively but comfortable atmosphere.
 
 The menu focuses on cocktails, beers, wines, non-alcoholic refreshments, and easygoing snacks made for sharing. Whether stopping by for an afternoon drink or spending the evening with family and friends, the experience is informal, social, and easy to enjoy.
 
@@ -45,7 +45,7 @@ The menu focuses on cocktails, beers, wines, non-alcoholic refreshments, and eas
 
 # Explore the menu
 
-The Sport Bar offers a casual selection of drinks, cocktails, salty treats, and snacks throughout the day and evening.
+Veranda offers a casual selection of drinks, cocktails, salty treats, and snacks throughout the day and evening.
 
 Menu items and availability may vary according to seasonality and current supply.
 
@@ -119,7 +119,7 @@ Selections may include:
 
 | Service | Hours |
 |---|---|
-| Sport Bar | 12:00 p.m. – 12:00 a.m. |
+| Veranda | 12:00 p.m. – 12:00 a.m. |
 
 > Operating hours and available service may vary according to the season.
 
@@ -143,7 +143,7 @@ Thank you for your understanding.
 
 **Section label:** Plan Your Visit
 
-# Joining us at the Sport Bar?
+# Joining us at Veranda?
 
 For current seating availability, menu information, or details about sports broadcasts and evening entertainment, please contact Guest Services.
 
@@ -158,9 +158,9 @@ For current seating availability, menu information, or details about sports broa
 
 **Section label:** A Closer Look
 
-# Experience the Sport Bar
+# Experience Veranda
 
-Explore the bar atmosphere, cocktails, cold beers, shareable snacks, sports moments, and relaxed evenings at the Sport Bar.
+Explore the bar atmosphere, cocktails, cold beers, shareable snacks, sports moments, and relaxed evenings at Veranda.
 
 **CTA:** View Gallery
 
@@ -191,8 +191,8 @@ Return to the dining overview or continue exploring the resort’s restaurants, 
 
 ### Suggested Navigation Labels
 
-- **Previous:** Italian Restaurant
-- **Current:** Sport Bar
+- **Previous:** Trattoria
+- **Current:** Veranda
 - **Next:** Dolce Mare
 - **Overview:** All Restaurants & Bars
 
@@ -202,13 +202,13 @@ Return to the dining overview or continue exploring the resort’s restaurants, 
 
 ## Short Card Copy
 
-### Sport Bar
+### Veranda
 
 A relaxed place for cocktails, cold drinks, sports, salty treats, and casual snacks from afternoon into the evening.
 
 **Service:** Drinks and snacks  
 **Hours:** 12:00 p.m. – 12:00 a.m.  
-**CTA:** Explore the Sport Bar
+**CTA:** Explore Veranda
 
 ---
 
@@ -216,8 +216,8 @@ A relaxed place for cocktails, cold drinks, sports, salty treats, and casual sna
 
 ### Suggested Page Title
 
-Sport Bar | Villas Playa Sámara
+Veranda | Villas Playa Sámara
 
 ### Suggested Meta Description
 
-Discover the Sport Bar at Villas Playa Sámara, offering cocktails, cold drinks, shareable snacks, sports, and a relaxed afternoon-to-evening atmosphere.
+Discover Veranda at Villas Playa Sámara, offering cocktails, cold drinks, shareable snacks, sports, and a relaxed afternoon-to-evening atmosphere.

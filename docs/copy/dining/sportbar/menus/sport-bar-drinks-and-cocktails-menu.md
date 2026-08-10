@@ -1,8 +1,8 @@
-# Sport Bar  
+# Veranda
 ## Drinks & Cocktails Menu
 
 > **Property:** Villas Playa Sámara  
-> **Venue name:** Pending  
+> **Venue branding:** Veranda is a concept name and logo that may change before final approval
 > **Menu type:** Concept menu for website and visual mockup development  
 >
 > Brands, selections, ingredients, and availability are subject to change.
@@ -11,7 +11,7 @@
 
 # Cold Drinks, Classic Cocktails & Game-Day Favorites
 
-From cold beers and familiar mixed drinks to tropical cocktails and alcohol-free refreshments, the Sport Bar offers an easygoing selection for afternoons, games, and relaxed evenings.
+From cold beers and familiar mixed drinks to tropical cocktails and alcohol-free refreshments, Veranda offers an easygoing selection for afternoons, games, and relaxed evenings.
 
 ---
 
@@ -115,7 +115,7 @@ Rum, tropical fruit juices, and citrus.
 
 ---
 
-## Sport Bar Cocktails
+## Veranda Cocktails
 
 ### Long Island Iced Tea
 

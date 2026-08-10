@@ -4,7 +4,7 @@
 > **Accommodation source of truth:** `accommodations/Accommodations-overview.md`  
 > **Dining scope:** Four resort venues. Nikoa Beach Club belongs on the Dining pages, not the homepage.  
 >
-> Italian Restaurant, Mexican Restaurant & Snacks, and Sport Bar remain working public names. Operational details and missing content are tracked in `../../TO-DO.md`.
+> Arrecife, Baja Azul, Trattoria, and Veranda—and their supplied logos—are concept branding for owner review. All four may change before final approval. Operational details and missing content are tracked in `../../TO-DO.md`.
 
 ---
 
@@ -154,19 +154,19 @@ Join daily resort activities, spend time on the padel and pickleball courts, or 
 
 From relaxed buffet meals and daytime snacks to Italian and Mexican-inspired dinners, cocktails, and casual evenings, the resort’s four dining venues bring variety to each day while keeping everything close at hand.
 
-### Arrecife Restaurant & Bar
+### Arrecife
 
 The resort’s main dining venue, offering seasonal buffet and à la carte service with international variety and Costa Rican character.
 
-### Italian Restaurant
+### Trattoria
 
 A relaxed dinner experience centered on familiar Italian flavors, including pizza, pasta, classic desserts, wines, and cocktails.
 
-### Mexican Restaurant & Snacks
+### Baja Azul
 
 A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la carte experience in the evening.
 
-### Sport Bar
+### Veranda
 
 A relaxed place for cocktails, cold drinks, sports, salty treats, and casual snacks from afternoon into the evening.
 

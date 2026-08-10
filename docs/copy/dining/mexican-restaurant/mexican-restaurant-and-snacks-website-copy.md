@@ -1,14 +1,16 @@
-# Mexican Restaurant & Snacks  
+# Baja Azul
 ## Website Copy
 
 > **Property:** Villas Playa Sámara  
-> **Venue name:** Mexican Restaurant & Snacks — working title  
+> **Venue concept:** Baja Azul — Mexican restaurant and snacks
 > **Content status:** Draft for implementation and owner review  
 > **Menu status:** Mockup-only; menu content is not final and must not be published as a current menu  
 >
+> **Concept branding note:** **Baja Azul** and its supplied logo are concepts for owner review and may change before final approval and launch.
+>
 > **Editorial note:** Lunch has been drafted as **12:00 p.m. to 4:00 p.m.** because the original “12:00 a.m.” was a typo. The corrected time remains pending approval in `../../../../TO-DO.md`.
 >
-> **Naming note:** Replace **Mexican Restaurant & Snacks** with the final approved venue name before launch.
+> **Naming note:** Keep Baja Azul identified as concept branding until the final venue name and logo are approved.
 
 ---
 
@@ -18,7 +20,7 @@
 
 Dining at Villas Playa Sámara
 
-# Mexican Restaurant & Snacks
+# Baja Azul
 
 ## Casual daytime bites and Mexican-inspired evenings
 
@@ -35,7 +37,7 @@ During the afternoon, the venue offers easygoing snacks and casual selections. I
 
 # From relaxed snacks to flavorful evenings
 
-The Mexican Restaurant & Snacks brings together two complementary experiences in one casual setting.
+Baja Azul brings together two complementary experiences in one casual setting.
 
 During the day, guests can stop by for convenient snacks, light meals, and refreshments between the beach, pool, and resort activities.
 
@@ -144,7 +146,7 @@ Our team will be happy to confirm the current service format and assist with any
 
 **Section label:** A Closer Look
 
-# Experience Mexican Restaurant & Snacks
+# Experience Baja Azul
 
 Explore the daytime atmosphere, casual snacks, Mexican-inspired dinner dishes, refreshing drinks, and shared dining moments.
 
@@ -169,7 +171,7 @@ Explore the daytime atmosphere, casual snacks, Mexican-inspired dinner dishes, r
 
 # Discover more dining at Villas Playa Sámara
 
-Return to the dining overview, visit Arrecife Restaurant & Bar, or continue to Trattoria for the next dining experience.
+Return to the dining overview, visit Arrecife, or continue to Trattoria for the next dining experience.
 
 **Previous CTA:** Previous Restaurant: Arrecife  
 **Overview CTA:** Dining Overview  
@@ -177,18 +179,18 @@ Return to the dining overview, visit Arrecife Restaurant & Bar, or continue to T
 
 ### Navigation Labels
 
-- **Previous:** Arrecife Restaurant & Bar
-- **Current:** Mexican Restaurant & Snacks
+- **Previous:** Arrecife
+- **Current:** Baja Azul
 - **Next:** Trattoria
 - **Overview:** All Restaurants
 
-> Replace **Mexican Restaurant & Snacks** and **Trattoria** if final approved venue names change.
+> Baja Azul and Trattoria are concept names and may change before publication.
 
 ---
 
 ## Short Card Copy
 
-### Mexican Restaurant & Snacks
+### Baja Azul
 
 A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la carte experience in the evening.
 
@@ -201,8 +203,8 @@ A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la 
 
 ### Suggested Page Title
 
-Mexican Restaurant & Snacks | Villas Playa Sámara
+Baja Azul | Villas Playa Sámara
 
 ### Suggested Meta Description
 
-Discover the Mexican Restaurant & Snacks at Villas Playa Sámara, offering casual daytime selections and a relaxed Mexican and Tex-Mex-inspired dinner experience.
+Discover Baja Azul at Villas Playa Sámara, offering casual daytime selections and a relaxed Mexican and Tex-Mex-inspired dinner experience.

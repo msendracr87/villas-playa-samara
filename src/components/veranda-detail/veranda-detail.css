@@ -1,0 +1,705 @@
+.veranda-page {
+  --veranda-night: #16242e;
+  --veranda-teal: #3f6c70;
+  --veranda-amber: #d6a34b;
+  --veranda-sand: #f2ede2;
+  color: var(--color-ink);
+  background: var(--veranda-sand);
+}
+
+.veranda-page__hero {
+  position: relative;
+  display: grid;
+  min-height: min(900px, 96svh);
+  overflow: hidden;
+  color: #fff;
+  background: var(--veranda-night);
+}
+
+.veranda-page__hero > img,
+.veranda-page__hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.veranda-page__hero > img {
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.veranda-page__hero-shade {
+  background:
+    linear-gradient(180deg, rgba(7, 16, 22, 0.62) 0%, transparent 43%),
+    linear-gradient(0deg, rgba(7, 16, 22, 0.92) 0%, rgba(7, 16, 22, 0.06) 72%);
+}
+
+.veranda-page__hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: inherit;
+  grid-template-rows: 1fr auto;
+  align-items: end;
+  padding-block: clamp(176px, 18vh, 228px) clamp(48px, 6vw, 84px);
+}
+
+.veranda-page__back-link,
+.veranda-page__hero-link {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.veranda-page__back-link {
+  justify-self: end;
+  padding-inline: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  background: rgba(22, 36, 46, 0.6);
+  transition:
+    border-color 180ms cubic-bezier(0.2, 0, 0, 1),
+    background-color 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.veranda-page__back-link:hover,
+.veranda-page__back-link:focus-visible {
+  border-color: #fff;
+  background: rgba(22, 36, 46, 0.92);
+}
+
+.veranda-page__back-link .material-symbols-outlined,
+.veranda-page__hero-link .material-symbols-outlined,
+.veranda-page__menus a .material-symbols-outlined,
+.veranda-page__next .material-symbols-outlined {
+  font-size: 20px;
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.veranda-page__back-link:hover .material-symbols-outlined,
+.veranda-page__back-link:focus-visible .material-symbols-outlined,
+.veranda-page__next > a:first-child:hover .material-symbols-outlined,
+.veranda-page__next > a:first-child:focus-visible .material-symbols-outlined {
+  transform: translateX(-4px);
+}
+
+.veranda-page__hero-link:hover .material-symbols-outlined,
+.veranda-page__hero-link:focus-visible .material-symbols-outlined {
+  transform: translateY(4px);
+}
+
+.veranda-page__identity {
+  align-self: end;
+  margin-bottom: clamp(36px, 5vw, 68px);
+}
+
+.veranda-page__identity > p {
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.veranda-page__identity h1 {
+  width: min(58vw, 500px);
+  height: clamp(170px, 22vw, 270px);
+  margin: 0;
+  line-height: 0;
+}
+
+.veranda-page__identity h1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.veranda-page__identity > span {
+  display: block;
+  max-width: 54ch;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(0.96rem, 1.2vw, 1.1rem);
+  line-height: 1.6;
+}
+
+.veranda-page__hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.veranda-page__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.78fr);
+  gap: 48px clamp(64px, 10vw, 160px);
+  padding-block: clamp(100px, 12vw, 180px);
+}
+
+.veranda-page__intro h2,
+.veranda-page__playbook h2,
+.veranda-page__atmosphere h2,
+.veranda-page__menus h2,
+.veranda-page__visit h2 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.veranda-page__intro h2 {
+  max-width: 12ch;
+  color: var(--veranda-night);
+  font-size: clamp(2.9rem, 5.4vw, 5.6rem);
+}
+
+.veranda-page__intro > div {
+  align-self: end;
+}
+
+.veranda-page__intro > div p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.3vw, 1.16rem);
+  line-height: 1.78;
+}
+
+.veranda-page__intro > div p + p {
+  margin-top: 20px;
+}
+
+.veranda-page__playbook {
+  overflow: hidden;
+  padding-block: clamp(92px, 11vw, 158px);
+  color: #fff;
+  background: var(--veranda-night);
+}
+
+.veranda-page__playbook-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+  align-items: end;
+  gap: 42px clamp(64px, 10vw, 160px);
+}
+
+.veranda-page__playbook h2 {
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 5.2vw, 5.4rem);
+}
+
+.veranda-page__playbook-heading > p {
+  max-width: 44ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.72;
+}
+
+.veranda-page__playbook-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: clamp(58px, 8vw, 104px);
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.veranda-page__playbook-band article {
+  min-width: 0;
+  padding: clamp(32px, 4vw, 58px) clamp(18px, 3vw, 42px);
+}
+
+.veranda-page__playbook-band article + article {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.veranda-page__playbook-band .material-symbols-outlined {
+  color: var(--veranda-amber);
+  font-size: 30px;
+}
+
+.veranda-page__playbook-band h3 {
+  margin: 36px 0 0;
+  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.veranda-page__playbook-band p {
+  max-width: 28ch;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.veranda-page__program-note {
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.76rem;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.veranda-page__atmosphere {
+  display: grid;
+  min-height: clamp(680px, 58vw, 840px);
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  background: #fff;
+}
+
+.veranda-page__atmosphere figure {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0;
+  background: var(--color-sand-200);
+}
+
+.veranda-page__atmosphere figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.veranda-page__atmosphere-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(58px, 8vw, 126px);
+}
+
+.veranda-page__atmosphere h2 {
+  max-width: 11ch;
+  color: var(--veranda-night);
+  font-size: clamp(2.7rem, 4.8vw, 5rem);
+}
+
+.veranda-page__atmosphere-copy > p {
+  max-width: 52ch;
+  margin: 30px 0 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.74;
+}
+
+.veranda-page__atmosphere dl {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
+  margin: 40px 0 0;
+}
+
+.veranda-page__atmosphere dl > div {
+  padding-top: 18px;
+  border-top: 1px solid rgba(22, 36, 46, 0.2);
+}
+
+.veranda-page__atmosphere dt {
+  color: var(--veranda-teal);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.veranda-page__atmosphere dd {
+  margin: 8px 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.veranda-page__menus {
+  padding-top: clamp(102px, 12vw, 176px);
+  background: var(--veranda-sand);
+}
+
+.veranda-page__menus > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+  align-items: end;
+  gap: 42px clamp(64px, 10vw, 160px);
+  padding-bottom: clamp(64px, 8vw, 108px);
+}
+
+.veranda-page__menus h2 {
+  max-width: 11ch;
+  color: var(--veranda-night);
+  font-size: clamp(2.8rem, 5.2vw, 5.4rem);
+}
+
+.veranda-page__menus > header > p {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.72;
+}
+
+.veranda-page__menu-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.veranda-page__menu-split article {
+  display: flex;
+  min-height: clamp(500px, 43vw, 650px);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(58px, 8vw, 126px);
+}
+
+.veranda-page__drinks-menu {
+  color: #fff;
+  background: var(--veranda-teal);
+}
+
+.veranda-page__snacks-menu {
+  color: var(--veranda-night);
+  background: var(--veranda-amber);
+}
+
+.veranda-page__menu-split article > .material-symbols-outlined {
+  font-size: 36px;
+}
+
+.veranda-page__drinks-menu > .material-symbols-outlined {
+  color: #f4c978;
+}
+
+.veranda-page__snacks-menu > .material-symbols-outlined {
+  color: var(--veranda-night);
+}
+
+.veranda-page__menu-split h3 {
+  max-width: 10ch;
+  margin: 44px 0 0;
+  font-size: clamp(2.3rem, 4.2vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.veranda-page__menu-split p {
+  max-width: 48ch;
+  margin: 26px 0 0;
+  line-height: 1.7;
+}
+
+.veranda-page__drinks-menu p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.veranda-page__snacks-menu p {
+  color: rgba(22, 36, 46, 0.76);
+}
+
+.veranda-page__menu-split a {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  color: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.veranda-page__menu-split a:hover .material-symbols-outlined,
+.veranda-page__menu-split a:focus-visible .material-symbols-outlined,
+.veranda-page__all-venues:hover .material-symbols-outlined,
+.veranda-page__all-venues:focus-visible .material-symbols-outlined {
+  transform: translateX(4px);
+}
+
+.veranda-page__visit {
+  padding-block: clamp(100px, 12vw, 172px);
+  background: #e8e0d2;
+}
+
+.veranda-page__visit-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
+}
+
+.veranda-page__dress-code {
+  padding: clamp(46px, 6vw, 82px);
+  color: #fff;
+  background: var(--veranda-night);
+}
+
+.veranda-page__dress-code > .material-symbols-outlined {
+  color: var(--veranda-amber);
+  font-size: 34px;
+}
+
+.veranda-page__dress-code h2 {
+  max-width: 11ch;
+  margin-top: 42px;
+  font-size: clamp(2rem, 3.2vw, 3.5rem);
+}
+
+.veranda-page__dress-code p {
+  max-width: 48ch;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.7;
+}
+
+.veranda-page__visit-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(54px, 7vw, 108px);
+  background: #fff;
+}
+
+.veranda-page__visit-copy h2 {
+  max-width: 10ch;
+  color: var(--veranda-night);
+  font-size: clamp(2.6rem, 4.6vw, 4.8rem);
+}
+
+.veranda-page__visit-copy p {
+  max-width: 54ch;
+  margin: 28px 0 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.74;
+}
+
+.veranda-page__visit-copy .button-link {
+  margin-top: 30px;
+}
+
+.veranda-page__next {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.veranda-page__next > a {
+  display: flex;
+  min-height: 126px;
+  align-items: center;
+  gap: 18px;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.veranda-page__all-venues {
+  justify-content: flex-end;
+  border-left: 1px solid #d7cebf;
+  text-align: right;
+}
+
+.veranda-page__next small {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-muted);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.veranda-page__next .material-symbols-outlined {
+  color: var(--veranda-teal);
+}
+
+.dining-motion-ready [data-dining-motion="veranda-hero"] > img {
+  clip-path: inset(0);
+  transform: scale(1);
+  transition:
+    clip-path 1100ms var(--dining-motion-ease),
+    transform 1400ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="veranda-hero"] .veranda-page__hero-layout > *,
+.dining-motion-ready [data-dining-motion="veranda-reveal"] > *,
+.dining-motion-ready [data-dining-motion="veranda-playbook"] > *,
+.dining-motion-ready [data-dining-motion="veranda-menus"] > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--dining-motion-ease),
+    transform 780ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="veranda-hero"]:not(.is-motion-visible) > img {
+  clip-path: inset(0 5%);
+  transform: scale(1.06);
+}
+
+.dining-motion-ready [data-dining-motion="veranda-hero"]:not(.is-motion-visible) .veranda-page__hero-layout > *,
+.dining-motion-ready [data-dining-motion="veranda-reveal"]:not(.is-motion-visible) > *,
+.dining-motion-ready [data-dining-motion="veranda-playbook"]:not(.is-motion-visible) > *,
+.dining-motion-ready [data-dining-motion="veranda-menus"]:not(.is-motion-visible) > * {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+
+.dining-motion-ready [data-dining-motion="veranda-split"] > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--dining-motion-ease),
+    transform 820ms var(--dining-motion-ease),
+    clip-path 920ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="veranda-split"]:not(.is-motion-visible) > :first-child {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0.42;
+}
+
+.dining-motion-ready [data-dining-motion="veranda-split"]:not(.is-motion-visible) > :last-child {
+  opacity: 0;
+  transform: translate3d(28px, 0, 0);
+}
+
+@media (max-width: 900px) {
+  .veranda-page__intro,
+  .veranda-page__playbook-heading,
+  .veranda-page__atmosphere,
+  .veranda-page__menus > header,
+  .veranda-page__visit-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .veranda-page__intro,
+  .veranda-page__playbook-heading,
+  .veranda-page__menus > header {
+    gap: 44px;
+  }
+
+  .veranda-page__playbook-band {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .veranda-page__playbook-band article:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .veranda-page__playbook-band article:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .veranda-page__atmosphere figure {
+    min-height: 540px;
+  }
+
+  .veranda-page__atmosphere-copy {
+    min-height: 580px;
+  }
+}
+
+@media (max-width: 760px) {
+  .veranda-page__hero {
+    min-height: 760px;
+  }
+
+  .veranda-page__hero-layout {
+    padding-block: 154px 44px;
+  }
+
+  .veranda-page__identity {
+    margin-bottom: 30px;
+  }
+
+  .veranda-page__identity h1 {
+    width: min(88vw, 420px);
+    height: 210px;
+  }
+
+  .veranda-page__hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .veranda-page__back-link {
+    align-self: flex-end;
+  }
+
+  .veranda-page__playbook-band {
+    grid-template-columns: 1fr;
+  }
+
+  .veranda-page__playbook-band article + article {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 0;
+  }
+
+  .veranda-page__program-note {
+    text-align: left;
+  }
+
+  .veranda-page__atmosphere figure {
+    min-height: clamp(320px, 82vw, 460px);
+  }
+
+  .veranda-page__atmosphere-copy {
+    min-height: 0;
+    padding: 68px var(--page-gutter) 76px;
+  }
+
+  .veranda-page__menu-split {
+    grid-template-columns: 1fr;
+  }
+
+  .veranda-page__menu-split article {
+    min-height: 500px;
+    padding: 68px var(--page-gutter) 76px;
+  }
+
+  .veranda-page__visit {
+    padding-block: 72px;
+  }
+
+  .veranda-page__visit-layout {
+    width: 100%;
+  }
+
+  .veranda-page__next {
+    grid-template-columns: 1fr;
+  }
+
+  .veranda-page__next > a {
+    min-height: 112px;
+  }
+
+  .veranda-page__all-venues {
+    border-top: 1px solid #d7cebf;
+    border-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .veranda-page__back-link .material-symbols-outlined,
+  .veranda-page__hero-link .material-symbols-outlined,
+  .veranda-page__menus a .material-symbols-outlined,
+  .veranda-page__next .material-symbols-outlined,
+  [data-dining-motion^="veranda-"] * {
+    transition-duration: 0.01ms !important;
+  }
+}

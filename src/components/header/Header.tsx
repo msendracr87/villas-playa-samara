@@ -5,7 +5,7 @@ import "./header.css";
 const navItems = [
   { label: "Home", href: "/#home" },
   { label: "Rooms & Villas", href: "/rooms-and-villas" },
-  { label: "Dining", href: "/#dining" },
+  { label: "Dining", href: "/dining" },
   { label: "Experiences", href: "/#experiences" },
   { label: "Wellness", href: "/#wellness" },
   { label: "Gallery", href: "/#gallery" },
@@ -93,6 +93,8 @@ export function Header() {
                   item.href === "/rooms-and-villas" &&
                   currentPath.startsWith("/rooms-and-villas")
                     ? "page"
+                    : item.href === "/dining" && currentPath.startsWith("/dining")
+                      ? "page"
                     : item.href === "/#home" && currentPath === "/"
                       ? "page"
                       : undefined

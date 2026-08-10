@@ -1,7 +1,8 @@
-# Arrecife Restaurant & Bar
+# Arrecife
 ## À La Carte Menu
 
 > **Property:** Villas Playa Sámara  
+> **Venue branding:** Arrecife is a concept name and logo that may change before final approval
 > **Menu type:** Concept menu for website and visual mockup development  
 > **Service:** Available during selected periods, depending on the season  
 >

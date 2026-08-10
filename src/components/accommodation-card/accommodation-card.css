@@ -9,7 +9,7 @@
   overflow: hidden;
   color: #fff;
   background: var(--color-forest-800);
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .accommodation-card__media-link {
@@ -61,7 +61,7 @@
   gap: 9px;
   padding: 10px 14px;
   border: 0;
-  border-radius: 4px;
+  border-radius: 0;
   color: #fff;
   background: rgba(16, 26, 20, 0.84);
   cursor: pointer;
@@ -202,7 +202,7 @@
   place-items: center;
   padding: 12px 18px;
   border: 1px solid var(--color-forest-900);
-  border-radius: 4px;
+  border-radius: 0;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -237,7 +237,7 @@
   padding: 0;
   overflow: hidden;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   color: var(--color-ink);
   background: var(--color-sand-50);
   box-shadow: 0 28px 80px rgba(5, 10, 6, 0.38);
@@ -288,7 +288,7 @@
   flex: 0 0 auto;
   place-items: center;
   border: 0;
-  border-radius: 50%;
+  border-radius: 0;
   cursor: pointer;
 }
 
@@ -351,7 +351,7 @@
   bottom: 18px;
   margin: 0;
   padding: 8px 11px;
-  border-radius: 4px;
+  border-radius: 0;
   color: #fff;
   background: rgba(16, 26, 20, 0.82);
   font-size: 0.68rem;

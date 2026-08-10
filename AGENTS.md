@@ -34,7 +34,7 @@ Research briefs provide design direction and may contain outdated names or facts
 Current approved terminology:
 
 - Use the eight accommodation names and their order from `docs/copy/accommodations/Accommodations-overview.md`.
-- The four resort dining venues are Arrecife Restaurant & Bar, Italian Restaurant, Mexican Restaurant & Snacks, and Sport Bar. The latter three remain working public names until approved otherwise.
+- The four resort dining concepts are Arrecife, Baja Azul, Trattoria, and Veranda. All four names and their supplied logos are concept branding for owner review and may change before final approval.
 - Nikoa Beach Club is a separate, additional-charge beachfront venue and is not one of the four resort dining venues or part of the all-inclusive plan.
 - Use `Monkey Tours` for the on-property standalone tour operator. Tour inquiries and lead capture remain within the Villas Playa Sámara website; do not route them to an external operator website.
 - Distinguish the padel and pickleball courts from paddleboard and kayak activities to Isla Chora.
@@ -57,7 +57,7 @@ Never publish:
 
 - `XXX`, `TBD`, placeholder, pending, or assumed values.
 - Concept menus as current restaurant menus.
-- Working venue names as final names without their documented status.
+- Concept venue names or logos as final branding without their documented status.
 - Future facilities as currently available.
 - Unverified testimonials or review excerpts.
 

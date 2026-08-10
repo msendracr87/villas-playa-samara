@@ -1,7 +1,8 @@
-# Arrecife Restaurant & Bar
+# Arrecife
 ## Daily Themed Buffet
 
 > **Property:** Villas Playa Sámara  
+> **Venue branding:** Arrecife is a concept name and logo that may change before final approval
 > **Menu type:** Concept schedule for website and visual mockup development  
 > **Recommended use:** Themed dinner buffet  
 >

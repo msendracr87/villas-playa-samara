@@ -38,7 +38,7 @@
   height: clamp(420px, 60vw, 810px);
   margin: 0;
   overflow: hidden;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 20px 20px;
   background: var(--color-sand-200);
 }
 
@@ -117,7 +117,6 @@
     grid-column: 1;
     height: min(74vw, 540px);
     min-height: 700px;
-    border-radius: 0 0 20px 20px;
   }
 
   .home-intro__aerial-logo {

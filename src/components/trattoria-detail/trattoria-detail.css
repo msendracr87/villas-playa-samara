@@ -1,0 +1,714 @@
+.trattoria-page {
+  --trattoria-wine: #481c1d;
+  --trattoria-terracotta: #9b493b;
+  --trattoria-gold: #d9b36a;
+  --trattoria-ivory: #f8f2e7;
+  color: var(--color-ink);
+  background: var(--trattoria-ivory);
+}
+
+.trattoria-page__hero {
+  position: relative;
+  display: grid;
+  min-height: min(900px, 96svh);
+  overflow: hidden;
+  color: #fff;
+  background: var(--trattoria-wine);
+}
+
+.trattoria-page__hero > img,
+.trattoria-page__hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trattoria-page__hero > img {
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.trattoria-page__hero-shade {
+  background: linear-gradient(180deg, rgba(31, 10, 10, 0.6) 0%, transparent 44%), linear-gradient(0deg, rgba(31, 10, 10, 0.9) 0%, rgba(31, 10, 10, 0.05) 70%);
+}
+
+.trattoria-page__hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: inherit;
+  grid-template-rows: 1fr auto;
+  align-items: end;
+  padding-block: clamp(176px, 18vh, 228px) clamp(48px, 6vw, 84px);
+}
+
+.trattoria-page__back-link,
+.trattoria-page__hero-link {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 10px;
+  justify-self: start;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.trattoria-page__back-link {
+  justify-self: end;
+  padding-inline: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  background: rgba(72, 28, 29, 0.58);
+  transition:
+    border-color 180ms cubic-bezier(0.2, 0, 0, 1),
+    background-color 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.trattoria-page__back-link:hover,
+.trattoria-page__back-link:focus-visible {
+  border-color: #fff;
+  background: rgba(72, 28, 29, 0.9);
+}
+
+.trattoria-page__back-link .material-symbols-outlined,
+.trattoria-page__hero-link .material-symbols-outlined,
+.trattoria-page__menu-link .material-symbols-outlined,
+.trattoria-page__wine-links .material-symbols-outlined,
+.trattoria-page__next .material-symbols-outlined {
+  font-size: 20px;
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.trattoria-page__back-link:hover .material-symbols-outlined,
+.trattoria-page__back-link:focus-visible .material-symbols-outlined,
+.trattoria-page__next > a:hover .material-symbols-outlined,
+.trattoria-page__next > a:focus-visible .material-symbols-outlined {
+  transform: translateX(-4px);
+}
+
+.trattoria-page__hero-link:hover .material-symbols-outlined,
+.trattoria-page__hero-link:focus-visible .material-symbols-outlined {
+  transform: translateY(4px);
+}
+
+.trattoria-page__identity {
+  align-self: end;
+  margin-bottom: clamp(38px, 5vw, 70px);
+}
+
+.trattoria-page__identity > p {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.trattoria-page__identity h1 {
+  width: min(60vw, 520px);
+  height: clamp(160px, 20vw, 240px);
+  margin: 0;
+  line-height: 0;
+}
+
+.trattoria-page__identity h1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+  filter: brightness(0) invert(1);
+}
+
+.trattoria-page__identity > span {
+  display: block;
+  max-width: 54ch;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(0.96rem, 1.2vw, 1.1rem);
+  line-height: 1.6;
+}
+
+.trattoria-page__hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.trattoria-page__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 0.82fr);
+  gap: 48px clamp(64px, 10vw, 160px);
+  padding-block: clamp(100px, 12vw, 180px);
+}
+
+.trattoria-page__intro h2,
+.trattoria-page__arrival h2,
+.trattoria-page__table h2,
+.trattoria-page__wine h2,
+.trattoria-page__visit h2 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.trattoria-page__intro h2 {
+  max-width: 10ch;
+  color: var(--trattoria-wine);
+  font-size: clamp(3rem, 5.5vw, 5.7rem);
+}
+
+.trattoria-page__intro-copy {
+  align-self: end;
+}
+
+.trattoria-page__intro-copy p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.3vw, 1.16rem);
+  line-height: 1.78;
+}
+
+.trattoria-page__intro-copy p + p {
+  margin-top: 20px;
+}
+
+.trattoria-page__evening-moments {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: clamp(26px, 4vw, 58px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trattoria-page__evening-moments li {
+  display: flex;
+  min-height: 92px;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid rgba(72, 28, 29, 0.24);
+  color: var(--trattoria-wine);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.trattoria-page__evening-moments li + li {
+  padding-left: clamp(20px, 3vw, 44px);
+  border-left: 1px solid rgba(72, 28, 29, 0.16);
+}
+
+.trattoria-page__evening-moments .material-symbols-outlined {
+  color: var(--trattoria-terracotta);
+  font-size: 28px;
+}
+
+.trattoria-page__act {
+  margin: 0 0 18px;
+  color: var(--trattoria-terracotta);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.trattoria-page__arrival {
+  display: grid;
+  min-height: clamp(680px, 58vw, 840px);
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  align-items: stretch;
+  background: #efe4d3;
+}
+
+.trattoria-page__arrival-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(58px, 8vw, 126px);
+}
+
+.trattoria-page__arrival h2 {
+  max-width: 10ch;
+  font-size: clamp(2.7rem, 4.8vw, 5rem);
+}
+
+.trattoria-page__arrival-copy > p:not(.trattoria-page__act) {
+  max-width: 50ch;
+  margin: 28px 0 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.74;
+}
+
+.trattoria-page__arrival-copy > p + p:not(.trattoria-page__act) {
+  margin-top: 16px;
+}
+
+.trattoria-page__arrival figure,
+.trattoria-page__table figure,
+.trattoria-page__wine figure {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0;
+  background: #ddcfba;
+}
+
+.trattoria-page__arrival figure img,
+.trattoria-page__table figure img,
+.trattoria-page__wine figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trattoria-page__table {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: clamp(56px, 9vw, 144px);
+  padding-block: clamp(106px, 13vw, 190px);
+}
+
+.trattoria-page__table header {
+  align-self: center;
+}
+
+.trattoria-page__table h2 {
+  max-width: 11ch;
+  color: var(--trattoria-wine);
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+}
+
+.trattoria-page__table header > p:not(.trattoria-page__act) {
+  max-width: 52ch;
+  margin: 30px 0 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.74;
+}
+
+.trattoria-page__menu-link {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  color: var(--trattoria-terracotta);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.trattoria-page__menu-link:hover .material-symbols-outlined,
+.trattoria-page__menu-link:focus-visible .material-symbols-outlined,
+.trattoria-page__wine-links a:hover .material-symbols-outlined,
+.trattoria-page__wine-links a:focus-visible .material-symbols-outlined {
+  transform: translateX(4px);
+}
+
+.trattoria-page__table-images {
+  position: relative;
+  min-height: clamp(650px, 61vw, 880px);
+}
+
+.trattoria-page__pasta {
+  position: absolute !important;
+  inset: 0 20% 14% 0;
+}
+
+.trattoria-page__pizza {
+  position: absolute !important;
+  right: 0;
+  bottom: 0;
+  width: 48%;
+  height: 54%;
+  border: 10px solid var(--trattoria-ivory);
+}
+
+.trattoria-page__wine {
+  overflow: hidden;
+  color: #fff;
+  background: var(--trattoria-wine);
+}
+
+.trattoria-page__wine-layout {
+  display: grid;
+  min-height: clamp(700px, 58vw, 880px);
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
+  align-items: center;
+  gap: clamp(54px, 9vw, 150px);
+  padding-block: clamp(88px, 10vw, 150px);
+}
+
+.trattoria-page__wine figure {
+  height: calc(100% - 4vw);
+  min-height: 560px;
+  background: #2b1011;
+}
+
+.trattoria-page__wine .trattoria-page__act {
+  color: var(--trattoria-gold);
+}
+
+.trattoria-page__wine h2 {
+  max-width: 10ch;
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+}
+
+.trattoria-page__wine-copy > p:not(.trattoria-page__act) {
+  max-width: 50ch;
+  margin: 30px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1rem;
+  line-height: 1.74;
+}
+
+.trattoria-page__wine-links {
+  margin-top: 42px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.trattoria-page__wine-links a {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  color: #fff;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  text-decoration: none;
+}
+
+.trattoria-page__wine-copy > small {
+  display: block;
+  max-width: 56ch;
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.trattoria-page__visit {
+  padding-block: clamp(100px, 12vw, 172px);
+  background: #efe4d3;
+}
+
+.trattoria-page__visit-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
+}
+
+.trattoria-page__dress-code {
+  padding: clamp(46px, 6vw, 82px);
+  color: #fff;
+  background: var(--trattoria-wine);
+}
+
+.trattoria-page__dress-code > .material-symbols-outlined {
+  color: #f4d8a3;
+  font-size: 34px;
+}
+
+.trattoria-page__dress-code h2 {
+  max-width: 11ch;
+  margin-top: 42px;
+  font-size: clamp(2rem, 3.2vw, 3.5rem);
+}
+
+.trattoria-page__dress-code p {
+  max-width: 48ch;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.7;
+}
+
+.trattoria-page__visit-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(54px, 7vw, 108px);
+  background: #fffdf8;
+}
+
+.trattoria-page__visit-copy h2 {
+  max-width: 10ch;
+  color: var(--trattoria-wine);
+  font-size: clamp(2.6rem, 4.6vw, 4.8rem);
+}
+
+.trattoria-page__visit-copy p {
+  max-width: 54ch;
+  margin: 28px 0 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.74;
+}
+
+.trattoria-page__visit-copy .button-link {
+  margin-top: 30px;
+}
+
+.trattoria-page__next {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* padding-block: clamp(28px, 4vw, 52px); */
+}
+
+.trattoria-page__next > a,
+.trattoria-page__next > span {
+  display: flex;
+  min-height: 126px;
+  align-items: center;
+  gap: 18px;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.trattoria-page__next > .trattoria-page__next-venue {
+  justify-content: flex-end;
+  border-left: 1px solid #ddcfba;
+  text-align: right;
+}
+
+.trattoria-page__next small {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-muted);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.trattoria-page__next .material-symbols-outlined {
+  color: var(--trattoria-terracotta);
+}
+
+.trattoria-page__next > .trattoria-page__next-venue:hover .material-symbols-outlined,
+.trattoria-page__next > .trattoria-page__next-venue:focus-visible .material-symbols-outlined {
+  transform: translateX(4px);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-hero"] > img {
+  clip-path: inset(0);
+  transform: scale(1);
+  transition:
+    clip-path 1100ms var(--dining-motion-ease),
+    transform 1400ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-hero"] .trattoria-page__hero-layout > *,
+.dining-motion-ready [data-dining-motion="trattoria-reveal"] > *,
+.dining-motion-ready [data-dining-motion="trattoria-table"] > *,
+.dining-motion-ready [data-dining-motion="trattoria-wine"] > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--dining-motion-ease),
+    transform 780ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-hero"]:not(.is-motion-visible) > img {
+  clip-path: inset(0 5%);
+  transform: scale(1.06);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-hero"]:not(.is-motion-visible) .trattoria-page__hero-layout > *,
+.dining-motion-ready [data-dining-motion="trattoria-reveal"]:not(.is-motion-visible) > *,
+.dining-motion-ready [data-dining-motion="trattoria-table"]:not(.is-motion-visible) > *,
+.dining-motion-ready [data-dining-motion="trattoria-wine"]:not(.is-motion-visible) > * {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-split"] > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--dining-motion-ease),
+    transform 820ms var(--dining-motion-ease),
+    clip-path 920ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-split"]:not(.is-motion-visible) > :first-child {
+  opacity: 0;
+  transform: translate3d(-28px, 0, 0);
+}
+
+.dining-motion-ready [data-dining-motion="trattoria-split"]:not(.is-motion-visible) > :last-child {
+  clip-path: inset(0 0 0 100%);
+  opacity: 0.42;
+}
+
+@media (max-width: 900px) {
+  .trattoria-page__intro,
+  .trattoria-page__arrival,
+  .trattoria-page__table,
+  .trattoria-page__wine-layout,
+  .trattoria-page__visit-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .trattoria-page__intro {
+    gap: 44px;
+  }
+
+  .trattoria-page__arrival-copy {
+    min-height: 580px;
+  }
+
+  .trattoria-page__arrival figure {
+    min-height: 540px;
+  }
+
+  .trattoria-page__table {
+    gap: 72px;
+  }
+
+  .trattoria-page__table header {
+    max-width: 680px;
+  }
+
+  .trattoria-page__wine-layout {
+    gap: 72px;
+  }
+
+  .trattoria-page__wine figure {
+    height: auto;
+    min-height: 620px;
+  }
+
+  .trattoria-page__wine-copy {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .trattoria-page__hero {
+    min-height: 760px;
+  }
+
+  .trattoria-page__hero-layout {
+    padding-block: 154px 44px;
+  }
+
+  .trattoria-page__identity {
+    margin-bottom: 30px;
+  }
+
+  .trattoria-page__identity h1 {
+    width: min(88vw, 420px);
+    height: 190px;
+  }
+
+  .trattoria-page__hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .trattoria-page__back-link {
+    align-self: flex-end;
+  }
+
+  .trattoria-page__evening-moments {
+    grid-template-columns: 1fr;
+  }
+
+  .trattoria-page__evening-moments li {
+    min-height: 72px;
+  }
+
+  .trattoria-page__evening-moments li + li {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .trattoria-page__arrival-copy {
+    min-height: 0;
+    padding: 68px var(--page-gutter) 76px;
+  }
+
+  .trattoria-page__arrival figure {
+    min-height: clamp(320px, 82vw, 460px);
+  }
+
+  .trattoria-page__table-images {
+    min-height: clamp(500px, 145vw, 700px);
+  }
+
+  .trattoria-page__pasta {
+    inset: 0 16% 13% 0;
+  }
+
+  .trattoria-page__pizza {
+    width: 50%;
+    height: 52%;
+    border-width: 7px;
+  }
+
+  .trattoria-page__wine-layout {
+    width: 100%;
+    gap: 0;
+    padding: 0;
+  }
+
+  .trattoria-page__wine figure {
+    min-height: clamp(440px, 125vw, 620px);
+  }
+
+  .trattoria-page__wine-copy {
+    padding: 70px var(--page-gutter) 82px;
+  }
+
+  .trattoria-page__visit {
+    padding-block: 72px;
+  }
+
+  .trattoria-page__visit-layout {
+    width: 100%;
+  }
+
+  .trattoria-page__next {
+    grid-template-columns: 1fr;
+  }
+
+  .trattoria-page__next > a,
+  .trattoria-page__next > span {
+    min-height: 112px;
+  }
+
+  .trattoria-page__next > .trattoria-page__next-venue {
+    border-top: 1px solid #ddcfba;
+    border-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trattoria-page__back-link .material-symbols-outlined,
+  .trattoria-page__hero-link .material-symbols-outlined,
+  .trattoria-page__menu-link .material-symbols-outlined,
+  .trattoria-page__wine-links .material-symbols-outlined,
+  .trattoria-page__next .material-symbols-outlined,
+  [data-dining-motion^="trattoria-"] * {
+    transition-duration: 0.01ms !important;
+  }
+}

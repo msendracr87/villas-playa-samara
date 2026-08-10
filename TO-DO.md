@@ -11,6 +11,7 @@ Do not replace a pending item with an assumption. When an item is resolved, upda
 - [x] Initialize and push the source repository to `msendracr87/villas-playa-samara`.
 - [x] Publish and verify the Netlify owner-review environment at `https://villasplayasamara.netlify.app/`.
 - [x] Build the Rooms & Villas overview and eight reusable accommodation-detail routes for owner review.
+- [x] Build the Dining overview, four dedicated resort-venue pages, separate Nikoa presentation, and Markdown-driven digital and printable concept menus for owner review.
 - [ ] Present the homepage to the owners and record their final content, image, and positioning feedback.
 
 See the [homepage development record](docs/progress/2026-07-30-homepage-development.md), [repository and deployment record](docs/progress/2026-07-30-repository-and-netlify-deployment.md), and [Netlify deployment reference](docs/deployment/netlify.md). The homepage is ready for presentation, not public launch; the unchecked requirements below remain pending.
@@ -33,8 +34,8 @@ The current homepage draft already contains the main written sections. The large
  - Confirmed.
 - [x] Approve the eight accommodation names and short homepage summaries derived from `docs/copy/accommodations/Accommodations-overview.md`.
 - Approved as written.
-- [x] Approve the working public names Italian Restaurant, Mexican Restaurant & Snacks, and Sport Bar for the presentation.
-- Approved as written.
+- [x] Approve the concept names and logos Arrecife, Baja Azul, Trattoria, and Veranda for the owner-review presentation.
+- Approved as concepts; all four names and logos may change before final approval.
 - [x] Decide whether Nikoa Beach Club should appear on the homepage as a separate additional-charge venue or remain only on the Dining pages.
 - Let's keep it in the Dining Pages
 - [x] Approve the Monkey Tours description as a standalone operator based at the hotel, with inquiries handled through the Villas Playa Sámara website.
@@ -119,15 +120,18 @@ These items can remain outside the homepage presentation unless the owners speci
 
 ## Dining venues and menus
 
-- [ ] Approve the final public names for Italian Restaurant, Mexican Restaurant & Snacks, and Sport Bar.
+- [ ] Approve the final names and logos for Arrecife, Baja Azul, Trattoria, and Veranda. The current branding is concept-only and may change.
 - [ ] Define the Mini Buffet concept, final name, operating model, copy, and imagery before adding it to the public dining collection.
 - [ ] Define the Ice Cream Shop concept, final name, operating model, copy, and imagery before adding it to the public dining collection.
-- [ ] Add the Nikoa Beach Club images to `assets/images/dining/nikoa-beach-club/` and connect them to its copy.
+- [x] Add the Nikoa Beach Club images and logo variants to `assets/images/dining/nikoa-beach-club/` and connect them to the dining overview.
 - [x] Keep Nikoa Beach Club on the dining overview and standalone page, not the homepage.
 - [ ] Review and approve all dining hours. The source value `12:00 a.m.` for lunch was treated as a typo and drafted as `12:00 p.m.`, but it remains unapproved.
 - [ ] Confirm reservation requirements and Guest Services contact destinations for each venue.
 - [ ] Replace mockup-only menus with approved menus before exposing menu links in production.
 - [ ] Confirm current menu items, ingredients, allergen information, prices, taxes, service charges, and availability.
+- [x] Generate the Arrecife, Baja Azul, Trattoria, and Veranda Letter-size print presentations from the same canonical Markdown used by their digital menus.
+- [x] Build the Veranda Sport Bar detail route using the established venue-hero action placement: section journey cue at lower-left and outlined “All dining” action at lower-right.
+- [ ] Add Legal and Tabloid print presets after the initial Letter design is reviewed and approved.
 - [ ] Confirm Nikoa Beach Club hours, operating days, reservation policy, public access, pricing, menu links, and navigation sequence.
 
 ## Experiences and recreation

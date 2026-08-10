@@ -11,25 +11,25 @@ import "./dining-showcase.css";
 
 const venues = [
   {
-    name: "Arrecife Restaurant & Bar",
+    name: "Arrecife",
     type: "International & Costa Rican",
     copy: "The resort’s main dining venue, offering seasonal buffet and à la carte service with international variety and Costa Rican character.",
     image: { small: arrecifeImageSmall, large: arrecifeImageLarge },
   },
   {
-    name: "Italian Restaurant",
+    name: "Trattoria",
     type: "Italian-inspired dinners",
     copy: "A relaxed dinner experience centered on familiar Italian flavors, including pizza, pasta, classic desserts, wines, and cocktails.",
     image: { small: italianImageSmall, large: italianImageLarge },
   },
   {
-    name: "Mexican Restaurant & Snacks",
+    name: "Baja Azul",
     type: "Daytime snacks & evening dining",
     copy: "A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la carte experience in the evening.",
     image: { small: mexicanImageSmall, large: mexicanImageLarge },
   },
   {
-    name: "Sport Bar",
+    name: "Veranda",
     type: "Cocktails, sports & casual bites",
     copy: "A relaxed place for cocktails, cold drinks, sports, salty treats, and casual snacks from afternoon into the evening.",
     image: { small: sportBarImageSmall, large: sportBarImageLarge },
@@ -99,19 +99,15 @@ export function DiningShowcase() {
             From relaxed buffet meals and daytime snacks to Italian and
             Mexican-inspired dinners, cocktails, and casual evenings, the
             resort’s four dining venues bring variety to each day while keeping
-            everything close at hand.
+            everything close at hand. Arrecife, Baja Azul, Trattoria, and
+            Veranda are concept names and may change before launch.
           </p>
-          <span
-            className="text-link"
-            role="link"
-            aria-disabled="true"
-            title="Dining page is not available yet"
-          >
+          <a className="text-link" href="/dining">
             Explore dining
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_forward
             </span>
-          </span>
+          </a>
         </div>
       </div>
 

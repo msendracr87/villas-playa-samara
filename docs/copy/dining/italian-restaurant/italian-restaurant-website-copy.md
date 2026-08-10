@@ -1,12 +1,12 @@
-# Italian Restaurant  
+# Trattoria
 ## Website Copy
 
 > **Property:** Villas Playa Sámara  
-> **Venue name:** Italian Restaurant — working title  
+> **Venue concept:** Trattoria — Italian restaurant
 > **Content status:** Draft for implementation and owner review  
 > **Menu status:** Mockup-only; menu content is not final and must not be published as a current menu  
 >
-> **Naming note:** If the final approved name remains **Trattoria**, replace **Italian Restaurant** throughout the website before publication.
+> **Concept branding note:** **Trattoria** and its supplied logo are concepts for owner review and may change before final approval and launch.
 
 ---
 
@@ -16,13 +16,13 @@
 
 Dining at Villas Playa Sámara
 
-# Italian Restaurant
+# Trattoria
 
 ## Classic Italian flavors in a relaxed evening setting
 
 Enjoy an evening inspired by the warmth and simplicity of Italian dining.
 
-The Italian Restaurant offers a refined but approachable à la carte experience featuring familiar favorites such as pizza, pasta, carefully prepared main courses, and classic desserts including tiramisu.
+Trattoria offers a refined but approachable à la carte experience featuring familiar favorites such as pizza, pasta, carefully prepared main courses, and classic desserts including tiramisu.
 
 **Primary CTA:** View Menu  
 **Secondary CTA:** Reservation Assistance
@@ -33,7 +33,7 @@ The Italian Restaurant offers a refined but approachable à la carte experience 
 
 # A relaxed taste of Italy
 
-The Italian Restaurant brings classic flavors, welcoming service, and a comfortable evening atmosphere to Villas Playa Sámara.
+Trattoria brings classic flavors, welcoming service, and a comfortable evening atmosphere to Villas Playa Sámara.
 
 The menu is centered on familiar Italian favorites, from freshly prepared pasta and pizza to satisfying main courses and traditional desserts.
 
@@ -47,7 +47,7 @@ Designed for couples, families, and groups, the experience feels polished withou
 
 # Explore our menus
 
-The Italian Restaurant serves an à la carte dinner menu inspired by classic Italian cooking.
+Trattoria serves an à la carte dinner menu inspired by classic Italian cooking.
 
 Selections may vary according to seasonality, ingredient availability, and the current dining program.
 
@@ -90,7 +90,7 @@ Availability may vary.
 
 **Section label:** Opening Hours
 
-# Dinner at the Italian Restaurant
+# Dinner at Trattoria
 
 | Service | Hours |
 |---|---|
@@ -135,7 +135,7 @@ Our team will be happy to assist with your preferred dining time and answer any 
 
 **Section label:** A Closer Look
 
-# Experience the Italian Restaurant
+# Experience Trattoria
 
 Explore the atmosphere, freshly prepared dishes, pizza, pasta, desserts, drinks, and shared dining moments that shape the evening experience.
 
@@ -161,31 +161,31 @@ Explore the atmosphere, freshly prepared dishes, pizza, pasta, desserts, drinks,
 
 # Discover more dining at Villas Playa Sámara
 
-Return to the dining overview, revisit the Mexican Restaurant & Snacks, or continue exploring the resort’s main dining experience at Arrecife Restaurant & Bar.
+Return to the dining overview, revisit Baja Azul, or continue exploring the resort’s main dining experience at Arrecife.
 
-**Previous CTA:** Previous Restaurant: Mexican Restaurant & Snacks  
+**Previous CTA:** Previous Restaurant: Baja Azul
 **Overview CTA:** Dining Overview  
-**Next CTA:** Next Restaurant: Arrecife Restaurant & Bar
+**Next CTA:** Next Restaurant: Arrecife
 
 ### Navigation Labels
 
-- **Previous:** Mexican Restaurant & Snacks
-- **Current:** Italian Restaurant
-- **Next:** Arrecife Restaurant & Bar
+- **Previous:** Baja Azul
+- **Current:** Trattoria
+- **Next:** Arrecife
 - **Overview:** All Restaurants
 
-> Replace all working venue names with the final approved names before publication.
+> Arrecife, Baja Azul, and Trattoria are concept names and may change before publication.
 
 ---
 
 ## Short Card Copy
 
-### Italian Restaurant
+### Trattoria
 
 A relaxed à la carte dinner experience featuring classic Italian favorites, including pizza, pasta, traditional desserts, and a selection of drinks.
 
 **Service:** Dinner  
-**CTA:** Explore the Italian Restaurant
+**CTA:** Explore Trattoria
 
 ---
 
@@ -193,8 +193,8 @@ A relaxed à la carte dinner experience featuring classic Italian favorites, inc
 
 ### Suggested Page Title
 
-Italian Restaurant | Villas Playa Sámara
+Trattoria | Villas Playa Sámara
 
 ### Suggested Meta Description
 
-Discover the Italian Restaurant at Villas Playa Sámara, offering a relaxed à la carte dinner experience with pizza, pasta, classic desserts, wines, and familiar Italian flavors.
+Discover Trattoria at Villas Playa Sámara, offering a relaxed à la carte dinner experience with pizza, pasta, classic desserts, wines, and familiar Italian flavors.

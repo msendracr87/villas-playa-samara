@@ -29,11 +29,14 @@ Example from: Example 1 - 2 Dribbble
 ![Restaurant Overview Example 2](../../../assets/inspirational/images/dining/dining-restaurant-overview-1.png)
 ![Restaurant Overview Example 2](../../../assets/inspirational/images/dining/dining-restaurant-overview-2.png)
 
-### Arrefice
+> **Concept branding note:** Arrecife, Baja Azul, Trattoria, and Veranda—and their supplied logos—are concepts for owner review and may change before final approval.
 
-### Mexican Restaurant (Name Pending)
+### Arrecife
 
-### Trattoria (Name Pending)
+### Baja Azul
+
+### Trattoria
+
+### Veranda
 
 ### Nikoa Beach Club ($)
-

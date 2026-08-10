@@ -1,0 +1,211 @@
+:root {
+  --dining-motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dining-motion-ready [data-dining-motion="hero"] > img {
+  clip-path: inset(0);
+  transform: scale(1);
+  transition:
+    clip-path 1100ms var(--dining-motion-ease),
+    transform 1400ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready
+  [data-dining-motion="hero"]
+  .dining-page__hero-content
+  > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--dining-motion-ease),
+    transform 760ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready
+  [data-dining-motion="hero"]
+  .dining-page__hero-content
+  > h1 {
+  transition-delay: 100ms;
+}
+
+.dining-motion-ready
+  [data-dining-motion="hero"]
+  .dining-page__hero-content
+  > span {
+  transition-delay: 200ms;
+}
+
+.dining-motion-ready
+  [data-dining-motion="hero"]
+  .dining-page__hero-content
+  > a {
+  transition-delay: 290ms;
+}
+
+.dining-motion-ready [data-dining-motion="hero"]:not(.is-motion-visible) > img {
+  clip-path: inset(0 5%);
+  transform: scale(1.06);
+  will-change: clip-path, transform;
+}
+
+.dining-motion-ready
+  [data-dining-motion="hero"]:not(.is-motion-visible)
+  .dining-page__hero-content
+  > * {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  will-change: opacity, transform;
+}
+
+.dining-motion-ready [data-dining-motion="intro"] > *,
+.dining-motion-ready [data-dining-motion="venues-heading"] > *,
+.dining-motion-ready [data-dining-motion="assistance-copy"] > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 520ms var(--dining-motion-ease),
+    transform 740ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready
+  [data-dining-motion="intro"]:not(.is-motion-visible)
+  > *,
+.dining-motion-ready
+  [data-dining-motion="assistance-copy"]:not(.is-motion-visible)
+  > * {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: opacity, transform;
+}
+
+.dining-motion-ready
+  [data-dining-motion="venues-heading"]:not(.is-motion-visible)
+  > div {
+  opacity: 0;
+  transform: translate3d(-24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.dining-motion-ready
+  [data-dining-motion="venues-heading"]:not(.is-motion-visible)
+  > p {
+  opacity: 0;
+  transform: translate3d(24px, 0, 0);
+  will-change: opacity, transform;
+}
+
+.dining-motion-ready [data-dining-motion="collage"] > figure {
+  clip-path: inset(0);
+  opacity: 1;
+  transition:
+    clip-path 880ms var(--dining-motion-ease),
+    opacity 520ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready
+  [data-dining-motion="collage"]
+  > figure:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.dining-motion-ready
+  [data-dining-motion="collage"]
+  > figure:nth-child(3) {
+  transition-delay: 180ms;
+}
+
+.dining-motion-ready
+  [data-dining-motion="collage"]:not(.is-motion-visible)
+  > figure {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0.36;
+  will-change: clip-path, opacity;
+}
+
+.dining-motion-ready [data-dining-motion="venue"] .dining-page__venue-media {
+  clip-path: inset(0);
+  opacity: 1;
+  transition:
+    clip-path 900ms var(--dining-motion-ease),
+    opacity 540ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="venue"] .dining-page__venue-body {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 520ms var(--dining-motion-ease) 110ms,
+    transform 760ms var(--dining-motion-ease) 110ms;
+}
+
+.dining-motion-ready
+  [data-dining-motion="venue"]:not(.is-motion-visible)
+  .dining-page__venue-media {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0.4;
+  will-change: clip-path, opacity;
+}
+
+.dining-motion-ready
+  [data-dining-motion="venue"]:nth-child(even):not(.is-motion-visible)
+  .dining-page__venue-media {
+  clip-path: inset(0 0 0 100%);
+}
+
+.dining-motion-ready
+  [data-dining-motion="venue"]:not(.is-motion-visible)
+  .dining-page__venue-body {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  will-change: opacity, transform;
+}
+
+.dining-motion-ready
+  [data-dining-motion="nikoa"]
+  .dining-page__nikoa-feature-media {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 900ms var(--dining-motion-ease),
+    opacity 560ms var(--dining-motion-ease),
+    transform 820ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready [data-dining-motion="nikoa"] .dining-page__nikoa-copy {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--dining-motion-ease),
+    transform 820ms var(--dining-motion-ease);
+}
+
+.dining-motion-ready
+  [data-dining-motion="nikoa"]
+  .dining-page__nikoa-copy {
+  transition-delay: 120ms;
+}
+
+.dining-motion-ready
+  [data-dining-motion="nikoa"]:not(.is-motion-visible)
+  .dining-page__nikoa-feature-media {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0.36;
+  transform: scale(1.02);
+  will-change: clip-path, opacity, transform;
+}
+
+.dining-motion-ready
+  [data-dining-motion="nikoa"]:not(.is-motion-visible)
+  .dining-page__nikoa-copy {
+  opacity: 0;
+  transform: translate3d(28px, 0, 0);
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-dining-motion],
+  [data-dining-motion] * {
+    transition-duration: 0.01ms !important;
+  }
+}

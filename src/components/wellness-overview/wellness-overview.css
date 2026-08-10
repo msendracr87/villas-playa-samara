@@ -22,7 +22,7 @@
   grid-template-columns: minmax(0, 1.45fr) minmax(340px, 0.75fr);
   margin-top: clamp(48px, 6vw, 82px);
   overflow: hidden;
-  border-radius: 32px;
+  border-radius: 15px;
   background: #fff;
   box-shadow:
     0 24px 70px rgba(16, 26, 20, 0.08),
@@ -39,7 +39,7 @@
   min-height: 32px;
   align-items: center;
   padding: 7px 12px;
-  border-radius: 999px;
+  border-radius: 0;
   color: var(--color-lime);
   background: rgba(196, 214, 88, 0.1);
   font-size: 0.65rem;

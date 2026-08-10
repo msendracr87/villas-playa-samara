@@ -28,6 +28,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+button,
+dialog,
+img,
+input,
+select,
+textarea {
+  border-radius: 0;
+}
+
 * {
   box-sizing: border-box;
 }

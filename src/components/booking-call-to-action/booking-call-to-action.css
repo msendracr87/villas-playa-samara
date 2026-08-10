@@ -71,7 +71,7 @@
   place-items: center;
   padding: 14px 24px;
   border: 0;
-  border-radius: 4px;
+  border-radius: 0;
   color: var(--color-forest-950);
   background: #fff;
   font-size: 0.76rem;

@@ -25,14 +25,8 @@ const colorTokens = [
 ] as const;
 
 const radiusInventory = [
-  { value: "4px", name: "Subtle", usage: "Global buttons and header booking action" },
-  { value: "6px", name: "Moderate", usage: "Inquiry panel, controls, and submit action" },
-  { value: "8px", name: "Pronounced", usage: "Accommodation, dining, and experience images" },
-  { value: "20px", name: "Mobile feature", usage: "Home aerial lower corners on small screens" },
-  { value: "32px", name: "Panel", usage: "Wellness summary composition" },
-  { value: "40px", name: "Feature", usage: "Home aerial lower corners" },
-  { value: "50%", name: "Circle", usage: "Wellness and utility icon containers" },
-  { value: "999px", name: "Pill", usage: "Availability and development statuses" },
+  { value: "0", name: "Square", usage: "Buttons, forms, panels, dialogs, and imagery" },
+  { value: "50%", name: "Circle", usage: "Identifiers, utility icons, and list markers only" },
 ] as const;
 
 const componentInventory = [
@@ -40,16 +34,16 @@ const componentInventory = [
   ["Hero", "Homepage introduction", "Full-viewport media, display copy, highlight rail", "src/components/hero"],
   ["HomeIntro", "Resort introduction", "Editorial copy, fact treatment, aerial media", "src/components/home-intro"],
   ["AccommodationsShowcase", "Homepage stay selector", "Split media, indexed navigation, text actions", "src/components/accommodations-showcase"],
-  ["DiningShowcase", "Venue carousel", "8px media, large arrow controls, venue summaries", "src/components/dining-showcase"],
+  ["DiningShowcase", "Venue carousel", "Square media, large arrow controls, venue summaries", "src/components/dining-showcase"],
   ["ExperiencesShowcase", "Experience collection", "Dark feature surface, media cards, overlay copy", "src/components/experiences-showcase"],
-  ["WellnessOverview", "Current and future wellness", "32px panel, status pills, circular icons", "src/components/wellness-overview"],
+  ["WellnessOverview", "Current and future wellness", "Square panel and statuses with circular utility icons", "src/components/wellness-overview"],
   ["GalleryPreview", "Homepage gallery", "Image-led grid with fine inset rules", "src/components/gallery-preview"],
   ["BookingCallToAction", "Homepage close", "Full-bleed media, square primary and text actions", "src/components/booking-call-to-action"],
   ["Footer", "Global close and navigation", "Deep forest surface and text actions", "src/components/footer"],
   ["AccommodationsOverview", "Rooms & Villas index", "Editorial grid, pattern surfaces, shared data", "src/components/accommodations-overview"],
-  ["AccommodationCard", "Reusable stay summary", "8px media, icon-led key features, floor plan and gallery dialogs, three actions", "src/components/accommodation-card"],
+  ["AccommodationCard", "Reusable stay summary", "Square media, icon-led key features, floor plan and gallery dialogs, three actions", "src/components/accommodation-card"],
   ["AccommodationDetail", "Reusable stay detail", "Full-bleed hero, facts, features, adjacent navigation", "src/components/accommodation-detail"],
-  ["AccommodationInquiry", "Rooms & Villas lead form", "6px controls, two-column fields, disabled submit state", "src/components/accommodation-inquiry"],
+  ["AccommodationInquiry", "Rooms & Villas lead form", "Square controls, two-column fields, disabled submit state", "src/components/accommodation-inquiry"],
 ] as const;
 
 const iconNames = [
@@ -156,8 +150,8 @@ export function DesignSystemPage() {
 
             <div className="design-system-page__subsection">
               <div className="design-system-page__subsection-heading">
-                <h3>Current radius inventory</h3>
-                <code>Observed across component stylesheets</code>
+                <h3>Shape system</h3>
+                <code>Square by default; circles only for non-control markers</code>
               </div>
               <div className="design-system-page__shapes">
                 {radiusInventory.map((radius) => (
@@ -245,14 +239,14 @@ export function DesignSystemPage() {
                   <a className="button-link" href="#actions">Primary action</a>
                 </div>
                 <h3>Global solid action</h3>
-                <code>.button-link · 54px min-height · 4px radius</code>
+                <code>.button-link · 54px min-height · 0 radius</code>
               </article>
               <article>
                 <div className="design-system-page__action-stage design-system-page__action-stage--dark">
                   <a className="site-header__book" href="#actions">Book now</a>
                 </div>
                 <h3>Header outline action</h3>
-                <code>.site-header__book · 52px min-height · 4px radius</code>
+                <code>.site-header__book · 52px min-height · 0 radius</code>
               </article>
               <article>
                 <div className="design-system-page__action-stage design-system-page__action-stage--dark">
@@ -261,7 +255,7 @@ export function DesignSystemPage() {
                   </button>
                 </div>
                 <h3>Booking primary action</h3>
-                <code>.booking-call-to-action__primary · 56px · 4px radius</code>
+                <code>.booking-call-to-action__primary · 56px · 0 radius</code>
               </article>
               <article>
                 <div className="design-system-page__action-stage">
@@ -285,12 +279,12 @@ export function DesignSystemPage() {
               </article>
               <article>
                 <div className="design-system-page__action-stage">
-                  <button className="design-system-page__rounded-action" type="button">
+                  <button className="design-system-page__form-action" type="button">
                     Form action
                   </button>
                 </div>
                 <h3>Inquiry action direction</h3>
-                <code>54px min-height · 6px radius</code>
+                <code>54px min-height · 0 radius</code>
               </article>
             </div>
           </div>
@@ -305,7 +299,7 @@ export function DesignSystemPage() {
               </div>
               <p className="section-copy">
                 The form uses visible labels, sand-100 input surfaces, sand-200
-                borders, a 6px radius, and a stronger green focus state.
+                borders, square corners, and a stronger green focus state.
               </p>
             </header>
 
@@ -349,20 +343,20 @@ export function DesignSystemPage() {
                 <h2 className="section-title">Small signals with specific roles</h2>
               </div>
               <p className="section-copy">
-                Material Symbols is the official icon system. Pills are
-                reserved for compact statuses, while circles currently frame
-                wellness and utility icons.
+                Material Symbols is the official icon system. Statuses use
+                square geometry, while circles are reserved for identifiers,
+                utility icons, and list markers.
               </p>
             </header>
 
             <div className="design-system-page__status-row">
               <div>
                 <span className="wellness-overview__status wellness-overview__status--current">Available now</span>
-                <code>Current status · 999px radius</code>
+                <code>Current status · 0 radius</code>
               </div>
               <div className="design-system-page__status-dark">
                 <span className="wellness-overview__status">Under development</span>
-                <code>Future status · 999px radius</code>
+                <code>Future status · 0 radius</code>
               </div>
             </div>
 
