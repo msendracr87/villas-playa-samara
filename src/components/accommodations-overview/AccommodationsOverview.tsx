@@ -59,6 +59,15 @@ export function AccommodationsOverview() {
               <span className="accommodations-page__script-accent">beach</span>.
             </h1>
             <span>Eight accommodation categories · Garden and beachfront settings</span>
+            <a
+              className="accommodations-page__hero-link"
+              href="#accommodations-collection"
+            >
+              Explore rooms &amp; villas
+              <span className="material-symbols-outlined" aria-hidden="true">
+                south
+              </span>
+            </a>
           </div>
         </section>
 
@@ -122,6 +131,7 @@ export function AccommodationsOverview() {
 
         <section
           className="content-wrap accommodations-page__collection"
+          id="accommodations-collection"
           aria-labelledby="accommodation-collection-title"
         >
           <div

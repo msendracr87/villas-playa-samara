@@ -141,7 +141,7 @@ export function DiningOverview() {
               </p>
               <p>
                 Our restaurants and bars offer a range of settings and menus
-                for couples, families, and friends—from relaxed all-day dining
+                for couples, families, and friends, from relaxed all-day dining
                 to lively social evenings.
               </p>
             </div>

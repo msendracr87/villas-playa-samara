@@ -49,17 +49,18 @@
   font-size: clamp(3rem, 7vw, 6rem);
   font-weight: 400;
   letter-spacing: -0.04em;
-  line-height: 0.96;
+  line-height: 0;
   text-wrap: balance;
 }
 
 .accommodations-page__script-accent {
   display: inline-block;
+  color: var(--color-lime);
   font-family: "Birthstone", cursive;
   font-size: 1.65em;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 0.72;
+  line-height: 0.6;
   transform: translateY(-0.07em);
 }
 
@@ -69,6 +70,30 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.82rem;
   letter-spacing: 0.04em;
+}
+
+.accommodations-page__hero-link {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.accommodations-page__hero-link .material-symbols-outlined {
+  font-size: 20px;
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.accommodations-page__hero-link:hover .material-symbols-outlined,
+.accommodations-page__hero-link:focus-visible .material-symbols-outlined {
+  transform: translateY(4px);
 }
 
 .accommodations-page__intro {
@@ -185,6 +210,7 @@
 
 .accommodations-page__collection {
   padding-block: var(--section-space);
+  scroll-margin-top: 24px;
 }
 
 .accommodations-page__collection-heading {

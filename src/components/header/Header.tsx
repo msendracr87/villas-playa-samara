@@ -1,12 +1,12 @@
 import { useEffect, useId, useState } from "react";
-import logoUrl from "../../../assets/svgs/logo/vps-logo-fff-frame.svg";
+import logoUrl from "../../../assets/svgs/logo/vps-logo-c4d658-fff-frame.svg";
 import "./header.css";
 
 const navItems = [
   { label: "Home", href: "/#home" },
   { label: "Rooms & Villas", href: "/rooms-and-villas" },
   { label: "Dining", href: "/dining" },
-  { label: "Experiences", href: "/#experiences" },
+  { label: "Experiences", href: "/experiences" },
   { label: "Wellness", href: "/#wellness" },
   { label: "Gallery", href: "/#gallery" },
 ] as const;
@@ -94,6 +94,9 @@ export function Header() {
                   currentPath.startsWith("/rooms-and-villas")
                     ? "page"
                     : item.href === "/dining" && currentPath.startsWith("/dining")
+                      ? "page"
+                    : item.href === "/experiences" &&
+                        currentPath.startsWith("/experiences")
                       ? "page"
                     : item.href === "/#home" && currentPath === "/"
                       ? "page"

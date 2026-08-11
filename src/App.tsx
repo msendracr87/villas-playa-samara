@@ -11,6 +11,10 @@ import { BajaAzulDetail } from "./components/baja-azul-detail/BajaAzulDetail";
 import { TrattoriaDetail } from "./components/trattoria-detail/TrattoriaDetail";
 import { VerandaDetail } from "./components/veranda-detail/VerandaDetail";
 import { ExperiencesShowcase } from "./components/experiences-showcase/ExperiencesShowcase";
+import { ExperiencesOverview } from "./components/experiences-overview/ExperiencesOverview";
+import { RentalsDetail } from "./components/rentals-detail/RentalsDetail";
+import { DayToursDetail } from "./components/day-tours-detail/DayToursDetail";
+import { ActivitiesDetail } from "./components/activities-detail/ActivitiesDetail";
 import { WellnessOverview } from "./components/wellness-overview/WellnessOverview";
 import { GalleryPreview } from "./components/gallery-preview/GalleryPreview";
 import { BookingCallToAction } from "./components/booking-call-to-action/BookingCallToAction";
@@ -63,6 +67,22 @@ export function App() {
 
   if (path === "/dining") {
     return <DiningOverview />;
+  }
+
+  if (path === "/experiences") {
+    return <ExperiencesOverview />;
+  }
+
+  if (path === "/experiences/rentals") {
+    return <RentalsDetail />;
+  }
+
+  if (path === "/experiences/day-tours") {
+    return <DayToursDetail />;
+  }
+
+  if (path === "/experiences/activities") {
+    return <ActivitiesDetail />;
   }
 
   if (path === "/dining/arrecife") {

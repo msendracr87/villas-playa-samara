@@ -55,6 +55,7 @@
 
 .dining-page__script-accent {
   display: inline-block;
+  color: var(--color-lime);
   font-family: "Birthstone", cursive;
   font-size: 1.72em;
   font-weight: 400;

@@ -1,0 +1,771 @@
+.experiences-page {
+  color: var(--color-ink);
+  background: var(--color-sand-50);
+}
+
+.experiences-page__hero {
+  position: relative;
+  display: flex;
+  min-height: min(860px, 92svh);
+  align-items: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--color-forest-900);
+  isolation: isolate;
+}
+
+.experiences-page__hero::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 14, 10, 0.15) 20%, rgba(8, 14, 10, 0.82) 100%), linear-gradient(90deg, rgba(8, 14, 10, 0.42), transparent 58%);
+  content: "";
+}
+
+.experiences-page__hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: -1px;
+}
+
+.experiences-page__hero-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: clamp(52px, 7vw, 104px);
+}
+
+.experiences-page__hero-kicker {
+  margin-bottom: 18px;
+  color: var(--color-lime) !important;
+}
+
+.experiences-page__hero h1 {
+  max-width: 10ch;
+  margin: 0;
+  font-size: clamp(3.2rem, 7.2vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  text-wrap: balance;
+}
+
+.experiences-page__hero h1 span {
+  /* display: block;
+  width: max-content; */
+  max-width: 100%;
+  margin-top: 0.14em;
+  color: var(--color-lime);
+  font-family: "Birthstone", cursive;
+  font-size: 1.72em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.4;
+}
+
+.experiences-page__hero-content > p:not(.experiences-page__hero-kicker) {
+  max-width: 42ch;
+  margin: 34px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.experiences-page__hero-link {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.experiences-page__hero-link .material-symbols-outlined {
+  font-size: 20px;
+  transition-property: transform;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.experiences-page__hero-link:hover .material-symbols-outlined,
+.experiences-page__hero-link:focus-visible .material-symbols-outlined {
+  transform: translateY(4px);
+}
+
+.experiences-page__hero-link:active {
+  transform: scale(0.96);
+}
+
+.experiences-page__introduction {
+  overflow: hidden;
+  padding-block: var(--section-space);
+  background: var(--color-sand-50);
+  scroll-margin-top: 24px;
+}
+
+.experiences-page__introduction-layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experiences-page__introduction-copy {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.experiences-page__introduction-copy h2,
+.experiences-page__journeys-story h2,
+.experiences-page__in-house-heading h2,
+.experiences-page__assistance h2 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5.2vw, 5.4rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.experiences-page__introduction-copy h2 {
+  max-width: 12ch;
+}
+
+.experiences-page__introduction-logo {
+  width: clamp(156px, 17vw, 220px);
+  height: auto;
+  margin: 0 0 clamp(22px, 2.8vw, 34px);
+  object-fit: contain;
+}
+
+.experiences-page__introduction-text {
+  display: grid;
+  max-width: 68ch;
+  gap: 18px;
+  margin-top: clamp(30px, 3.6vw, 46px);
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.experiences-page__introduction-text p {
+  margin: 0;
+}
+
+.experiences-page__introduction-media {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.18fr 0.86fr 0.86fr;
+  align-items: end;
+  gap: clamp(12px, 2.2vw, 34px);
+  margin-top: clamp(68px, 8vw, 116px);
+}
+
+.experiences-page__introduction-image {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: var(--color-sand-200);
+}
+
+.experiences-page__introduction-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+}
+
+.experiences-page__introduction-image--wildlife {
+  aspect-ratio: 1 / 1.06;
+}
+
+.experiences-page__introduction-image--coffee {
+  aspect-ratio: 0.86 / 1;
+  align-self: start;
+  margin-top: clamp(-34px, -3vw, -18px);
+}
+
+.experiences-page__introduction-image--coast {
+  aspect-ratio: 0.88 / 1;
+  margin-bottom: clamp(-42px, -3.3vw, -20px);
+}
+
+.experiences-page__introduction-note {
+  max-width: 68ch;
+  margin: clamp(72px, 8vw, 116px) 0 0;
+  color: var(--color-muted);
+  font-size: 0.84rem;
+  line-height: 1.7;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.experiences-page__journeys {
+  --journeys-section-space: clamp(96px, 10vw, 152px);
+
+  position: relative;
+  padding-block: var(--journeys-section-space);
+  overflow: clip;
+  color: var(--color-ink);
+  background: #fff;
+  isolation: isolate;
+}
+
+.experiences-page__journeys-story {
+  position: relative;
+  z-index: 2;
+  width: min(calc(100% - (var(--page-gutter) * 2)), 900px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.experiences-page__journeys-story h2 {
+  color: var(--color-ink);
+}
+
+.experiences-page__journeys-story p {
+  max-width: 54ch;
+  margin: 30px auto 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.45vw, 1.24rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.experiences-page__journeys-backdrop {
+  position: sticky;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100svh;
+  margin-top: calc(-1 * var(--journeys-section-space));
+  margin-bottom: calc(-100svh + var(--journeys-section-space));
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.experiences-page__journeys-backdrop-image {
+  position: absolute;
+  inset: -2%;
+  width: 104%;
+  height: 104%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.02);
+  transition-property: opacity;
+  transition-duration: 520ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experiences-page__journeys-backdrop-image.is-active {
+  opacity: 1;
+}
+
+.experiences-page__journey-flow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(88px, 10vw, 152px);
+  margin-top: clamp(70px, 10vw, 100px);
+}
+
+.experiences-page__journey {
+  --journey-radius: 10px;
+
+  position: relative;
+  display: grid;
+  width: min(88%, 1120px);
+  min-height: clamp(520px, 48vw, 680px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: var(--journey-radius);
+  background: transparent;
+  clip-path: inset(0 round var(--journey-radius));
+  isolation: isolate;
+}
+
+.experiences-page__journey::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
+  pointer-events: none;
+  transition-property: background-color;
+  transition-duration: 420ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.experiences-page__journey.is-clickable {
+  cursor: pointer;
+}
+
+.experiences-page__journey-card-link {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  border-radius: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.experiences-page__journey-card-link:focus-visible {
+  outline: 3px solid var(--color-lime);
+  outline-offset: -4px;
+}
+
+.experiences-page__journey-media {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background: transparent;
+}
+
+.experiences-page__journey-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+  transition-property: opacity;
+  transition-duration: 420ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.experiences-page__journey-image--sharp {
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .experiences-page__journey:hover::after {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .experiences-page__journey:hover .experiences-page__journey-image--sharp {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .experiences-page__journey::after {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .experiences-page__journey-image--sharp {
+    opacity: 1;
+  }
+}
+
+.experiences-page__journey-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  grid-column: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(42px, 6vw, 88px);
+  color: #fff;
+}
+
+.experiences-page__journey-copy h3 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4.8vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.experiences-page__journey-copy > p {
+  max-width: 48ch;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(0.96rem, 1.14vw, 1.06rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.experiences-page__journey-action {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  color: #fff;
+  cursor: default;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  opacity: 0.72;
+  text-transform: uppercase;
+}
+
+.experiences-page__journey-action.is-link {
+  opacity: 1;
+}
+
+.experiences-page__journey-action .material-symbols-outlined {
+  font-size: 19px;
+  transition-property: transform;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.experiences-page__journey.is-clickable:hover
+  .experiences-page__journey-action
+  .material-symbols-outlined,
+.experiences-page__journey.is-clickable:focus-within
+  .experiences-page__journey-action
+  .material-symbols-outlined {
+  transform: translateX(4px);
+}
+
+.experiences-page__in-house {
+  padding-block: var(--section-space);
+  overflow: hidden;
+  background: var(--color-sand-50);
+}
+
+.experiences-page__in-house-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 48px;
+}
+
+.experiences-page__in-house-heading > div:first-child {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.62fr);
+  align-items: end;
+  gap: clamp(36px, 7vw, 112px);
+}
+
+.experiences-page__in-house-heading h2 {
+  max-width: 12ch;
+}
+
+.experiences-page__in-house-title .section-kicker {
+  margin-bottom: 20px;
+}
+
+.experiences-page__in-house-heading > div:first-child > p {
+  max-width: 54ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.experiences-page__carousel-controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.experiences-page__carousel-controls > p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.experiences-page__carousel-controls > div {
+  display: flex;
+  gap: 8px;
+}
+
+.experiences-page__carousel-controls button {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  background: var(--color-forest-900);
+  cursor: pointer;
+  place-items: center;
+  transition-property: color, background-color, transform;
+  transition-duration: 180ms;
+}
+
+.experiences-page__carousel-controls button:hover:not(:disabled),
+.experiences-page__carousel-controls button:focus-visible:not(:disabled) {
+  color: var(--color-forest-950);
+  background: var(--color-lime);
+}
+
+.experiences-page__carousel-controls button:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.experiences-page__carousel-controls button:disabled {
+  cursor: default;
+  opacity: 0.28;
+}
+
+.experiences-page__carousel-controls .material-symbols-outlined {
+  font-size: 22px;
+}
+
+.experiences-page__carousel {
+  display: grid;
+  grid-auto-columns: minmax(300px, calc((100% - 48px) / 3));
+  grid-auto-flow: column;
+  gap: 24px;
+  width: min(calc(100% - max(var(--page-gutter), calc((100vw - var(--content-width)) / 2))), calc(var(--content-width) + max(var(--page-gutter), calc((100vw - var(--content-width)) / 2))));
+  margin-top: clamp(64px, 8vw, 112px);
+  margin-left: max(var(--page-gutter), calc((100vw - var(--content-width)) / 2));
+  padding-right: var(--page-gutter);
+  padding-bottom: 24px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-color: var(--color-leaf) var(--color-sand-100);
+  scrollbar-width: thin;
+  scroll-snap-type: inline mandatory;
+}
+
+.experiences-page__activity {
+  min-width: 0;
+  background: var(--color-sand-50);
+  scroll-snap-align: start;
+}
+
+.experiences-page__activity-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-sand-200);
+}
+
+.experiences-page__activity-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+  transition-property: transform;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.experiences-page__activity:hover .experiences-page__activity-media img {
+  transform: scale(1.025);
+}
+
+.experiences-page__activity-copy {
+  min-height: 154px;
+  padding: 24px 26px 28px;
+}
+
+.experiences-page__activity-copy p {
+  margin: 0;
+  color: var(--color-brand-green-text);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.experiences-page__activity-copy h3 {
+  max-width: 20ch;
+  margin: 16px 0 0;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.experiences-page__assistance {
+  display: flex;
+  min-height: 680px;
+  align-items: center;
+  color: #fff;
+  background: var(--color-leaf);
+}
+
+.experiences-page__assistance-copy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: var(--section-space);
+  text-align: center;
+}
+
+.experiences-page__assistance h2 {
+  max-width: 14ch;
+  color: var(--color-forest-950);
+}
+
+.experiences-page__assistance .section-kicker {
+  color: var(--color-forest-950);
+}
+
+.experiences-page__assistance-copy > p:not(.section-kicker) {
+  max-width: 56ch;
+  margin: 30px 0 0;
+  color: rgba(16, 26, 20, 0.78);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.experiences-page__assistance-action {
+  margin-top: 34px;
+  cursor: default;
+  opacity: 0.58;
+}
+
+@media (max-width: 1040px) {
+  .experiences-page__in-house-heading,
+  .experiences-page__in-house-heading > div:first-child {
+    grid-template-columns: 1fr;
+  }
+
+  .experiences-page__in-house-heading > div:first-child {
+    gap: 28px;
+  }
+
+  .experiences-page__carousel-controls {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .experiences-page__carousel {
+    grid-auto-columns: minmax(300px, calc((100% - 24px) / 2));
+  }
+}
+
+@media (max-width: 860px) {
+  .experiences-page__journey {
+    width: 94%;
+  }
+}
+
+@media (max-width: 760px) {
+  .experiences-page__hero {
+    min-height: 760px;
+  }
+
+  .experiences-page__hero h1 {
+    font-size: clamp(3rem, 14vw, 4.8rem);
+  }
+
+  .experiences-page__hero h1 span {
+    line-height: 0.68;
+  }
+
+  .experiences-page__introduction-copy h2,
+  .experiences-page__journeys-story h2,
+  .experiences-page__in-house-heading h2,
+  .experiences-page__assistance h2 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .experiences-page__introduction-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .experiences-page__introduction-image--wildlife {
+    grid-column: 1 / -1;
+    aspect-ratio: 1.26 / 1;
+  }
+
+  .experiences-page__introduction-image--coffee,
+  .experiences-page__introduction-image--coast {
+    margin: 0;
+  }
+
+  .experiences-page__journeys {
+    --journeys-section-space: var(--section-space);
+
+    min-height: 0;
+    padding-block: var(--journeys-section-space);
+  }
+
+  .experiences-page__journeys-story {
+    width: min(calc(100% - (var(--page-gutter) * 2)), 680px);
+    text-align: left;
+  }
+
+  .experiences-page__journeys-story p {
+    margin-inline: 0;
+  }
+
+  .experiences-page__journey-flow {
+    gap: 48px;
+    margin-top: 72px;
+  }
+
+  .experiences-page__journey,
+  .experiences-page__journey:nth-child(even) {
+    width: 100%;
+    min-height: clamp(500px, 140vw, 620px);
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .experiences-page__journey-media {
+    height: auto;
+  }
+
+  .experiences-page__journey-copy {
+    min-height: inherit;
+    grid-column: 1;
+    justify-content: flex-end;
+    padding: 36px 28px 42px;
+  }
+
+  .experiences-page__carousel {
+    grid-auto-columns: minmax(280px, 84vw);
+    gap: 16px;
+  }
+
+  .experiences-page__assistance {
+    min-height: 580px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experiences-page__hero-link,
+  .experiences-page__hero-link .material-symbols-outlined,
+  .experiences-page__journeys-backdrop-image,
+  .experiences-page__journey::after,
+  .experiences-page__journey-image,
+  .experiences-page__carousel-controls button,
+  .experiences-page__activity-media img {
+    transition-duration: 0.01ms;
+  }
+}

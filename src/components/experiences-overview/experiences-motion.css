@@ -1,0 +1,165 @@
+:root {
+  --experiences-motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experiences-motion-ready [data-experiences-motion="hero"] > img {
+  clip-path: inset(0);
+  transform: scale(1);
+  transition:
+    clip-path 1100ms var(--experiences-motion-ease),
+    transform 1400ms var(--experiences-motion-ease);
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="hero"]
+  .experiences-page__hero-content
+  > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms var(--experiences-motion-ease),
+    transform 760ms var(--experiences-motion-ease);
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="hero"]
+  .experiences-page__hero-content
+  > h1 {
+  transition-delay: 90ms;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="hero"]
+  .experiences-page__hero-content
+  > p:not(.experiences-page__hero-kicker) {
+  transition-delay: 180ms;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="hero"]
+  .experiences-page__hero-content
+  > a {
+  transition-delay: 270ms;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="hero"]:not(.is-motion-visible)
+  > img {
+  clip-path: inset(0 5%);
+  transform: scale(1.06);
+  will-change: clip-path, transform;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="hero"]:not(.is-motion-visible)
+  .experiences-page__hero-content
+  > * {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  will-change: opacity, transform;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="introduction"]
+  .experiences-page__introduction-copy > *,
+.experiences-motion-ready
+  [data-experiences-motion="in-house-heading"]
+  > *,
+.experiences-motion-ready
+  [data-experiences-motion="assistance"]
+  > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 540ms var(--experiences-motion-ease),
+    transform 760ms var(--experiences-motion-ease);
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="introduction"]:not(.is-motion-visible)
+  .experiences-page__introduction-copy > *,
+.experiences-motion-ready
+  [data-experiences-motion="in-house-heading"]:not(.is-motion-visible)
+  > *,
+.experiences-motion-ready
+  [data-experiences-motion="assistance"]:not(.is-motion-visible)
+  > * {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: opacity, transform;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="introduction"]
+  .experiences-page__introduction-media {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 900ms var(--experiences-motion-ease) 120ms,
+    opacity 560ms var(--experiences-motion-ease) 120ms,
+    transform 820ms var(--experiences-motion-ease) 120ms;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="introduction"]:not(.is-motion-visible)
+  .experiences-page__introduction-media {
+  clip-path: inset(0 0 12% 0);
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.experiences-motion-ready [data-experiences-motion="journey"] {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 900ms var(--experiences-motion-ease),
+    opacity 560ms var(--experiences-motion-ease),
+    transform 900ms var(--experiences-motion-ease);
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="journey"]:not(.is-motion-visible) {
+  clip-path: inset(0 10% 0 0);
+  opacity: 0.3;
+  transform: translate3d(-34px, 0, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="journey"]:nth-child(even):not(.is-motion-visible) {
+  clip-path: inset(0 0 0 10%);
+  transform: translate3d(34px, 0, 0);
+}
+
+.experiences-motion-ready [data-experiences-motion="in-house-carousel"] {
+  clip-path: inset(0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    clip-path 820ms var(--experiences-motion-ease),
+    opacity 560ms var(--experiences-motion-ease),
+    transform 820ms var(--experiences-motion-ease);
+}
+
+.experiences-motion-ready
+  [data-experiences-motion="in-house-carousel"]:not(.is-motion-visible) {
+  clip-path: inset(0 0 14% 0);
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  will-change: clip-path, opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-experiences-motion],
+  [data-experiences-motion] * {
+    animation: none !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}

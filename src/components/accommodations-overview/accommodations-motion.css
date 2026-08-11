@@ -38,6 +38,13 @@
 }
 
 .accommodations-motion-ready
+  [data-accommodations-motion="hero"]
+  .accommodations-page__hero-content
+  > .accommodations-page__hero-link {
+  transition-delay: 330ms;
+}
+
+.accommodations-motion-ready
   [data-accommodations-motion="hero"]:not(.is-motion-visible)
   > img {
   clip-path: inset(0 5%);

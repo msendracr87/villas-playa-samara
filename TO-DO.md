@@ -141,7 +141,9 @@ These items can remain outside the homepage presentation unless the owners speci
 - [ ] Provide Mini-Golf imagery, availability, hours, age guidance, and equipment information.
 - [ ] Confirm padel and pickleball court schedules, equipment availability, reservation requirements, and guest access.
 - [ ] Confirm the current Monkey Tours schedules, prices, inclusions, departure conditions, and inquiry form fields.
-- [ ] Confirm whether all listed rentals, activities, and day tours should display prices publicly.
+- [x] Confirm that the canonical Rentals prices and departure times should display publicly. The project owner explicitly requested their inclusion on 2026-08-11.
+- [x] Confirm that the canonical Day Tours prices and departure information should display publicly. The project owner explicitly requested the dedicated page be created from the supplied copy on 2026-08-11, following the approved Rentals implementation.
+- [ ] Confirm whether the Activities page should display any supplied prices publicly when its dedicated page is implemented.
 - [ ] Confirm the weekly in-house activity schedule before publication.
 
 ## Wellness

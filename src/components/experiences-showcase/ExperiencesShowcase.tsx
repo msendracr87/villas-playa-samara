@@ -273,20 +273,18 @@ export function ExperiencesShowcase() {
           data-home-motion="copy"
         >
           <p>
-            Every pace has a place here—from an unhurried pool day to a full-day
+            Every pace has a place here, from an unhurried pool day to a full-day
             Costa Rican adventure.
           </p>
-          <span
+          <a
             className="text-link"
-            role="link"
-            aria-disabled="true"
-            title="Experiences page is not available yet"
+            href="/experiences"
           >
             Explore experiences
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_forward
             </span>
-          </span>
+          </a>
         </div>
       </div>
     </section>

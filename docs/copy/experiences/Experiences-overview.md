@@ -12,6 +12,8 @@ Embark on a journey of discovery with Monkey Tours, a standalone tour operator b
 
 Questions and tour inquiries are handled through the Villas Playa Sámara website so guests can plan an experience as part of their stay.
 
+> Tour and activity schedules are subject to availability. Departure times for selected experiences may vary according to tide conditions. Contact Guest Services for current details during your stay.
+
 ---
 
 ## Rentals

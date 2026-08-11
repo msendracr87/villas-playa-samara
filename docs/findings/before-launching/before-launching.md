@@ -1,7 +1,7 @@
 # Before We Launch Check-list
 
 1. custom 404 page
-2. CTA above the fold 12
+2. CTA above the fold
 3. internal links
 4. thank you page
 5. breadcrumbs
