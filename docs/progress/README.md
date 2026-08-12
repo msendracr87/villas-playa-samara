@@ -7,6 +7,7 @@ This directory contains dated implementation records for completed milestones an
 - **Homepage presentation:** Current design and implementation iteration completed and paused for owner review.
 - **Rooms & Villas:** Overview and eight accommodation-detail routes implemented and paused for owner visual review.
 - **Dining:** Overview route, four-venue collection, separate Nikoa presentation, and dedicated Arrecife, Baja Azul, Trattoria, and Veranda routes with Markdown-driven digital and printable concept menus implemented and paused for owner visual review.
+- **Experiences:** Overview, Rentals, Day Tours, and Activities routes implemented with image-led comparisons, internal navigation, optimized imagery, and offering-specific inquiry flows; paused for owner visual and editorial review.
 - **Accommodation comparison:** Key facts, floor plans, galleries, and responsive card actions implemented across all eight approved categories.
 - **Accommodation FAQs:** Five FAQs and an expandable, accommodation-specific inquiry form implemented on every detail route.
 - **Visual system:** Square geometry and restrained Birthstone display accents implemented for review.
@@ -15,6 +16,14 @@ This directory contains dated implementation records for completed milestones an
 
 ## Progress records
 
+- [Experiences milestone completed — August 11, 2026](2026-08-11-experiences-milestone-complete.md)
+- [Activities detail development — August 11, 2026](2026-08-11-activities-detail-development.md)
+- [Experience item inquiry actions — August 11, 2026](2026-08-11-experience-item-inquiry-actions.md)
+- [Day Tours detail development — August 11, 2026](2026-08-11-day-tours-detail-development.md)
+- [Rentals operational details — August 11, 2026](2026-08-11-rentals-operational-details.md)
+- [Rentals inquiry development — August 11, 2026](2026-08-11-rentals-inquiry-development.md)
+- [Rentals detail development — August 11, 2026](2026-08-11-rentals-detail-development.md)
+- [Experiences overview development — August 10, 2026](2026-08-10-experiences-overview-development.md)
 - [Dining milestone completed — August 10, 2026](2026-08-10-dining-milestone-complete.md)
 - [Veranda detail and menu development — August 10, 2026](2026-08-10-veranda-detail-and-menus.md)
 - [Trattoria detail and menu development — August 10, 2026](2026-08-10-trattoria-detail-and-menus.md)

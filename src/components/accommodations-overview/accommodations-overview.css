@@ -250,6 +250,10 @@
 }
 
 @media (max-width: 760px) {
+  .accommodations-page__script-accent {
+    line-height: 0.8;
+  }
+
   .accommodations-page__hero {
     min-height: 760px;
   }

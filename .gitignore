@@ -20,6 +20,7 @@ dist/
 
 # Local image-editing source files
 *.psd
+*.af~lock~
 
 # Local development scratch files
 video-test.html
