@@ -14,6 +14,7 @@ import surfBackdrop from "../../../assets/images/optimized/activities/surf-lesso
 import turtleImageSmall from "../../../assets/images/optimized/activities/turtle-nesting-960.webp";
 import turtleImageLarge from "../../../assets/images/optimized/activities/turtle-nesting-1600.webp";
 import turtleBackdrop from "../../../assets/images/optimized/activities/turtle-nesting-blur-1920.webp";
+import islandIconUrl from "../../../assets/svgs/others/island-island.svg";
 import { useExperiencesMotion } from "../../hooks/useExperiencesMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { ActivitiesInquiry } from "../activities-inquiry/ActivitiesInquiry";
@@ -25,6 +26,8 @@ const activities = [
   {
     id: "padel-and-pickleball-courts",
     name: "Padel & Pickleball Courts",
+    icon: "sports_tennis",
+    kicker: "Courts at the resort",
     description:
       "Dedicated courts give guests space for padel and pickleball, from casual practice and friendly rallies to light competition during their stay.",
     summary: "Court access",
@@ -39,6 +42,9 @@ const activities = [
   {
     id: "isla-chora-paddleboard-tour",
     name: "Isla Chora Paddleboard & Snorkel Tour",
+    icon: islandIconUrl,
+    iconType: "image",
+    kicker: "Paddle toward Isla Chora",
     description:
       "Paddle to this secluded pink-sand island. Explore its beaches, discover hermit crabs, or snorkel among tropical marine life.",
     summary: "Subject to tide · Starting at $69 p.p.",
@@ -67,6 +73,8 @@ const activities = [
   {
     id: "isla-chora-kayak-tour",
     name: "Isla Chora Kayak & Snorkel Tour",
+    icon: "kayaking",
+    kicker: "Kayak across the bay",
     description:
       "Kayak across calm waters to Isla Chora. Enjoy snorkeling, beach walks, and wildlife encounters in this stunning setting.",
     summary: "Subject to tide · Starting at $59 p.p.",
@@ -96,6 +104,8 @@ const activities = [
   {
     id: "surf-lessons",
     name: "Surf Lessons at Sámara Beach",
+    icon: "surfing",
+    kicker: "Meet the Pacific waves",
     description:
       "The perfect spot for beginners and intermediate surfers. Enjoy warm waters, mild waves, and expert instruction to get you riding in no time.",
     summary: "Subject to tide · From $79 p.p.",
@@ -120,6 +130,8 @@ const activities = [
   {
     id: "turtle-nesting-tour",
     name: "Turtle Nesting Tour",
+    icon: "cruelty_free",
+    kicker: "Wildlife after dark",
     description:
       "At Camaronal Wildlife Refuge, witness the magic of sea turtles nesting on the beach. Depending on the season, you may see multiple turtles laying eggs in a single night—an unforgettable experience.",
     summary: "6:30 p.m. · Starting at $79 p.p.",
@@ -256,9 +268,24 @@ export function ActivitiesDetail() {
                 data-experiences-motion="day-tours-index-item"
               >
                 <a href={`#${activity.id}`}>
-                  <span>{activity.name}</span>
+                  <span className="day-tours-page__index-name">
+                    <span className="day-tours-page__index-kicker">
+                      {"iconType" in activity ? (
+                        <img src={activity.icon} alt="" aria-hidden="true" />
+                      ) : (
+                        <span className="material-symbols-outlined" aria-hidden="true">
+                          {activity.icon}
+                        </span>
+                      )}
+                      {activity.kicker}
+                    </span>
+                    <span>{activity.name}</span>
+                  </span>
                   <small>{activity.summary}</small>
-                  <span className="material-symbols-outlined" aria-hidden="true">
+                  <span
+                    className="material-symbols-outlined day-tours-page__index-arrow"
+                    aria-hidden="true"
+                  >
                     south_east
                   </span>
                 </a>
@@ -300,13 +327,32 @@ export function ActivitiesDetail() {
                 </figure>
 
                 <div className="day-tours-page__chapter-copy">
+                  <p className="day-tours-page__chapter-kicker">
+                    {"iconType" in activity ? (
+                      <img src={activity.icon} alt="" aria-hidden="true" />
+                    ) : (
+                      <span className="material-symbols-outlined" aria-hidden="true">
+                        {activity.icon}
+                      </span>
+                    )}
+                    {activity.kicker}
+                  </p>
                   <h2>{activity.name}</h2>
                   <p>{activity.description}</p>
 
                   <dl className="day-tours-page__chapter-details">
                     {activity.details.map((detail) => (
                       <div key={detail.label}>
-                        <dt>{detail.label}</dt>
+                        <dt>
+                          <span className="material-symbols-outlined" aria-hidden="true">
+                            {detail.label === "Includes"
+                              ? "checklist"
+                              : detail.label === "Departure"
+                                ? "schedule"
+                                : "payments"}
+                          </span>
+                          {detail.label}
+                        </dt>
                         <dd>
                           {detail.values.map((value) => (
                             <span key={value}>{value}</span>

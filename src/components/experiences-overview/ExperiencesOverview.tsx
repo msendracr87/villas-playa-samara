@@ -69,6 +69,8 @@ const journeys = [
   {
     id: "rentals",
     name: "Rentals",
+    icon: "directions_car",
+    kicker: "Explore independently",
     summary:
       "Discover Sámara at your own pace. From ATVs and bikes to fishing trips, rentals give you the freedom to explore the beaches, jungles, and ocean your way.",
     action: "View rentals",
@@ -84,6 +86,8 @@ const journeys = [
   {
     id: "day-tours",
     name: "Day tours",
+    icon: "landscape",
+    kicker: "Beyond Sámara",
     summary:
       "Venture beyond Sámara with curated day trips to volcanoes, coffee farms, cloud forests, and wildlife safaris, each a unique glimpse into Costa Rica’s beauty.",
     action: "View tours",
@@ -99,6 +103,8 @@ const journeys = [
   {
     id: "activities",
     name: "Activities",
+    icon: "surfing",
+    kicker: "Play by the Pacific",
     summary:
       "Dive into hands-on adventures right here in Sámara. Paddle to Isla Chora, learn to surf, or witness sea turtles nesting, experiences that make memories for a lifetime.",
     action: "View activities",
@@ -117,21 +123,25 @@ const inHouseActivities = [
   {
     name: "Punta Indio",
     type: "Hiking experience",
+    icon: "hiking",
     image: { small: puntaIndioImageSmall, large: puntaIndioImageLarge },
   },
   {
     name: "Aqua Aerobics",
     type: "Pool fitness experience",
+    icon: "pool",
     image: { small: aquaAerobicsImageSmall, large: aquaAerobicsImageLarge },
   },
   {
     name: "Beach Soccer",
     type: "Beach sports experience",
+    icon: "sports_soccer",
     image: { small: beachSoccerImageSmall, large: beachSoccerImageLarge },
   },
   {
     name: "Beach Volleyball",
     type: "Beach sports experience",
+    icon: "sports_volleyball",
     image: {
       small: beachVolleyballImageSmall,
       large: beachVolleyballImageLarge,
@@ -140,71 +150,85 @@ const inHouseActivities = [
   {
     name: "Beach Walk",
     type: "Morning beach experience",
+    icon: "directions_walk",
     image: { small: beachWalkImageSmall, large: beachWalkImageLarge },
   },
   {
     name: "Board Games and Bingo",
     type: "Social games experience",
+    icon: "casino",
     image: { small: boardGamesImageSmall, large: boardGamesImageLarge },
   },
   {
     name: "Beach Bonfire",
     type: "Evening beach experience",
+    icon: "local_fire_department",
     image: { small: bonfireImageSmall, large: bonfireImageLarge },
   },
   {
     name: "Canvas Time",
     type: "Creative art experience",
+    icon: "palette",
     image: { small: canvasTimeImageSmall, large: canvasTimeImageLarge },
   },
   {
     name: "Ceviche",
     type: "Costa Rican flavor experience",
+    icon: "restaurant",
     image: { small: cevicheImageSmall, large: cevicheImageLarge },
   },
   {
     name: "Cocktail Course",
     type: "Mixology experience",
+    icon: "local_bar",
     image: { small: cocktailImageSmall, large: cocktailImageLarge },
   },
   {
     name: "Coffee and National Drink Tasting",
     type: "Cultural tasting experience",
+    icon: "coffee",
     image: { small: coffeeTastingImageSmall, large: coffeeTastingImageLarge },
   },
   {
     name: "Dance Lessons",
     type: "Music and movement experience",
+    icon: "music_note",
     image: { small: danceLessonsImageSmall, large: danceLessonsImageLarge },
   },
   {
     name: "Morning Stretch",
     type: "Wellness experience",
+    icon: "self_improvement",
     image: { small: morningStretchImageSmall, large: morningStretchImageLarge },
   },
   {
     name: "Padel and Pickleball Courts",
     type: "Racket sports experience",
+    icon: "sports_tennis",
     image: { small: pickleballImageSmall, large: pickleballImageLarge },
   },
   {
     name: "Pool Volleyball",
     type: "Pool sports experience",
+    icon: "sports_volleyball",
     image: { small: poolVolleyballImageSmall, large: poolVolleyballImageLarge },
   },
   {
     name: "Tennis",
     type: "Racket sports experience",
+    icon: "sports_tennis",
     image: { small: tennisImageSmall, large: tennisImageLarge },
   },
   {
     name: "Tortillas Time",
     type: "Costa Rican food experience",
+    icon: "outdoor_grill",
     image: { small: tortillasImageSmall, large: tortillasImageLarge },
   },
   {
     name: "Yoga",
     type: "Wellness experience",
+    icon: "self_improvement",
     image: { small: yogaImageSmall, large: yogaImageLarge },
   },
 ] as const;
@@ -529,6 +553,12 @@ export function ExperiencesOverview() {
                   />
                 </div>
                 <div className="experiences-page__journey-copy">
+                  <p className="experiences-page__journey-kicker">
+                    <span className="material-symbols-outlined" aria-hidden="true">
+                      {journey.icon}
+                    </span>
+                    {journey.kicker}
+                  </p>
                   <h3>{journey.name}</h3>
                   <p>{journey.summary}</p>
                   <span
@@ -632,7 +662,12 @@ export function ExperiencesOverview() {
                   />
                 </div>
                 <div className="experiences-page__activity-copy">
-                  <p>{activity.type}</p>
+                  <p>
+                    <span className="material-symbols-outlined" aria-hidden="true">
+                      {activity.icon}
+                    </span>
+                    {activity.type}
+                  </p>
                   <h3>{activity.name}</h3>
                 </div>
               </article>

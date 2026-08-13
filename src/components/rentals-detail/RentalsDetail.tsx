@@ -19,6 +19,8 @@ const rentals = [
   {
     id: "atv-jungle-tour",
     name: "ATV Jungle Tour",
+    icon: "directions_car",
+    kicker: "Jungle adventure",
     description:
       "Discover the Nicoya Peninsula in the most thrilling way! Ride through jungle trails, enjoy panoramic views, and spot monkeys, tropical birds, and the lush wildlife of Guanacaste.",
     details: [
@@ -38,6 +40,8 @@ const rentals = [
   {
     id: "fishing-trip",
     name: "Fishing Trip",
+    icon: "sailing",
+    kicker: "Out on the Pacific",
     description:
       "Head out aboard our fully equipped 23ft Angler boat for an unforgettable day at sea. Try your luck catching mahi-mahi, tuna, red snapper, and more.",
     details: [
@@ -63,6 +67,8 @@ const rentals = [
   {
     id: "bike-rental",
     name: "Bike Rental",
+    icon: "pedal_bike",
+    kicker: "Easygoing exploration",
     description:
       "Explore Sámara town and nearby Carrillo Beach at your own pace. Perfect for sightseeing, beach hopping, and enjoying the local vibe.",
     details: [
@@ -211,13 +217,28 @@ export function RentalsDetail() {
                 </figure>
 
                 <div className="rentals-page__folio-copy">
+                  <p className="rentals-page__folio-kicker">
+                    <span className="material-symbols-outlined" aria-hidden="true">
+                      {rental.icon}
+                    </span>
+                    {rental.kicker}
+                  </p>
                   <h2>{rental.name}</h2>
                   <p>{rental.description}</p>
 
                   <dl className="rentals-page__folio-details">
                     {rental.details.map((detail) => (
                       <div key={detail.label}>
-                        <dt>{detail.label}</dt>
+                        <dt>
+                          <span className="material-symbols-outlined" aria-hidden="true">
+                            {detail.label === "Includes"
+                              ? "checklist"
+                              : detail.label === "Departure"
+                                ? "schedule"
+                                : "payments"}
+                          </span>
+                          {detail.label}
+                        </dt>
                         <dd>
                           {detail.values.map((value) => (
                             <span key={value}>{value}</span>

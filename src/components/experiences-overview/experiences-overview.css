@@ -403,7 +403,26 @@
   text-wrap: balance;
 }
 
-.experiences-page__journey-copy > p {
+.experiences-page__journey-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  color: var(--color-lime);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.experiences-page__journey-kicker .material-symbols-outlined {
+  flex: 0 0 auto;
+  font-size: 23px;
+  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+}
+
+.experiences-page__journey-copy > p:not(.experiences-page__journey-kicker) {
   max-width: 48ch;
   margin: 28px 0 0;
   color: rgba(255, 255, 255, 0.86);
@@ -589,12 +608,20 @@
 }
 
 .experiences-page__activity-copy p {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   margin: 0;
   color: var(--color-brand-green-text);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.11em;
   text-transform: uppercase;
+}
+
+.experiences-page__activity-copy p .material-symbols-outlined {
+  font-size: 19px;
+  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 20;
 }
 
 .experiences-page__activity-copy h3 {

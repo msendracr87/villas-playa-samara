@@ -37,6 +37,8 @@ const dayTours = [
   {
     id: "sunset-ocean-tour",
     name: "Sunset Ocean Tour",
+    icon: "wb_twilight",
+    kicker: "Pacific sunset",
     description:
       "Sail along the coast of Sámara to spot dolphins and, during migration season, humpback whales. Afterwards, snorkel to discover vibrant underwater life.",
     departure: "3:30 p.m. · Subject to availability",
@@ -58,6 +60,8 @@ const dayTours = [
   {
     id: "carrillo-horseback-riding",
     name: "Carrillo Horseback Riding",
+    icon: "pets",
+    kicker: "Coastal horseback journey",
     description:
       "Ride along private trails overlooking Playa Carrillo. This scenic journey takes you to the highest viewpoints of Sámara, Carrillo, and Camaronal.",
     departure: "Subject to tide",
@@ -76,6 +80,8 @@ const dayTours = [
   {
     id: "sea-life-adventure-tour",
     name: "Sea Life Adventure Tour",
+    icon: "scuba_diving",
+    kicker: "Underwater encounters",
     description:
       "Meet dolphins, turtles, and colorful marine life while snorkeling in the warm Pacific waters. A perfect mix of adventure and relaxation.",
     departure: "Subject to tide",
@@ -97,6 +103,8 @@ const dayTours = [
   {
     id: "jungle-adrenaline-day-pass",
     name: "Costa Rican Jungle Adrenaline Day Pass",
+    icon: "vital_signs",
+    kicker: "A full day of adrenaline",
     description:
       "Experience pure adventure: river tubing, zip-lining through canyons, horseback riding to waterfalls, and a rejuvenating visit to mud baths and hot springs.",
     departure: "6:00 a.m.",
@@ -125,6 +133,8 @@ const dayTours = [
   {
     id: "palo-verde-boat-tour",
     name: "Palo Verde Boat Tour & Pottery Town",
+    icon: "directions_boat",
+    kicker: "River wildlife and culture",
     description:
       "Cruise the longest river in Costa Rica's Pacific northwest to spot monkeys, iguanas, crocodiles, and exotic birds. End the day in Guaitil, a pottery town with 800 years of history.",
     departure: "9:00 a.m.",
@@ -152,6 +162,8 @@ const dayTours = [
   {
     id: "costa-rican-safari",
     name: "Costa Rican Safari Adventure",
+    icon: "park",
+    kicker: "Wildlife and waterfalls",
     description:
       "A full day at Ponderosa Adventure Park with horseback riding, zip-lining, kayaking, and trails. Visit La Perla waterfall and encounter 22 animal species roaming in controlled freedom.",
     departure: "6:30 a.m.",
@@ -173,6 +185,8 @@ const dayTours = [
   {
     id: "monteverde-cloud-forest",
     name: "Monteverde Cloud Forest & Sky Adventures",
+    icon: "forest",
+    kicker: "Above the cloud forest",
     description:
       "Soar above the canopy with SkyTrek zip lines, ride the SkyTram gondola, and explore the SkyWalk hanging bridges. A perfect mix of thrills and nature in the magical cloud forest.",
     departure: "6:30 a.m.",
@@ -199,6 +213,8 @@ const dayTours = [
   {
     id: "arenal-volcano",
     name: "Arenal Volcano & Hot Springs",
+    icon: "volcano",
+    kicker: "Volcano country",
     description:
       "Visit Costa Rica's most iconic volcano. Choose one adventure: Sloths Reserve, SkyTrek Zipline, or Hanging Bridges. Relax afterwards in natural hot springs.",
     departure: "6:30 a.m.",
@@ -220,6 +236,8 @@ const dayTours = [
   {
     id: "coffee-tour",
     name: "Coffee Tour",
+    icon: "coffee",
+    kicker: "From plantation to cup",
     description:
       "Learn the story of Costa Rican coffee, from plantation to cup. Discover how coffee is cultivated and processed while enjoying a guided tasting with local snacks.",
     departure: "8:30 a.m. or 12:30 p.m.",
@@ -360,11 +378,22 @@ export function DayToursDetail() {
             {dayTours.map((tour) => (
               <li key={tour.id} data-experiences-motion="day-tours-index-item">
                 <a href={`#${tour.id}`}>
-                  <span>{tour.name}</span>
+                  <span className="day-tours-page__index-name">
+                    <span className="day-tours-page__index-kicker">
+                      <span className="material-symbols-outlined" aria-hidden="true">
+                        {tour.icon}
+                      </span>
+                      {tour.kicker}
+                    </span>
+                    <span>{tour.name}</span>
+                  </span>
                   <small>
                     {tour.departure} · {tour.price}
                   </small>
-                  <span className="material-symbols-outlined" aria-hidden="true">
+                  <span
+                    className="material-symbols-outlined day-tours-page__index-arrow"
+                    aria-hidden="true"
+                  >
                     south_east
                   </span>
                 </a>
@@ -406,13 +435,28 @@ export function DayToursDetail() {
                 </figure>
 
                 <div className="day-tours-page__chapter-copy">
+                  <p className="day-tours-page__chapter-kicker">
+                    <span className="material-symbols-outlined" aria-hidden="true">
+                      {tour.icon}
+                    </span>
+                    {tour.kicker}
+                  </p>
                   <h2>{tour.name}</h2>
                   <p>{tour.description}</p>
 
                   <dl className="day-tours-page__chapter-details">
                     {tour.details.map((detail) => (
                       <div key={detail.label}>
-                        <dt>{detail.label}</dt>
+                        <dt>
+                          <span className="material-symbols-outlined" aria-hidden="true">
+                            {detail.label === "Includes"
+                              ? "checklist"
+                              : detail.label === "Departure"
+                                ? "schedule"
+                                : "payments"}
+                          </span>
+                          {detail.label}
+                        </dt>
                         <dd>
                           {detail.values.map((value) => (
                             <span key={value}>{value}</span>
