@@ -70,17 +70,12 @@ export function WellnessOverview() {
               ))}
             </ul>
 
-            <span
-              className="text-link"
-              role="link"
-              aria-disabled="true"
-              title="Wellness page is not available yet"
-            >
+            <a className="text-link" href="/wellness">
               Explore current wellness
               <span className="material-symbols-outlined" aria-hidden="true">
                 arrow_forward
               </span>
-            </span>
+            </a>
           </article>
 
           <article

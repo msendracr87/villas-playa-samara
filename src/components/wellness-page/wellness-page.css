@@ -1,0 +1,831 @@
+.wellness-page {
+  color: var(--color-ink);
+  background: var(--color-sand-50);
+}
+
+.wellness-page__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wellness-page__hero {
+  position: relative;
+  display: grid;
+  min-height: min(940px, 100svh);
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  overflow: hidden;
+  color: #fff;
+  background: var(--color-forest-950);
+}
+
+.wellness-page__hero-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(250px, 25vh, 320px) clamp(32px, 6vw, 104px) clamp(130px, 14vh, 178px);
+}
+
+.wellness-page__hero h1,
+.wellness-page__gym h2,
+.wellness-page__yoga h2,
+.wellness-page__morpho h2,
+.wellness-page__future h2,
+.wellness-page__closing h2 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.wellness-page__hero h1 {
+  max-width: 8ch;
+  font-size: clamp(3.5rem, 6.4vw, 6rem);
+  line-height: 0.92;
+}
+
+.wellness-page__hero h1 span {
+  display: inline-block;
+  color: var(--color-lime);
+  font-family: "Birthstone", cursive;
+  font-size: 1.65em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.68;
+  transform: translateY(-0.02em);
+}
+
+.wellness-page__hero-copy > p {
+  max-width: 43ch;
+  margin: 30px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.wellness-page__hero-copy > a {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-property: opacity, transform;
+  transition-duration: 180ms;
+}
+
+.wellness-page__hero-copy > a:hover,
+.wellness-page__hero-copy > a:focus-visible {
+  opacity: 0.76;
+}
+
+.wellness-page__hero-copy > a:active {
+  transform: scale(0.96);
+}
+
+.wellness-page__hero-copy .material-symbols-outlined {
+  font-size: 19px;
+}
+
+.wellness-page__hero-media {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.wellness-page__hero-media::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 12, 8, 0.36), transparent 38%),
+    linear-gradient(90deg, rgba(16, 26, 20, 0.3), transparent 38%);
+  content: "";
+  pointer-events: none;
+}
+
+.wellness-page__hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: -1px;
+}
+
+.wellness-page__path {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(8, 14, 10, 0.46);
+}
+
+.wellness-page__path a {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  min-height: 112px;
+  align-content: center;
+  align-items: center;
+  gap: 14px;
+  padding-inline: clamp(20px, 5vw, 80px);
+  color: #fff;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 180ms;
+}
+
+.wellness-page__path a:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.wellness-page__path a:hover,
+.wellness-page__path a:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.wellness-page__path-icon.material-symbols-outlined {
+  color: var(--color-lime);
+  font-size: 23px;
+  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+}
+
+.wellness-page__path-copy {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.wellness-page__path strong {
+  color: var(--color-lime);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.wellness-page__path-copy > span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.9rem;
+}
+
+.wellness-page__gym,
+.wellness-page__yoga,
+.wellness-page__morpho,
+.wellness-page__future {
+  scroll-margin-top: 24px;
+}
+
+.wellness-page__gym {
+  padding-block: var(--section-space);
+  background: var(--color-sand-50);
+}
+
+.wellness-page__gym-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.64fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(54px, 9vw, 140px);
+}
+
+.wellness-page__availability {
+  margin-bottom: 22px;
+}
+
+.wellness-page__availability > .material-symbols-outlined,
+.wellness-page__future-kicker > .material-symbols-outlined {
+  flex: 0 0 auto;
+  font-size: 23px;
+  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+}
+
+.wellness-page__gym h2,
+.wellness-page__morpho h2 {
+  font-size: clamp(2.9rem, 5.2vw, 5.4rem);
+  line-height: 0.96;
+}
+
+.wellness-page__gym h2 {
+  max-width: 10ch;
+}
+
+.wellness-page__gym-copy > p,
+.wellness-page__morpho-copy > p,
+.wellness-page__future-copy > p,
+.wellness-page__closing p {
+  color: var(--color-muted);
+  font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.wellness-page__gym-copy > p {
+  max-width: 48ch;
+  margin: 26px 0 0;
+}
+
+.wellness-page__gym-copy .button-link {
+  margin-top: 34px;
+}
+
+.wellness-page__gym figure,
+.wellness-page__yoga figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.wellness-page__gym figure img {
+  width: 100%;
+  min-height: 680px;
+  object-fit: cover;
+  object-position: center;
+  outline: 1px solid rgba(16, 26, 20, 0.1);
+  outline-offset: -1px;
+}
+
+.wellness-page__yoga {
+  padding-block: clamp(96px, 11vw, 176px);
+  color: #fff;
+  background: var(--color-forest-900);
+}
+
+.wellness-page__yoga-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  align-items: end;
+  gap: 36px clamp(60px, 10vw, 152px);
+}
+
+.wellness-page__yoga h2 {
+  max-width: 11ch;
+  font-size: clamp(3rem, 5.5vw, 5.8rem);
+  line-height: 0.95;
+}
+
+.wellness-page__yoga-heading > p {
+  max-width: 51ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.wellness-page__yoga-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 0.72fr);
+  align-items: stretch;
+  gap: clamp(48px, 8vw, 124px);
+  margin-top: clamp(64px, 8vw, 112px);
+}
+
+.wellness-page__yoga figure img {
+  width: 100%;
+  height: 100%;
+  min-height: 900px;
+  object-fit: cover;
+  object-position: center;
+  outline: 1px solid rgba(255, 255, 255, 0.12);
+  outline-offset: -1px;
+}
+
+.wellness-page__yoga-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wellness-page__schedule,
+.wellness-page__locations,
+.wellness-page__private-yoga {
+  padding-block: clamp(30px, 3vw, 42px);
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.wellness-page__private-yoga {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.wellness-page__schedule > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.wellness-page__schedule h3,
+.wellness-page__locations h3,
+.wellness-page__private-yoga h3 {
+  margin: 0;
+  color: var(--color-lime);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.wellness-page__schedule h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wellness-page__schedule h3 > .material-symbols-outlined {
+  flex: 0 0 auto;
+  font-size: 23px;
+  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+}
+
+.wellness-page__schedule > div p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.74rem;
+}
+
+.wellness-page__schedule table {
+  width: 100%;
+  margin-top: 22px;
+  border-collapse: collapse;
+}
+
+.wellness-page__schedule tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.wellness-page__schedule th,
+.wellness-page__schedule td {
+  height: 62px;
+  padding: 0;
+  font-size: 0.86rem;
+}
+
+.wellness-page__schedule th {
+  color: rgba(255, 255, 255, 0.66);
+  font-weight: 400;
+  text-align: left;
+}
+
+.wellness-page__schedule td {
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.wellness-page__locations ul,
+.wellness-page__future-copy ul,
+.wellness-page__treatments ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wellness-page__locations ul {
+  margin-top: 22px;
+}
+
+.wellness-page__locations li {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 18px;
+  padding-block: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.wellness-page__locations strong {
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.wellness-page__locations li span {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.wellness-page__private-yoga > p {
+  max-width: 54ch;
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+.wellness-page__private-yoga > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin-top: 18px;
+}
+
+.wellness-page__private-yoga a {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+
+.wellness-page__private-yoga a > .material-symbols-outlined {
+  color: var(--color-lime);
+  font-size: 20px;
+  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+}
+
+.wellness-page__morpho {
+  padding-block: var(--section-space);
+  background: #fff;
+}
+
+.wellness-page__morpho-layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.8fr) minmax(0, 1.2fr);
+  align-items: stretch;
+  gap: clamp(52px, 8vw, 124px);
+}
+
+.wellness-page__morpho figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.wellness-page__morpho figure img {
+  width: 100%;
+  height: 100%;
+  min-height: 820px;
+  object-fit: cover;
+  object-position: center;
+  outline: 1px solid rgba(16, 26, 20, 0.1);
+  outline-offset: -1px;
+}
+
+.wellness-page__morpho-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wellness-page__morpho h2 {
+  max-width: 11ch;
+}
+
+.wellness-page__morpho-logo {
+  width: clamp(148px, 15vw, 220px);
+  height: auto;
+  margin-bottom: clamp(30px, 4vw, 48px);
+}
+
+.wellness-page__morpho-copy > p {
+  max-width: 57ch;
+  margin: 26px 0 0;
+}
+
+.wellness-page__morpho-copy .text-link {
+  margin-top: 32px;
+}
+
+.wellness-page__treatments {
+  margin-top: clamp(38px, 5vw, 64px);
+}
+
+.wellness-page__treatments > p {
+  margin: 0 0 16px;
+  color: var(--color-brand-green-text);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.wellness-page__treatments li {
+  padding-block: 17px;
+  border-top: 1px solid var(--color-sand-200);
+  color: var(--color-ink);
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.wellness-page__treatments li:last-child {
+  border-bottom: 1px solid var(--color-sand-200);
+}
+
+.wellness-page__future {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(420px, 0.94fr);
+  color: #fff;
+  background: var(--color-forest-950);
+}
+
+.wellness-page__future-media {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.wellness-page__future-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 900px;
+  object-fit: cover;
+  object-position: center;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: -1px;
+}
+
+.wellness-page__future-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(88px, 10vw, 160px) clamp(40px, 7vw, 112px);
+}
+
+.wellness-page__future-kicker {
+  margin-bottom: 22px;
+  color: var(--color-lime);
+}
+
+.wellness-page__future h2 {
+  max-width: 11ch;
+  font-size: clamp(3rem, 5vw, 5.4rem);
+  line-height: 0.95;
+}
+
+.wellness-page__future-copy > p {
+  max-width: 52ch;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.wellness-page__future-copy ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 38px;
+}
+
+.wellness-page__future-copy li {
+  min-height: 68px;
+  padding: 18px 18px 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.wellness-page__future-copy li:nth-child(even) {
+  padding-left: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wellness-page__future-copy small {
+  display: block;
+  max-width: 66ch;
+  margin-top: 34px;
+  color: var(--color-lime);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.65;
+  text-transform: uppercase;
+}
+
+.wellness-page__closing {
+  padding-block: var(--section-space);
+  background: var(--color-sand-100);
+  text-align: center;
+}
+
+.wellness-page__closing .content-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wellness-page__closing h2 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 5.8vw, 6rem);
+  line-height: 0.94;
+}
+
+.wellness-page__closing p {
+  max-width: 62ch;
+  margin: 30px 0 0;
+}
+
+.wellness-page__closing .content-wrap > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 32px;
+  margin-top: 38px;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="hero"] .wellness-page__hero-media img,
+.wellness-motion-ready .wellness-page [data-wellness-motion="media-left"] img,
+.wellness-motion-ready .wellness-page [data-wellness-motion="media-right"] img {
+  clip-path: inset(0);
+  transform: scale(1);
+  transition:
+    clip-path 950ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="hero"] .wellness-page__hero-copy > *,
+.wellness-motion-ready .wellness-page [data-wellness-motion="reveal"] > *,
+.wellness-motion-ready .wellness-page [data-wellness-motion="schedule-row"],
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 560ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 760ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="hero"]:not(.is-motion-visible) .wellness-page__hero-media img {
+  clip-path: inset(0 0 0 12%);
+  transform: scale(1.05);
+  will-change: clip-path, transform;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="media-left"]:not(.is-motion-visible) img {
+  clip-path: inset(0 100% 0 0);
+  transform: scale(1.03);
+  will-change: clip-path, transform;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="media-right"]:not(.is-motion-visible) img {
+  clip-path: inset(0 0 0 100%);
+  transform: scale(1.03);
+  will-change: clip-path, transform;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="hero"]:not(.is-motion-visible) .wellness-page__hero-copy > *,
+.wellness-motion-ready .wellness-page [data-wellness-motion="reveal"]:not(.is-motion-visible) > *,
+.wellness-motion-ready .wellness-page [data-wellness-motion="schedule-row"]:not(.is-motion-visible),
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:not(.is-motion-visible) {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  will-change: opacity, transform;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="schedule-row"]:nth-child(2),
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:nth-child(2),
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:nth-child(6) {
+  transition-delay: 80ms;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="schedule-row"]:nth-child(3),
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:nth-child(3),
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:nth-child(7) {
+  transition-delay: 150ms;
+}
+
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:nth-child(4),
+.wellness-motion-ready .wellness-page [data-wellness-motion="future-row"]:nth-child(8) {
+  transition-delay: 210ms;
+}
+
+@media (max-width: 1080px) {
+  .wellness-page__hero-copy {
+    padding-inline: var(--page-gutter);
+  }
+
+  .wellness-page__gym-layout,
+  .wellness-page__yoga-heading,
+  .wellness-page__yoga-layout,
+  .wellness-page__morpho-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .wellness-page__gym-copy,
+  .wellness-page__morpho-copy,
+  .wellness-page__yoga-heading > p {
+    max-width: 720px;
+  }
+
+  .wellness-page__gym figure img,
+  .wellness-page__yoga figure img,
+  .wellness-page__morpho figure img {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .wellness-page__yoga-heading > p {
+    margin-top: 0;
+  }
+
+  .wellness-page__future {
+    grid-template-columns: 1fr;
+  }
+
+  .wellness-page__future-media img {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 800px) {
+  .wellness-page__hero {
+    min-height: 1040px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(360px, 1fr) auto;
+  }
+
+  .wellness-page__hero-copy {
+    padding: 236px var(--page-gutter) 72px;
+  }
+
+  .wellness-page__hero h1 {
+    font-size: clamp(3.2rem, 15vw, 5rem);
+  }
+
+  .wellness-page__hero-media {
+    grid-row: 2;
+  }
+
+  .wellness-page__hero-media::after {
+    background: linear-gradient(180deg, rgba(16, 26, 20, 0.18), transparent 38%);
+  }
+
+  .wellness-page__path {
+    position: static;
+    grid-row: 3;
+  }
+
+  .wellness-page__path a {
+    min-height: 96px;
+    padding-inline: 18px;
+  }
+
+  .wellness-page__path-copy > span {
+    font-size: 0.76rem;
+  }
+
+  .wellness-page__future-copy ul {
+    grid-template-columns: 1fr;
+  }
+
+  .wellness-page__future-copy li:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .wellness-page__path {
+    grid-template-columns: 1fr;
+  }
+
+  .wellness-page__path a {
+    min-height: 78px;
+  }
+
+  .wellness-page__path a:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+    border-left: 0;
+  }
+
+  .wellness-page__schedule > div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .wellness-page__locations li {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .wellness-page__private-yoga > div,
+  .wellness-page__closing .content-wrap > div {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wellness-page__future-copy {
+    padding-inline: var(--page-gutter);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wellness-page__hero-copy > a,
+  .wellness-motion-ready .wellness-page [data-wellness-motion] {
+    transition-duration: 0.01ms;
+  }
+}

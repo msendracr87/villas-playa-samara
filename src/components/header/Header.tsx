@@ -7,31 +7,51 @@ const navItems = [
   { label: "Rooms & Villas", href: "/rooms-and-villas" },
   { label: "Dining", href: "/dining" },
   { label: "Experiences", href: "/experiences" },
-  { label: "Wellness", href: "/#wellness" },
-  { label: "Gallery", href: "/#gallery" },
+] as const;
+
+const wellnessItems = [
+  { label: "Overview", href: "/wellness" },
+  { label: "Gym", href: "/wellness/gym" },
+  { label: "Spa", href: null },
 ] as const;
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isWellnessOpen, setIsWellnessOpen] = useState(false);
   const menuId = useId();
+  const wellnessMenuId = useId();
   const currentPath = window.location.pathname;
 
   useEffect(() => {
-    if (!isMenuOpen) {
+    if (!isMenuOpen && !isWellnessOpen) {
       return;
     }
 
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setIsMenuOpen(false);
+        setIsWellnessOpen(false);
       }
     };
 
     document.addEventListener("keydown", closeOnEscape);
     return () => document.removeEventListener("keydown", closeOnEscape);
-  }, [isMenuOpen]);
+  }, [isMenuOpen, isWellnessOpen]);
 
-  const closeMenu = () => setIsMenuOpen(false);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setIsWellnessOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen((current) => {
+      if (current) {
+        setIsWellnessOpen(false);
+      }
+
+      return !current;
+    });
+  };
 
   return (
     <header className="site-header">
@@ -55,7 +75,7 @@ export function Header() {
             aria-label={isMenuOpen ? "Close navigation" : "Open navigation"}
             aria-controls={menuId}
             aria-expanded={isMenuOpen}
-            onClick={() => setIsMenuOpen((current) => !current)}
+            onClick={toggleMenu}
           >
             <span className="site-header__menu-icons" aria-hidden="true">
               <span
@@ -106,6 +126,65 @@ export function Header() {
                 {item.label}
               </a>
             ))}
+
+            <div className="site-header__wellness-menu">
+              <button
+                className="site-header__wellness-trigger"
+                type="button"
+                aria-controls={wellnessMenuId}
+                aria-expanded={isWellnessOpen}
+                aria-haspopup="true"
+                aria-current={
+                  currentPath.startsWith("/wellness") ? "page" : undefined
+                }
+                onClick={() => setIsWellnessOpen((current) => !current)}
+              >
+                <span>Wellness</span>
+                <span
+                  className={`material-symbols-outlined site-header__wellness-chevron ${isWellnessOpen ? "is-open" : ""}`}
+                  aria-hidden="true"
+                >
+                  expand_more
+                </span>
+              </button>
+
+              {isWellnessOpen && (
+                <div
+                  className="site-header__wellness-dropdown"
+                  id={wellnessMenuId}
+                  aria-label="Wellness sections"
+                >
+                  {wellnessItems.map((item) => (
+                    item.href ? (
+                      <a
+                        className="site-header__wellness-option"
+                        href={item.href}
+                        key={item.label}
+                        onClick={closeMenu}
+                        aria-current={
+                          currentPath === item.href ? "page" : undefined
+                        }
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <button
+                        className="site-header__wellness-option"
+                        key={item.label}
+                        type="button"
+                        disabled
+                      >
+                        {item.label}
+                      </button>
+                    )
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <a href="/#gallery" onClick={closeMenu}>
+              Gallery
+            </a>
           </nav>
 
           <a className="site-header__book" href="/#book" onClick={closeMenu}>

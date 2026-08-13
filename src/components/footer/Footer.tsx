@@ -8,7 +8,7 @@ const footerLinks = [
   { label: "Rooms & Villas", href: "/rooms-and-villas" },
   { label: "Dining", href: "/dining" },
   { label: "Experiences", href: "/experiences" },
-  { label: "Wellness", href: "/#wellness" },
+  { label: "Wellness", href: "/wellness" },
   { label: "Gallery", href: "/#gallery" },
 ] as const;
 
