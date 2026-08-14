@@ -109,9 +109,7 @@
 .wellness-page__hero-media::after {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(7, 12, 8, 0.36), transparent 38%),
-    linear-gradient(90deg, rgba(16, 26, 20, 0.3), transparent 38%);
+  background: linear-gradient(180deg, rgba(7, 12, 8, 0.36), transparent 38%), linear-gradient(90deg, rgba(16, 26, 20, 0.3), transparent 38%);
   content: "";
   pointer-events: none;
 }
@@ -162,7 +160,11 @@
 .wellness-page__path-icon.material-symbols-outlined {
   color: var(--color-lime);
   font-size: 23px;
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 350,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .wellness-page__path-copy {
@@ -211,7 +213,11 @@
 .wellness-page__future-kicker > .material-symbols-outlined {
   flex: 0 0 auto;
   font-size: 23px;
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 350,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .wellness-page__gym h2,
@@ -347,7 +353,11 @@
 .wellness-page__schedule h3 > .material-symbols-outlined {
   flex: 0 0 auto;
   font-size: 23px;
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 350,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .wellness-page__schedule > div p {
@@ -446,7 +456,11 @@
 .wellness-page__private-yoga a > .material-symbols-outlined {
   color: var(--color-lime);
   font-size: 20px;
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 350,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .wellness-page__morpho {

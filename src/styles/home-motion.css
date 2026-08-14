@@ -22,8 +22,7 @@
     transform 720ms var(--motion-ease-out) var(--motion-delay);
 }
 
-.home-motion-ready
-  [data-home-motion="copy"]:not(.is-motion-visible) {
+.home-motion-ready [data-home-motion="copy"]:not(.is-motion-visible) {
   opacity: 0;
   transform: translate3d(0, 22px, 0);
   will-change: opacity, transform;
@@ -33,9 +32,7 @@
   transform: none;
 }
 
-.home-motion-ready
-  [data-home-motion="media"]
-  .home-intro__aerial-image {
+.home-motion-ready [data-home-motion="media"] .home-intro__aerial-image {
   opacity: 1;
   transform: scale(1);
   transition:
@@ -43,20 +40,14 @@
     transform 900ms var(--motion-ease-out);
 }
 
-.home-motion-ready
-  [data-home-motion="media"]:not(.is-motion-visible)
-  .home-intro__aerial-image {
+.home-motion-ready [data-home-motion="media"]:not(.is-motion-visible) .home-intro__aerial-image {
   opacity: 0;
   transform: scale(1.035);
   will-change: opacity, transform;
 }
 
-.home-motion-ready
-  [data-home-motion="wide-media"]
-  .accommodations-showcase__media,
-.home-motion-ready
-  [data-home-motion="wide-media"]
-  .accommodations-showcase__selector {
+.home-motion-ready [data-home-motion="wide-media"] .accommodations-showcase__media,
+.home-motion-ready [data-home-motion="wide-media"] .accommodations-showcase__selector {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition:
@@ -64,25 +55,19 @@
     transform 780ms var(--motion-ease-out);
 }
 
-.home-motion-ready
-  [data-home-motion="wide-media"]:not(.is-motion-visible)
-  .accommodations-showcase__media {
+.home-motion-ready [data-home-motion="wide-media"]:not(.is-motion-visible) .accommodations-showcase__media {
   opacity: 0;
   transform: translate3d(-28px, 0, 0);
   will-change: opacity, transform;
 }
 
-.home-motion-ready
-  [data-home-motion="wide-media"]:not(.is-motion-visible)
-  .accommodations-showcase__selector {
+.home-motion-ready [data-home-motion="wide-media"]:not(.is-motion-visible) .accommodations-showcase__selector {
   opacity: 0;
   transform: translate3d(28px, 0, 0);
   will-change: opacity, transform;
 }
 
-.home-motion-ready
-  [data-home-motion="carousel"]
-  .dining-showcase__viewport {
+.home-motion-ready [data-home-motion="carousel"] .dining-showcase__viewport {
   opacity: 1;
   transition:
     opacity 540ms var(--motion-ease-out),
@@ -90,17 +75,13 @@
   transform: translate3d(0, 0, 0);
 }
 
-.home-motion-ready
-  [data-home-motion="carousel"]:not(.is-motion-visible)
-  .dining-showcase__viewport {
+.home-motion-ready [data-home-motion="carousel"]:not(.is-motion-visible) .dining-showcase__viewport {
   opacity: 0;
   transform: translate3d(0, 24px, 0);
   will-change: opacity, transform;
 }
 
-.home-motion-ready
-  [data-home-motion="discoveries"]
-  .experiences-showcase__column {
+.home-motion-ready [data-home-motion="discoveries"] .experiences-showcase__column {
   clip-path: inset(0);
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -110,21 +91,15 @@
     transform 780ms var(--motion-ease-out);
 }
 
-.home-motion-ready
-  [data-home-motion="discoveries"]
-  .experiences-showcase__column:nth-child(2) {
+.home-motion-ready [data-home-motion="discoveries"] .experiences-showcase__column:nth-child(2) {
   transition-delay: 100ms;
 }
 
-.home-motion-ready
-  [data-home-motion="discoveries"]
-  .experiences-showcase__column:nth-child(3) {
+.home-motion-ready [data-home-motion="discoveries"] .experiences-showcase__column:nth-child(3) {
   transition-delay: 190ms;
 }
 
-.home-motion-ready
-  [data-home-motion="discoveries"]:not(.is-motion-visible)
-  .experiences-showcase__column {
+.home-motion-ready [data-home-motion="discoveries"]:not(.is-motion-visible) .experiences-showcase__column {
   clip-path: inset(0 0 14% 0);
   opacity: 0;
   transform: translate3d(0, 34px, 0);
@@ -141,32 +116,22 @@
     transform 760ms var(--motion-ease-out) var(--motion-delay);
 }
 
-.home-motion-ready
-  [data-home-motion="wellness-panel"]:not(.is-motion-visible) {
+.home-motion-ready [data-home-motion="wellness-panel"]:not(.is-motion-visible) {
   opacity: 0;
   will-change: clip-path, opacity, transform;
 }
 
-.home-motion-ready
-  .wellness-overview__current[data-home-motion="wellness-panel"]:not(
-    .is-motion-visible
-  ) {
+.home-motion-ready .wellness-overview__current[data-home-motion="wellness-panel"]:not(.is-motion-visible) {
   clip-path: inset(0 8% 0 0);
   transform: translate3d(-28px, 0, 0);
 }
 
-.home-motion-ready
-  .wellness-overview__future[data-home-motion="wellness-panel"]:not(
-    .is-motion-visible
-  ) {
+.home-motion-ready .wellness-overview__future[data-home-motion="wellness-panel"]:not(.is-motion-visible) {
   clip-path: inset(0 0 0 8%);
   transform: translate3d(28px, 0, 0);
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]
-  .gallery-preview__grid
-  figure {
+.home-motion-ready [data-home-motion="gallery"] .gallery-preview__grid figure {
   clip-path: inset(0);
   opacity: 1;
   transform: scale(1);
@@ -176,48 +141,30 @@
     transform 760ms var(--motion-ease-out);
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]
-  .gallery-preview__grid
-  figure:nth-child(2) {
+.home-motion-ready [data-home-motion="gallery"] .gallery-preview__grid figure:nth-child(2) {
   transition-delay: 80ms;
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]
-  .gallery-preview__grid
-  figure:nth-child(3) {
+.home-motion-ready [data-home-motion="gallery"] .gallery-preview__grid figure:nth-child(3) {
   transition-delay: 140ms;
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]
-  .gallery-preview__grid
-  figure:nth-child(4) {
+.home-motion-ready [data-home-motion="gallery"] .gallery-preview__grid figure:nth-child(4) {
   transition-delay: 190ms;
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]
-  .gallery-preview__grid
-  figure:nth-child(5) {
+.home-motion-ready [data-home-motion="gallery"] .gallery-preview__grid figure:nth-child(5) {
   transition-delay: 240ms;
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]:not(.is-motion-visible)
-  .gallery-preview__grid
-  figure {
+.home-motion-ready [data-home-motion="gallery"]:not(.is-motion-visible) .gallery-preview__grid figure {
   clip-path: inset(0 0 100% 0);
   opacity: 0.35;
   transform: scale(0.985);
   will-change: clip-path, opacity, transform;
 }
 
-.home-motion-ready
-  [data-home-motion="gallery"]:not(.is-motion-visible)
-  .gallery-preview__grid
-  figure:nth-child(even) {
+.home-motion-ready [data-home-motion="gallery"]:not(.is-motion-visible) .gallery-preview__grid figure:nth-child(even) {
   clip-path: inset(0 100% 0 0);
 }
 
@@ -226,9 +173,7 @@
   transition: transform 1100ms var(--motion-ease-out);
 }
 
-.home-motion-ready
-  [data-home-motion="booking"]
-  .booking-call-to-action__content {
+.home-motion-ready [data-home-motion="booking"] .booking-call-to-action__content {
   clip-path: inset(0);
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -238,25 +183,19 @@
     transform 800ms var(--motion-ease-out) 100ms;
 }
 
-.home-motion-ready
-  [data-home-motion="booking"]:not(.is-motion-visible)
-  > img {
+.home-motion-ready [data-home-motion="booking"]:not(.is-motion-visible) > img {
   transform: scale(1.06);
   will-change: transform;
 }
 
-.home-motion-ready
-  [data-home-motion="booking"]:not(.is-motion-visible)
-  .booking-call-to-action__content {
+.home-motion-ready [data-home-motion="booking"]:not(.is-motion-visible) .booking-call-to-action__content {
   clip-path: inset(0 0 32% 0);
   opacity: 0;
   transform: translate3d(0, 28px, 0);
   will-change: clip-path, opacity, transform;
 }
 
-.home-motion-ready
-  [data-home-motion="footer"]
-  > * {
+.home-motion-ready [data-home-motion="footer"] > * {
   clip-path: inset(0);
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -266,21 +205,15 @@
     transform 680ms var(--motion-ease-out);
 }
 
-.home-motion-ready
-  [data-home-motion="footer"]
-  > :nth-child(2) {
+.home-motion-ready [data-home-motion="footer"] > :nth-child(2) {
   transition-delay: 90ms;
 }
 
-.home-motion-ready
-  [data-home-motion="footer"]
-  > :nth-child(3) {
+.home-motion-ready [data-home-motion="footer"] > :nth-child(3) {
   transition-delay: 170ms;
 }
 
-.home-motion-ready
-  [data-home-motion="footer"]:not(.is-motion-visible)
-  > * {
+.home-motion-ready [data-home-motion="footer"]:not(.is-motion-visible) > * {
   clip-path: inset(0 0 20% 0);
   opacity: 0;
   transform: translate3d(0, 22px, 0);
@@ -288,9 +221,7 @@
 }
 
 @media (max-width: 680px) {
-  .home-motion-ready
-    [data-home-motion="discoveries"]
-    .experiences-showcase__column {
+  .home-motion-ready [data-home-motion="discoveries"] .experiences-showcase__column {
     transition-delay: 0ms;
   }
 }

@@ -62,8 +62,7 @@
 }
 
 .text-link:not([aria-disabled="true"]):hover .material-symbols-outlined,
-.text-link:not([aria-disabled="true"]):focus-visible
-  .material-symbols-outlined {
+.text-link:not([aria-disabled="true"]):focus-visible .material-symbols-outlined {
   transform: translateX(4px);
 }
 

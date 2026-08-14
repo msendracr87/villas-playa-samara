@@ -12,6 +12,8 @@ Do not replace a pending item with an assumption. When an item is resolved, upda
 - [x] Publish and verify the Netlify owner-review environment at `https://villasplayasamara.netlify.app/`.
 - [x] Build the Rooms & Villas overview and eight reusable accommodation-detail routes for owner review.
 - [x] Build the Dining overview, four dedicated resort-venue pages, separate Nikoa presentation, and Markdown-driven digital and printable concept menus for owner review.
+- [x] Build the Experiences overview and dedicated Rentals, Day Tours, and Activities routes for owner review.
+- [x] Build the Wellness overview and dedicated GYM route for owner review, with future retreat facilities clearly labeled as under development.
 - [ ] Present the homepage to the owners and record their final content, image, and positioning feedback.
 
 See the [homepage development record](docs/progress/2026-07-30-homepage-development.md), [repository and deployment record](docs/progress/2026-07-30-repository-and-netlify-deployment.md), and [Netlify deployment reference](docs/deployment/netlify.md). The homepage is ready for presentation, not public launch; the unchecked requirements below remain pending.

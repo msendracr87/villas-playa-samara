@@ -27,6 +27,18 @@ The project is currently an owner-review presentation, not a publication-ready w
 - US Letter print presentations generated from the same Markdown sources as the digital menus.
 - Restaurant names, logos, menu selections, hours, policies, and operating details remain concept or unapproved content until confirmed.
 
+### Experiences
+
+- Complete Experiences overview with dedicated Rentals, Day Tours, and Activities routes.
+- Includes responsive imagery, internal navigation, published owner-directed prices and departure details where documented, and offering-specific inquiry flows.
+- Mini-Golf content, final schedules, operational details, and inquiry destinations remain pending.
+
+### Wellness
+
+- Complete Wellness overview and dedicated GYM route.
+- Clearly separates the currently available GYM, yoga, and Morpho treatments from the expanded retreat facilities under development.
+- The dedicated Morpho treatment presentation, final schedules, booking process, operational details, and Guest Services destinations remain pending.
+
 ### Design system
 
 - Responsive React component system with square interface geometry.
@@ -89,6 +101,22 @@ Preview the production build locally:
 npm run preview
 ```
 
+## Continue development on another computer
+
+Clone the latest `main` branch and recreate the local dependencies from the lockfile:
+
+```sh
+git clone https://github.com/msendracr87/villas-playa-samara.git
+cd villas-playa-samara
+npm ci
+npm run build
+npm run dev
+```
+
+No committed build output or local dependency directory is required: `dist/` and `node_modules/` are generated locally. No application environment variables are currently referenced by the source code.
+
+Before making changes, read [AGENTS.md](AGENTS.md), the [current development handoff](docs/progress/2026-08-14-current-development-handoff.md), and [TO-DO.md](TO-DO.md). Use `docs/copy/` as the canonical content source and treat the latest `origin/main` commit as the resume point. A fresh clone should show a clean `git status` after installation and build.
+
 ## Repository structure
 
 - `src/components/` — reusable page and interface components.
@@ -105,4 +133,4 @@ npm run preview
 
 Content is classified as `approved`, `draft`, `mockup-only`, or `future`. Dining menus remain mockup-only unless the project owner explicitly changes their status. Arrecife, Baja Azul, Trattoria, and Veranda are concept names and logos for review and may change before final approval.
 
-For the latest implementation history, see [Project progress](docs/progress/README.md).
+For the latest implementation history and current handoff, see [Project progress](docs/progress/README.md).

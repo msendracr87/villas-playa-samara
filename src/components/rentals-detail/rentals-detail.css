@@ -66,7 +66,11 @@
 .rentals-page__folio-kicker > .material-symbols-outlined {
   flex: 0 0 auto;
   font-size: 23px;
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 350,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .rentals-page__hero h1 {
@@ -296,8 +300,7 @@
   line-height: 0.96;
 }
 
-.rentals-page__folio-copy
-  > p:not(.rentals-page__folio-note, .rentals-page__folio-kicker) {
+.rentals-page__folio-copy > p:not(.rentals-page__folio-note, .rentals-page__folio-kicker) {
   max-width: 52ch;
   margin: 28px 0 0;
   color: rgba(255, 255, 255, 0.82);
@@ -335,7 +338,11 @@
 
 .rentals-page__folio-details dt .material-symbols-outlined {
   font-size: 17px;
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 18;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 350,
+    "GRAD" 0,
+    "opsz" 18;
 }
 
 .rentals-page__folio-details dd {
@@ -531,7 +538,6 @@
     grid-column: 1;
     padding: 0 clamp(18px, 4vw, 48px) clamp(18px, 3vw, 36px);
   }
-
 }
 
 @media (max-width: 760px) {
