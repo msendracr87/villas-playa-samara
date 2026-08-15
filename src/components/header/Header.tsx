@@ -12,7 +12,7 @@ const navItems = [
 const wellnessItems = [
   { label: "Overview", href: "/wellness" },
   { label: "Gym", href: "/wellness/gym" },
-  { label: "Spa", href: null },
+  { label: "Spa", href: "/wellness/spa" },
 ] as const;
 
 export function Header() {
@@ -155,28 +155,17 @@ export function Header() {
                   aria-label="Wellness sections"
                 >
                   {wellnessItems.map((item) => (
-                    item.href ? (
-                      <a
-                        className="site-header__wellness-option"
-                        href={item.href}
-                        key={item.label}
-                        onClick={closeMenu}
-                        aria-current={
-                          currentPath === item.href ? "page" : undefined
-                        }
-                      >
-                        {item.label}
-                      </a>
-                    ) : (
-                      <button
-                        className="site-header__wellness-option"
-                        key={item.label}
-                        type="button"
-                        disabled
-                      >
-                        {item.label}
-                      </button>
-                    )
+                    <a
+                      className="site-header__wellness-option"
+                      href={item.href}
+                      key={item.label}
+                      onClick={closeMenu}
+                      aria-current={
+                        currentPath === item.href ? "page" : undefined
+                      }
+                    >
+                      {item.label}
+                    </a>
                   ))}
                 </div>
               )}

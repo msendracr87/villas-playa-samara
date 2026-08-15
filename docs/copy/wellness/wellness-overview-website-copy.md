@@ -92,7 +92,7 @@ Morpho’s current wellness offering creates space to pause, release tension, an
 
 Choose from massages, body treatments, facials, exfoliations, and wellness packages designed for different ways of unwinding. Contact Guest Services to review current availability and arrange an appointment.
 
-**Primary CTA:** [Explore Morpho Wellness Retreat](spa/morpho-wellness-retreat-future-development-website-copy-corrected.md)
+**Primary CTA:** [Explore Morpho Spa](spa/morpho-spa-current-services.md)
 
 **Secondary CTA:** [View Current Treatment Menu](spa/morpho-spa-menu.md)
 
@@ -123,7 +123,7 @@ The expanded experience is envisioned as a calm sequence of treatment, water, re
 
 > These additions are future experiences and are not yet available. Images are conceptual, and the design, services, policies, and opening information may evolve as development continues.
 
-**CTA:** [Discover the Future Morpho Experience](spa/morpho-wellness-retreat-future-development-website-copy-corrected.md)
+**CTA:** [Discover the Future Morpho Experience](spa/morpho-wellness-retreat-future-development.md)
 
 ---
 

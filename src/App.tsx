@@ -16,6 +16,7 @@ import { RentalsDetail } from "./components/rentals-detail/RentalsDetail";
 import { DayToursDetail } from "./components/day-tours-detail/DayToursDetail";
 import { ActivitiesDetail } from "./components/activities-detail/ActivitiesDetail";
 import { GymDetail } from "./components/gym-detail/GymDetail";
+import { SpaDetail } from "./components/spa-detail/SpaDetail";
 import { WellnessPage } from "./components/wellness-page/WellnessPage";
 import { WellnessOverview } from "./components/wellness-overview/WellnessOverview";
 import { GalleryPreview } from "./components/gallery-preview/GalleryPreview";
@@ -89,6 +90,10 @@ export function App() {
 
   if (path === "/wellness/gym") {
     return <GymDetail />;
+  }
+
+  if (path === "/wellness/spa") {
+    return <SpaDetail />;
   }
 
   if (path === "/wellness") {

@@ -151,7 +151,7 @@ These items can remain outside the homepage presentation unless the owners speci
 ## Wellness
 
 - [ ] Confirm the current Morpho treatment booking process, availability, hours, and Guest Services destination.
-- [ ] Confirm the current Morpho treatment menu, durations, and prices before publishing them.
+- [x] Confirm the current Morpho treatment menu, durations, and prices before publishing them.
 - [ ] Confirm the yoga schedule, locations, instructor information, and equipment availability.
 - [ ] Confirm the GYM operating hours and final public styling of the facility name.
 - [ ] Provide opening milestones and approved publication language for the expanded Morpho Wellness Retreat.

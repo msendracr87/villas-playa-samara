@@ -1,4 +1,10 @@
-# Spa Menu
+# Morpho Spa Treatment Menu
+
+> **Property:** Villas Playa Sámara
+> **Venue:** Morpho Spa
+> **Availability:** Current offering
+> **Content status:** Approved for the current Spa page by the project owner on August 14, 2026
+> **Operational note:** Appointment availability, operating hours, and the final booking destination remain pending confirmation.
 
 ## Massages
 

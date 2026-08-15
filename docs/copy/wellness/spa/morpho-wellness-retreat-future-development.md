@@ -1,20 +1,20 @@
-# Morpho Wellness Retreat — Future Wellness Experience  
-## Website Copy & Content Direction
+# Morpho Wellness Retreat — Future Development
+## Website copy and content direction
 
-> **Property:** Villas Playa Sámara  
-> **Venue:** Morpho Wellness Retreat  
-> **Content type:** Website-ready concept copy  
-> **Project status:** Future development  
+> **Property:** Villas Playa Sámara
+> **Venue:** Morpho Wellness Retreat
+> **Content type:** Website-ready concept copy
+> **Project status:** Future development
 >
-> **Naming guidance:**  
-> - Use **Morpho Wellness Retreat** as the complete official venue name.  
-> - After the first mention, use **the retreat** when repetition would feel heavy.  
-> - Use functional terms such as **treatment spaces**, **wellness packages**, **treatment menu**, **pool**, and **relaxation areas** rather than replacing every use of “spa” or “space” with “Wellness Retreat.”  
-> - Keep **Beauty Bar**, **Hair Studio**, and **Nail Bar** as service-area names until final approval.  
+> **Naming guidance:**
+> - Use **Morpho Wellness Retreat** as the complete official venue name.
+> - After the first mention, use **the retreat** when repetition would feel heavy.
+> - Use functional terms such as **treatment spaces**, **wellness packages**, **treatment menu**, **pool**, and **relaxation areas** rather than replacing every use of “spa” or “space” with “Wellness Retreat.”
+> - Keep **Beauty Bar**, **Hair Studio**, and **Nail Bar** as service-area names until final approval.
 >
 > **Important:** Morpho Wellness Retreat is still under development. Service names, operating hours, capacity, treatment details, opening dates, and reservation policies must be confirmed before publication.
 >
-> **Current foundation:** Morpho’s current wellness services include massages, body treatments, facials, exfoliations, and wellness packages. The future development is planned to expand the experience with additional treatment rooms, a cold plunge, sauna, pool, Beauty Bar, Hair Studio, Nail Bar, and broader body-care services.
+> **Current-services source:** Current treatments belong to the separate [Morpho Spa current-services document](morpho-spa-current-services.md) and its canonical [treatment menu](morpho-spa-menu.md). This document covers only the future development.
 
 ---
 
@@ -32,8 +32,8 @@ Morpho Wellness Retreat is being reimagined as a more complete wellness destinat
 
 The future experience will bring together massage and body treatments, water and heat therapies, beauty services, and quiet spaces surrounded by tropical greenery—creating more ways to relax, recover, and enjoy time for yourself during your stay.
 
-**Primary CTA:** Discover the Future Experience  
-**Secondary CTA:** View Current Treatments
+**Primary CTA:** Discover the Future Experience
+**Secondary CTA:** View Concept Gallery
 
 ---
 
@@ -43,7 +43,7 @@ The future experience will bring together massage and body treatments, water and
 
 The future Morpho Wellness Retreat is envisioned as a calm, nature-connected destination where wellness can unfold at an unhurried pace.
 
-Building on Morpho’s current massage and body-care offering, the expanded concept will introduce more treatment spaces alongside a cold plunge, sauna, pool, Beauty Bar, Hair Studio, Nail Bar, and additional body-care experiences.
+The expanded concept is planned to introduce more treatment spaces alongside a cold plunge, sauna, pool, Beauty Bar, Hair Studio, Nail Bar, and additional body-care experiences.
 
 The architectural direction places individual treatment areas, water features, wooden walkways, and shaded relaxation zones within lush tropical landscaping. The result is designed to feel private, restorative, and closely connected to the natural character of Sámara.
 
@@ -71,19 +71,7 @@ Massage will remain at the heart of Morpho Wellness Retreat.
 
 The future development will add more treatment beds and dedicated treatment spaces, allowing the retreat to welcome more guests while creating a quieter and more private experience.
 
-The current menu includes options such as:
-
-- Relaxing massage
-- Deep tissue massage
-- Hot stone massage
-- Reflexology
-- Back, neck, and shoulder massage
-- Therapeutic massage with stretching
-- Chocolate massage
-- Honey and milk massage
-- Tropical fruit massage
-
-Future treatment selections may evolve as the new wellness program is finalized.
+The future treatment selection and operating model will be confirmed as the new wellness program is finalized.
 
 **CTA:** Explore Massage Treatments
 
@@ -97,7 +85,7 @@ Future treatment selections may evolve as the new wellness program is finalized.
 
 Body-care experiences are planned as an important part of the expanded wellness offering.
 
-Current treatments include exfoliations, wraps, and facials using ingredients such as coffee, coconut, chocolate, clay, aloe, and chamomile. The future concept creates room to broaden these services with more complete rituals focused on renewal, hydration, relaxation, and skin care.
+The future concept creates room to broaden body-care services with more complete rituals focused on renewal, hydration, relaxation, and skin care.
 
 Possible categories may include:
 
@@ -214,9 +202,7 @@ Potential services may include:
 
 # Experiences designed to flow together
 
-Morpho Wellness Retreat currently offers combined packages that bring exfoliation, massage, wraps, and facials into one longer experience.
-
-The future retreat will create more opportunities to build complete rituals that may combine:
+The future retreat is planned to create opportunities for complete rituals that may combine:
 
 - Massage
 - Body exfoliation
@@ -273,30 +259,6 @@ The overall direction feels calm, private, and immersive without losing the welc
 
 ---
 
-# Morpho Wellness Retreat Today
-
-**Section label:** Available During Development
-
-# Wellness experiences available now
-
-While the new retreat is being developed, guests can continue to enjoy Morpho’s current treatment menu.
-
-Available categories currently include:
-
-- Massages
-- Special massages
-- Body treatments
-- Facials
-- Exfoliations
-- Wellness packages
-
-Please review the current menu or contact Guest Services for available treatments, prices, and reservations.
-
-**Primary CTA:** View Current Treatment Menu  
-**Secondary CTA:** Request an Appointment
-
----
-
 # Development Notice
 
 ## A future wellness experience is taking shape
@@ -306,23 +268,6 @@ Morpho Wellness Retreat is being expanded to offer more treatment capacity, a br
 The images shown are conceptual and may evolve as the architectural design, service program, and construction process continue.
 
 Opening information and final services will be shared once confirmed.
-
----
-
-# Reservations
-
-**Section label:** Plan Your Wellness Time
-
-# Ready to make time for yourself?
-
-For current treatment availability, appointments, and information about Morpho Wellness Retreat, please contact Guest Services.
-
-Our team will be happy to help you review the available menu and choose an experience that fits your stay.
-
-**Primary CTA:** Request an Appointment  
-**Secondary CTA:** Contact Guest Services
-
-> Advance reservations may be recommended. Final reservation policies must be confirmed before publication.
 
 ---
 
@@ -351,7 +296,6 @@ Explore the architectural concept, tropical setting, treatment pavilions, water 
 - Nail Bar
 - Tropical landscaping
 - Reception and arrival
-- Current massage and body treatments
 
 ---
 
@@ -369,18 +313,11 @@ The master plan brings together treatment rooms, a central pool, recovery areas,
 
 Wooden pavilions, water features, shaded decks, and dense planting shape a calm environment designed for longer, more complete wellness experiences.
 
-### Current Treatments
-
-Morpho Wellness Retreat currently offers massages, exfoliations, body wraps, facials, and combined wellness packages.
-
----
-
 # Suggested Image Alt Text
 
 - Aerial architectural rendering of the future Morpho Wellness Retreat surrounded by tropical gardens.
 - Wellness development plan showing treatment rooms, pool areas, decks, pathways, and support spaces.
 - Concept rendering of wooden treatment pavilions, a central pool, hot and cold water areas, and landscaped relaxation zones.
-- Morpho’s current massage and body-treatment menu at Villas Playa Sámara.
 
 ---
 
@@ -400,9 +337,9 @@ Morpho Wellness Retreat is being expanded with more treatment rooms, a sauna, co
 
 ## Wellness, reimagined
 
-Continue your wellness routine in the 24-hour GYM, join a guided yoga session, or discover the future of Morpho Wellness Retreat—a new retreat planned around massage, recovery, beauty, water, and rest.
+Discover the future of Morpho Wellness Retreat—a new retreat planned around massage, recovery, beauty, water, and rest.
 
-**CTA:** Explore Wellness
+**CTA:** Discover the Future Retreat
 
 ---
 
@@ -412,10 +349,10 @@ Continue your wellness routine in the 24-hour GYM, join a guided yoga session, o
 
 # More ways to feel restored
 
-From massage and body care to future thermal, beauty, and water experiences, Morpho Wellness Retreat is evolving into a more complete place to slow down and reconnect.
+Morpho Wellness Retreat is planned as a more complete place to slow down and reconnect through treatment, thermal, beauty, water, and relaxation experiences.
 
-**Primary CTA:** View Current Treatments  
-**Secondary CTA:** Discover the Future Wellness Retreat
+**Primary CTA:** Explore the Concept Gallery
+**Secondary CTA:** Return to Wellness
 
 ---
 
