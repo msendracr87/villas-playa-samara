@@ -14,24 +14,28 @@ const venues = [
     name: "Arrecife",
     type: "International & Costa Rican",
     copy: "The resort’s main dining venue, offering seasonal buffet and à la carte service with international variety and Costa Rican character.",
+    href: "/dining/arrecife",
     image: { small: arrecifeImageSmall, large: arrecifeImageLarge },
   },
   {
     name: "Trattoria",
     type: "Italian-inspired dinners",
     copy: "A relaxed dinner experience centered on familiar Italian flavors, including pizza, pasta, classic desserts, wines, and cocktails.",
+    href: "/dining/trattoria",
     image: { small: italianImageSmall, large: italianImageLarge },
   },
   {
     name: "Baja Azul",
     type: "Daytime snacks & evening dining",
     copy: "A casual venue offering daytime snacks and a Mexican and Tex-Mex-inspired à la carte experience in the evening.",
+    href: "/dining/baja-azul",
     image: { small: mexicanImageSmall, large: mexicanImageLarge },
   },
   {
     name: "Veranda",
     type: "Cocktails, sports & casual bites",
     copy: "A relaxed place for cocktails, cold drinks, sports, salty treats, and casual snacks from afternoon into the evening.",
+    href: "/dining/veranda",
     image: { small: sportBarImageSmall, large: sportBarImageLarge },
   },
 ] as const;
@@ -161,11 +165,9 @@ export function DiningShowcase() {
                     <p>{venue.type}</p>
                     <h3>{venue.name}</h3>
                     <p>{venue.copy}</p>
-                    <span
+                    <a
                       className="dining-showcase__venue-link"
-                      role="link"
-                      aria-disabled="true"
-                      title={`${venue.name} page is not available yet`}
+                      href={venue.href}
                     >
                       Explore restaurant
                       <span
@@ -174,7 +176,7 @@ export function DiningShowcase() {
                       >
                         arrow_forward
                       </span>
-                    </span>
+                    </a>
                   </div>
                 </article>
               );

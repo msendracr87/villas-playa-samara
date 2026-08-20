@@ -250,7 +250,9 @@
   }
 
   .hero__scroll-cue {
-    display: none;
+    position: static;
+    display: inline-flex;
+    margin-top: 16px;
   }
 
   .hero__highlights {

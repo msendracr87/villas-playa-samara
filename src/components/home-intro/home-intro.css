@@ -92,7 +92,7 @@
 
 @media (max-width: 800px) {
   .home-intro {
-    --home-intro-media-overlap: 0px;
+    --home-intro-media-overlap: 210px;
   }
 
   .home-intro__layout {

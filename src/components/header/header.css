@@ -619,10 +619,11 @@
 
   .site-header__mobile-book {
     display: inline-grid;
-    min-width: clamp(104px, 28vw, 132px);
-    min-height: 52px;
+    min-width: 96px;
+    min-height: 44px;
     justify-self: end;
-    padding-inline: clamp(14px, 3vw, 22px);
+    padding: 8px 14px;
+    font-size: 0.7rem;
   }
 
   .site-header__nav-row > .site-header__book {
