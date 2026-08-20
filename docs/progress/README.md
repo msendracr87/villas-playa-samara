@@ -8,7 +8,8 @@ This directory contains dated implementation records for completed milestones an
 - **Rooms & Villas:** Overview and eight accommodation-detail routes implemented and paused for owner visual review.
 - **Dining:** Overview route, four-venue collection, separate Nikoa presentation, and dedicated Arrecife, Baja Azul, Trattoria, and Veranda routes with Markdown-driven digital and printable concept menus implemented and paused for owner visual review.
 - **Experiences:** Overview, Rentals, Day Tours, and Activities routes implemented with image-led comparisons, internal navigation, optimized imagery, and offering-specific inquiry flows; paused for owner visual and editorial review.
-- **Wellness:** Overview and dedicated GYM routes implemented with current services separated from future retreat facilities; dedicated Morpho treatment presentation and final operational details remain pending.
+- **Wellness:** Overview plus dedicated GYM and current-services Morpho Spa routes implemented with shared inquiry forms, cross-page navigation, and future retreat facilities kept separate; final operational details and form delivery remain pending.
+- **Gallery:** Dedicated randomized masonry route with 35 optimized images and an accessible full-screen viewer implemented; categories, captions, alt text, provenance, rights, and drone-image approval remain pending.
 - **Accommodation comparison:** Key facts, floor plans, galleries, and responsive card actions implemented across all eight approved categories.
 - **Accommodation FAQs:** Five FAQs and an expandable, accommodation-specific inquiry form implemented on every detail route.
 - **Visual system:** Square geometry and restrained Birthstone display accents implemented for review.
@@ -17,6 +18,8 @@ This directory contains dated implementation records for completed milestones an
 
 ## Progress records
 
+- [Gallery page development — August 19, 2026](2026-08-19-gallery-page-development.md)
+- [Wellness inquiry forms and cross-links — August 17, 2026](2026-08-17-wellness-inquiry-and-cross-links.md)
 - [Current development handoff — August 14, 2026](2026-08-14-current-development-handoff.md)
 - [GYM detail refinements — August 13, 2026](2026-08-13-gym-detail-refinement.md)
 - [Wellness overview visual refinements — August 12, 2026](2026-08-12-wellness-overview-polish.md)

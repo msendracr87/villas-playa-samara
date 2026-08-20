@@ -9,7 +9,7 @@ const footerLinks = [
   { label: "Dining", href: "/dining" },
   { label: "Experiences", href: "/experiences" },
   { label: "Wellness", href: "/wellness" },
-  { label: "Gallery", href: "/#gallery" },
+  { label: "Gallery", href: "/gallery" },
 ] as const;
 
 const contactDetails = [

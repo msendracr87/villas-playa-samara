@@ -74,6 +74,7 @@
   background: var(--color-forest-800);
   cursor: pointer;
   text-align: left;
+  text-decoration: none;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -144,15 +145,13 @@
 }
 
 .experiences-showcase__card:hover > img,
-.experiences-showcase__card:focus-visible > img,
-.experiences-showcase__card.is-active > img {
+.experiences-showcase__card:focus-visible > img {
   opacity: 0.18;
   transform: scale(1.025);
 }
 
 .experiences-showcase__card:hover .experiences-showcase__card-details,
-.experiences-showcase__card:focus-visible .experiences-showcase__card-details,
-.experiences-showcase__card.is-active .experiences-showcase__card-details {
+.experiences-showcase__card:focus-visible .experiences-showcase__card-details {
   opacity: 1;
   transform: translateY(0);
 }
@@ -232,8 +231,7 @@
 
   .experiences-showcase__card > img,
   .experiences-showcase__card:hover > img,
-  .experiences-showcase__card:focus-visible > img,
-  .experiences-showcase__card.is-active > img {
+  .experiences-showcase__card:focus-visible > img {
     display: block;
     height: min(64vw, 280px);
     opacity: 1;
@@ -242,8 +240,7 @@
 
   .experiences-showcase__card-details,
   .experiences-showcase__card:hover .experiences-showcase__card-details,
-  .experiences-showcase__card:focus-visible .experiences-showcase__card-details,
-  .experiences-showcase__card.is-active .experiences-showcase__card-details {
+  .experiences-showcase__card:focus-visible .experiences-showcase__card-details {
     position: static;
     min-height: 210px;
     justify-content: flex-start;

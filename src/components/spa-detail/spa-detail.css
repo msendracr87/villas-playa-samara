@@ -57,8 +57,7 @@
 
 .spa-page__hero h1,
 .spa-page__introduction h2,
-.spa-page__menu h2,
-.spa-page__closing h2 {
+.spa-page__menu h2 {
   margin: 0;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -71,7 +70,7 @@
 
 .spa-page__menu h2 span {
   display: inline-block;
-  color: var(--color-lime);
+  color: var(--color-brand-green-text);
   font: inherit;
   letter-spacing: inherit;
   line-height: inherit;
@@ -107,7 +106,7 @@
   letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
-  transition-property: opacity, transform;
+  transition-property: transform;
   transition-duration: 180ms;
 }
 
@@ -115,11 +114,16 @@
   padding-inline: 18px;
   border: 1px solid rgba(255, 255, 255, 0.64);
   background: rgba(16, 26, 20, 0.58);
+  transition:
+    border-color 180ms cubic-bezier(0.2, 0, 0, 1),
+    background-color 180ms cubic-bezier(0.2, 0, 0, 1),
+    transform 180ms cubic-bezier(0.2, 0, 0, 1);
 }
 
-.spa-page__hero-actions a:hover,
-.spa-page__hero-actions a:focus-visible {
-  opacity: 0.78;
+.spa-page__hero-actions a:last-child:hover,
+.spa-page__hero-actions a:last-child:focus-visible {
+  border-color: #fff;
+  background: rgba(16, 26, 20, 0.9);
 }
 
 .spa-page__hero-actions a:active {
@@ -127,7 +131,18 @@
 }
 
 .spa-page__hero-actions .material-symbols-outlined {
-  font-size: 19px;
+  font-size: 20px;
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.spa-page__hero-actions a:first-child:hover .material-symbols-outlined,
+.spa-page__hero-actions a:first-child:focus-visible .material-symbols-outlined {
+  transform: translateY(4px);
+}
+
+.spa-page__hero-actions a:last-child:hover .material-symbols-outlined,
+.spa-page__hero-actions a:last-child:focus-visible .material-symbols-outlined {
+  transform: translateX(-4px);
 }
 
 .spa-page__introduction {
@@ -157,8 +172,7 @@
 }
 
 .spa-page__introduction-copy h2,
-.spa-page__menu-heading h2,
-.spa-page__closing h2 {
+.spa-page__menu-heading h2 {
   font-size: clamp(2.8rem, 5.2vw, 5.4rem);
   line-height: 0.98;
 }
@@ -168,8 +182,7 @@
 }
 
 .spa-page__introduction-copy > p,
-.spa-page__menu-heading > p,
-.spa-page__closing p {
+.spa-page__menu-heading > p {
   color: var(--color-muted);
   font-size: clamp(0.98rem, 1.15vw, 1.08rem);
   line-height: 1.75;
@@ -187,8 +200,8 @@
 
 .spa-page__menu {
   padding-block: clamp(96px, 11vw, 168px);
-  color: #fff;
-  background: var(--color-forest-900);
+  color: var(--color-ink);
+  background: var(--color-sand-50);
   scroll-margin-top: 24px;
 }
 
@@ -206,7 +219,7 @@
 .spa-page__menu-heading > p {
   max-width: 50ch;
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--color-muted);
 }
 
 .spa-page__menu-groups {
@@ -218,13 +231,13 @@
 
 .spa-page__menu-group {
   min-width: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  border-top: 1px solid var(--color-sand-200);
 }
 
 .spa-page__menu-group h3,
 .spa-page__packages h3 {
   margin: 0;
-  color: var(--color-lime);
+  color: var(--color-brand-green-text);
   font-size: clamp(1.5rem, 2.2vw, 2rem);
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -240,15 +253,15 @@
 
 .spa-page__menu-group dl > div {
   padding-block: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--color-sand-200);
 }
 
 .spa-page__menu-group dl > div:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid var(--color-sand-200);
 }
 
 .spa-page__menu-group dt {
-  color: rgba(255, 255, 255, 0.94);
+  color: var(--color-ink);
   font-size: 0.96rem;
   font-weight: 500;
   line-height: 1.5;
@@ -260,14 +273,14 @@
   justify-content: space-between;
   gap: 18px;
   margin: 9px 0 0;
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--color-muted);
   font-size: 0.78rem;
   font-variant-numeric: tabular-nums;
   line-height: 1.5;
 }
 
 .spa-page__menu-group dd span:last-child {
-  color: #fff;
+  color: var(--color-ink);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -278,7 +291,7 @@
 
 .spa-page__packages > h3 {
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+  border-bottom: 1px solid var(--color-sand-200);
 }
 
 .spa-page__package-grid {
@@ -289,11 +302,11 @@
 .spa-page__package-grid article {
   min-width: 0;
   padding: clamp(30px, 4vw, 52px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1px solid var(--color-sand-200);
 }
 
 .spa-page__package-grid article + article {
-  border-left: 1px solid rgba(255, 255, 255, 0.22);
+  border-left: 1px solid var(--color-sand-200);
 }
 
 .spa-page__package-grid article > div {
@@ -305,7 +318,7 @@
 
 .spa-page__package-grid h4 {
   margin: 0;
-  color: #fff;
+  color: var(--color-ink);
   font-size: clamp(1.25rem, 1.8vw, 1.55rem);
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -313,7 +326,7 @@
 }
 
 .spa-page__package-grid strong {
-  color: var(--color-lime);
+  color: var(--color-brand-green-text);
   font-size: 0.94rem;
   font-variant-numeric: tabular-nums;
   font-weight: 500;
@@ -321,7 +334,7 @@
 
 .spa-page__package-grid article > p {
   margin: 14px 0 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-muted);
   font-size: 0.78rem;
   font-variant-numeric: tabular-nums;
 }
@@ -334,8 +347,8 @@
 
 .spa-page__package-grid li {
   padding-block: 11px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.74);
+  border-top: 1px solid var(--color-sand-200);
+  color: var(--color-muted);
   font-size: 0.86rem;
   line-height: 1.55;
 }
@@ -344,40 +357,10 @@
   max-width: 72ch;
   margin-top: 44px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.66);
+  color: var(--color-muted);
   font-size: 0.82rem;
   line-height: 1.7;
   text-wrap: pretty;
-}
-
-.spa-page__closing {
-  padding-block: var(--section-space);
-  background: var(--color-sand-100);
-  text-align: center;
-}
-
-.spa-page__closing .content-wrap {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.spa-page__closing h2 {
-  max-width: 11ch;
-}
-
-.spa-page__closing p {
-  max-width: 61ch;
-  margin: 30px 0 0;
-}
-
-.spa-page__closing .content-wrap > div {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px 32px;
-  margin-top: 38px;
 }
 
 .wellness-motion-ready [data-wellness-motion="hero"] > img {
@@ -494,14 +477,11 @@
     border-left: 0;
   }
 
-  .spa-page__closing .content-wrap > div {
-    align-items: stretch;
-    flex-direction: column;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .spa-page__hero-actions a,
+  .spa-page__hero-actions .material-symbols-outlined,
   .wellness-motion-ready [data-wellness-motion] {
     transition-duration: 0.01ms;
   }

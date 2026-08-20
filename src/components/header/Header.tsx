@@ -1,4 +1,5 @@
 import { useEffect, useId, useState } from "react";
+import stickyLogoUrl from "../../../assets/svgs/logo/vps-icon-c4d658-frame.svg";
 import logoUrl from "../../../assets/svgs/logo/vps-logo-c4d658-fff-frame.svg";
 import "./header.css";
 
@@ -15,7 +16,12 @@ const wellnessItems = [
   { label: "Spa", href: "/wellness/spa" },
 ] as const;
 
-export function Header() {
+type HeaderBarProps = {
+  variant: "top" | "sticky";
+  isVisible?: boolean;
+};
+
+function HeaderBar({ variant, isVisible = true }: HeaderBarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isWellnessOpen, setIsWellnessOpen] = useState(false);
   const menuId = useId();
@@ -54,10 +60,15 @@ export function Header() {
   };
 
   return (
-    <header className="site-header">
-      <a className="skip-link" href="#main-content">
-        Skip to content
-      </a>
+    <header
+      className={`site-header site-header--${variant}${variant === "sticky" && isVisible ? " is-visible" : ""}`}
+      aria-hidden={variant === "sticky" ? !isVisible : undefined}
+    >
+      {variant === "top" && (
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
+      )}
 
       <div className="site-header__layout">
         <div className="site-header__brand-panel">
@@ -66,8 +77,26 @@ export function Header() {
             href="/"
             aria-label="Villas Playa Sámara home"
           >
-            <img src={logoUrl} alt="" />
+            <picture>
+              {variant === "top" && (
+                <source media="(max-width: 960px)" srcSet={stickyLogoUrl} />
+              )}
+              <img
+                src={variant === "sticky" ? stickyLogoUrl : logoUrl}
+                alt=""
+              />
+            </picture>
           </a>
+
+          {variant === "top" && (
+            <a
+              className="site-header__mobile-book"
+              href="/#book"
+              onClick={closeMenu}
+            >
+              Book now
+            </a>
+          )}
 
           <button
             className="site-header__menu-button"
@@ -171,7 +200,11 @@ export function Header() {
               )}
             </div>
 
-            <a href="/#gallery" onClick={closeMenu}>
+            <a
+              href="/gallery"
+              onClick={closeMenu}
+              aria-current={currentPath === "/gallery" ? "page" : undefined}
+            >
               Gallery
             </a>
           </nav>
@@ -189,5 +222,76 @@ export function Header() {
         </div>
       </div>
     </header>
+  );
+}
+
+export function Header() {
+  const [isStickyVisible, setIsStickyVisible] = useState(false);
+
+  useEffect(() => {
+    const main = document.getElementById("main-content");
+    const hero = main?.firstElementChild as HTMLElement | null;
+    const footer = document.querySelector<HTMLElement>(".site-footer");
+    const stickyHeader = document.querySelector<HTMLElement>(
+      ".site-header--sticky",
+    );
+
+    if (!hero || !footer || !stickyHeader) {
+      return;
+    }
+
+    let animationFrame = 0;
+    let previousScrollY = Math.max(window.scrollY, 0);
+    let isScrollingUp = false;
+    const scrollDirectionThreshold = 6;
+
+    const updateStickyVisibility = () => {
+      animationFrame = 0;
+
+      const currentScrollY = Math.max(window.scrollY, 0);
+      const scrollDelta = currentScrollY - previousScrollY;
+
+      if (Math.abs(scrollDelta) >= scrollDirectionThreshold) {
+        isScrollingUp = scrollDelta < 0;
+        previousScrollY = currentScrollY;
+      }
+
+      const stickyTop = Number.parseFloat(
+        window.getComputedStyle(stickyHeader).top,
+      );
+      const stickyBottom = stickyTop + stickyHeader.offsetHeight;
+      const hasPassedHero = hero.getBoundingClientRect().bottom <= 0;
+      const hasReachedFooter =
+        footer.getBoundingClientRect().top <= stickyBottom;
+
+      setIsStickyVisible(
+        hasPassedHero && !hasReachedFooter && isScrollingUp,
+      );
+    };
+
+    const requestVisibilityUpdate = () => {
+      if (!animationFrame) {
+        animationFrame = window.requestAnimationFrame(updateStickyVisibility);
+      }
+    };
+
+    updateStickyVisibility();
+    window.addEventListener("scroll", requestVisibilityUpdate, {
+      passive: true,
+    });
+    window.addEventListener("resize", requestVisibilityUpdate);
+
+    return () => {
+      window.cancelAnimationFrame(animationFrame);
+      window.removeEventListener("scroll", requestVisibilityUpdate);
+      window.removeEventListener("resize", requestVisibilityUpdate);
+    };
+  }, []);
+
+  return (
+    <>
+      <HeaderBar variant="top" />
+      <HeaderBar variant="sticky" isVisible={isStickyVisible} />
+    </>
   );
 }

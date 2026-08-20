@@ -2,11 +2,15 @@ import spaBodyworkSmall from "../../../assets/images/optimized/wellness/spa/mass
 import spaBodyworkLarge from "../../../assets/images/optimized/wellness/spa/massage-and-bodywork-2-1600.webp";
 import spaTreatmentSmall from "../../../assets/images/optimized/wellness/spa/massage-and-face-treatment-1-720.webp";
 import spaTreatmentLarge from "../../../assets/images/optimized/wellness/spa/massage-and-face-treatment-1-1200.webp";
+import gymTrainingSmall from "../../../assets/images/optimized/wellness/gym/gym-people-using-equipment-3-960.webp";
+import gymTrainingLarge from "../../../assets/images/optimized/wellness/gym/gym-people-using-equipment-3-1448.webp";
 import morphoLogoUrl from "../../../assets/svgs/logo/morpho/morpho-spa-logo-FFFFFF-frame.svg";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { useWellnessMotion } from "../../hooks/useWellnessMotion";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import { WellnessCrossLink } from "../wellness-cross-link/WellnessCrossLink";
+import { WellnessInquiry } from "../wellness-inquiry/WellnessInquiry";
 import "./spa-detail.css";
 
 type MenuItem = {
@@ -288,32 +292,16 @@ export function SpaDetail() {
           </p>
         </section>
 
-        <section className="spa-page__closing" aria-labelledby="spa-closing-title">
-          <div className="content-wrap" data-wellness-motion="reveal">
-            <h2 id="spa-closing-title">Make time for your treatment</h2>
-            <p>
-              Choose the treatment that suits your stay, then contact Guest
-              Services to review availability and arrange your appointment at
-              Morpho Spa.
-            </p>
-            <div>
-              <span
-                className="button-link"
-                role="link"
-                aria-disabled="true"
-                title="Guest Services contact destination is pending"
-              >
-                Contact Guest Services
-              </span>
-              <a className="text-link" href="/wellness">
-                Explore wellness
-                <span className="material-symbols-outlined" aria-hidden="true">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </section>
+        <WellnessInquiry variant="spa" />
+
+        <WellnessCrossLink
+          className="spa-page__closing"
+          imageSmall={gymTrainingSmall}
+          imageLarge={gymTrainingLarge}
+          imageLargeWidth={1448}
+          primaryHref="/wellness/gym"
+          primaryLabel="Explore the GYM"
+        />
       </main>
       <Footer />
     </div>

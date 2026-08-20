@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./hero.css";
 
 const muxPlayerUrl =
-  "https://player.mux.com/i1pPy37sDMpBRbpDZhDlBEp4En02EcXwz72bTIGK7soo?autoplay=muted&muted=1&loop=1&controls=false&playsinline=1";
+  "https://player.mux.com/kAtsb5201cBP5MWAOZ00epa02i00JEzUnnJQv9ZzzTstDPs?autoplay=muted&muted=1&loop=1&controls=false&playsinline=1";
 
 function getReducedMotionPreference() {
   return (

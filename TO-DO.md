@@ -185,7 +185,8 @@ These items can remain outside the homepage presentation unless the owners speci
 
 - [ ] Provide the primary booking-engine URL and define whether deep links are available by accommodation.
 - [ ] Provide the physical address, phone numbers, email addresses, WhatsApp destination, and Guest Services contact route.
-- [ ] Define the lead forms and required fields for accommodations, dining, Monkey Tours, wellness, groups, and general inquiries.
+- [ ] Define the lead forms and required fields for accommodations, dining, Monkey Tours, groups, and general inquiries.
+- [ ] Confirm required fields, consent and privacy copy, submission destination, and success and error handling for the owner-requested Wellness inquiry forms.
 - [ ] Provide FAQ content.
 - [ ] Provide Offers page content and an empty state for periods without offers.
 - [ ] Provide Explore Sámara content.

@@ -1,6 +1,5 @@
 import resortAerialSmall from "../../../assets/images/optimized/homepage/resort/samara-bay-aerial-800.webp";
 import resortAerialLarge from "../../../assets/images/optimized/homepage/resort/samara-bay-aerial-1600.webp";
-import resortLogo from "../../../assets/svgs/logo/vps-logo-c4d658-58595b-frame.svg";
 import "./home-intro.css";
 
 export function HomeIntro() {
@@ -49,12 +48,6 @@ export function HomeIntro() {
             alt="Aerial view of Villas Playa Sámara, Sámara Bay, and Isla Chora"
             loading="lazy"
             decoding="async"
-          />
-          <img
-            className="home-intro__aerial-logo"
-            src={resortLogo}
-            alt=""
-            aria-hidden="true"
           />
         </figure>
       </div>

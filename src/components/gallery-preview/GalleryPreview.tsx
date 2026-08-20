@@ -63,17 +63,12 @@ export function GalleryPreview() {
             dining experiences, resort activities, and relaxed moments that
             shape a stay at Villas Playa Sámara.
           </p>
-          <span
-            className="text-link"
-            role="link"
-            aria-disabled="true"
-            title="Gallery page is not available yet"
-          >
+          <a className="text-link" href="/gallery">
             View gallery
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_forward
             </span>
-          </span>
+          </a>
         </div>
       </div>
 

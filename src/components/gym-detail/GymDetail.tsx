@@ -6,10 +6,14 @@ import gymTrainingSmall from "../../../assets/images/optimized/wellness/gym/gym-
 import gymTrainingLarge from "../../../assets/images/optimized/wellness/gym/gym-people-using-equipment-3-1448.webp";
 import gymMovementSmall from "../../../assets/images/optimized/wellness/gym/gym-people-using-equipment-4-960.webp";
 import gymMovementLarge from "../../../assets/images/optimized/wellness/gym/gym-people-using-equipment-4-1448.webp";
+import spaBodyworkSmall from "../../../assets/images/optimized/wellness/spa/massage-and-bodywork-2-960.webp";
+import spaBodyworkLarge from "../../../assets/images/optimized/wellness/spa/massage-and-bodywork-2-1600.webp";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { useWellnessMotion } from "../../hooks/useWellnessMotion";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import { WellnessCrossLink } from "../wellness-cross-link/WellnessCrossLink";
+import { WellnessInquiry } from "../wellness-inquiry/WellnessInquiry";
 import "./gym-detail.css";
 
 const gymHighlights = [
@@ -233,26 +237,16 @@ export function GymDetail() {
           </div>
         </section>
 
-        <section className="gym-page__closing" aria-labelledby="gym-closing-title">
-          <div className="content-wrap" data-wellness-motion="reveal">
-            <h2 id="gym-closing-title">Keep moving or slow things down</h2>
-            <p>
-              Start with an independent workout in the 24-hour GYM, or explore
-              more ways to support your wellbeing during your stay.
-            </p>
-            <div>
-              <a className="button-link" href="/wellness">
-                Explore wellness
-              </a>
-              <a className="text-link" href="/experiences/activities">
-                View activities
-                <span className="material-symbols-outlined" aria-hidden="true">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </section>
+        <WellnessInquiry variant="gym" />
+
+        <WellnessCrossLink
+          className="gym-page__closing"
+          imageSmall={spaBodyworkSmall}
+          imageLarge={spaBodyworkLarge}
+          imageLargeWidth={1600}
+          primaryHref="/wellness/spa"
+          primaryLabel="Explore Spa"
+        />
       </main>
       <Footer />
     </div>

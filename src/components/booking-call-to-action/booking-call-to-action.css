@@ -1,7 +1,7 @@
 .booking-call-to-action {
   position: relative;
   display: grid;
-  min-height: clamp(620px, 78vw, 920px);
+  min-height: clamp(420px, 58vw, 720px);
   align-items: center;
   isolation: isolate;
   overflow: hidden;

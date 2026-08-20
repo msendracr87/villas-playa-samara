@@ -9,6 +9,7 @@ export function useExperiencesMotion() {
       "(prefers-reduced-motion: reduce)",
     );
     let observer: IntersectionObserver | null = null;
+    let hashScrollFrame = 0;
 
     const stopMotion = () => {
       observer?.disconnect();
@@ -49,9 +50,25 @@ export function useExperiencesMotion() {
     };
 
     startMotion();
+    const hashTargetId = window.location.hash.slice(1);
+
+    if (hashTargetId) {
+      const hashTarget = document.getElementById(hashTargetId);
+
+      if (hashTarget) {
+        hashScrollFrame = window.requestAnimationFrame(() => {
+          hashTarget.scrollIntoView({
+            behavior: "auto",
+            block: "start",
+          });
+        });
+      }
+    }
+
     reducedMotion.addEventListener("change", startMotion);
 
     return () => {
+      window.cancelAnimationFrame(hashScrollFrame);
       reducedMotion.removeEventListener("change", startMotion);
       stopMotion();
     };

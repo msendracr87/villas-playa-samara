@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import surfImageSmall from "../../../assets/images/optimized/homepage/experiences/surf-lessons-640.webp";
 import surfImageLarge from "../../../assets/images/optimized/homepage/experiences/surf-lessons-1280.webp";
 import kayakImageSmall from "../../../assets/images/optimized/homepage/experiences/isla-chora-kayak-640.webp";
@@ -24,54 +24,63 @@ const experienceCards = [
     title: "Surf Sámara",
     type: "Ocean & beach",
     copy: "Build confidence in the warm Pacific with a guided surf lesson at Sámara Beach.",
+    href: "/experiences/activities#surf-lessons",
     image: { small: surfImageSmall, large: surfImageLarge },
   },
   {
     title: "Isla Chora by Kayak",
     type: "Ocean & beach",
     copy: "Paddle across Sámara Bay toward Isla Chora and explore the coast from the water.",
+    href: "/experiences/activities#isla-chora-kayak-tour",
     image: { small: kayakImageSmall, large: kayakImageLarge },
   },
   {
     title: "Pacific Sunset",
     type: "Ocean tour",
     copy: "Watch the coastline change in the evening light during a relaxed sunset ocean tour.",
+    href: "/experiences/day-tours#sunset-ocean-tour",
     image: { small: sunsetImageSmall, large: sunsetImageLarge },
   },
   {
     title: "ATV Jungle Tour",
     type: "Rentals & adventure",
     copy: "Follow jungle routes and discover more of the landscapes surrounding Sámara by ATV.",
+    href: "/experiences/rentals#atv-jungle-tour",
     image: { small: atvImageSmall, large: atvImageLarge },
   },
   {
     title: "Arenal Volcano",
     type: "Day tour",
     copy: "Venture inland for a full-day look at one of Costa Rica’s most recognizable volcanic landscapes.",
+    href: "/experiences/day-tours#arenal-volcano",
     image: { small: arenalImageSmall, large: arenalImageLarge },
   },
   {
     title: "Monteverde",
     type: "Day tour",
     copy: "Discover the misty trails, remarkable biodiversity, and elevated views of the cloud forest.",
+    href: "/experiences/day-tours#monteverde-cloud-forest",
     image: { small: monteverdeImageSmall, large: monteverdeImageLarge },
   },
   {
     title: "Palo Verde",
     type: "Wildlife & nature",
     copy: "Explore a protected wetland landscape known for wildlife, river scenery, and abundant birdlife.",
+    href: "/experiences/day-tours#palo-verde-boat-tour",
     image: { small: paloVerdeImageSmall, large: paloVerdeImageLarge },
   },
   {
     title: "Costa Rican Coffee",
     type: "Culture & flavor",
     copy: "Learn how Costa Rican coffee moves from plantation to cup while experiencing its local character.",
+    href: "/experiences/day-tours#coffee-tour",
     image: { small: coffeeImageSmall, large: coffeeImageLarge },
   },
   {
     title: "Turtle Nesting",
     type: "Wildlife & nature",
     copy: "Experience the remarkable nesting season at Camaronal Wildlife Refuge with local guidance.",
+    href: "/experiences/activities#turtle-nesting-tour",
     image: { small: turtleImageSmall, large: turtleImageLarge },
   },
 ] as const;
@@ -82,30 +91,9 @@ const cardColumns = [
   [experienceCards[2], experienceCards[5], experienceCards[8]],
 ] as const;
 
-function getCompactCardLayout() {
-  return (
-    typeof window !== "undefined" &&
-    window.matchMedia("(max-width: 680px)").matches
-  );
-}
-
 export function ExperiencesShowcase() {
   const sectionRef = useRef<HTMLElement>(null);
   const storyRef = useRef<HTMLDivElement>(null);
-  const [activeCard, setActiveCard] = useState<string | null>(null);
-  const [hasCompactCardLayout, setHasCompactCardLayout] = useState(
-    getCompactCardLayout,
-  );
-
-  useEffect(() => {
-    const compactLayout = window.matchMedia("(max-width: 680px)");
-    const updateCardLayout = () =>
-      setHasCompactCardLayout(compactLayout.matches);
-
-    compactLayout.addEventListener("change", updateCardLayout);
-    return () =>
-      compactLayout.removeEventListener("change", updateCardLayout);
-  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -197,12 +185,6 @@ export function ExperiencesShowcase() {
               key={columnIndex}
             >
               {column.map((experience) => {
-                const isActive = activeCard === experience.title;
-                const detailsId = `experience-${experience.title
-                  .toLowerCase()
-                  .replace(/[^a-z0-9]+/g, "-")
-                  .replace(/(^-|-$)/g, "")}-details`;
-                const cardClassName = `experiences-showcase__card ${isActive ? "is-active" : ""}`;
                 const cardContent = (
                   <>
                     <img
@@ -218,50 +200,31 @@ export function ExperiencesShowcase() {
                         {experience.type}
                       </span>
                       <strong>{experience.title}</strong>
-                      <span
-                        className="experiences-showcase__card-copy"
-                        id={detailsId}
-                      >
+                      <span className="experiences-showcase__card-copy">
                         {experience.copy}
                       </span>
                       <span className="experiences-showcase__card-action">
-                        {isActive ? "Hide details" : "View details"}
+                        View details
                         <span
                           className="material-symbols-outlined"
                           aria-hidden="true"
                         >
-                          {isActive ? "expand_less" : "expand_more"}
+                          arrow_forward
                         </span>
                       </span>
                     </span>
                   </>
                 );
 
-                if (hasCompactCardLayout) {
-                  return (
-                    <article className={cardClassName} key={experience.title}>
-                      {cardContent}
-                    </article>
-                  );
-                }
-
                 return (
-                  <button
-                    className={cardClassName}
-                    type="button"
-                    aria-expanded={isActive}
-                    aria-controls={detailsId}
-                    aria-describedby={isActive ? detailsId : undefined}
-                    aria-label={`${isActive ? "Hide" : "View"} details for ${experience.title}`}
-                    onClick={() =>
-                      setActiveCard((current) =>
-                        current === experience.title ? null : experience.title,
-                      )
-                    }
+                  <a
+                    className="experiences-showcase__card"
+                    href={experience.href}
+                    aria-label={`View details for ${experience.title}`}
                     key={experience.title}
                   >
                     {cardContent}
-                  </button>
+                  </a>
                 );
               })}
             </div>
@@ -276,10 +239,7 @@ export function ExperiencesShowcase() {
             Every pace has a place here, from an unhurried pool day to a full-day
             Costa Rican adventure.
           </p>
-          <a
-            className="text-link"
-            href="/experiences"
-          >
+          <a className="text-link" href="/experiences">
             Explore experiences
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_forward

@@ -20,6 +20,7 @@ import { SpaDetail } from "./components/spa-detail/SpaDetail";
 import { WellnessPage } from "./components/wellness-page/WellnessPage";
 import { WellnessOverview } from "./components/wellness-overview/WellnessOverview";
 import { GalleryPreview } from "./components/gallery-preview/GalleryPreview";
+import { GalleryPage } from "./components/gallery-page/GalleryPage";
 import { BookingCallToAction } from "./components/booking-call-to-action/BookingCallToAction";
 import { Footer } from "./components/footer/Footer";
 import { AccommodationDetail } from "./components/accommodation-detail/AccommodationDetail";
@@ -98,6 +99,10 @@ export function App() {
 
   if (path === "/wellness") {
     return <WellnessPage />;
+  }
+
+  if (path === "/gallery") {
+    return <GalleryPage />;
   }
 
   if (path === "/dining/arrecife") {
