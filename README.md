@@ -39,6 +39,12 @@ The project is currently an owner-review presentation, not a publication-ready w
 - Clearly separates the currently available GYM, yoga, and Morpho treatments from the expanded retreat facilities under development.
 - The dedicated Morpho treatment presentation, final schedules, booking process, operational details, and Guest Services destinations remain pending.
 
+### HTML presentation
+
+- Complete standalone 25-slide presentation at `/presentation` with self-running playback, accessible controls, keyboard navigation, and fullscreen support.
+- Includes the current GYM photography, 2025 padel and pickleball courts video, and presentation-only future-development renders with permanent concept / under-development labels.
+- Ready for owner review; it has not been deployed in this milestone.
+
 ### Design system
 
 - Responsive React component system with square interface geometry.
@@ -50,6 +56,16 @@ The project is currently an owner-review presentation, not a publication-ready w
 The current hosted review build is available at [villasplayasamara.netlify.app](https://villasplayasamara.netlify.app/).
 
 This environment is for review and must not be treated as the final public website while launch requirements remain unresolved.
+
+## Project tracking and stakeholder visibility
+
+Maintain these three project records together:
+
+- [TO-DO.md](TO-DO.md) for unresolved content, approvals, operational facts, dependencies, and launch requirements.
+- [`docs/progress/`](docs/progress/) for dated implementation and milestone history.
+- [Villas Playa Sámara — Pages & Launch Tracker](https://docs.google.com/spreadsheets/d/1HoBfcvMqgzZ4CG-wrGlFJ_w3C2BcbocL4RitfCrPIGA/edit) for the stakeholder-facing inventory of pages, review rounds, missing pages, launch features, audits, priorities, owners, blockers, and completion criteria.
+
+Update the Google Sheet after substantial work changes a page's implementation, content, stakeholder-review status, priority, ownership, blockers, or launch readiness. Stakeholders have access for visibility; editing is intentionally limited to the project owner and Codex. The Sheet summarizes project status and does not replace the canonical copy, `TO-DO.md`, or dated progress records.
 
 ## What remains before public launch
 
@@ -128,6 +144,7 @@ Before making changes, read [AGENTS.md](AGENTS.md), the [current development han
 - `assets/images/` — source and optimized website imagery.
 - `assets/svgs/` — approved and concept vector assets.
 - `TO-DO.md` — unresolved content, approvals, operational facts, and launch requirements.
+- [Stakeholder tracker](https://docs.google.com/spreadsheets/d/1HoBfcvMqgzZ4CG-wrGlFJ_w3C2BcbocL4RitfCrPIGA/edit) — page inventory, stakeholder-review status, and launch-readiness tracking.
 
 ## Content status
 

@@ -26,6 +26,7 @@ import { Footer } from "./components/footer/Footer";
 import { AccommodationDetail } from "./components/accommodation-detail/AccommodationDetail";
 import { AccommodationsOverview } from "./components/accommodations-overview/AccommodationsOverview";
 import { DesignSystemPage } from "./components/design-system/DesignSystemPage";
+import { PresentationPage } from "./components/presentation/PresentationPage";
 import { getAccommodationBySlug } from "./data/accommodations";
 import {
   arrecifeMenuVenue,
@@ -64,6 +65,10 @@ function HomePage() {
 
 export function App() {
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
+
+  if (path === "/presentation") {
+    return <PresentationPage />;
+  }
 
   if (path === "/rooms-and-villas") {
     return <AccommodationsOverview />;

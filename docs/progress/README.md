@@ -10,6 +10,7 @@ This directory contains dated implementation records for completed milestones an
 - **Experiences:** Overview, Rentals, Day Tours, and Activities routes implemented with image-led comparisons, internal navigation, optimized imagery, and offering-specific inquiry flows; paused for owner visual and editorial review.
 - **Wellness:** Overview plus dedicated GYM and current-services Morpho Spa routes implemented with shared inquiry forms, cross-page navigation, and future retreat facilities kept separate; final operational details and form delivery remain pending.
 - **Gallery:** Dedicated randomized masonry route with 35 optimized images and an accessible full-screen viewer implemented; categories, captions, alt text, provenance, rights, and drone-image approval remain pending.
+- **HTML presentation:** Current 25-slide `/presentation` deck implemented with continuous navigation, homepage-aligned image spacing, corrected canvas centering, hover-only website return, controls outside the widescreen slide frame, current GYM photography, the 2025 courts video, and clearly labeled future-development renders; paused for owner review and not deployed in this milestone.
 - **Accommodation comparison:** Key facts, floor plans, galleries, and responsive card actions implemented across all eight approved categories.
 - **Accommodation FAQs:** Five FAQs and an expandable, accommodation-specific inquiry form implemented on every detail route.
 - **Visual system:** Square geometry and restrained Birthstone display accents implemented for review.
@@ -18,6 +19,10 @@ This directory contains dated implementation records for completed milestones an
 
 ## Progress records
 
+- [HTML presentation sequence and gallery refinements — August 24, 2026](2026-08-24-html-presentation-sequence-and-gallery-refinements.md)
+- [HTML presentation image, logo, and keyboard refinements — August 24, 2026](2026-08-24-html-presentation-visual-refinements.md)
+- [HTML presentation completed and corrected — August 24, 2026](2026-08-24-html-presentation-completion.md)
+- [HTML presentation prototype — August 24, 2026](2026-08-24-html-presentation-prototype.md)
 - [Gallery page development — August 19, 2026](2026-08-19-gallery-page-development.md)
 - [Wellness inquiry forms and cross-links — August 17, 2026](2026-08-17-wellness-inquiry-and-cross-links.md)
 - [Current development handoff — August 14, 2026](2026-08-14-current-development-handoff.md)
