@@ -7,6 +7,7 @@ import { useDiningMotion } from "../../hooks/useDiningMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import "../dining-detail/dining-detail.css";
 import "./veranda-detail.css";
 
 const socialPlaybook = [
@@ -40,11 +41,11 @@ export function VerandaDetail() {
   );
 
   return (
-    <div className="site-shell veranda-page">
+    <div className="site-shell dining-detail-page veranda-page">
       <Header />
       <main id="main-content">
         <section
-          className="veranda-page__hero"
+          className="dining-detail-page__hero veranda-page__hero"
           aria-labelledby="veranda-title"
           data-dining-motion="veranda-hero"
         >
@@ -55,23 +56,23 @@ export function VerandaDetail() {
             alt=""
             decoding="async"
           />
-          <div className="veranda-page__hero-shade" aria-hidden="true" />
-          <div className="content-wrap veranda-page__hero-layout">
-            <div className="veranda-page__identity">
+          <div className="dining-detail-page__hero-shade veranda-page__hero-shade" aria-hidden="true" />
+          <div className="content-wrap dining-detail-page__hero-layout veranda-page__hero-layout">
+            <div className="dining-detail-page__identity veranda-page__identity">
               <p>Concept name and logo · subject to change</p>
               <h1 id="veranda-title">
                 <img src={verandaLogoUrl} alt="Veranda Sport Bar" />
               </h1>
               <span>Drinks, games, and easygoing evenings</span>
             </div>
-            <div className="veranda-page__hero-actions">
-              <a className="veranda-page__hero-link" href="#veranda-story">
+            <div className="dining-detail-page__hero-actions veranda-page__hero-actions">
+              <a className="text-link text-link--light text-link--down dining-detail-page__hero-link veranda-page__hero-link" href="#veranda-story">
                 Discover Veranda
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="veranda-page__back-link" href="/dining">
+              <a className="text-link text-link--light text-link--back dining-detail-page__back-link veranda-page__back-link" href="/dining">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -88,7 +89,7 @@ export function VerandaDetail() {
           data-dining-motion="veranda-reveal"
         >
           <header>
-            <h2 id="veranda-intro-title">A casual place to meet, watch, and unwind</h2>
+            <h2 className="section-title" id="veranda-intro-title">A casual place to meet, watch, and unwind</h2>
           </header>
           <div>
             <p>
@@ -109,7 +110,7 @@ export function VerandaDetail() {
           data-dining-motion="veranda-playbook"
         >
           <div className="content-wrap veranda-page__playbook-heading">
-            <h2 id="veranda-playbook-title">Come for the game. Stay for the company.</h2>
+            <h2 className="section-title section-title--light" id="veranda-playbook-title">Come for the game. Stay for the company.</h2>
             <p>
               Four simple ways to make Veranda part of an easygoing resort day.
             </p>
@@ -147,7 +148,7 @@ export function VerandaDetail() {
             />
           </figure>
           <div className="veranda-page__atmosphere-copy">
-            <h2 id="veranda-atmosphere-title">Relaxed enough to drop in. Social enough to stay.</h2>
+            <h2 className="section-title" id="veranda-atmosphere-title">Relaxed enough to drop in. Social enough to stay.</h2>
             <p>
               Cocktails, beers, wines, non-alcoholic refreshments, and casual
               snacks come together in a comfortable setting made for shared
@@ -172,7 +173,7 @@ export function VerandaDetail() {
           data-dining-motion="veranda-menus"
         >
           <header className="content-wrap">
-            <h2 id="veranda-menus-title">What will you bring to the table?</h2>
+            <h2 className="section-title" id="veranda-menus-title">What will you bring to the table?</h2>
             <p>
               Explore Veranda’s current mockup selections. Menu items,
               ingredients, brands, and availability remain subject to change.
@@ -224,7 +225,7 @@ export function VerandaDetail() {
               <span className="material-symbols-outlined" aria-hidden="true">
                 apparel
               </span>
-              <h2>Casual-elegant resort attire</h2>
+              <h2 className="subsection-title section-title--light">Casual-elegant resort attire</h2>
               <p>
                 Shirts or appropriate cover-ups and footwear are required.
                 Bathing suits without a cover-up and shirtless entry are not
@@ -232,7 +233,7 @@ export function VerandaDetail() {
               </p>
             </div>
             <div className="veranda-page__visit-copy">
-              <h2 id="veranda-visit-title">Joining us at Veranda?</h2>
+              <h2 className="section-title" id="veranda-visit-title">Joining us at Veranda?</h2>
               <p>
                 Guest Services can help with current seating availability, menu
                 information, and details about available sports broadcasts or

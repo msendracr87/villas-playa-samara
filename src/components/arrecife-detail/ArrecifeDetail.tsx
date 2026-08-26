@@ -13,6 +13,7 @@ import { useDiningMotion } from "../../hooks/useDiningMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import "../dining-detail/dining-detail.css";
 import "./arrecife-detail.css";
 
 const serviceMoments = [
@@ -29,11 +30,11 @@ export function ArrecifeDetail() {
   );
 
   return (
-    <div className="site-shell arrecife-page">
+    <div className="site-shell dining-detail-page arrecife-page">
       <Header />
       <main id="main-content">
         <section
-          className="arrecife-page__hero"
+          className="dining-detail-page__hero arrecife-page__hero"
           aria-labelledby="arrecife-title"
           data-dining-motion="arrecife-hero"
         >
@@ -44,9 +45,9 @@ export function ArrecifeDetail() {
             alt=""
             decoding="async"
           />
-          <div className="arrecife-page__hero-shade" aria-hidden="true" />
-          <div className="content-wrap arrecife-page__hero-layout">
-            <div className="arrecife-page__identity">
+          <div className="dining-detail-page__hero-shade arrecife-page__hero-shade" aria-hidden="true" />
+          <div className="content-wrap dining-detail-page__hero-layout arrecife-page__hero-layout">
+            <div className="dining-detail-page__identity arrecife-page__identity">
               <p>Concept name and logo · subject to change</p>
               <h1 id="arrecife-title">
                 <img src={arrecifeLogoUrl} alt="Arrecife" />
@@ -56,14 +57,14 @@ export function ArrecifeDetail() {
                 resort dining
               </span>
             </div>
-            <div className="arrecife-page__hero-actions">
-              <a className="arrecife-page__hero-link" href="#arrecife-story">
+            <div className="dining-detail-page__hero-actions arrecife-page__hero-actions">
+              <a className="text-link text-link--light text-link--down dining-detail-page__hero-link arrecife-page__hero-link" href="#arrecife-story">
                 Discover Arrecife
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="arrecife-page__back-link" href="/dining">
+              <a className="text-link text-link--light text-link--back dining-detail-page__back-link arrecife-page__back-link" href="/dining">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -80,7 +81,7 @@ export function ArrecifeDetail() {
           data-dining-motion="arrecife-reveal"
         >
           <header>
-            <h2 id="arrecife-intro-title">
+            <h2 className="section-title" id="arrecife-intro-title">
               A welcoming table for every part of the day
             </h2>
           </header>
@@ -131,7 +132,7 @@ export function ArrecifeDetail() {
           </div>
 
           <div className="arrecife-page__formats-copy">
-            <h2 id="arrecife-formats-title">Seasonal service, familiar welcome</h2>
+            <h2 className="section-title" id="arrecife-formats-title">Seasonal service, familiar welcome</h2>
             <p>
               The dining format follows the rhythm of the season while keeping
               the atmosphere approachable for couples, families, and friends.
@@ -197,7 +198,7 @@ export function ArrecifeDetail() {
         >
           <div className="content-wrap arrecife-page__bar-layout">
             <div className="arrecife-page__bar-copy">
-              <h2 id="arrecife-bar-title">A drink, a conversation, a little longer</h2>
+              <h2 className="section-title section-title--light" id="arrecife-bar-title">A drink, a conversation, a little longer</h2>
               <p>
                 The integrated bar offers cocktails, wines, beers,
                 non-alcoholic beverages, juices, coffee, and refreshments to
@@ -233,7 +234,7 @@ export function ArrecifeDetail() {
           data-dining-motion="arrecife-gallery"
         >
           <header>
-            <h2 id="arrecife-gallery-title">A closer look at Arrecife</h2>
+            <h2 className="section-title" id="arrecife-gallery-title">A closer look at Arrecife</h2>
             <p>
               Restaurant atmosphere, welcoming service, and open-air resort
               surroundings come together around the table.
@@ -274,7 +275,7 @@ export function ArrecifeDetail() {
               <span className="material-symbols-outlined" aria-hidden="true">
                 apparel
               </span>
-              <h2>Casual resort attire</h2>
+              <h2 className="subsection-title section-title--light">Casual resort attire</h2>
               <p>
                 Shirts or appropriate cover-ups and footwear are required.
                 Bathing suits without a cover-up and shirtless entry are not
@@ -283,7 +284,7 @@ export function ArrecifeDetail() {
             </div>
 
             <div className="arrecife-page__visit-copy">
-              <h2 id="arrecife-visit-title">Joining us at Arrecife?</h2>
+              <h2 className="section-title" id="arrecife-visit-title">Joining us at Arrecife?</h2>
               <p>
                 Guest Services can help confirm current availability, seasonal
                 service information, and whether buffet or à la carte dining is

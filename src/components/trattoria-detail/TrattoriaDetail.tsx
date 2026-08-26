@@ -13,6 +13,7 @@ import { useDiningMotion } from "../../hooks/useDiningMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import "../dining-detail/dining-detail.css";
 import "./trattoria-detail.css";
 
 const eveningMoments = [
@@ -29,11 +30,11 @@ export function TrattoriaDetail() {
   );
 
   return (
-    <div className="site-shell trattoria-page">
+    <div className="site-shell dining-detail-page trattoria-page">
       <Header />
       <main id="main-content">
         <section
-          className="trattoria-page__hero"
+          className="dining-detail-page__hero trattoria-page__hero"
           aria-labelledby="trattoria-title"
           data-dining-motion="trattoria-hero"
         >
@@ -44,23 +45,23 @@ export function TrattoriaDetail() {
             alt=""
             decoding="async"
           />
-          <div className="trattoria-page__hero-shade" aria-hidden="true" />
-          <div className="content-wrap trattoria-page__hero-layout">
-            <div className="trattoria-page__identity">
+          <div className="dining-detail-page__hero-shade trattoria-page__hero-shade" aria-hidden="true" />
+          <div className="content-wrap dining-detail-page__hero-layout trattoria-page__hero-layout">
+            <div className="dining-detail-page__identity trattoria-page__identity">
               <p>Concept name and logo · subject to change</p>
               <h1 id="trattoria-title">
                 <img src={trattoriaLogoUrl} alt="Trattoria" />
               </h1>
               <span>Classic Italian flavors in a relaxed evening setting</span>
             </div>
-            <div className="trattoria-page__hero-actions">
-              <a className="trattoria-page__hero-link" href="#trattoria-story">
+            <div className="dining-detail-page__hero-actions trattoria-page__hero-actions">
+              <a className="text-link text-link--light text-link--down dining-detail-page__hero-link trattoria-page__hero-link" href="#trattoria-story">
                 Settle into the evening
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="trattoria-page__back-link" href="/dining">
+              <a className="text-link text-link--light text-link--back dining-detail-page__back-link trattoria-page__back-link" href="/dining">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -77,7 +78,7 @@ export function TrattoriaDetail() {
           data-dining-motion="trattoria-reveal"
         >
           <header>
-            <h2 id="trattoria-intro-title">A relaxed taste of Italy</h2>
+            <h2 className="section-title" id="trattoria-intro-title">A relaxed taste of Italy</h2>
           </header>
           <div className="trattoria-page__intro-copy">
             <p>
@@ -112,7 +113,7 @@ export function TrattoriaDetail() {
         >
           <div className="trattoria-page__arrival-copy">
             <p className="trattoria-page__act">Act I · Arrive</p>
-            <h2 id="trattoria-arrival-title">Let the pace of the evening soften</h2>
+            <h2 className="section-title" id="trattoria-arrival-title">Let the pace of the evening soften</h2>
             <p>
               The setting is comfortable and inviting: a place to come together,
               share conversation, and settle in before dinner begins.
@@ -141,7 +142,7 @@ export function TrattoriaDetail() {
         >
           <header>
             <p className="trattoria-page__act">Act II · Share</p>
-            <h2 id="trattoria-table-title">Familiar dishes, gathered around the table</h2>
+            <h2 className="section-title" id="trattoria-table-title">Familiar dishes, gathered around the table</h2>
             <p>
               The à la carte concept brings together antipasti, salads, pizza,
               pasta, risotto, meat and seafood dishes, vegetarian options, and
@@ -199,7 +200,7 @@ export function TrattoriaDetail() {
             </figure>
             <div className="trattoria-page__wine-copy">
               <p className="trattoria-page__act">Act III · Linger</p>
-              <h2 id="trattoria-wine-title">A glass of wine, then a little longer</h2>
+              <h2 className="section-title section-title--light" id="trattoria-wine-title">A glass of wine, then a little longer</h2>
               <p>
                 Wines, classic Italian cocktails, familiar mixed drinks,
                 non-alcoholic selections, coffee, and after-dinner refreshments
@@ -237,7 +238,7 @@ export function TrattoriaDetail() {
               <span className="material-symbols-outlined" aria-hidden="true">
                 apparel
               </span>
-              <h2>Casual-elegant resort attire</h2>
+              <h2 className="subsection-title section-title--light">Casual-elegant resort attire</h2>
               <p>
                 Shirts or appropriate cover-ups and footwear are required.
                 Bathing suits without a cover-up and shirtless entry are not
@@ -245,7 +246,7 @@ export function TrattoriaDetail() {
               </p>
             </div>
             <div className="trattoria-page__visit-copy">
-              <h2 id="trattoria-visit-title">Joining us for dinner?</h2>
+              <h2 className="section-title" id="trattoria-visit-title">Joining us for dinner?</h2>
               <p>
                 Guest Services can help confirm current availability, seasonal
                 service information, and answer questions about the menu during

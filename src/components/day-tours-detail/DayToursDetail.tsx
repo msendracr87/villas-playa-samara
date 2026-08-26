@@ -31,6 +31,7 @@ import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { DayTourInquiry } from "../day-tour-inquiry/DayTourInquiry";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import "../experiences-detail/experiences-detail.css";
 import "./day-tours-detail.css";
 
 const dayTours = [
@@ -296,11 +297,11 @@ export function DayToursDetail() {
   };
 
   return (
-    <div className="site-shell day-tours-page">
+    <div className="site-shell experiences-detail-page day-tours-page">
       <Header />
       <main id="main-content">
         <section
-          className="day-tours-page__hero"
+          className="experiences-detail-page__hero day-tours-page__hero"
           aria-labelledby="day-tours-page-title"
           data-experiences-motion="day-tours-hero"
         >
@@ -311,9 +312,9 @@ export function DayToursDetail() {
             alt=""
             decoding="async"
           />
-          <div className="day-tours-page__hero-shade" aria-hidden="true" />
+          <div className="experiences-detail-page__hero-shade day-tours-page__hero-shade" aria-hidden="true" />
 
-          <div className="content-wrap day-tours-page__hero-content">
+          <div className="content-wrap experiences-detail-page__hero-content day-tours-page__hero-content">
             <h1 id="day-tours-page-title">
               Discover Costa Rica <span>in a Day</span>
             </h1>
@@ -321,14 +322,14 @@ export function DayToursDetail() {
               Volcanoes, cloud forests, wildlife reserves, coffee country,
               and the Pacific—all within a day&apos;s journey from Sámara.
             </p>
-            <div className="day-tours-page__hero-actions">
-              <a href="#day-tour-index">
+            <div className="experiences-detail-page__hero-actions day-tours-page__hero-actions">
+              <a className="text-link text-link--light text-link--down" href="#day-tour-index">
                 Discover tours
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="day-tours-page__back-link" href="/experiences">
+              <a className="text-link text-link--light text-link--back experiences-detail-page__back-link day-tours-page__back-link" href="/experiences">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -339,11 +340,11 @@ export function DayToursDetail() {
         </section>
 
         <section
-          className="content-wrap day-tours-page__introduction"
+          className="content-wrap experiences-detail-page__introduction day-tours-page__introduction"
           aria-labelledby="day-tours-introduction-title"
           data-experiences-motion="day-tours-reveal"
         >
-          <h2 id="day-tours-introduction-title">
+          <h2 className="section-title" id="day-tours-introduction-title">
             Adventures Beyond the Shores of Sámara
           </h2>
           <p>
@@ -352,22 +353,22 @@ export function DayToursDetail() {
             and wildlife reserves, each tour is designed to bring you closer
             to Costa Rica&apos;s vibrant culture and breathtaking beauty.
           </p>
-          <p className="day-tours-page__introduction-note">
+          <p className="experiences-detail-page__introduction-note day-tours-page__introduction-note">
             Tour schedules and departure conditions vary by experience. Guest
             Services can confirm current availability during your stay.
           </p>
         </section>
 
         <section
-          className="day-tours-page__index"
+          className="experiences-detail-page__index day-tours-page__index"
           id="day-tour-index"
           aria-labelledby="day-tour-index-title"
         >
           <div
-            className="content-wrap day-tours-page__index-heading"
+            className="content-wrap experiences-detail-page__index-heading day-tours-page__index-heading"
             data-experiences-motion="day-tours-reveal"
           >
-            <h2 id="day-tour-index-title">Nine ways into Costa Rica</h2>
+            <h2 className="section-title" id="day-tour-index-title">Nine ways into Costa Rica</h2>
             <p>
               Choose the coast, wildlife, highlands, coffee country, or a full
               day of adrenaline—then follow the daybook to the details.
@@ -441,7 +442,7 @@ export function DayToursDetail() {
                     </span>
                     {tour.kicker}
                   </p>
-                  <h2>{tour.name}</h2>
+                  <h2 className="subsection-title subsection-title--light">{tour.name}</h2>
                   <p>{tour.description}</p>
 
                   <dl className="day-tours-page__chapter-details">

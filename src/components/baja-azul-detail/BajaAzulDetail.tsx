@@ -13,6 +13,7 @@ import { useDiningMotion } from "../../hooks/useDiningMotion";
 import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import "../dining-detail/dining-detail.css";
 import "./baja-azul-detail.css";
 
 const serviceMoments = [
@@ -47,11 +48,11 @@ export function BajaAzulDetail() {
   );
 
   return (
-    <div className="site-shell baja-page">
+    <div className="site-shell dining-detail-page baja-page">
       <Header />
       <main id="main-content">
         <section
-          className="baja-page__hero"
+          className="dining-detail-page__hero baja-page__hero"
           aria-labelledby="baja-title"
           data-dining-motion="baja-hero"
         >
@@ -62,23 +63,23 @@ export function BajaAzulDetail() {
             alt=""
             decoding="async"
           />
-          <div className="baja-page__hero-shade" aria-hidden="true" />
-          <div className="content-wrap baja-page__hero-layout">
-            <div className="baja-page__identity">
+          <div className="dining-detail-page__hero-shade baja-page__hero-shade" aria-hidden="true" />
+          <div className="content-wrap dining-detail-page__hero-layout baja-page__hero-layout">
+            <div className="dining-detail-page__identity baja-page__identity">
               <p>Concept name and logo · subject to change</p>
               <h1 id="baja-title">
                 <img src={bajaAzulLogoUrl} alt="Baja Azul" />
               </h1>
               <span>Casual daytime bites and Mexican-inspired evenings</span>
             </div>
-            <div className="baja-page__hero-actions">
-              <a className="baja-page__hero-link" href="#baja-story">
+            <div className="dining-detail-page__hero-actions baja-page__hero-actions">
+              <a className="text-link text-link--light text-link--down dining-detail-page__hero-link baja-page__hero-link" href="#baja-story">
                 Discover Baja Azul
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="baja-page__back-link" href="/dining">
+              <a className="text-link text-link--light text-link--back dining-detail-page__back-link baja-page__back-link" href="/dining">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -96,7 +97,7 @@ export function BajaAzulDetail() {
         >
           <header>
             <p>Day to night</p>
-            <h2 id="baja-intro-title">From relaxed snacks to flavorful evenings</h2>
+            <h2 className="section-title" id="baja-intro-title">From relaxed snacks to flavorful evenings</h2>
           </header>
           <div className="baja-page__intro-copy">
             <p>
@@ -138,7 +139,7 @@ export function BajaAzulDetail() {
           </div>
           <div className="baja-page__rhythm-copy">
             <p className="baja-page__kicker">Two easygoing rhythms</p>
-            <h2 id="baja-rhythm-title">A casual spot that changes with the day</h2>
+            <h2 className="section-title" id="baja-rhythm-title">A casual spot that changes with the day</h2>
             <div className="baja-page__rhythm-list">
               <article>
                 <span>01</span>
@@ -176,7 +177,7 @@ export function BajaAzulDetail() {
           <div className="content-wrap baja-page__menus-layout">
             <div className="baja-page__menus-copy">
               <p className="baja-page__kicker">Concept menus</p>
-              <h2 id="baja-menus-title">Find something for the moment</h2>
+              <h2 className="section-title section-title--light" id="baja-menus-title">Find something for the moment</h2>
               <p>
                 Explore the current mockup menus for daytime snacks, evening
                 dining, and drinks. Selections remain subject to change.
@@ -228,7 +229,7 @@ export function BajaAzulDetail() {
         >
           <div className="baja-page__atmosphere-copy">
             <p className="baja-page__kicker">At the table</p>
-            <h2 id="baja-atmosphere-title">Lively, comfortable, and easy to enjoy</h2>
+            <h2 className="section-title" id="baja-atmosphere-title">Lively, comfortable, and easy to enjoy</h2>
             <p>
               Baja Azul is designed for a laid-back resort meal: a comfortable
               place to gather with family and friends and enjoy familiar flavors
@@ -255,7 +256,7 @@ export function BajaAzulDetail() {
           <div className="content-wrap baja-page__visit-layout">
             <div className="baja-page__dress-code">
               <span className="material-symbols-outlined" aria-hidden="true">apparel</span>
-              <h2>Casual resort attire</h2>
+              <h2 className="subsection-title section-title--light">Casual resort attire</h2>
               <p>
                 Comfortable resort wear is welcome. Appropriate cover-ups,
                 shirts, and footwear are required inside the restaurant.
@@ -263,7 +264,7 @@ export function BajaAzulDetail() {
             </div>
             <div className="baja-page__visit-copy">
               <p className="baja-page__kicker">Plan your evening</p>
-              <h2 id="baja-visit-title">Joining us at Baja Azul?</h2>
+              <h2 className="section-title" id="baja-visit-title">Joining us at Baja Azul?</h2>
               <p>
                 Guest Services can help confirm the current service format,
                 seasonal availability, and dining information during your stay.

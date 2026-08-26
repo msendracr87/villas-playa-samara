@@ -1,28 +1,9 @@
 .arrecife-page {
+  --dining-detail-hero-bg: var(--color-forest-950);
+  --dining-detail-overlay-rgb: 16, 26, 20;
+
   color: var(--color-ink);
   background: var(--color-sand-50);
-}
-
-.arrecife-page__hero {
-  position: relative;
-  display: grid;
-  min-height: min(900px, 96svh);
-  overflow: hidden;
-  color: #fff;
-  background: var(--color-forest-950);
-}
-
-.arrecife-page__hero > img,
-.arrecife-page__hero-shade {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.arrecife-page__hero > img {
-  object-fit: cover;
-  object-position: center 48%;
 }
 
 .arrecife-page__hero-shade {
@@ -31,106 +12,17 @@
     linear-gradient(0deg, rgba(7, 12, 8, 0.88) 0%, rgba(7, 12, 8, 0.08) 72%);
 }
 
-.arrecife-page__hero-layout {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  min-height: inherit;
-  grid-template-rows: 1fr auto;
-  align-items: end;
-  padding-block: clamp(176px, 18vh, 228px) clamp(48px, 6vw, 84px);
-}
-
-.arrecife-page__back-link,
-.arrecife-page__hero-link {
-  display: inline-flex;
-  min-height: var(--interaction-target-min);
-  align-items: center;
-  gap: 10px;
-  justify-self: start;
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.arrecife-page__back-link {
-  justify-self: end;
-  padding-inline: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.64);
-  background: rgba(16, 26, 20, 0.58);
-  transition:
-    border-color 180ms cubic-bezier(0.2, 0, 0, 1),
-    background-color 180ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-.arrecife-page__back-link:hover,
-.arrecife-page__back-link:focus-visible {
-  border-color: #fff;
-  background: rgba(16, 26, 20, 0.9);
-}
-
-.arrecife-page__back-link .material-symbols-outlined,
-.arrecife-page__hero-link .material-symbols-outlined {
-  font-size: 20px;
-  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-.arrecife-page__back-link:hover .material-symbols-outlined,
-.arrecife-page__back-link:focus-visible .material-symbols-outlined {
-  transform: translateX(-4px);
-}
-
-.arrecife-page__hero-link:hover .material-symbols-outlined,
-.arrecife-page__hero-link:focus-visible .material-symbols-outlined {
-  transform: translateY(4px);
-}
-
 .arrecife-page__identity {
-  align-self: end;
   margin-bottom: clamp(42px, 6vw, 74px);
-}
-
-.arrecife-page__identity > p {
-  margin: 0 0 8px;
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
 }
 
 .arrecife-page__identity h1 {
   width: min(58vw, 470px);
   height: clamp(180px, 24vw, 290px);
-  margin: 0;
-  line-height: 0;
-}
-
-.arrecife-page__identity h1 img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: left center;
 }
 
 .arrecife-page__identity > span {
-  display: block;
-  max-width: 54ch;
   margin-top: 2px;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: clamp(0.96rem, 1.2vw, 1.1rem);
-  line-height: 1.6;
-}
-
-.arrecife-page__hero-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
 }
 
 .arrecife-page__intro {
@@ -146,15 +38,10 @@
 .arrecife-page__gallery header h2,
 .arrecife-page__visit h2 {
   margin: 0;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
-  text-wrap: balance;
 }
 
 .arrecife-page__intro header h2 {
   max-width: 12ch;
-  font-size: clamp(2.8rem, 5.5vw, 5.6rem);
 }
 
 .arrecife-page__intro-copy {
@@ -242,7 +129,6 @@
 
 .arrecife-page__formats-copy h2 {
   max-width: 11ch;
-  font-size: clamp(2.5rem, 4.7vw, 4.9rem);
 }
 
 .arrecife-page__formats-copy > p {
@@ -340,7 +226,6 @@
 
 .arrecife-page__bar-copy h2 {
   max-width: 11ch;
-  font-size: clamp(2.6rem, 4.8vw, 5rem);
 }
 
 .arrecife-page__bar-copy p {
@@ -380,7 +265,6 @@
 
 .arrecife-page__gallery header h2 {
   max-width: 10ch;
-  font-size: clamp(2.8rem, 5.2vw, 5.3rem);
 }
 
 .arrecife-page__gallery header p {
@@ -432,7 +316,6 @@
 .arrecife-page__dress-code h2 {
   max-width: 10ch;
   margin-top: 42px;
-  font-size: clamp(2rem, 3.2vw, 3.5rem);
 }
 
 .arrecife-page__dress-code p {
@@ -454,7 +337,6 @@
 
 .arrecife-page__visit-copy h2 {
   max-width: 12ch;
-  font-size: clamp(2.6rem, 4.8vw, 5rem);
 }
 
 .arrecife-page__visit-copy > p {

@@ -40,11 +40,7 @@
   padding-bottom: clamp(150px, 15vw, 180px);
 }
 
-.gym-page__hero h1,
-.gym-page__introduction h2,
-.gym-page__inside-copy h2,
-.gym-page__training-heading h2,
-.gym-page__reception h2 {
+.gym-page__hero h1 {
   margin: 0;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -198,10 +194,8 @@
   text-align: center;
 }
 
-.gym-page__introduction h2 {
+.gym-page__introduction .section-title {
   max-width: 13ch;
-  font-size: clamp(2.8rem, 5.4vw, 5.5rem);
-  line-height: 0.98;
 }
 
 .gym-page__introduction p {
@@ -259,13 +253,6 @@
   line-height: 1.5;
 }
 
-.gym-page__inside-copy h2,
-.gym-page__training-heading h2,
-.gym-page__reception h2 {
-  font-size: clamp(2.7rem, 5vw, 5.2rem);
-  line-height: 0.98;
-}
-
 .gym-page__inside-copy > p,
 .gym-page__training-heading p,
 .gym-page__reception p {
@@ -310,8 +297,9 @@
   gap: 36px clamp(60px, 10vw, 152px);
 }
 
-.gym-page__training-heading h2 {
+.gym-page__training-heading .section-title {
   max-width: 11ch;
+  color: #fff;
 }
 
 .gym-page__training-heading p {
@@ -377,7 +365,7 @@
   gap: clamp(54px, 9vw, 140px);
 }
 
-.gym-page__reception h2 {
+.gym-page__reception .section-title {
   max-width: 10ch;
 }
 
@@ -446,7 +434,7 @@
   transition-delay: 150ms;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
   .gym-page__inside-layout,
   .gym-page__training-layout,
   .gym-page__reception-layout,

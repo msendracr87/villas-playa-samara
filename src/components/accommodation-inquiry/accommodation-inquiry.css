@@ -35,14 +35,9 @@
   top: 48px;
 }
 
-.accommodation-inquiry__intro h2 {
+.accommodation-inquiry__intro .section-title {
   max-width: 12ch;
-  margin: 0;
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
-  text-wrap: balance;
+  color: #fff;
 }
 
 .accommodation-inquiry__intro p {
@@ -171,7 +166,7 @@
     position: static;
   }
 
-  .accommodation-inquiry__intro h2 {
+  .accommodation-inquiry__intro .section-title {
     max-width: 14ch;
   }
 

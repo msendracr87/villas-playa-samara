@@ -827,7 +827,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .presentation__back {
     top: 12px;
     left: 12px;

@@ -279,7 +279,7 @@ export function DiningOverview() {
             </div>
             <div className="dining-page__nikoa-copy">
               <p>Beyond the all-inclusive plan</p>
-              <h2 id="nikoa-title">
+              <h2 className="brand-title" id="nikoa-title">
                 <img src={nikoaLogoUrl} alt="Nikoa Beach Club" />
               </h2>
               <p>
@@ -327,7 +327,7 @@ export function DiningOverview() {
             data-dining-motion="assistance-copy"
           >
             <p className="section-kicker">Here to help</p>
-            <h2 id="dining-assistance-title">
+            <h2 className="section-title" id="dining-assistance-title">
               Questions about dining during your stay?
             </h2>
             <p>

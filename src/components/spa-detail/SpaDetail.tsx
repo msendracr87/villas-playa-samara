@@ -195,7 +195,7 @@ export function SpaDetail() {
             </figure>
 
             <div className="spa-page__introduction-copy" data-wellness-motion="reveal">
-              <h2 id="spa-introduction-title">
+              <h2 className="section-title" id="spa-introduction-title">
                 Care shaped around the way you want to feel
               </h2>
               <p>
@@ -224,7 +224,7 @@ export function SpaDetail() {
           aria-labelledby="spa-menu-title"
         >
           <div className="content-wrap spa-page__menu-heading" data-wellness-motion="reveal">
-            <h2 id="spa-menu-title">
+            <h2 className="section-title" id="spa-menu-title">
               Choose your time to <span>restore</span>
             </h2>
             <p>

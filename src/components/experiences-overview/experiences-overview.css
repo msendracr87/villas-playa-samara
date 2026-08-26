@@ -132,11 +132,6 @@
 .experiences-page__in-house-heading h2,
 .experiences-page__assistance h2 {
   margin: 0;
-  font-size: clamp(2.6rem, 5.2vw, 5.4rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.96;
-  text-wrap: balance;
 }
 
 .experiences-page__introduction-copy h2 {
@@ -674,7 +669,7 @@
   opacity: 0.58;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1080px) {
   .experiences-page__in-house-heading,
   .experiences-page__in-house-heading > div:first-child {
     grid-template-columns: 1fr;
@@ -695,7 +690,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   .experiences-page__journey {
     width: 94%;
   }
@@ -718,7 +713,6 @@
   .experiences-page__journeys-story h2,
   .experiences-page__in-house-heading h2,
   .experiences-page__assistance h2 {
-    font-size: clamp(2.5rem, 12vw, 4rem);
   }
 
   .experiences-page__introduction-media {

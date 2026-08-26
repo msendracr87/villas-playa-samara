@@ -104,11 +104,6 @@
 .accommodation-card h2 {
   max-width: 20ch;
   margin: 0;
-  font-size: clamp(1.75rem, 2.8vw, 3rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 1.04;
-  text-wrap: balance;
 }
 
 .accommodation-card h2 a {
@@ -274,10 +269,6 @@
 
 .accommodation-card__dialog-header h2 {
   margin: 0;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
 }
 
 .accommodation-card__dialog-header > button,

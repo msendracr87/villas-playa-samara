@@ -3,28 +3,8 @@
   background: var(--color-sand-50);
 }
 
-.rentals-page__hero {
-  position: relative;
-  display: flex;
-  min-height: min(900px, 94svh);
-  align-items: flex-end;
-  overflow: hidden;
-  color: #fff;
-  background: var(--color-forest-950);
-  isolation: isolate;
-}
-
-.rentals-page__hero > img,
-.rentals-page__hero-shade {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .rentals-page__hero > img {
   z-index: -2;
-  object-fit: cover;
   object-position: center 48%;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   outline-offset: -1px;
@@ -33,21 +13,6 @@
 .rentals-page__hero-shade {
   z-index: -1;
   background: linear-gradient(180deg, rgba(7, 12, 8, 0.5) 0%, transparent 38%), linear-gradient(0deg, rgba(7, 12, 8, 0.86) 0%, rgba(7, 12, 8, 0.08) 70%), linear-gradient(90deg, rgba(7, 12, 8, 0.34), transparent 62%);
-}
-
-.rentals-page__hero-content {
-  position: relative;
-  padding-bottom: clamp(52px, 7vw, 96px);
-}
-
-.rentals-page__hero h1,
-.rentals-page__introduction h2,
-.rentals-page__guide-heading h2,
-.rentals-page__folio-copy h2 {
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  text-wrap: balance;
 }
 
 .rentals-page__folio-kicker {
@@ -75,148 +40,18 @@
 
 .rentals-page__hero h1 {
   max-width: 10ch;
-  font-size: clamp(3.4rem, 7.2vw, 6rem);
-  line-height: 0.9;
 }
 
 .rentals-page__hero h1 span {
-  max-width: 100%;
-  margin-top: 0.12em;
-  color: var(--color-lime);
-  font-family: "Birthstone", cursive;
   font-size: 1.52em;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 0.54;
 }
 
 .rentals-page__hero-content > p {
   max-width: 42ch;
-  margin: 36px 0 0;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: clamp(1rem, 1.35vw, 1.18rem);
-  line-height: 1.65;
-  text-wrap: pretty;
-}
-
-.rentals-page__hero-actions {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 18px 32px;
-  margin-top: 30px;
-}
-
-.rentals-page__hero-actions a {
-  display: inline-flex;
-  min-height: var(--interaction-target-min);
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.rentals-page__hero-actions .material-symbols-outlined {
-  font-size: 20px;
-  transition-property: transform;
-  transition-duration: 180ms;
-  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
-}
-
-.rentals-page__hero-actions .rentals-page__back-link {
-  padding-inline: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.64);
-  background: rgba(16, 26, 20, 0.58);
-  transition:
-    border-color 180ms cubic-bezier(0.2, 0, 0, 1),
-    background-color 180ms cubic-bezier(0.2, 0, 0, 1),
-    transform 180ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-.rentals-page__hero-actions .rentals-page__back-link:hover,
-.rentals-page__hero-actions .rentals-page__back-link:focus-visible {
-  border-color: #fff;
-  background: rgba(16, 26, 20, 0.9);
-}
-
-.rentals-page__hero-actions a:first-child:hover .material-symbols-outlined,
-.rentals-page__hero-actions a:first-child:focus-visible .material-symbols-outlined {
-  transform: translateY(4px);
-}
-
-.rentals-page__hero-actions a:last-child:hover .material-symbols-outlined,
-.rentals-page__hero-actions a:last-child:focus-visible .material-symbols-outlined {
-  transform: translateX(-4px);
-}
-
-.rentals-page__hero-actions a:active {
-  transform: scale(0.96);
-}
-
-.rentals-page__introduction {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-block: var(--section-space);
-  text-align: center;
-}
-
-.rentals-page__introduction h2 {
-  max-width: 13ch;
-  font-size: clamp(2.8rem, 5.4vw, 5.5rem);
-  line-height: 0.98;
 }
 
 .rentals-page__introduction > p:not(.rentals-page__introduction-note) {
   max-width: 62ch;
-  margin: 34px 0 0;
-  color: var(--color-muted);
-  font-size: clamp(1rem, 1.35vw, 1.2rem);
-  line-height: 1.78;
-  text-wrap: pretty;
-}
-
-.rentals-page__introduction-note {
-  max-width: 70ch;
-  margin: 64px 0 0;
-  color: var(--color-muted);
-  font-size: 0.82rem;
-  line-height: 1.7;
-  text-wrap: pretty;
-}
-
-.rentals-page__guide {
-  padding-block: clamp(92px, 10vw, 152px);
-  background: #fff;
-  scroll-margin-top: 24px;
-}
-
-.rentals-page__guide-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
-  align-items: end;
-  gap: 36px clamp(60px, 10vw, 152px);
-}
-
-.rentals-page__guide-heading h2 {
-  max-width: 10ch;
-  font-size: clamp(2.8rem, 5.2vw, 5.4rem);
-  line-height: 0.96;
-}
-
-.rentals-page__guide-heading p {
-  max-width: 52ch;
-  margin: 0;
-  color: var(--color-muted);
-  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
-  line-height: 1.75;
-  text-wrap: pretty;
 }
 
 .rentals-page__folios {
@@ -296,8 +131,6 @@
 }
 
 .rentals-page__folio-copy h2 {
-  font-size: clamp(2rem, 3vw, 3.5rem);
-  line-height: 0.96;
 }
 
 .rentals-page__folio-copy > p:not(.rentals-page__folio-note, .rentals-page__folio-kicker) {
@@ -507,18 +340,9 @@
   will-change: opacity, transform;
 }
 
-@media (max-width: 960px) {
-  .rentals-page__guide-heading,
+@media (max-width: 980px) {
   .rentals-page__folio {
     grid-template-columns: 1fr;
-  }
-
-  .rentals-page__guide-heading {
-    align-items: start;
-  }
-
-  .rentals-page__guide-heading h2 {
-    max-width: 12ch;
   }
 
   .rentals-page__folio {
@@ -541,42 +365,9 @@
 }
 
 @media (max-width: 760px) {
-  .rentals-page__hero {
-    min-height: 760px;
-  }
 
   .rentals-page__hero > img {
     object-position: 57% center;
-  }
-
-  .rentals-page__hero-content {
-    padding-bottom: 44px;
-  }
-
-  .rentals-page__hero h1 {
-    font-size: clamp(3rem, 14vw, 4.8rem);
-  }
-
-  .rentals-page__hero-actions {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .rentals-page__introduction {
-    text-align: left;
-  }
-
-  .rentals-page__introduction h2 {
-    max-width: 12ch;
-  }
-
-  .rentals-page__introduction-note {
-    margin-top: 48px;
-  }
-
-  .rentals-page__guide {
-    padding-block: 76px;
   }
 
   .rentals-page__folios {
@@ -621,8 +412,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .rentals-page__hero-actions a,
-  .rentals-page__hero-actions .material-symbols-outlined,
   .rentals-page__navigation .material-symbols-outlined {
     transition-duration: 0.01ms;
   }

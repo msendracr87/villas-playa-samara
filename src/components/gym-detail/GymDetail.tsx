@@ -127,7 +127,7 @@ export function GymDetail() {
           aria-labelledby="gym-introduction-title"
           data-wellness-motion="reveal"
         >
-          <h2 id="gym-introduction-title">
+          <h2 className="section-title" id="gym-introduction-title">
             Move, recharge, and make time for yourself
           </h2>
           <p>
@@ -156,7 +156,9 @@ export function GymDetail() {
             </figure>
 
             <div className="gym-page__inside-copy" data-wellness-motion="reveal">
-              <h2 id="gym-inside-title">Inside the GYM</h2>
+              <h2 className="section-title" id="gym-inside-title">
+                Inside the GYM
+              </h2>
               <p>
                 Large windows overlook the surrounding greenery, bringing
                 natural light into the workout space while creating an open
@@ -182,7 +184,9 @@ export function GymDetail() {
           aria-labelledby="gym-training-title"
         >
           <div className="content-wrap gym-page__training-heading" data-wellness-motion="reveal">
-            <h2 id="gym-training-title">A space for your routine</h2>
+            <h2 className="section-title" id="gym-training-title">
+              A space for your routine
+            </h2>
             <p>
               From a quick morning session to a more complete workout, the GYM
               supports different ways to keep moving during your stay.
@@ -218,7 +222,9 @@ export function GymDetail() {
         >
           <div className="content-wrap gym-page__reception-layout">
             <div data-wellness-motion="reveal">
-              <h2 id="gym-reception-title">A welcoming arrival</h2>
+              <h2 className="section-title" id="gym-reception-title">
+                A welcoming arrival
+              </h2>
               <p>
                 A dedicated reception area, natural finishes, and garden-facing
                 windows carry the calm character of the resort into the GYM.

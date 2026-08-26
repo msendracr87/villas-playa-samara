@@ -68,7 +68,7 @@ export function AccommodationMediaDialog({
         <header className="accommodation-card__dialog-header">
           <div>
             <p>{isGallery ? "Accommodation gallery" : "Accommodation layout"}</p>
-            <h2 id={titleId}>{accommodation.name}</h2>
+            <h2 className="subsection-title" id={titleId}>{accommodation.name}</h2>
           </div>
           <button type="button" onClick={closeDialog} aria-label="Close">
             <span className="material-symbols-outlined" aria-hidden="true">

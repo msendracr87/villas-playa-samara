@@ -223,11 +223,6 @@
 
 .accommodation-detail-page__included h2 {
   margin: 0;
-  font-size: clamp(2.2rem, 4.5vw, 4.8rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  text-wrap: balance;
 }
 
 .accommodation-detail-page__included ul {
@@ -279,11 +274,6 @@
 .accommodation-detail-page__faqs-heading h2 {
   max-width: 10ch;
   margin: 0;
-  font-size: clamp(2.4rem, 4.6vw, 4.8rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
-  text-wrap: balance;
 }
 
 .accommodation-detail-page__faqs-heading p {

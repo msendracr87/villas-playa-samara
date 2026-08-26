@@ -442,7 +442,7 @@ export function ExperiencesOverview() {
                 loading="lazy"
                 decoding="async"
               />
-              <h2>Your gateway to adventure</h2>
+              <h2 className="section-title">Your gateway to adventure</h2>
               <div className="experiences-page__introduction-text">
                 <p>
                   Embark on a journey of discovery with Monkey Tours, a
@@ -521,7 +521,7 @@ export function ExperiencesOverview() {
           </div>
 
           <div className="experiences-page__journeys-story">
-            <h2 id="experiences-journeys-title">From Sámara to Costa Rica</h2>
+            <h2 className="section-title section-title--light" id="experiences-journeys-title">From Sámara to Costa Rica</h2>
             <p>
               Choose your pace, then follow the landscape—from the Pacific coast
               to cloud forest and volcano country.
@@ -587,7 +587,7 @@ export function ExperiencesOverview() {
             <div>
               <div className="experiences-page__in-house-title">
                 <p className="section-kicker">At the resort</p>
-                <h2 id="in-house-activities-title">
+                <h2 className="section-title" id="in-house-activities-title">
                   Make every resort day your own
                 </h2>
               </div>
@@ -681,7 +681,7 @@ export function ExperiencesOverview() {
             data-experiences-motion="assistance"
           >
             <p className="section-kicker">Plan your experience</p>
-            <h2>Ready for your adventure?</h2>
+            <h2 className="section-title">Ready for your adventure?</h2>
             <p>
               Not sure where to start? Our team can help you plan the right mix
               of tours and activities to match your style.

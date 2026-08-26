@@ -77,11 +77,7 @@
   max-width: 660px;
 }
 
-.wellness-page__hero h1,
-.wellness-page__hero-yoga h2,
-.wellness-page__service h2,
-.wellness-page__future h2,
-.wellness-page__closing h2 {
+.wellness-page__hero h1 {
   margin: 0;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -365,10 +361,8 @@
     "opsz" 24;
 }
 
-.wellness-page__service h2 {
+.wellness-page__service .section-title {
   max-width: 11ch;
-  font-size: clamp(2.9rem, 5.2vw, 5.4rem);
-  line-height: 0.96;
 }
 
 .wellness-page__service-copy > p,
@@ -446,10 +440,9 @@
   color: var(--color-lime);
 }
 
-.wellness-page__future h2 {
+.wellness-page__future .section-title {
   max-width: 11ch;
-  font-size: clamp(3rem, 5vw, 5.4rem);
-  line-height: 0.95;
+  color: #fff;
 }
 
 .wellness-page__future-copy > p {
@@ -503,10 +496,8 @@
   flex-direction: column;
 }
 
-.wellness-page__closing h2 {
+.wellness-page__closing .section-title {
   max-width: 12ch;
-  font-size: clamp(3rem, 5.8vw, 6rem);
-  line-height: 0.94;
 }
 
 .wellness-page__closing p {
@@ -683,7 +674,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .wellness-page__hero-intro {
     min-height: 780px;
     padding-block: 236px 96px;
@@ -695,10 +686,6 @@
 
   .wellness-page__hero-anchors {
     width: 100%;
-  }
-
-  .wellness-page__hero-yoga h2 {
-    font-size: clamp(2.8rem, 12vw, 4.8rem);
   }
 
   .wellness-page__hero-yoga-grid {
@@ -721,7 +708,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 620px) {
   .wellness-page__hero-intro {
     min-height: 720px;
   }

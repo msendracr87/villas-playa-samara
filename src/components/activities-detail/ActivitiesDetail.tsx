@@ -20,6 +20,7 @@ import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { ActivitiesInquiry } from "../activities-inquiry/ActivitiesInquiry";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
+import "../experiences-detail/experiences-detail.css";
 import "./activities-detail.css";
 
 const activities = [
@@ -183,11 +184,11 @@ export function ActivitiesDetail() {
   };
 
   return (
-    <div className="site-shell day-tours-page activities-page">
+    <div className="site-shell experiences-detail-page day-tours-page activities-page">
       <Header />
       <main id="main-content">
         <section
-          className="day-tours-page__hero"
+          className="experiences-detail-page__hero day-tours-page__hero"
           aria-labelledby="activities-page-title"
           data-experiences-motion="day-tours-hero"
         >
@@ -198,9 +199,9 @@ export function ActivitiesDetail() {
             alt=""
             decoding="async"
           />
-          <div className="day-tours-page__hero-shade" aria-hidden="true" />
+          <div className="experiences-detail-page__hero-shade day-tours-page__hero-shade" aria-hidden="true" />
 
-          <div className="content-wrap day-tours-page__hero-content">
+          <div className="content-wrap experiences-detail-page__hero-content day-tours-page__hero-content">
             <h1 id="activities-page-title">
               Play, Relax, and <span>Explore</span>
             </h1>
@@ -208,14 +209,14 @@ export function ActivitiesDetail() {
               Paddle toward Isla Chora, learn to surf, meet nesting turtles,
               or make time for a friendly match on the resort courts.
             </p>
-            <div className="day-tours-page__hero-actions">
-              <a href="#activity-index">
+            <div className="experiences-detail-page__hero-actions day-tours-page__hero-actions">
+              <a className="text-link text-link--light text-link--down" href="#activity-index">
                 Discover activities
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="day-tours-page__back-link" href="/experiences">
+              <a className="text-link text-link--light text-link--back experiences-detail-page__back-link day-tours-page__back-link" href="/experiences">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -226,11 +227,11 @@ export function ActivitiesDetail() {
         </section>
 
         <section
-          className="content-wrap day-tours-page__introduction"
+          className="content-wrap experiences-detail-page__introduction day-tours-page__introduction"
           aria-labelledby="activities-introduction-title"
           data-experiences-motion="day-tours-reveal"
         >
-          <h2 id="activities-introduction-title">
+          <h2 className="section-title" id="activities-introduction-title">
             Make Every Moment Count in Sámara
           </h2>
           <p>
@@ -239,22 +240,22 @@ export function ActivitiesDetail() {
             explore the coast, or make time for a friendly match on the resort
             courts.
           </p>
-          <p className="day-tours-page__introduction-note">
+          <p className="experiences-detail-page__introduction-note day-tours-page__introduction-note">
             Activities, departures, and conditions are subject to availability.
             Guest Services can confirm current details during your stay.
           </p>
         </section>
 
         <section
-          className="day-tours-page__index"
+          className="experiences-detail-page__index day-tours-page__index"
           id="activity-index"
           aria-labelledby="activity-index-title"
         >
           <div
-            className="content-wrap day-tours-page__index-heading"
+            className="content-wrap experiences-detail-page__index-heading day-tours-page__index-heading"
             data-experiences-motion="day-tours-reveal"
           >
-            <h2 id="activity-index-title">Five ways to move through Sámara</h2>
+            <h2 className="section-title" id="activity-index-title">Five ways to move through Sámara</h2>
             <p>
               Take to the courts, cross the bay, meet the Pacific waves, or
               follow the coast after dark.
@@ -337,7 +338,7 @@ export function ActivitiesDetail() {
                     )}
                     {activity.kicker}
                   </p>
-                  <h2>{activity.name}</h2>
+                  <h2 className="subsection-title subsection-title--light">{activity.name}</h2>
                   <p>{activity.description}</p>
 
                   <dl className="day-tours-page__chapter-details">

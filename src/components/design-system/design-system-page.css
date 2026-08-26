@@ -254,11 +254,6 @@
 
 .design-system-page__display {
   max-width: 12ch;
-  font-size: clamp(3rem, 7vw, 7rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.92;
-  text-wrap: balance;
 }
 
 .design-system-page__label {

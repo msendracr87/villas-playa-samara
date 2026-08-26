@@ -165,7 +165,7 @@ export function ExperiencesShowcase() {
           aria-describedby="experiences-description"
         >
           <p className="section-kicker">Experience</p>
-          <h2 id="experiences-title">Sámara Beach</h2>
+          <h2 className="section-title section-title--light" id="experiences-title">Sámara Beach</h2>
           <p id="experiences-description">
             From the shore of Sámara Bay, paddle to Isla Chora, learn to surf,
             or follow the Pacific into sunset. With Monkey Tours based at the

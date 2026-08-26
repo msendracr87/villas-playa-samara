@@ -162,11 +162,6 @@
 .accommodations-page__amenities h2 {
   max-width: 12ch;
   margin: 0;
-  font-size: clamp(2rem, 4vw, 4.4rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  text-wrap: balance;
 }
 
 .accommodations-page__amenities-layout > div > span {
@@ -224,11 +219,6 @@
 .accommodations-page__collection-heading h2 {
   max-width: 14ch;
   margin: 0;
-  font-size: clamp(2.5rem, 5.2vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
-  text-wrap: balance;
 }
 
 .accommodations-page__collection-heading p {

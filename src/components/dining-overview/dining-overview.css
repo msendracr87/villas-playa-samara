@@ -472,11 +472,6 @@ a.dining-page__venue-action:focus-visible .material-symbols-outlined {
 .dining-page__assistance-copy h2 {
   max-width: 15ch;
   margin: 0;
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
-  text-wrap: balance;
 }
 
 .dining-page__assistance-copy > p:not(.section-kicker) {

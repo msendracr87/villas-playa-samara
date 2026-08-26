@@ -146,10 +146,6 @@
 .site-footer__stay h2 {
   max-width: 14ch;
   margin: 0;
-  font-size: clamp(2rem, 3.5vw, 3.7rem);
-  font-weight: 400;
-  letter-spacing: -0.045em;
-  line-height: 1;
 }
 
 .site-footer__stay > a {
@@ -235,7 +231,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .site-footer__top {
     grid-template-columns: 1fr 1fr;
   }

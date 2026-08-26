@@ -3,28 +3,8 @@
   background: var(--color-sand-50);
 }
 
-.day-tours-page__hero {
-  position: relative;
-  display: flex;
-  min-height: min(900px, 94svh);
-  align-items: flex-end;
-  overflow: hidden;
-  color: #fff;
-  background: var(--color-forest-950);
-  isolation: isolate;
-}
-
-.day-tours-page__hero > img,
-.day-tours-page__hero-shade {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .day-tours-page__hero > img {
   z-index: -2;
-  object-fit: cover;
   object-position: center 54%;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   outline-offset: -1px;
@@ -35,163 +15,8 @@
   background: linear-gradient(180deg, rgba(7, 12, 8, 0.46) 0%, transparent 40%), linear-gradient(0deg, rgba(7, 12, 8, 0.88) 0%, rgba(7, 12, 8, 0.08) 72%), linear-gradient(90deg, rgba(7, 12, 8, 0.38), transparent 62%);
 }
 
-.day-tours-page__hero-content {
-  position: relative;
-  padding-bottom: clamp(52px, 7vw, 96px);
-}
-
-.day-tours-page__hero h1,
-.day-tours-page__introduction h2,
-.day-tours-page__index-heading h2,
-.day-tours-page__chapter-copy h2 {
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  text-wrap: balance;
-}
-
-.day-tours-page__hero h1 {
-  max-width: 10.5ch;
-  font-size: clamp(3.4rem, 7.2vw, 6rem);
-  line-height: 0.9;
-}
-
-.day-tours-page__hero h1 span {
-  max-width: 100%;
-  margin-top: 0.12em;
-  color: var(--color-lime);
-  font-family: "Birthstone", cursive;
-  font-size: 1.5em;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 0.54;
-}
-
 .day-tours-page__hero-content > p {
   max-width: 48ch;
-  margin: 36px 0 0;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: clamp(1rem, 1.35vw, 1.18rem);
-  line-height: 1.65;
-  text-wrap: pretty;
-}
-
-.day-tours-page__hero-actions {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 18px 32px;
-  margin-top: 30px;
-}
-
-.day-tours-page__hero-actions a {
-  display: inline-flex;
-  min-height: var(--interaction-target-min);
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.day-tours-page__hero-actions .material-symbols-outlined {
-  font-size: 20px;
-  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-.day-tours-page__hero-actions .day-tours-page__back-link {
-  padding-inline: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.64);
-  background: rgba(16, 26, 20, 0.58);
-  transition:
-    border-color 180ms cubic-bezier(0.2, 0, 0, 1),
-    background-color 180ms cubic-bezier(0.2, 0, 0, 1),
-    transform 180ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-.day-tours-page__hero-actions .day-tours-page__back-link:hover,
-.day-tours-page__hero-actions .day-tours-page__back-link:focus-visible {
-  border-color: #fff;
-  background: rgba(16, 26, 20, 0.9);
-}
-
-.day-tours-page__hero-actions a:first-child:hover .material-symbols-outlined,
-.day-tours-page__hero-actions a:first-child:focus-visible .material-symbols-outlined {
-  transform: translateY(4px);
-}
-
-.day-tours-page__hero-actions a:last-child:hover .material-symbols-outlined,
-.day-tours-page__hero-actions a:last-child:focus-visible .material-symbols-outlined {
-  transform: translateX(-4px);
-}
-
-.day-tours-page__hero-actions a:active {
-  transform: scale(0.96);
-}
-
-.day-tours-page__introduction {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-block: var(--section-space);
-  text-align: center;
-}
-
-.day-tours-page__introduction h2 {
-  max-width: 13ch;
-  font-size: clamp(2.8rem, 5.4vw, 5.5rem);
-  line-height: 0.98;
-}
-
-.day-tours-page__introduction > p:not(.day-tours-page__introduction-note) {
-  max-width: 66ch;
-  margin: 34px 0 0;
-  color: var(--color-muted);
-  font-size: clamp(1rem, 1.35vw, 1.2rem);
-  line-height: 1.78;
-  text-wrap: pretty;
-}
-
-.day-tours-page__introduction-note {
-  max-width: 70ch;
-  margin: 64px 0 0;
-  color: var(--color-muted);
-  font-size: 0.82rem;
-  line-height: 1.7;
-  text-wrap: pretty;
-}
-
-.day-tours-page__index {
-  padding-block: clamp(92px, 10vw, 152px);
-  background: #fff;
-  scroll-margin-top: 24px;
-}
-
-.day-tours-page__index-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
-  align-items: end;
-  gap: 36px clamp(60px, 10vw, 152px);
-}
-
-.day-tours-page__index-heading h2 {
-  max-width: 10ch;
-  font-size: clamp(2.8rem, 5.2vw, 5.4rem);
-  line-height: 0.96;
-}
-
-.day-tours-page__index-heading p {
-  max-width: 52ch;
-  margin: 0;
-  color: var(--color-muted);
-  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
-  line-height: 1.75;
-  text-wrap: pretty;
 }
 
 .day-tours-page__index-list {
@@ -398,8 +223,6 @@
 }
 
 .day-tours-page__chapter-copy h2 {
-  font-size: clamp(2rem, 3vw, 3.5rem);
-  line-height: 0.96;
 }
 
 .day-tours-page__chapter-kicker {
@@ -644,7 +467,7 @@
   will-change: opacity, transform;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
   .day-tours-page__index-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -666,18 +489,9 @@
   }
 }
 
-@media (max-width: 960px) {
-  .day-tours-page__index-heading,
+@media (max-width: 980px) {
   .day-tours-page__chapter {
     grid-template-columns: 1fr;
-  }
-
-  .day-tours-page__index-heading {
-    align-items: start;
-  }
-
-  .day-tours-page__index-heading h2 {
-    max-width: 12ch;
   }
 
   .day-tours-page__chapter {
@@ -700,42 +514,9 @@
 }
 
 @media (max-width: 760px) {
-  .day-tours-page__hero {
-    min-height: 760px;
-  }
 
   .day-tours-page__hero > img {
     object-position: 58% center;
-  }
-
-  .day-tours-page__hero-content {
-    padding-bottom: 44px;
-  }
-
-  .day-tours-page__hero h1 {
-    font-size: clamp(3rem, 14vw, 4.8rem);
-  }
-
-  .day-tours-page__hero-actions {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .day-tours-page__introduction {
-    text-align: left;
-  }
-
-  .day-tours-page__introduction h2 {
-    max-width: 12ch;
-  }
-
-  .day-tours-page__introduction-note {
-    margin-top: 48px;
-  }
-
-  .day-tours-page__index {
-    padding-block: 76px;
   }
 
   .day-tours-page__index-list {
@@ -799,11 +580,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .day-tours-page__hero-actions a,
-  .day-tours-page__hero-actions .material-symbols-outlined,
   .day-tours-page__index-list a,
-  .day-tours-page__index-list .material-symbols-outlined,
-  .day-tours-page__navigation .material-symbols-outlined {
+.day-tours-page__index-list .material-symbols-outlined,
+.day-tours-page__navigation .material-symbols-outlined {
     transition-duration: 0.01ms;
   }
 }

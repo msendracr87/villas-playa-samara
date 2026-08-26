@@ -105,7 +105,7 @@ export function AccommodationsOverview() {
           >
             <div>
               <p>Across the collection</p>
-              <h2 id="common-amenities-title">Common in-room amenities</h2>
+              <h2 className="section-title section-title--light" id="common-amenities-title">Common in-room amenities</h2>
               <span>Amenities and layouts vary by accommodation category.</span>
             </div>
             <ul>
@@ -138,7 +138,7 @@ export function AccommodationsOverview() {
             className="accommodations-page__collection-heading"
             data-accommodations-motion="collection-heading"
           >
-            <h2 id="accommodation-collection-title">Choose your setting and space</h2>
+            <h2 className="section-title" id="accommodation-collection-title">Choose your setting and space</h2>
             <p>
               Compare all eight categories in their approved order, from
               garden-view rooms for two to multi-bedroom villas beside the

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "check:design-system": "node scripts/check-design-system.mjs",
+    "build": "npm run check:design-system && tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

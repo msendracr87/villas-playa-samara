@@ -13,6 +13,7 @@ import { usePageMetadata } from "../../hooks/usePageMetadata";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import { RentalInquiry } from "../rental-inquiry/RentalInquiry";
+import "../experiences-detail/experiences-detail.css";
 import "./rentals-detail.css";
 
 const rentals = [
@@ -114,11 +115,11 @@ export function RentalsDetail() {
   };
 
   return (
-    <div className="site-shell rentals-page">
+    <div className="site-shell experiences-detail-page rentals-page">
       <Header />
       <main id="main-content">
         <section
-          className="rentals-page__hero"
+          className="experiences-detail-page__hero rentals-page__hero"
           aria-labelledby="rentals-page-title"
           data-experiences-motion="rentals-hero"
         >
@@ -129,9 +130,9 @@ export function RentalsDetail() {
             alt=""
             decoding="async"
           />
-          <div className="rentals-page__hero-shade" aria-hidden="true" />
+          <div className="experiences-detail-page__hero-shade rentals-page__hero-shade" aria-hidden="true" />
 
-          <div className="content-wrap rentals-page__hero-content">
+          <div className="content-wrap experiences-detail-page__hero-content rentals-page__hero-content">
             <h1 id="rentals-page-title">
               Explore at <span>Your Own Pace</span>
             </h1>
@@ -139,14 +140,14 @@ export function RentalsDetail() {
               Choose from ATVs, bikes, or boats and set off on your own
               adventure.
             </p>
-            <div className="rentals-page__hero-actions">
-              <a href="#rental-guide">
+            <div className="experiences-detail-page__hero-actions rentals-page__hero-actions">
+              <a className="text-link text-link--light text-link--down" href="#rental-guide">
                 Discover rentals
                 <span className="material-symbols-outlined" aria-hidden="true">
                   south
                 </span>
               </a>
-              <a className="rentals-page__back-link" href="/experiences">
+              <a className="text-link text-link--light text-link--back experiences-detail-page__back-link rentals-page__back-link" href="/experiences">
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_back
                 </span>
@@ -157,11 +158,11 @@ export function RentalsDetail() {
         </section>
 
         <section
-          className="content-wrap rentals-page__introduction"
+          className="content-wrap experiences-detail-page__introduction rentals-page__introduction"
           aria-labelledby="rentals-introduction-title"
           data-experiences-motion="rentals-reveal"
         >
-          <h2 id="rentals-introduction-title">
+          <h2 className="section-title" id="rentals-introduction-title">
             Freedom to Discover Sámara and Beyond
           </h2>
           <p>
@@ -169,19 +170,19 @@ export function RentalsDetail() {
             jungles, and ocean at your own rhythm—whether it&apos;s a quick ride
             through town or a day chasing the horizon.
           </p>
-          <p className="rentals-page__introduction-note">
+          <p className="experiences-detail-page__introduction-note rentals-page__introduction-note">
             Availability and departure conditions vary by rental. Guest
             Services can confirm current details during your stay.
           </p>
         </section>
 
         <section
-          className="rentals-page__guide"
+          className="experiences-detail-page__index rentals-page__guide"
           id="rental-guide"
           aria-labelledby="rentals-guide-title"
         >
-          <div className="content-wrap rentals-page__guide-heading">
-            <h2 id="rentals-guide-title">Choose how you explore</h2>
+          <div className="content-wrap experiences-detail-page__index-heading rentals-page__guide-heading">
+            <h2 className="section-title" id="rentals-guide-title">Choose how you explore</h2>
             <p>
               Take to jungle trails, head out on the Pacific, or move through
               Sámara and Carrillo at an easy pace.
@@ -223,7 +224,7 @@ export function RentalsDetail() {
                     </span>
                     {rental.kicker}
                   </p>
-                  <h2>{rental.name}</h2>
+                  <h2 className="subsection-title subsection-title--light">{rental.name}</h2>
                   <p>{rental.description}</p>
 
                   <dl className="rentals-page__folio-details">

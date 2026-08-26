@@ -276,12 +276,7 @@
 .arrecife-menu__content h2 {
   max-width: 18ch;
   margin: clamp(72px, 9vw, 116px) 0 0;
-  font-size: clamp(2.5rem, 5vw, 4.8rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
   scroll-margin-top: 166px;
-  text-wrap: balance;
 }
 
 .arrecife-menu__content h2.arrecife-menu__lead-heading {

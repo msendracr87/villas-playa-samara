@@ -1,0 +1,196 @@
+.experiences-detail-page__hero {
+  position: relative;
+  display: flex;
+  min-height: min(900px, 94svh);
+  align-items: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--color-forest-950);
+  isolation: isolate;
+}
+
+.experiences-detail-page__hero > img,
+.experiences-detail-page__hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.experiences-detail-page__hero > img {
+  object-fit: cover;
+}
+
+.experiences-detail-page__hero-content {
+  position: relative;
+  padding-bottom: clamp(52px, 7vw, 96px);
+}
+
+.experiences-detail-page__hero h1 {
+  max-width: 10.5ch;
+  margin: 0;
+  font-size: var(--type-display-title);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: 0.9;
+  text-wrap: balance;
+}
+
+.experiences-detail-page__hero h1 span {
+  max-width: 100%;
+  margin-top: 0.12em;
+  color: var(--color-lime);
+  font-family: "Birthstone", cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.54;
+}
+
+.experiences-detail-page__hero-content > p {
+  margin: 36px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.experiences-detail-page__hero-actions {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 18px 32px;
+  margin-top: 30px;
+}
+
+.experiences-detail-page__hero-actions a {
+  flex: 0 0 auto;
+}
+
+.experiences-detail-page__back-link {
+  padding-inline: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  background: rgba(16, 26, 20, 0.58);
+  transition:
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    background-color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.experiences-detail-page__back-link:hover,
+.experiences-detail-page__back-link:focus-visible {
+  border-color: #fff;
+  background: rgba(16, 26, 20, 0.9);
+}
+
+.experiences-detail-page__introduction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: var(--space-section-standard);
+  text-align: center;
+}
+
+.experiences-detail-page__introduction .section-title {
+  max-width: 13ch;
+}
+
+.experiences-detail-page__introduction > p:not(.experiences-detail-page__introduction-note) {
+  max-width: 66ch;
+  margin: 34px 0 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.78;
+  text-wrap: pretty;
+}
+
+.experiences-detail-page__introduction-note {
+  max-width: 70ch;
+  margin: 64px 0 0;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.experiences-detail-page__index {
+  padding-block: clamp(92px, 10vw, 152px);
+  background: #fff;
+  scroll-margin-top: 24px;
+}
+
+.experiences-detail-page__index-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  align-items: end;
+  gap: 36px clamp(60px, 10vw, 152px);
+}
+
+.experiences-detail-page__index-heading .section-title {
+  max-width: 10ch;
+}
+
+.experiences-detail-page__index-heading > p {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+@media (max-width: 980px) {
+  .experiences-detail-page__index-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .experiences-detail-page__index-heading .section-title {
+    max-width: 12ch;
+  }
+}
+
+@media (max-width: 760px) {
+  .experiences-detail-page__hero {
+    min-height: 760px;
+  }
+
+  .experiences-detail-page__hero-content {
+    padding-bottom: 44px;
+  }
+
+  .experiences-detail-page__hero h1 {
+    font-size: clamp(3rem, 14vw, 4.8rem);
+  }
+
+  .experiences-detail-page__hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .experiences-detail-page__introduction {
+    text-align: left;
+  }
+
+  .experiences-detail-page__introduction .section-title {
+    max-width: 12ch;
+  }
+
+  .experiences-detail-page__introduction-note {
+    margin-top: 48px;
+  }
+
+  .experiences-detail-page__index {
+    padding-block: 76px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experiences-detail-page__hero-actions a,
+  .experiences-detail-page__hero-actions .material-symbols-outlined {
+    transition-duration: 0.01ms;
+  }
+}

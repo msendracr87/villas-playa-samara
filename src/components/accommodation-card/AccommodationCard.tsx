@@ -90,7 +90,7 @@ export function AccommodationCard({
 
       <div className="accommodation-card__body">
         <p>{accommodation.note}</p>
-        <h2>
+        <h2 className="card-title">
           <a href={getAccommodationPath(accommodation)}>
             <span>{displayName}</span>
             {bedSizeLabel ? (

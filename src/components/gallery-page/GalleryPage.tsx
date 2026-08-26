@@ -230,7 +230,7 @@ export function GalleryPage() {
           aria-labelledby="gallery-collection-title"
         >
           <header className="content-wrap gallery-page__collection-intro">
-            <h2 id="gallery-collection-title">A different view, every visit.</h2>
+            <h2 className="section-title" id="gallery-collection-title">A different view, every visit.</h2>
             <p>
               This collection reshuffles whenever the page is refreshed, bringing
               a new mix of Sámara moments to the surface each time.

@@ -78,7 +78,7 @@ export function Footer() {
 
         <div className="site-footer__stay">
           <p>Begin your stay</p>
-          <h2>Close to the beach. At home in Sámara.</h2>
+          <h2 className="subsection-title subsection-title--light">Close to the beach. At home in Sámara.</h2>
           <a href="/#book">
             Book now
             <span className="material-symbols-outlined" aria-hidden="true">

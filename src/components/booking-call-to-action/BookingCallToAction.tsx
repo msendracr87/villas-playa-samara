@@ -21,7 +21,7 @@ export function BookingCallToAction() {
       <div className="booking-call-to-action__shade" aria-hidden="true" />
       <div className="content-wrap booking-call-to-action__content">
         <p className="section-kicker">Your Pacific stay</p>
-        <h2 id="booking-title">Ready for your stay in Sámara?</h2>
+        <h2 className="section-title section-title--light" id="booking-title">Ready for your stay in Sámara?</h2>
         <p>
           Choose the room or villa that fits your trip and begin planning your
           time by the Pacific.

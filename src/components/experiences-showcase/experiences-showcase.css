@@ -26,11 +26,6 @@
 .experiences-samara-beach h2 {
   margin: 0;
   color: var(--color-leaf);
-  font-size: clamp(3rem, 7vw, 7rem);
-  font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.94;
-  text-wrap: balance;
 }
 
 .experiences-samara-beach p {
@@ -200,7 +195,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 760px) {
   .experiences-samara-beach {
     top: 96px;
     text-align: left;

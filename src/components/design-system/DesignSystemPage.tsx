@@ -44,6 +44,9 @@ const componentInventory = [
   ["AccommodationCard", "Reusable stay summary", "Square media, icon-led key features, floor plan and gallery dialogs, three actions", "src/components/accommodation-card"],
   ["AccommodationDetail", "Reusable stay detail", "Full-bleed hero, facts, features, adjacent navigation", "src/components/accommodation-detail"],
   ["AccommodationInquiry", "Rooms & Villas lead form", "Square controls, two-column fields, disabled submit state", "src/components/accommodation-inquiry"],
+  ["DiningDetail", "Shared restaurant-page foundation", "Hero, identity, navigation, and action composition", "src/components/dining-detail"],
+  ["ExperiencesDetail", "Shared experience-page foundation", "Hero, introduction, index, and responsive behavior", "src/components/experiences-detail"],
+  ["InquiryForm", "Shared inquiry form foundation", "Consistent fields, scheduling, validation state, and submission feedback", "src/components/inquiry-form"],
 ] as const;
 
 const iconNames = [
@@ -186,12 +189,20 @@ export function DesignSystemPage() {
 
             <div className="design-system-page__type-specimens">
               <article>
-                <div><strong>Page display</strong><code>clamp(3rem, 7vw, 7rem) · 400 · 0.92</code></div>
-                <p className="design-system-page__display">Ready for your stay in Sámara?</p>
+                <div><strong>Page display</strong><code>.display-title · clamp(3rem, 7vw, 6rem)</code></div>
+                <p className="display-title design-system-page__display">Ready for your stay in Sámara?</p>
               </article>
               <article>
-                <div><strong>Section title</strong><code>.section-title · clamp(2.4rem, 5.1vw, 5rem)</code></div>
+                <div><strong>Section title</strong><code>.section-title · clamp(1.4rem, 4.1vw, 4rem)</code></div>
                 <h3 className="section-title">Room to settle into Sámara</h3>
+              </article>
+              <article>
+                <div><strong>Subsection title</strong><code>.subsection-title · clamp(1.6rem, 3vw, 3.5rem)</code></div>
+                <h3 className="subsection-title">A closer look at the experience</h3>
+              </article>
+              <article>
+                <div><strong>Card title</strong><code>.card-title · clamp(1.35rem, 2vw, 2rem)</code></div>
+                <h3 className="card-title">Garden-view room</h3>
               </article>
               <article>
                 <div><strong>Kicker</strong><code>.section-kicker · 0.72rem · 0.16em</code></div>

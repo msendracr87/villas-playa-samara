@@ -42,11 +42,6 @@
 .booking-call-to-action__content h2 {
   max-width: 12ch;
   margin: 0;
-  font-size: clamp(3rem, 7vw, 7rem);
-  font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.92;
-  text-wrap: balance;
 }
 
 .booking-call-to-action__content > p {
@@ -121,7 +116,7 @@
   transform: scale(0.96);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .booking-call-to-action__content > div {
     width: 100%;
     align-items: stretch;

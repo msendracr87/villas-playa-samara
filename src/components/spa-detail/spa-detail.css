@@ -55,9 +55,7 @@
   height: auto;
 }
 
-.spa-page__hero h1,
-.spa-page__introduction h2,
-.spa-page__menu h2 {
+.spa-page__hero h1 {
   margin: 0;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -68,7 +66,7 @@
   max-width: none;
 }
 
-.spa-page__menu h2 span {
+.spa-page__menu .section-title span {
   display: inline-block;
   color: var(--color-brand-green-text);
   font: inherit;
@@ -171,13 +169,7 @@
   outline-offset: -1px;
 }
 
-.spa-page__introduction-copy h2,
-.spa-page__menu-heading h2 {
-  font-size: clamp(2.8rem, 5.2vw, 5.4rem);
-  line-height: 0.98;
-}
-
-.spa-page__introduction-copy h2 {
+.spa-page__introduction-copy .section-title {
   max-width: 11ch;
 }
 
@@ -212,7 +204,7 @@
   gap: 36px clamp(60px, 10vw, 152px);
 }
 
-.spa-page__menu-heading h2 {
+.spa-page__menu-heading .section-title {
   max-width: 11ch;
 }
 

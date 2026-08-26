@@ -93,7 +93,7 @@
   transform: translateX(-4px);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 620px) {
   .wellness-cross-link,
   .wellness-cross-link__links {
     min-height: 176px;

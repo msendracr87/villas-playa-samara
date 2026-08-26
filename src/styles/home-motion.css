@@ -220,7 +220,7 @@
   will-change: clip-path, opacity, transform;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 760px) {
   .home-motion-ready [data-home-motion="discoveries"] .experiences-showcase__column {
     transition-delay: 0ms;
   }

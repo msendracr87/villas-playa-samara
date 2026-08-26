@@ -241,7 +241,7 @@ export function AccommodationDetail({
           >
             <div>
               <p>Inside your {accommodation.category.toLowerCase()}</p>
-              <h2 id="accommodation-included-title">
+              <h2 className="section-title section-title--light" id="accommodation-included-title">
                 Included in your stay
               </h2>
             </div>
@@ -277,7 +277,7 @@ export function AccommodationDetail({
           data-accommodations-motion="detail-faqs"
         >
           <header className="accommodation-detail-page__faqs-heading">
-            <h2 id="accommodation-faqs-title">
+            <h2 className="section-title" id="accommodation-faqs-title">
               Questions about this stay
             </h2>
             <p>

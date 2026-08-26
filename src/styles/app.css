@@ -8,6 +8,22 @@
   margin-inline: auto;
 }
 
+.display-title,
+.section-title,
+.subsection-title,
+.card-title {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  text-wrap: balance;
+}
+
+.display-title {
+  max-width: 11ch;
+  font-size: var(--type-display-title);
+  line-height: 0.92;
+}
+
 .section-kicker {
   display: inline-flex;
   align-items: center;
@@ -23,20 +39,40 @@
 
 .section-title {
   max-width: 13ch;
-  margin: 0;
   color: var(--color-ink);
-  font-size: clamp(2.4rem, 5.1vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.052em;
+  font-size: var(--type-section-title);
   line-height: 0.98;
-  text-wrap: balance;
+}
+
+.subsection-title {
+  max-width: 16ch;
+  color: var(--color-ink);
+  font-size: var(--type-subsection-title);
+  line-height: 1;
+}
+
+.card-title {
+  color: inherit;
+  font-size: var(--type-card-title);
+  line-height: 1.08;
+}
+
+.brand-title {
+  margin: 0;
+  line-height: 0;
+}
+
+.section-title--light,
+.subsection-title--light,
+.display-title--light {
+  color: #fff;
 }
 
 .section-copy {
   max-width: 62ch;
   margin: 0;
   color: var(--color-muted);
-  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  font-size: var(--type-section-copy);
   line-height: 1.75;
   text-wrap: pretty;
 }
@@ -57,8 +93,8 @@
 .text-link .material-symbols-outlined {
   font-size: 20px;
   transition-property: transform;
-  transition-duration: 180ms;
-  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  transition-duration: var(--motion-duration-fast);
+  transition-timing-function: var(--motion-ease-standard);
 }
 
 .text-link:not([aria-disabled="true"]):hover .material-symbols-outlined,
@@ -68,6 +104,20 @@
 
 .text-link:not([aria-disabled="true"]):active {
   transform: scale(0.96);
+}
+
+.text-link--light {
+  color: #fff;
+}
+
+.text-link.text-link--back:not([aria-disabled="true"]):hover .material-symbols-outlined,
+.text-link.text-link--back:not([aria-disabled="true"]):focus-visible .material-symbols-outlined {
+  transform: translateX(-4px);
+}
+
+.text-link.text-link--down:not([aria-disabled="true"]):hover .material-symbols-outlined,
+.text-link.text-link--down:not([aria-disabled="true"]):focus-visible .material-symbols-outlined {
+  transform: translateY(4px);
 }
 
 .text-link[aria-disabled="true"] {
@@ -93,7 +143,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transition-property: color, background-color, transform;
-  transition-duration: 180ms;
+  transition-duration: var(--motion-duration-fast);
 }
 
 .button-link:hover,

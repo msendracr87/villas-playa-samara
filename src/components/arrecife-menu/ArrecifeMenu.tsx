@@ -285,10 +285,10 @@ function MenuContent({ blocks }: { blocks: MenuBlock[] }) {
           }
           className={
             block.level === 1
-              ? "arrecife-menu__lead-heading"
+              ? "subsection-title arrecife-menu__lead-heading"
               : compoundHeading
-                ? "arrecife-menu__split-heading"
-                : undefined
+                ? "subsection-title arrecife-menu__split-heading"
+                : "subsection-title"
           }
           id={headingId}
           key={key}

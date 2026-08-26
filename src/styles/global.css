@@ -19,6 +19,17 @@
   --page-gutter: clamp(20px, 5vw, 80px);
   --section-space: clamp(88px, 11vw, 176px);
   --content-width: 1440px;
+  --space-section-compact: clamp(64px, 8vw, 112px);
+  --space-section-standard: var(--section-space);
+  --space-section-generous: clamp(112px, 14vw, 196px);
+  --type-display-title: clamp(3rem, 7vw, 6rem);
+  --type-section-title: clamp(1.4rem, 4.1vw, 4rem);
+  --type-subsection-title: clamp(1.6rem, 3vw, 3.5rem);
+  --type-card-title: clamp(1.35rem, 2vw, 2rem);
+  --type-section-copy: clamp(1rem, 1.25vw, 1.18rem);
+  --tracking-display: -0.04em;
+  --motion-duration-fast: 180ms;
+  --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
   font-family: "DM Sans", Arial, sans-serif;
   color: #fff;
   background: var(--color-forest-900);

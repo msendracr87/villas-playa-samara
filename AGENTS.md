@@ -11,6 +11,7 @@ This repository contains a React 19, TypeScript, and Vite application for the Vi
 - `docs/deployment/` records hosting environments, confirmed build settings, deployment ownership, and launch-transition requirements.
 - `docs/progress/` contains dated implementation and milestone records. Add a new record after substantial project work instead of rewriting historical entries.
 - `TO-DO.md` tracks missing content, unresolved operational facts, approvals, and implementation dependencies. Do not silently resolve its items by guessing.
+- The [Villas Playa Sámara — Pages & Launch Tracker](https://docs.google.com/spreadsheets/d/1HoBfcvMqgzZ4CG-wrGlFJ_w3C2BcbocL4RitfCrPIGA/edit) is the stakeholder-facing inventory of pages, review rounds, missing pages, launch features, audits, priorities, owners, blockers, and completion criteria. Stakeholders can view it; editing is intentionally limited to the project owner and Codex.
 - `docs/asset-duplicates.md` records intentional backup and cross-category duplicate assets.
 - `assets/images/` contains property, accommodation, dining, experience, gallery, and wellness imagery used by the application and copy documents.
 - `assets/svgs/logo/` stores approved logo variants used by the application.
@@ -19,6 +20,16 @@ This repository contains a React 19, TypeScript, and Vite application for the Vi
 - `docs/vendor/` contains locally saved third-party platform documentation, such as the Mux fundamentals.
 
 Keep application imports relative and portable; do not embed machine-specific absolute paths in source code. Keep Markdown image links relative to the document that uses them.
+
+## Project Tracking Records
+
+Maintain the stakeholder Google Sheet alongside `TO-DO.md` and `docs/progress/`:
+
+- Update `TO-DO.md` when unresolved requirements, approvals, facts, or dependencies change.
+- Add a dated record to `docs/progress/` after substantial implementation or milestone work.
+- Update the stakeholder Sheet after substantial work changes page inventory, implementation status, content status, R1/R2 review state, priority, ownership, blockers, missing pages, launch features, audits, or readiness.
+- Treat R1/R2 as stakeholder-review workflow labels, not publication approval. Do not infer or advance a review state without explicit project-owner or stakeholder direction.
+- Keep the Sheet concise and stakeholder-readable. It summarizes the repository records and must not override canonical copy, documented content status, `TO-DO.md`, or historical progress records.
 
 ## Content Source of Truth
 
@@ -96,6 +107,18 @@ No lint or automated test commands are configured yet. Validate changes proporti
 - Check that referenced websites and copied factual details are current and appropriate for the brief.
 
 Do not automatically run browser checks, screenshots, or visual inspection for UI changes unless the user explicitly requests them. After UI changes, pause and summarize for review.
+
+## Interface Design System
+
+Treat `docs/design-system.md` as the source of truth for shared interface roles and review it before changing public-page UI.
+
+- Reuse the documented typography, action, spacing, motion, and responsive roles before adding page-specific declarations.
+- Reuse the shared restaurant-detail, experience-detail, and inquiry-form foundations when working in those page families.
+- Do not redefine a shared role's font size, weight, tracking, or line height in component CSS. Contextual rules may change placement, width, alignment, or color.
+- Do not introduce a new viewport breakpoint, duplicated interaction pattern, or parallel component class when an existing token, modifier, or shared component can express the design.
+- When a genuinely new pattern will be reused across three or more places, extract and document it instead of copying it into page styles.
+- If an approved change alters the system itself, update `docs/design-system.md` and the internal Design System page in the same change.
+- Run `npm run check:design-system` after interface changes. The production build also runs this check automatically.
 
 ## Markdown, Asset & Naming Conventions
 

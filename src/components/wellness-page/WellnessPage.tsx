@@ -179,7 +179,9 @@ export function WellnessPage() {
                 </span>
                 Open 24 hours
               </span>
-              <h2 id="wellness-gym-title">A space for your routine</h2>
+              <h2 className="section-title" id="wellness-gym-title">
+                A space for your routine
+              </h2>
               <p>
                 Stay active in a newly completed, air-conditioned facility
                 designed for independent workouts at any hour.
@@ -219,7 +221,7 @@ export function WellnessPage() {
                 src={morphoLogoUrl}
                 alt="Morpho Wellness Retreat"
               />
-              <h2 id="wellness-morpho-title">
+              <h2 className="section-title" id="wellness-morpho-title">
                 Time to slow down and care for yourself
               </h2>
               <p>
@@ -272,7 +274,7 @@ export function WellnessPage() {
               </span>
               Under development
             </span>
-            <h2 id="wellness-future-title">
+            <h2 className="section-title" id="wellness-future-title">
               A more expansive retreat is taking shape
             </h2>
             <p>
@@ -303,7 +305,9 @@ export function WellnessPage() {
           aria-labelledby="wellness-closing-title"
         >
           <div className="content-wrap" data-wellness-motion="reveal">
-            <h2 id="wellness-closing-title">How would you like to feel today?</h2>
+            <h2 className="section-title" id="wellness-closing-title">
+              How would you like to feel today?
+            </h2>
             <p>
               Choose the path that fits your stay: independent movement in the
               GYM or restorative care with Morpho.
