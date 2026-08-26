@@ -27,6 +27,8 @@ import { AccommodationDetail } from "./components/accommodation-detail/Accommoda
 import { AccommodationsOverview } from "./components/accommodations-overview/AccommodationsOverview";
 import { DesignSystemPage } from "./components/design-system/DesignSystemPage";
 import { PresentationPage } from "./components/presentation/PresentationPage";
+import { NotFoundPage } from "./components/not-found-page/NotFoundPage";
+import { ThankYouPage } from "./components/thank-you-page/ThankYouPage";
 import { getAccommodationBySlug } from "./data/accommodations";
 import {
   arrecifeMenuVenue,
@@ -39,6 +41,14 @@ import { useHomeMotion } from "./hooks/useHomeMotion";
 import { usePageMetadata } from "./hooks/usePageMetadata";
 import "./styles/app.css";
 import "./styles/home-motion.css";
+
+const decodePathSegment = (segment: string) => {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return null;
+  }
+};
 
 function HomePage() {
   useHomeMotion();
@@ -68,6 +78,10 @@ export function App() {
 
   if (path === "/presentation") {
     return <PresentationPage />;
+  }
+
+  if (path === "/thank-you") {
+    return <ThankYouPage />;
   }
 
   if (path === "/rooms-and-villas") {
@@ -127,51 +141,59 @@ export function App() {
   }
 
   if (path.startsWith("/dining/arrecife/menus/")) {
-    const slug = decodeURIComponent(path.slice("/dining/arrecife/menus/".length));
-    const menu = getDiningMenuBySlug(arrecifeMenuVenue, slug);
+    const slug = decodePathSegment(
+      path.slice("/dining/arrecife/menus/".length),
+    );
+    const menu = slug ? getDiningMenuBySlug(arrecifeMenuVenue, slug) : undefined;
 
     if (menu) {
       return <DiningMenuPage menu={menu} venue={arrecifeMenuVenue} />;
     }
 
-    return <ArrecifeDetail />;
+    return <NotFoundPage />;
   }
 
   if (path.startsWith("/dining/baja-azul/menus/")) {
-    const slug = decodeURIComponent(path.slice("/dining/baja-azul/menus/".length));
-    const menu = getDiningMenuBySlug(bajaAzulMenuVenue, slug);
+    const slug = decodePathSegment(
+      path.slice("/dining/baja-azul/menus/".length),
+    );
+    const menu = slug ? getDiningMenuBySlug(bajaAzulMenuVenue, slug) : undefined;
 
     if (menu) {
       return <DiningMenuPage menu={menu} venue={bajaAzulMenuVenue} />;
     }
 
-    return <BajaAzulDetail />;
+    return <NotFoundPage />;
   }
 
   if (path.startsWith("/dining/trattoria/menus/")) {
-    const slug = decodeURIComponent(path.slice("/dining/trattoria/menus/".length));
-    const menu = getDiningMenuBySlug(trattoriaMenuVenue, slug);
+    const slug = decodePathSegment(
+      path.slice("/dining/trattoria/menus/".length),
+    );
+    const menu = slug ? getDiningMenuBySlug(trattoriaMenuVenue, slug) : undefined;
 
     if (menu) {
       return <DiningMenuPage menu={menu} venue={trattoriaMenuVenue} />;
     }
 
-    return <TrattoriaDetail />;
+    return <NotFoundPage />;
   }
 
   if (path.startsWith("/dining/veranda/menus/")) {
-    const slug = decodeURIComponent(path.slice("/dining/veranda/menus/".length));
-    const menu = getDiningMenuBySlug(verandaMenuVenue, slug);
+    const slug = decodePathSegment(
+      path.slice("/dining/veranda/menus/".length),
+    );
+    const menu = slug ? getDiningMenuBySlug(verandaMenuVenue, slug) : undefined;
 
     if (menu) {
       return <DiningMenuPage menu={menu} venue={verandaMenuVenue} />;
     }
 
-    return <VerandaDetail />;
+    return <NotFoundPage />;
   }
 
   if (path.startsWith("/dining/")) {
-    return <DiningOverview />;
+    return <NotFoundPage />;
   }
 
   if (path === "/design-system") {
@@ -179,15 +201,19 @@ export function App() {
   }
 
   if (path.startsWith("/rooms-and-villas/")) {
-    const slug = decodeURIComponent(path.slice("/rooms-and-villas/".length));
-    const accommodation = getAccommodationBySlug(slug);
+    const slug = decodePathSegment(path.slice("/rooms-and-villas/".length));
+    const accommodation = slug ? getAccommodationBySlug(slug) : undefined;
 
     if (accommodation) {
       return <AccommodationDetail accommodation={accommodation} />;
     }
 
-    return <AccommodationsOverview />;
+    return <NotFoundPage />;
   }
 
-  return <HomePage />;
+  if (path === "/") {
+    return <HomePage />;
+  }
+
+  return <NotFoundPage />;
 }

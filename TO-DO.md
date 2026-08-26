@@ -199,7 +199,9 @@ These items can remain outside the homepage presentation unless the owners speci
 - [ ] Provide privacy policy, cookie policy/preferences, terms, reservation policy, and cancellation policy.
 - [ ] Provide footer social links and confirm the final copyright, legal-rights-holder, and legal business-name wording.
 - [ ] Provide Sitemap content and route inventory.
-- [ ] Provide 404, error, no-results, and form-success copy.
+- [ ] Approve the draft 404 copy implemented in `src/components/not-found-page/NotFoundPage.tsx`.
+- [ ] Approve the draft form-success copy implemented in `src/components/thank-you-page/ThankYouPage.tsx`, and connect `/thank-you` only after each form submission destination and success/error handling are approved.
+- [ ] Provide error and no-results copy.
 - [ ] Decide whether Spanish localization is required and define the translation workflow.
 
 ## Content operations

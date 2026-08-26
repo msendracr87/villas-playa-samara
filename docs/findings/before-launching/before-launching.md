@@ -1,9 +1,9 @@
 # Before We Launch Check-list
 
-1. custom 404 page
+1. custom 404 page — implemented August 25, 2026; pending owner UI and copy review
 2. CTA above the fold
 3. internal links
-4. thank you page
+4. thank you page — implemented August 25, 2026; pending owner UI and copy review and form-delivery integration
 5. breadcrumbs
 6. case studies
 7. FA@'s
