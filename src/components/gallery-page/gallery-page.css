@@ -18,9 +18,7 @@
   position: absolute;
   z-index: 0;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(8, 14, 10, 0.16) 22%, transparent 49%),
-    linear-gradient(0deg, rgba(8, 14, 10, 0.88), rgba(8, 14, 10, 0.06) 64%);
+  background: linear-gradient(180deg, rgba(8, 14, 10, 0.16) 22%, transparent 49%), linear-gradient(0deg, rgba(8, 14, 10, 0.88), rgba(8, 14, 10, 0.06) 64%);
   content: "";
 }
 
@@ -49,7 +47,7 @@
   font-size: clamp(3.2rem, 7vw, 6rem);
   font-weight: 400;
   letter-spacing: -0.04em;
-  line-height: 0.92;
+  line-height: 0.5;
   text-wrap: balance;
 }
 

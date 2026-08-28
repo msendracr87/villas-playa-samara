@@ -10,6 +10,8 @@ const footerLinks = [
   { label: "Experiences", href: "/experiences" },
   { label: "Wellness", href: "/wellness" },
   { label: "Gallery", href: "/gallery" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact Us", href: "/contact" },
 ] as const;
 
 const contactDetails = [
@@ -18,7 +20,7 @@ const contactDetails = [
     value: "reserve@villasplayasamara.com",
     href: "mailto:reserve@villasplayasamara.com",
   },
-  { label: "Phone", value: "2503-1905", href: "tel:+50625031905" },
+  { label: "Phone", value: "+506 4102 4040", href: "tel:+50641024040" },
   {
     label: "WhatsApp",
     value: "8659-8383",
@@ -70,7 +72,7 @@ export function Footer() {
         <nav className="site-footer__nav" aria-label="Footer navigation">
           <p>Explore</p>
           {footerLinks.map((link) => (
-            <a key={link.label} href={link.href}>
+            <a className="site-footer__nav-link" key={link.label} href={link.href}>
               {link.label}
             </a>
           ))}
@@ -133,6 +135,11 @@ export function Footer() {
         </a>
 
         <div className="site-footer__legal">
+          <nav className="site-footer__legal-links" aria-label="Legal">
+            <a className="site-footer__nav-link site-footer__legal-link" href="/privacy-policy">Privacy Policy</a>
+            <a className="site-footer__nav-link site-footer__legal-link" href="/cookie-policy">Cookie Policy</a>
+            <a className="site-footer__nav-link site-footer__legal-link" href="/terms">Terms &amp; Conditions</a>
+          </nav>
           <span>© 2026 QViva Resorts. All rights reserved.</span>
         </div>
       </div>

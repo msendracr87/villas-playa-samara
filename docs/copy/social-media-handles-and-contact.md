@@ -14,7 +14,7 @@ reserve@villasplayasamara.com
 
 ### Phone
 
-[2503-1905](tel:+50625031905)
+[+506 4102 4040](tel:+50641024040)
 
 ### WhatsApp
 

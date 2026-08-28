@@ -1,4 +1,4 @@
-import type { ChangeEvent } from "react";
+import type { ChangeEvent, ReactNode } from "react";
 
 export type InquiryOption = {
   value: string;
@@ -42,7 +42,13 @@ type InquiryFormProps = {
   scheduleFields?: readonly InquiryScheduleField[];
   hiddenFields?: readonly InquiryHiddenField[];
   includePhone?: boolean;
+  includeSubject?: boolean;
   fullNameFullWidth?: boolean;
+  labels?: Partial<Record<"name" | "email" | "phone" | "subject" | "message", string>>;
+  requiredFields?: readonly ("name" | "email" | "phone" | "subject" | "message")[];
+  className?: string;
+  formHeader?: ReactNode;
+  aside?: ReactNode;
   statusMessage?: string;
 };
 
@@ -57,17 +63,21 @@ export function InquiryForm({
   scheduleFields = [],
   hiddenFields = [],
   includePhone = false,
+  includeSubject = false,
   fullNameFullWidth = false,
+  labels = {},
+  requiredFields = [],
+  className,
+  formHeader,
+  aside,
   statusMessage = defaultStatusMessage,
 }: InquiryFormProps) {
   const fieldId = (field: string) => `${idPrefix}-${field}`;
+  const isRequired = (field: "name" | "email" | "phone" | "subject" | "message") =>
+    requiredFields.includes(field);
 
-  return (
-    <form
-      className="accommodation-inquiry__form"
-      aria-label={ariaLabel}
-      onSubmit={(event) => event.preventDefault()}
-    >
+  const formFields = (
+    <>
       {hiddenFields.map((field) => (
         <input name={field.name} type="hidden" value={field.value} key={field.name} />
       ))}
@@ -76,25 +86,39 @@ export function InquiryForm({
         className={`accommodation-inquiry__field${
           fullNameFullWidth ? " accommodation-inquiry__field--full" : ""
         }`}
+        data-inquiry-field="name"
       >
-        <label htmlFor={fieldId("name")}>Full name</label>
-        <input id={fieldId("name")} name="name" type="text" autoComplete="name" />
+        <label htmlFor={fieldId("name")}>
+          {labels.name ?? "Full name"}
+          {isRequired("name") ? "*" : ""}
+        </label>
+        <input
+          id={fieldId("name")}
+          name="name"
+          type="text"
+          autoComplete="name"
+          required={isRequired("name")}
+        />
       </div>
 
-      <div className="accommodation-inquiry__field">
-        <label htmlFor={fieldId("email")}>Email address</label>
+      <div className="accommodation-inquiry__field" data-inquiry-field="email">
+        <label htmlFor={fieldId("email")}>
+          {labels.email ?? "Email address"}
+          {isRequired("email") ? "*" : ""}
+        </label>
         <input
           id={fieldId("email")}
           name="email"
           type="email"
           autoComplete="email"
           inputMode="email"
+          required={isRequired("email")}
         />
       </div>
 
       {includePhone ? (
-        <div className="accommodation-inquiry__field">
-          <label htmlFor={fieldId("phone")}>Phone number</label>
+        <div className="accommodation-inquiry__field" data-inquiry-field="phone">
+          <label htmlFor={fieldId("phone")}>{labels.phone ?? "Phone number"}</label>
           <input
             id={fieldId("phone")}
             name="phone"
@@ -105,8 +129,15 @@ export function InquiryForm({
         </div>
       ) : null}
 
+      {includeSubject ? (
+        <div className="accommodation-inquiry__field" data-inquiry-field="subject">
+          <label htmlFor={fieldId("subject")}>{labels.subject ?? "Subject"}</label>
+          <input id={fieldId("subject")} name="subject" type="text" />
+        </div>
+      ) : null}
+
       {choice ? (
-        <div className="accommodation-inquiry__field">
+        <div className="accommodation-inquiry__field" data-inquiry-field={choice.name}>
           <label htmlFor={fieldId(choice.name)}>{choice.label}</label>
           {choice.readOnlyValue ? (
             <>
@@ -145,7 +176,7 @@ export function InquiryForm({
       ) : null}
 
       {numberField ? (
-        <div className="accommodation-inquiry__field">
+        <div className="accommodation-inquiry__field" data-inquiry-field={numberField.name}>
           <label htmlFor={fieldId(numberField.name)}>{numberField.label}</label>
           <input
             id={fieldId(numberField.name)}
@@ -158,7 +189,7 @@ export function InquiryForm({
       ) : null}
 
       {scheduleFields.map((field) => (
-        <div className="accommodation-inquiry__field" key={field.name}>
+        <div className="accommodation-inquiry__field" data-inquiry-field={field.name} key={field.name}>
           <label htmlFor={fieldId(field.name)}>{field.label}</label>
           <input
             id={fieldId(field.name)}
@@ -169,17 +200,45 @@ export function InquiryForm({
         </div>
       ))}
 
-      <div className="accommodation-inquiry__field accommodation-inquiry__field--full">
-        <label htmlFor={fieldId("message")}>What would you like us to know?</label>
-        <textarea id={fieldId("message")} name="message" rows={5} />
+      <div
+        className="accommodation-inquiry__field accommodation-inquiry__field--full"
+        data-inquiry-field="message"
+      >
+        <label htmlFor={fieldId("message")}>
+          {labels.message ?? "What would you like us to know?"}
+          {isRequired("message") ? "*" : ""}
+        </label>
+        <textarea
+          id={fieldId("message")}
+          name="message"
+          rows={5}
+          required={isRequired("message")}
+        />
       </div>
 
-      <div className="accommodation-inquiry__actions accommodation-inquiry__field--full">
+      <div
+        className="accommodation-inquiry__actions accommodation-inquiry__field--full"
+        data-inquiry-field="actions"
+      >
         <button type="submit" disabled aria-describedby={fieldId("status")}>
           Send inquiry
         </button>
         <p id={fieldId("status")}>{statusMessage}</p>
       </div>
+    </>
+  );
+
+  return (
+    <form
+      className={`accommodation-inquiry__form${
+        className ? ` ${className}` : ""
+      }${aside ? " accommodation-inquiry__form--with-aside" : ""}`}
+      aria-label={ariaLabel}
+      onSubmit={(event) => event.preventDefault()}
+    >
+      {formHeader ? <div className="accommodation-inquiry__form-header">{formHeader}</div> : null}
+      {aside ? <div className="accommodation-inquiry__fields">{formFields}</div> : formFields}
+      {aside ? <div className="accommodation-inquiry__aside">{aside}</div> : null}
     </form>
   );
 }

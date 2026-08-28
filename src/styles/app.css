@@ -8,6 +8,11 @@
   margin-inline: auto;
 }
 
+.section-title-centered {
+  text-align: center !important;
+  max-width: 100% !important;
+}
+
 .display-title,
 .section-title,
 .subsection-title,

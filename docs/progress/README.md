@@ -13,7 +13,12 @@ This directory contains dated implementation records for completed milestones an
 - **HTML presentation:** Current 25-slide `/presentation` deck implemented with continuous navigation, homepage-aligned image spacing, corrected canvas centering, hover-only website return, controls outside the widescreen slide frame, current GYM photography, the 2025 courts video, and clearly labeled future-development renders; paused for owner review and not deployed in this milestone.
 - **Accommodation comparison:** Key facts, floor plans, galleries, and responsive card actions implemented across all eight approved categories.
 - **Accommodation FAQs:** Five FAQs and an expandable, accommodation-specific inquiry form implemented on every detail route.
+- **FAQ:** Dedicated `/faq` route implemented from the consolidated master FAQ with topic navigation, accessible disclosure rows, and Guest Services/booking actions; paused for owner review.
+- **Privacy Policy:** Draft `/privacy-policy` route implemented as a long-form reading page with a contents rail and legal-review notice; final legal entity, systems, privacy contact, cookie, retention, and policy-date details remain pending.
+- **Cookie Policy:** Draft `/cookie-policy` route implemented as a companion reading page covering cookie categories, preference behavior, consent choices, and the pending production inventory; management, technical, and legal review remain pending.
 - **Visual system:** Square geometry and restrained Birthstone display accents implemented for review.
+- **Terms & Conditions:** Draft /terms route implemented as a companion reading page with PMS-supplied rate tables, reservation terms, resort policies, and a booking summary; management, Reservations, Finance, and legal review remain pending.
+- **Contact Us:** Dedicated /contact route implemented with direct email, phone, WhatsApp, toll-free, map, Facebook, and Instagram actions plus a draft-safe general inquiry form; delivery requirements remain pending.
 - **Hosted review:** The current production build is available at [villasplayasamara.netlify.app](https://villasplayasamara.netlify.app/).
 - **Public launch:** Not ready. Final assets, business facts, contact details, CTA destinations, legal content, policies, and publishing approvals remain tracked in [`TO-DO.md`](../../TO-DO.md).
 
@@ -24,6 +29,13 @@ This directory contains dated implementation records for completed milestones an
 - [HTML presentation completed and corrected — August 24, 2026](2026-08-24-html-presentation-completion.md)
 - [HTML presentation prototype — August 24, 2026](2026-08-24-html-presentation-prototype.md)
 - [Gallery page development — August 19, 2026](2026-08-19-gallery-page-development.md)
+- [FAQ page development — August 27, 2026](2026-08-27-faq-page-development.md)
+- [Privacy Policy page development — August 27, 2026](2026-08-27-privacy-policy-page-development.md)
+- [Cookie Policy page development — August 27, 2026](2026-08-27-cookie-policy-page-development.md)
+- [Terms & Conditions page development — August 27, 2026](2026-08-27-terms-page-development.md)
+- [Contact Us page development — August 27, 2026](2026-08-27-contact-page-development.md)
+- [Contact phone number update — August 28, 2026](2026-08-28-contact-phone-number-update.md)
+- [Contact page overlap and contact-detail refinement — August 28, 2026](2026-08-28-contact-page-overlap-refinement.md)
 - [Wellness inquiry forms and cross-links — August 17, 2026](2026-08-17-wellness-inquiry-and-cross-links.md)
 - [Current development handoff — August 14, 2026](2026-08-14-current-development-handoff.md)
 - [GYM detail refinements — August 13, 2026](2026-08-13-gym-detail-refinement.md)

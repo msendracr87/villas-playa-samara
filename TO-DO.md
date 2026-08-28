@@ -88,8 +88,10 @@ The current homepage draft already contains the main written sections. The large
 - [ ] Add a source and last-reviewed date for homepage operational claims.
 - [ ] Connect every homepage CTA to a real route, booking destination, contact action, or intentional “Coming soon” state.
 - [ ] Complete production captions and alt text for homepage imagery.
-- [ ] Provide the privacy policy, cookie policy/preferences, terms, reservation policy, and cancellation policy needed by the footer and booking journey.
+- [x] Add a Privacy Policy draft page at `/privacy-policy`; management and legal review plus final legal entity, systems, privacy contact, cookie, retention, and policy-date details remain pending.
+- [x] Add a Cookie Policy draft page at `/cookie-policy`; production cookie inventory, consent platform, preference behavior, providers, durations, and final legal review remain pending.
 - [ ] Provide an accessibility statement or approved accessibility destination.
+- [x] Add a Terms & Conditions draft page at /terms; reservation, finance, operational, legal-entity, and final policy review remain pending.
 - [ ] Confirm cookie-consent requirements and final cookie-banner copy.
 - [ ] Verify the final title, meta description, social-sharing image, and canonical URL.
 - [ ] Confirm whether the initial homepage launches in English only or requires Spanish at launch.
@@ -190,11 +192,11 @@ These items can remain outside the homepage presentation unless the owners speci
 - [ ] Provide the physical address, phone numbers, email addresses, WhatsApp destination, and Guest Services contact route.
 - [ ] Define the lead forms and required fields for accommodations, dining, Monkey Tours, groups, and general inquiries.
 - [ ] Confirm required fields, consent and privacy copy, submission destination, and success and error handling for the owner-requested Wellness inquiry forms.
-- [ ] Provide FAQ content.
+- [x] Provide a consolidated FAQ draft in `docs/copy/FAQs/villas-playa-samara-faq-master.md`; owner and operations approval for the remaining FAQ dependencies is still pending.
 - [ ] Provide Offers page content and an empty state for periods without offers.
 - [ ] Provide Explore Sámara content.
 - [ ] Provide Travel Professionals content.
-- [ ] Provide Contact page content.
+- [x] Add the Contact Us page at /contact with the supplied email, phone, WhatsApp, toll-free, map address, Facebook, and Instagram destinations, plus a draft-safe general inquiry form requesting full name, email, phone, subject, and message. Delivery destination, consent, success/error handling, and final inquiry requirements remain pending.
 - [ ] Provide accessibility statement content.
 - [ ] Provide privacy policy, cookie policy/preferences, terms, reservation policy, and cancellation policy.
 - [ ] Provide footer social links and confirm the final copyright, legal-rights-holder, and legal business-name wording.

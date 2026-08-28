@@ -29,6 +29,11 @@ import { DesignSystemPage } from "./components/design-system/DesignSystemPage";
 import { PresentationPage } from "./components/presentation/PresentationPage";
 import { NotFoundPage } from "./components/not-found-page/NotFoundPage";
 import { ThankYouPage } from "./components/thank-you-page/ThankYouPage";
+import { FAQPage } from "./components/faq-page/FAQPage";
+import { PrivacyPolicyPage } from "./components/privacy-policy-page/PrivacyPolicyPage";
+import { CookiePolicyPage } from "./components/cookie-policy-page/CookiePolicyPage";
+import { TermsPage } from "./components/terms-page/TermsPage";
+import { ContactPage } from "./components/contact-page/ContactPage";
 import { getAccommodationBySlug } from "./data/accommodations";
 import {
   arrecifeMenuVenue,
@@ -122,6 +127,26 @@ export function App() {
 
   if (path === "/gallery") {
     return <GalleryPage />;
+  }
+
+  if (path === "/faq") {
+    return <FAQPage />;
+  }
+
+  if (path === "/privacy-policy") {
+    return <PrivacyPolicyPage />;
+  }
+
+  if (path === "/cookie-policy") {
+    return <CookiePolicyPage />;
+  }
+
+  if (path === "/terms") {
+    return <TermsPage />;
+  }
+
+  if (path === "/contact") {
+    return <ContactPage />;
   }
 
   if (path === "/dining/arrecife") {

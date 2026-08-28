@@ -1,0 +1,523 @@
+.contact-page {
+  --contact-form-hero-overlap: clamp(64px, 8vw, 100px);
+  --contact-form-map-overlap: clamp(96px, 9vw, 160px);
+
+  color: var(--color-ink);
+  background: var(--color-forest-950);
+}
+
+.contact-page__hero {
+  position: relative;
+  display: flex;
+  min-height: 100svh;
+  align-items: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--color-forest-900);
+  isolation: isolate;
+}
+
+.contact-page__hero::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 14, 10, 0.16) 22%, transparent 49%), linear-gradient(0deg, rgba(8, 14, 10, 0.88), rgba(8, 14, 10, 0.06) 64%);
+  content: "";
+}
+
+.contact-page__hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: contact-page-hero-reveal 1100ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.contact-page__hero-layout {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: clamp(90px, 12vw, 160px);
+  text-align: center;
+}
+
+.contact-page__hero h1 {
+  max-width: 11ch;
+  margin: 0;
+  font-size: clamp(3.2rem, 7vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.5;
+  text-wrap: balance;
+  transform: translateY(-60px);
+}
+
+.contact-page__hero h1 span {
+  display: inline-block;
+  color: var(--color-lime);
+  font-family: "Birthstone", cursive;
+  font-size: 1.65em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.68;
+  transform: translateY(-0.02em);
+}
+
+.contact-page__inquiry {
+  background: var(--color-forest-950);
+  scroll-margin-top: 24px;
+}
+
+.contact-page__form.accommodation-inquiry__form {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 95%;
+  gap: clamp(32px, 4vw, 56px);
+  margin-top: calc(-1 * var(--contact-form-hero-overlap));
+  margin-inline: auto;
+  padding: clamp(30px, 5vw, 72px);
+  color: var(--color-ink);
+  background: var(--color-sand-50);
+  z-index: 2;
+}
+
+.contact-page__form .accommodation-inquiry__form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(18px, 2vw, 32px);
+  padding-bottom: clamp(4px, 1vw, 12px);
+}
+
+.contact-page__form .contact-page__response-time {
+  margin-left: auto;
+  max-width: none;
+  text-align: right;
+  text-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.contact-page__message-heading,
+.contact-page__contact-heading {
+  max-width: none;
+}
+
+.contact-page__form .accommodation-inquiry__fields {
+  display: grid;
+  grid-template-areas:
+    "name subject message"
+    "email phone message"
+    "actions actions actions";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: start;
+  gap: 22px clamp(18px, 2vw, 32px);
+}
+
+.contact-page__form [data-inquiry-field="name"] {
+  grid-area: name;
+}
+
+.contact-page__form [data-inquiry-field="email"] {
+  grid-area: email;
+}
+
+.contact-page__form [data-inquiry-field="phone"] {
+  grid-area: phone;
+}
+
+.contact-page__form [data-inquiry-field="subject"] {
+  grid-area: subject;
+}
+
+.contact-page__form [data-inquiry-field="message"] {
+  grid-area: message;
+}
+
+.contact-page__form [data-inquiry-field="actions"] {
+  grid-area: actions;
+}
+
+.contact-page__form .accommodation-inquiry__field label {
+  color: var(--color-forest-800);
+}
+
+.contact-page__form .accommodation-inquiry__field input,
+.contact-page__form .accommodation-inquiry__field textarea {
+  border-color: var(--color-sand-200);
+  color: var(--color-ink);
+  background: #fff;
+}
+
+.contact-page__form .accommodation-inquiry__field textarea {
+  min-height: 164px;
+}
+
+.contact-page__form .accommodation-inquiry__field input:hover,
+.contact-page__form .accommodation-inquiry__field textarea:hover {
+  border-color: var(--color-brand-green-text);
+}
+
+.contact-page__form .accommodation-inquiry__field input:focus-visible,
+.contact-page__form .accommodation-inquiry__field textarea:focus-visible {
+  border-color: var(--color-brand-green-text);
+  outline-color: var(--color-brand-green-text);
+}
+
+.contact-page__form .accommodation-inquiry__actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(18px, 3vw, 36px);
+  margin-top: 8px;
+}
+
+.contact-page__form .accommodation-inquiry__actions button {
+  grid-column: 3;
+  justify-self: end;
+  color: var(--color-forest-950);
+  background: var(--color-lime);
+}
+
+.contact-page__form .accommodation-inquiry__actions p {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  justify-self: start;
+  text-align: left;
+  color: var(--color-muted);
+}
+
+.contact-page__form .accommodation-inquiry__aside {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.7fr) minmax(0, 1fr) minmax(0, 1fr);
+  align-content: start;
+  gap: 28px clamp(18px, 3vw, 40px);
+  min-width: 0;
+  padding-top: clamp(28px, 4vw, 48px);
+  border-top: 1px solid rgba(16, 26, 20, 0.22);
+}
+
+.contact-page__contact-heading {
+  grid-column: 1 / -1;
+}
+
+.contact-page__contact-details {
+  display: contents;
+  margin: 0;
+  font-style: normal;
+}
+
+.contact-page__contact-item {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.contact-page__contact-item:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.contact-page__contact-item:nth-child(2) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.contact-page__contact-item:nth-child(3) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.contact-page__contact-item:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.contact-page__contact-item:nth-child(5) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.contact-page__contact-item .material-symbols-outlined {
+  align-self: start;
+  margin-top: -3px;
+  color: var(--color-brand-green-text);
+  font-size: 21px;
+  line-height: 1;
+}
+
+.contact-page__contact-item > div {
+  display: grid;
+  gap: 3px;
+}
+
+.contact-page__contact-item a {
+  width: fit-content;
+  max-width: 100%;
+  color: var(--color-forest-800);
+  font-size: 1rem;
+  line-height: 1.55;
+  text-decoration-color: rgba(16, 26, 20, 0.42);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition-property: color, text-decoration-color;
+  transition-duration: var(--motion-duration-fast);
+}
+
+.contact-page__contact-item a:hover,
+.contact-page__contact-item a:focus-visible {
+  color: var(--color-forest-950);
+  text-decoration-color: var(--color-lime);
+}
+
+.contact-page__contact-item strong {
+  color: var(--color-forest-950);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact-page__social-links {
+  display: grid;
+  grid-column: 3 / -1;
+  grid-row: 3;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 24px;
+  padding: 0;
+}
+
+.contact-page__social-links a {
+  display: inline-flex;
+  min-height: var(--interaction-target-min);
+  align-items: center;
+  gap: 10px;
+  color: var(--color-forest-950);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-property: color, transform;
+  transition-duration: var(--motion-duration-fast);
+}
+
+.contact-page__social-links a:hover,
+.contact-page__social-links a:focus-visible {
+  color: var(--color-lime);
+  transform: translateY(-2px);
+}
+
+.contact-page__social-links a:active {
+  transform: scale(0.96);
+}
+
+.contact-page__social-links img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%);
+}
+
+.contact-page__map-section {
+  position: relative;
+  z-index: 1;
+  margin-top: calc(-1 * var(--contact-form-map-overlap));
+  background: var(--color-sand-50);
+}
+
+.contact-page__map-shell {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: var(--color-sand-50);
+}
+
+.contact-page__map-frame {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: 0;
+  pointer-events: none;
+}
+
+@keyframes contact-page-hero-reveal {
+  from {
+    clip-path: inset(0 0 100% 0);
+    filter: saturate(0.72);
+    transform: scale(1.035);
+  }
+
+  to {
+    clip-path: inset(0);
+    filter: saturate(1);
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 980px) {
+  .contact-page__form .accommodation-inquiry__fields {
+    grid-template-areas:
+      "name subject"
+      "email phone"
+      "message message"
+      "actions actions";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-page__form .accommodation-inquiry__actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-page__form .accommodation-inquiry__actions p {
+    grid-column: 1;
+  }
+
+  .contact-page__form .accommodation-inquiry__actions button {
+    grid-column: 2;
+  }
+
+  .contact-page__form .accommodation-inquiry__aside {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-page__contact-item:nth-child(n) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .contact-page__contact-item:first-child,
+  .contact-page__social-links {
+    grid-column: 1 / -1;
+  }
+
+  .contact-page__social-links {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-page {
+    --contact-form-map-overlap: clamp(64px, 16vw, 96px);
+  }
+
+  .contact-page__form.accommodation-inquiry__form {
+    width: 95%;
+  }
+
+  .contact-page__form .accommodation-inquiry__form-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-page__form .contact-page__response-time {
+    margin-left: 0;
+    text-align: left;
+    text-wrap: pretty;
+    white-space: normal;
+  }
+
+  .contact-page__form .accommodation-inquiry__fields {
+    grid-template-areas:
+      "name"
+      "subject"
+      "email"
+      "phone"
+      "message"
+      "actions";
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-page__form .accommodation-inquiry__actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-page__form .accommodation-inquiry__actions p {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+    text-align: left;
+  }
+
+  .contact-page__form .accommodation-inquiry__actions button {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .contact-page__form .accommodation-inquiry__aside {
+    gap: 24px;
+  }
+
+  .contact-page__map-shell,
+  .contact-page__map-frame {
+    height: 440px;
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-page__hero {
+    min-height: 920px;
+  }
+
+  .contact-page__hero > img {
+    object-position: center;
+  }
+
+  .contact-page__hero-layout {
+    padding-bottom: 42px;
+  }
+
+  .contact-page__hero h1 {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(2.15rem, 10vw, 3.1rem);
+  }
+
+  .contact-page__hero h1 span {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-page__form.accommodation-inquiry__form {
+    width: 100%;
+    padding: 28px;
+  }
+
+  .contact-page__form .accommodation-inquiry__aside {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-page__contact-item:first-child,
+  .contact-page__social-links {
+    grid-column: auto;
+  }
+
+  .contact-page__social-links {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .contact-page__map-shell,
+  .contact-page__map-frame {
+    height: 360px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-page__hero > img {
+    animation-duration: 0.01ms;
+    animation-delay: 0ms;
+  }
+
+  .contact-page__contact-item a,
+  .contact-page__social-links a {
+    transition-duration: 0.01ms;
+  }
+}
