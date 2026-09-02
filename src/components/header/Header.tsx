@@ -225,10 +225,18 @@ function HeaderBar({ variant, isVisible = true }: HeaderBarProps) {
   );
 }
 
-export function Header() {
+type HeaderProps = {
+  showSticky?: boolean;
+};
+
+export function Header({ showSticky = true }: HeaderProps) {
   const [isStickyVisible, setIsStickyVisible] = useState(false);
 
   useEffect(() => {
+    if (!showSticky) {
+      return;
+    }
+
     const main = document.getElementById("main-content");
     const hero = main?.firstElementChild as HTMLElement | null;
     const footer = document.querySelector<HTMLElement>(".site-footer");
@@ -286,12 +294,14 @@ export function Header() {
       window.removeEventListener("scroll", requestVisibilityUpdate);
       window.removeEventListener("resize", requestVisibilityUpdate);
     };
-  }, []);
+  }, [showSticky]);
 
   return (
     <>
       <HeaderBar variant="top" />
-      <HeaderBar variant="sticky" isVisible={isStickyVisible} />
+      {showSticky && (
+        <HeaderBar variant="sticky" isVisible={isStickyVisible} />
+      )}
     </>
   );
 }

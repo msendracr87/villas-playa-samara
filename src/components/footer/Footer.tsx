@@ -12,6 +12,8 @@ const footerLinks = [
   { label: "Gallery", href: "/gallery" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Media Center", href: "/media-center" },
+  { label: "Sitemap", href: "/sitemap" },
 ] as const;
 
 const contactDetails = [

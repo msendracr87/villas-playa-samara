@@ -108,7 +108,8 @@ These items can remain outside the homepage presentation unless the owners speci
 - Detailed Monkey Tours schedules, prices, and inclusions.
 - Detailed yoga schedules, Morpho prices, and future retreat operating policies.
 - Full Gallery filtering, categorization, and captions beyond the images selected for the homepage preview.
-- Full FAQ, Explore Sámara, Travel Professionals, Offers, Contact, Sitemap, and error-page content, provided unavailable footer links are hidden or clearly marked for the presentation.
+- Offers, Explore Sámara, Travel Professionals, and Case studies are explicitly deferred until after launch and should remain unavailable until their content is ready.
+- Full FAQ, Contact, Sitemap, and error-page content, provided unavailable footer links are hidden or clearly marked for the presentation.
 
 ---
 
@@ -193,14 +194,16 @@ These items can remain outside the homepage presentation unless the owners speci
 - [ ] Define the lead forms and required fields for accommodations, dining, Monkey Tours, groups, and general inquiries.
 - [ ] Confirm required fields, consent and privacy copy, submission destination, and success and error handling for the owner-requested Wellness inquiry forms.
 - [x] Provide a consolidated FAQ draft in `docs/copy/FAQs/villas-playa-samara-faq-master.md`; owner and operations approval for the remaining FAQ dependencies is still pending.
-- [ ] Provide Offers page content and an empty state for periods without offers.
-- [ ] Provide Explore Sámara content.
-- [ ] Provide Travel Professionals content.
+- [x] Defer Offers, Explore Sámara, Travel Professionals, and Case studies until after launch; develop each page only when its content is ready.
+- [ ] Post-launch: provide Offers page content and an empty state for periods without offers.
+- [ ] Post-launch: provide Explore Sámara content.
+- [ ] Post-launch: provide Travel Professionals content.
+- [ ] Post-launch: provide Case studies content and confirm the appropriate resort-specific scope.
 - [x] Add the Contact Us page at /contact with the supplied email, phone, WhatsApp, toll-free, map address, Facebook, and Instagram destinations, plus a draft-safe general inquiry form requesting full name, email, phone, subject, and message. Delivery destination, consent, success/error handling, and final inquiry requirements remain pending.
 - [ ] Provide accessibility statement content.
 - [ ] Provide privacy policy, cookie policy/preferences, terms, reservation policy, and cancellation policy.
 - [ ] Provide footer social links and confirm the final copyright, legal-rights-holder, and legal business-name wording.
-- [ ] Provide Sitemap content and route inventory.
+- [x] Provide Sitemap content and the current public route inventory in `docs/copy/Sitemap/villas-playa-samara-sitemap-page-direction.md`; exclude internal review tools, the form-success route, the 404 state, mockup-only dining menus, and deferred post-launch pages.
 - [ ] Approve the draft 404 copy implemented in `src/components/not-found-page/NotFoundPage.tsx`.
 - [ ] Approve the draft form-success copy implemented in `src/components/thank-you-page/ThankYouPage.tsx`, and connect `/thank-you` only after each form submission destination and success/error handling are approved.
 - [ ] Provide error and no-results copy.

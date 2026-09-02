@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Header } from "./components/header/Header";
 import { Hero } from "./components/hero/Hero";
 import { HomeIntro } from "./components/home-intro/HomeIntro";
@@ -34,6 +35,7 @@ import { PrivacyPolicyPage } from "./components/privacy-policy-page/PrivacyPolic
 import { CookiePolicyPage } from "./components/cookie-policy-page/CookiePolicyPage";
 import { TermsPage } from "./components/terms-page/TermsPage";
 import { ContactPage } from "./components/contact-page/ContactPage";
+import { SitemapPage } from "./components/sitemap-page/SitemapPage";
 import { getAccommodationBySlug } from "./data/accommodations";
 import {
   arrecifeMenuVenue,
@@ -46,6 +48,12 @@ import { useHomeMotion } from "./hooks/useHomeMotion";
 import { usePageMetadata } from "./hooks/usePageMetadata";
 import "./styles/app.css";
 import "./styles/home-motion.css";
+
+const MediaCenterPage = lazy(() =>
+  import("./components/media-center-page/MediaCenterPage").then((module) => ({
+    default: module.MediaCenterPage,
+  })),
+);
 
 const decodePathSegment = (segment: string) => {
   try {
@@ -147,6 +155,18 @@ export function App() {
 
   if (path === "/contact") {
     return <ContactPage />;
+  }
+
+  if (path === "/media-center") {
+    return (
+      <Suspense fallback={<div className="site-shell" />}>
+        <MediaCenterPage />
+      </Suspense>
+    );
+  }
+
+  if (path === "/sitemap") {
+    return <SitemapPage />;
   }
 
   if (path === "/dining/arrecife") {
