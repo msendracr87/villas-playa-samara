@@ -4,7 +4,11 @@ Design and development repository for the Villas Playa Sámara beachfront resort
 
 The project is currently an owner-review presentation, not a publication-ready website. Several names, menus, operational facts, destinations, policies, and image approvals still require confirmation before launch.
 
+[Open the Google Sheet — Pages & Launch Tracker](https://docs.google.com/spreadsheets/d/1HoBfcvMqgzZ4CG-wrGlFJ_w3C2BcbocL4RitfCrPIGA/edit) for page status, stakeholder reviews, pending work, and launch blockers.
+
 ## Current progress
+
+Implementation summary updated September 3, 2026, against the current source and dated project records. Implementation status does not imply publication approval or deployment of the latest changes.
 
 ### Homepage
 
@@ -35,27 +39,55 @@ The project is currently an owner-review presentation, not a publication-ready w
 
 ### Wellness
 
-- Complete Wellness overview and dedicated GYM route.
+- Complete Wellness overview and dedicated GYM (`/wellness/gym`) and Morpho Spa (`/wellness/spa`) routes.
+- The Spa page includes the current treatment menu, durations, prices, and packages. GYM and Spa share inquiry forms and cross-page navigation.
 - Clearly separates the currently available GYM, yoga, and Morpho treatments from the expanded retreat facilities under development.
-- The dedicated Morpho treatment presentation, final schedules, booking process, operational details, and Guest Services destinations remain pending.
+- Final schedules, booking process, operational details, Guest Services destinations, and inquiry delivery remain pending.
+
+### Gallery
+
+- Dedicated `/gallery` page with 35 optimized images, randomized masonry layout, and a full-screen viewer with keyboard navigation.
+- Categories, production captions and alt text, image rights, and drone-image approval remain pending.
+
+### Visitor information and legal pages
+
+- `/faq` uses the consolidated master FAQ with topic navigation and expandable answers.
+- `/contact` includes supplied contact and social destinations, a location map, and a general inquiry form; form delivery remains disabled pending approval.
+- Draft `/privacy-policy`, `/cookie-policy`, and `/terms` pages are implemented for review. Legal and operational approval, final business details, and cookie-consent implementation remain pending.
+- A branded 404 page handles unknown routes and invalid detail slugs. The draft `/thank-you` page is ready for future form-success integration; forms are not yet connected to it.
+
+### Media Center and Sitemap
+
+- `/media-center` provides eight photography and logo collections with previews and individual downloads, derived from the project asset folders and loaded separately from the initial page bundle.
+- Backup, no-use, mockup, and complementary-blur assets are excluded. Rights metadata and final publication approvals remain pending; ZIP packages and access controls are outside the first version.
+- `/sitemap` groups current visitor-facing routes and excludes internal review tools, form-success and 404 states, concept menu routes, and deferred pages. An XML sitemap remains pending.
+- Offers, Explore Sámara, Travel Professionals, and Case studies are deferred until after launch and depend on supplied content.
 
 ### HTML presentation
 
 - Complete standalone 25-slide presentation at `/presentation` with self-running playback, accessible controls, keyboard navigation, and fullscreen support.
 - Includes the current GYM photography, 2025 padel and pickleball courts video, and presentation-only future-development renders with permanent concept / under-development labels.
-- Ready for owner review; it has not been deployed in this milestone.
+- Ready for owner review; deployment of the latest presentation changes requires confirmation.
 
 ### Design system
 
 - Responsive React component system with square interface geometry.
 - Shared typography, color, spacing, motion, navigation, buttons, and content patterns.
 - Material Symbols are used as the official interface icon system.
+- Shared restaurant-detail, experience-detail, and inquiry-form foundations are documented in [the design-system guide](docs/design-system.md) and displayed at `/design-system`.
+- `npm run check:design-system` checks shared interface rules and runs automatically during production builds.
+- Local simplification work recorded on September 2 consolidates scroll-reveal behavior and inquiry styles, removes unused code, and derives the presentation count from its slide configuration; see the [implementation record](docs/progress/2026-09-02-codebase-simplification.md). These application changes remain uncommitted as of this documentation update.
 
-## Review environment
+## Review environments and deployment
 
-The current hosted review build is available at [villasplayasamara.netlify.app](https://villasplayasamara.netlify.app/).
+The documented Netlify owner-review address is [villasplayasamara.netlify.app](https://villasplayasamara.netlify.app/). See the [Netlify deployment record](docs/deployment/netlify.md) for confirmed settings and remaining ownership questions. The latest local or GitHub changes should not be assumed to be deployed there.
 
-This environment is for review and must not be treated as the final public website while launch requirements remain unresolved.
+DreamHost development deployment to `dev.villasplayasamara.com` through GitHub Actions is planned and pending configuration. The immediate dependency is delegated DreamHost account access, followed by confirmed SSH details, the website directory, DNS/HTTPS, deployment credentials, routing configuration, and a tested workflow.
+
+- [DreamHost + GitHub Actions stakeholder brief](docs/deployment/dreamhost-github-actions-stakeholder-brief.md) — required access, responsibilities, and next steps.
+- [DreamHost deployment implementation guide](docs/deployment/dreamhost-github-actions-vite-dev-deployment-guide.md) — detailed setup instructions.
+
+Review environments must not be treated as the final public website while launch requirements remain unresolved.
 
 ## Project tracking and stakeholder visibility
 
@@ -72,10 +104,10 @@ Update the Google Sheet after substantial work changes a page's implementation, 
 The complete working checklist is maintained in [TO-DO.md](TO-DO.md). The main outstanding areas are:
 
 - Owner approval of final copy, imagery, positioning, and production alt text.
-- Final booking engine, room booking links, Guest Services, contact, social, and CTA destinations.
+- Final booking engine, room booking links, Guest Services, and CTA destinations, plus final approval of the supplied contact and social details.
 - Approval of dining names, logos, menus, allergens, hours, prices, reservation policies, and seasonal availability.
 - Final operational facts for accommodations, all-inclusive inclusions, resort amenities, experiences, and wellness.
-- Privacy, cookies, terms, accessibility, reservation, cancellation, and other legal content.
+- Approval and completion of the draft privacy, cookie, and terms pages, plus accessibility, reservation, cancellation, and other required legal content.
 - Production forms, submission destinations, consent language, and success or error handling.
 - Analytics, cookie consent, monitoring, custom domain, deployment ownership, and release procedures.
 - Decision and workflow for Spanish localization.
@@ -90,6 +122,7 @@ Never publish placeholder, pending, future, draft, or mockup-only content as a c
 - Component-scoped CSS and shared global styles
 - Markdown-based canonical website copy and dining menus
 - Netlify review deployment
+- Planned DreamHost static hosting with GitHub Actions deployment over SSH
 
 ## Local development
 
@@ -111,6 +144,8 @@ Create a production build:
 npm run build
 ```
 
+The build runs the design-system check, TypeScript compilation, and Vite bundling. Run `npm run check:design-system` independently when checking shared interface rules. No separate lint or automated test command is configured.
+
 Preview the production build locally:
 
 ```sh
@@ -131,13 +166,15 @@ npm run dev
 
 No committed build output or local dependency directory is required: `dist/` and `node_modules/` are generated locally. No application environment variables are currently referenced by the source code.
 
-Before making changes, read [AGENTS.md](AGENTS.md), the [current development handoff](docs/progress/2026-08-14-current-development-handoff.md), and [TO-DO.md](TO-DO.md). Use `docs/copy/` as the canonical content source and treat the latest `origin/main` commit as the resume point. A fresh clone should show a clean `git status` after installation and build.
+Before making changes, read [AGENTS.md](AGENTS.md), the latest [dated progress records](docs/progress/), [the design-system guide](docs/design-system.md), and [TO-DO.md](TO-DO.md). The [August 14 handoff](docs/progress/2026-08-14-current-development-handoff.md) is historical context; later records and current source describe subsequent additions. Use `docs/copy/` as the canonical content source and treat the latest `origin/main` commit as the resume point. Local uncommitted work is not included in a fresh clone. A fresh clone should show a clean `git status` after installation and build.
 
 ## Repository structure
 
 - `src/components/` — reusable page and interface components.
 - `src/styles/` — application-wide styles and design foundations.
 - `src/data/` — structured application data and Markdown menu configuration.
+- `src/hooks/` — shared motion, page metadata, and interaction hooks.
+- `scripts/` — build-time design-system checks.
 - `docs/copy/` — canonical implementation copy and menu content.
 - `docs/progress/` — dated implementation and milestone records.
 - `docs/deployment/` — hosting and launch-transition documentation.
@@ -150,4 +187,4 @@ Before making changes, read [AGENTS.md](AGENTS.md), the [current development han
 
 Content is classified as `approved`, `draft`, `mockup-only`, or `future`. Dining menus remain mockup-only unless the project owner explicitly changes their status. Arrecife, Baja Azul, Trattoria, and Veranda are concept names and logos for review and may change before final approval.
 
-For the latest implementation history and current handoff, see [Project progress](docs/progress/README.md).
+For implementation history, see the [dated progress records](docs/progress/) and [Project progress index](docs/progress/README.md).
